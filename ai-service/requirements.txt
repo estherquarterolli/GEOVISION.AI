@@ -1,0 +1,35 @@
+# GeoVision.AI — Serviço de classificação de risco
+#
+# Versões travadas nesta instalação, feita com Python 3.14 (única versão
+# disponível na máquina de desenvolvimento no momento). Se o ambiente de
+# deploy usar Python 3.11–3.13, os pacotes originalmente planejados
+# (fastapi 0.115, pydantic 2.10, numpy 2.2, onnxruntime 1.20 etc.) também
+# funcionam — a atualização abaixo foi necessária só porque essas versões
+# mais antigas não têm wheel pré-compilado para cp314 e falhavam ao tentar
+# compilar do source (Rust/PyO3 e Cython ausentes no ambiente).
+
+# --- API ---------------------------------------------------------------------
+fastapi==0.141.1
+uvicorn[standard]==0.52.3
+pydantic==2.13.4
+pydantic-settings==2.15.0
+python-multipart==0.0.32      # upload de imagem via multipart/form-data
+
+# --- Imagem ------------------------------------------------------------------
+pillow==12.3.0
+numpy==2.5.2
+
+# --- Inferência --------------------------------------------------------------
+# ONNX Runtime em vez de TensorFlow completo em produção: a imagem final fica
+# na casa das dezenas de MB em vez de ~1 GB, o que importa no plano gratuito
+# do Railway/Fly.io. O treino (Sprint 5) usa TensorFlow em notebook separado e
+# exporta para ONNX — não é dependência deste serviço.
+onnxruntime==1.28.0
+
+# --- Integrações -------------------------------------------------------------
+httpx==0.28.1                 # chamadas ao Supabase, Resend e WhatsApp Cloud API
+supabase==2.31.0
+
+# --- Testes ------------------------------------------------------------------
+pytest==9.1.1
+pytest-asyncio==1.4.0

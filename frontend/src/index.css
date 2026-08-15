@@ -1,0 +1,176 @@
+@import 'tailwindcss';
+
+/* =============================================================================
+   GeoVision.AI — Design System
+   Conceito: "Do Território ao Dado"
+   Contorno topográfico (laranja) → rede de nós (azul) → pino de ação (laranja)
+
+   Tokens definidos aqui viram utilitários do Tailwind automaticamente
+   (ex.: --color-marca-laranja  →  bg-marca-laranja, text-marca-laranja).
+   ============================================================================= */
+
+@theme {
+  /* --- Marca ------------------------------------------------------------- */
+  --color-marca-laranja: #f2811d; /* ações primárias, alerta, pino */
+  --color-marca-azul: #0e5c82; /* estrutura, dados, navegação */
+  --color-marca-petroleo: #0a3a52; /* fundo do painel Defesa Civil */
+
+  /* Variações derivadas, para estados hover/ativo e fundos suaves */
+  --color-marca-laranja-escuro: #d96f12;
+  --color-marca-laranja-suave: #fef1e4;
+  --color-marca-azul-escuro: #0b4a6b;
+  --color-marca-azul-suave: #e7f0f5;
+
+  /* --- Neutros ----------------------------------------------------------- */
+  --color-fundo: #fafaf8; /* fundo do app do cidadão */
+  --color-superficie: #ffffff;
+  --color-tinta: #1c2530; /* texto principal */
+  --color-tinta-suave: #6b7280; /* texto secundário */
+  --color-borda: #e5e7eb;
+
+  /* --- Semáforo de risco ------------------------------------------------- */
+  --color-risco-baixo: #2e9e5b;
+  --color-risco-medio: #e8a93b;
+  --color-risco-critico: #d9463b;
+
+  --color-risco-baixo-suave: #e8f5ed;
+  --color-risco-medio-suave: #fdf4e3;
+  --color-risco-critico-suave: #fbeae8;
+
+  /* --- Tipografia --------------------------------------------------------
+     Sora nos títulos: geométrica e moderna sem ser infantil nem corporativa
+     fria — atende a faixa de 13 a 55 anos.
+     Inter no corpo: legibilidade alta em tela pequena e em formulário.
+     Tabular nas métricas: números alinhados no painel institucional.        */
+  --font-titulo: 'Sora', ui-sans-serif, system-ui, sans-serif;
+  --font-corpo: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-metrica: 'JetBrains Mono', ui-monospace, 'Courier New', monospace;
+
+  /* --- Raio ---------------------------------------------------------------
+     App do cidadão usa raio médio (acolhedor); o painel da Defesa Civil usa
+     raio reto (institucional). São dois tokens, não um valor no olho.       */
+  --radius-cidadao: 14px;
+  --radius-painel: 6px;
+
+  /* --- Elevação ----------------------------------------------------------- */
+  --shadow-card: 0 1px 2px rgb(28 37 48 / 0.06), 0 4px 12px rgb(28 37 48 / 0.05);
+  --shadow-flutuante: 0 8px 24px rgb(28 37 48 / 0.14);
+}
+
+/* -----------------------------------------------------------------------------
+   Base
+   -------------------------------------------------------------------------- */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-fundo);
+    color: var(--color-tinta);
+    font-family: var(--font-corpo);
+    /* Evita o zoom acidental de duplo-toque no iOS durante a captura de foto */
+    touch-action: manipulation;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-titulo);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  /* Foco sempre visível: requisito de acessibilidade, não enfeite. */
+  :focus-visible {
+    outline: 2px solid var(--color-marca-azul);
+    outline-offset: 2px;
+  }
+
+  /* Respeita quem desativou animação no sistema. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* -----------------------------------------------------------------------------
+   Tema do Painel da Defesa Civil
+
+   Envolver a árvore em .tema-painel troca o fundo e a superfície para o modo
+   "centro de operações", sem precisar de classes condicionais nos componentes.
+   -------------------------------------------------------------------------- */
+@layer components {
+  .tema-painel {
+    --color-fundo: #0a3a52;
+    --color-superficie: #0f4964;
+    --color-tinta: #eef6fa;
+    --color-tinta-suave: #93b4c6;
+    --color-borda: #1a5c7d;
+
+    background-color: var(--color-fundo);
+    color: var(--color-tinta);
+  }
+
+  /* Métricas do painel em variante tabular: números não "dançam" ao atualizar
+     em tempo real. */
+  .metrica {
+    font-family: var(--font-metrica);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+  }
+
+  /* --- Motivo "Do Território ao Dado" -------------------------------------
+     Divisor com o gradiente terra→rede. Usado entre seções, em barras de
+     progresso e no estado de "IA processando".                              */
+  .divisor-territorio {
+    height: 2px;
+    border: 0;
+    background: linear-gradient(
+      90deg,
+      var(--color-marca-laranja) 0%,
+      var(--color-marca-laranja) 18%,
+      var(--color-marca-azul) 62%,
+      var(--color-marca-azul) 100%
+    );
+    opacity: 0.9;
+  }
+
+  /* Barra de progresso indeterminada para "IA analisando sua foto": a faixa
+     percorre da cor do território para a cor do dado. */
+  .progresso-ia {
+    position: relative;
+    overflow: hidden;
+    height: 4px;
+    background-color: var(--color-marca-azul-suave);
+    border-radius: 999px;
+  }
+
+  .progresso-ia::after {
+    content: '';
+    position: absolute;
+    inset-block: 0;
+    inline-size: 40%;
+    border-radius: 999px;
+    background: linear-gradient(
+      90deg,
+      var(--color-marca-laranja),
+      var(--color-marca-azul)
+    );
+    animation: percorre-territorio 1.4s ease-in-out infinite;
+  }
+
+  @keyframes percorre-territorio {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(350%);
+    }
+  }
+}

@@ -1,0 +1,56 @@
+# Dependências
+node_modules/
+.pnp
+.pnp.js
+
+# Build
+dist/
+dist-ssr/
+build/
+*.local
+
+# Ambiente — NUNCA commitar chaves
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Modelos treinados (grandes — usar Git LFS ou storage externo)
+*.h5
+*.onnx
+*.tflite
+*.pt
+ai-service/models/*
+!ai-service/models/.gitkeep
+
+# Dataset de imagens (não versionar imagens brutas)
+# Ignora o conteúdo, não a pasta: o Git não consegue reincluir um arquivo
+# dentro de um diretório ignorado, e o .gitkeep sumiria junto.
+ai-service/dataset/*
+!ai-service/dataset/.gitkeep
+
+# Editor / SO
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# Supabase local
+supabase/.temp/
+supabase/.branches/
