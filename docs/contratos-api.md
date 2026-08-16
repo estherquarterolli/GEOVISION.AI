@@ -144,30 +144,37 @@ await supabase.auth.signInWithPassword({ email, password: senha })
 
 ### Enviar um alerta
 
+Implementado em `frontend/src/services/alertas.ts` (`enviarAlerta`), usado
+pela tela `pages/NovoAlerta.tsx`.
+
 ```ts
+// 0. comprimir antes de tudo — foto de celular passa de 10-20 MB, acima do
+//    limite de 8 MB do /classify e sem necessidade nenhuma para a análise.
+const fotoComprimida = await comprimirImagem(arquivo)   // lib/imagem.ts
+
 // 1. foto no Storage
 const caminho = `${usuario.id}/${crypto.randomUUID()}.jpg`
-await supabase.storage.from('alertas').upload(caminho, arquivo)
+await supabase.storage.from('alertas').upload(caminho, fotoComprimida)
 
-// 2. registro do alerta
+// 2. registro do alerta (status inicial: 'processando', default da coluna)
 const { data } = await supabase.from('alertas').insert({
   usuario_id: usuario.id,
   foto_path: caminho,
   localizacao: `POINT(${lng} ${lat})`,   // ordem: longitude, latitude
+  endereco_manual: enderecoManual,       // preenchido só se o GPS foi negado
   tipo_anomalia: 'rachadura',
 }).select().single()
 
-// 3. classificação
-const forma = new FormData()
-forma.append('imagem', arquivo)
-const r = await fetch(`${AI_URL}/classify`, { method: 'POST', body: forma })
-const { risco, confianca, versao_modelo } = await r.json()
+// 3. classificação — nunca lança. 503 (sem modelo), erro de rede ou timeout
+//    todos viram `null`, não uma exceção que travaria o envio do alerta.
+const classificacao = await classificar(fotoComprimida)   // -> ... | null
 
-// 4. resultado de volta no alerta
+// 4. resultado de volta no alerta — mesmo sem classificação, o status sai de
+//    'processando' e o alerta aparece na fila de triagem sem risco sugerido.
 await supabase.from('alertas').update({
-  nivel_risco: risco,
-  confianca_ia: confianca,
-  modelo_versao: versao_modelo,
+  nivel_risco: classificacao?.risco ?? null,
+  confianca_ia: classificacao?.confianca ?? null,
+  modelo_versao: classificacao?.versao_modelo ?? null,
   status: 'recebido',
 }).eq('id', data.id)
 ```
@@ -176,6 +183,20 @@ await supabase.from('alertas').update({
 > A Geolocation API do navegador devolve `coords.latitude` e
 > `coords.longitude` — trocar os dois coloca todos os alertas do Rio no meio
 > do oceano, e o erro passa despercebido até alguém abrir o mapa.
+
+> **Por que a classificação nunca bloqueia o envio:** se o passo 3 lançasse
+> exceção em qualquer indisponibilidade do serviço de IA (esperado até o
+> Sprint 5, mas também possível depois — deploy, rede, timeout), o alerta
+> ficaria preso em `status = 'processando'` para sempre, com a foto já salva
+> mas invisível para a Defesa Civil. Uma foto sem classificação automática
+> ainda vale mais do que uma foto que nunca chegou à triagem.
+
+### Upload de fotos — RLS do Storage
+
+Bucket `alertas` (privado). Políticas em
+`supabase/migrations/0003_storage_alertas.sql`, exigem o caminho no formato
+`{usuario_id}/{arquivo}` — é assim que a política identifica o dono do
+arquivo. Um upload para qualquer outro caminho é rejeitado.
 
 ### Ler a fila de triagem (Defesa Civil)
 

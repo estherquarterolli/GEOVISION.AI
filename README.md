@@ -55,9 +55,10 @@ terminal novo. Para Python, use sempre `py` em vez de `python` nesta máquina.
 ### 1. Banco (Supabase)
 
 1. Crie um projeto em [supabase.com](https://supabase.com).
-2. No **SQL Editor**, execute `supabase/migrations/0001_esquema_inicial.sql`.
-3. Em **Storage**, crie o bucket `alertas`.
-4. Em **Settings > API**, copie a URL do projeto e a chave `anon`.
+2. No **SQL Editor**, execute as migrations de `supabase/migrations/` **em
+   ordem** (`0001`, `0002`, `0003`) — a `0003` já cria o bucket de fotos e
+   suas políticas, não precisa criar nada manualmente em Storage.
+3. Em **Settings > API**, copie a URL do projeto e a chave `anon`.
 
 ### 2. Frontend
 

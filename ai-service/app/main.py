@@ -14,11 +14,13 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from app.config import obter_config
-from app.routers import classificacao, webhooks
+from app.routers import classificacao, webhooks, auth, alertas
 from app.schemas import RespostaSaude
 from app.services.classificador import Classificador
+from app.db import inicializar_banco, UPLOADS_DIR
 
 logging.basicConfig(
     level=logging.INFO,
@@ -34,6 +36,10 @@ async def ciclo_de_vida(app: FastAPI):
     Carregar por requisição adicionaria centenas de milissegundos a cada foto
     enviada.
     """
+    # Inicializa banco de dados local SQLite
+    inicializar_banco()
+    logger.info("Banco de dados SQLite inicializado.")
+
     config = obter_config()
     app.state.config = config
 
@@ -70,12 +76,19 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=obter_config().origens_permitidas,
     allow_credentials=True,
-    allow_methods=["GET", "POST"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
 )
 
+# Servir fotos locais estaticamente
+UPLOADS_DIR.mkdir(parents=True, exist_ok=True)
+app.mount("/uploads", StaticFiles(directory=str(UPLOADS_DIR)), name="uploads")
+
 app.include_router(classificacao.roteador)
 app.include_router(webhooks.roteador)
+app.include_router(auth.roteador)
+app.include_router(alertas.roteador)
+
 
 
 @app.get("/health", response_model=RespostaSaude, tags=["infra"])

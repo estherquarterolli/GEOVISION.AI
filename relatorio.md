@@ -13,10 +13,10 @@ Referência de escopo: [planodedesenvolvimento.md](planodedesenvolvimento.md).
 | Sprint | Escopo | Situação |
 |---|---|---|
 | 0 | Fundação e Design System | ✅ código escrito · ✅ executado e verificado |
-| 1 | Arquitetura e modelagem de dados | ✅ código escrito · ✅ serviço de IA verificado · ⚠️ migration ainda não aplicada em um Supabase real |
-| 2 | Autenticação e cadastro | ✅ código escrito · ✅ type-check limpo · ⚠️ ainda **não verificado rodando** no navegador |
-| 3 | Coleta e curadoria do dataset | ⬜ não iniciado |
-| 4 | Captura, câmera e geolocalização | ⬜ não iniciado |
+| 1 | Arquitetura e modelagem de dados | ✅ código escrito · ✅ serviço de IA verificado · ⚠️ migrations ainda não aplicadas em um Supabase real |
+| 2 | Autenticação e cadastro | ✅ código escrito · ✅ roteamento/gate verificado ao vivo · ⚠️ formulário em si não testado (precisa de Supabase real) |
+| 3 | Coleta e curadoria do dataset | ⬜ não iniciado — depende de você |
+| 4 | Captura, câmera e geolocalização | ✅ código escrito · ✅ type-check limpo · ✅ roteamento/gate verificado ao vivo · ⚠️ formulário em si não testado (precisa de Supabase real) |
 | 5 | Treinamento do MobileNetV2 | ⬜ não iniciado |
 | 6 | API de classificação e integração | 🟡 esqueleto pronto e testado, sem modelo |
 | 7–11 | Painel, educação, testes, refino | ⬜ não iniciado |
@@ -24,6 +24,110 @@ Referência de escopo: [planodedesenvolvimento.md](planodedesenvolvimento.md).
 **Ambiente:** frontend rodando em [localhost:5180](http://localhost:5180),
 serviço de IA em [localhost:8001](http://localhost:8001/docs) — detalhes na
 entrada de verificação abaixo.
+
+---
+
+## 15/08/2026 (madrugada) — Sprint 4: Captura, câmera e geolocalização
+
+Pulei o Sprint 3 de propósito — coleta de dataset é trabalho de dados, não de
+código, e só avança com sua participação (ver Sprint 3 na tabela acima).
+Segui direto para o Sprint 4: a tela "Novo Alerta" ponta a ponta.
+
+Também terminei a verificação ao vivo do Sprint 2 que tinha ficado
+interrompida na rodada anterior, e removi o `playwright` temporário de novo
+depois de usar.
+
+### Verificação do Sprint 2 (pendência da rodada anterior, agora concluída)
+
+Reinstalei o Playwright temporariamente e testei `/cadastro`, `/entrar`,
+`/termos`, `/perfil` e `/design-system`: o aviso de configuração pendente
+renderiza corretamente em todas as telas que dependem de conta, `/termos`
+mostra o texto legal completo, a vitrine do design system continua intacta,
+`/` redireciona para `/entrar` como esperado. **Zero erros de console.**
+Removido o Playwright em seguida.
+
+### Integração real com `/classify`, não um placeholder
+
+O plano descreve o Sprint 4 como "envio de alerta sem classificação de IA
+ainda — usar placeholder", porque a classificação só chegaria no Sprint 6.
+Mas o endpoint `/classify` **já existe e já foi testado** desde o Sprint 1
+(responde 503 quando não há modelo carregado). Em vez de escrever um
+placeholder descartável que o Sprint 6 teria que arrancar depois, integrei
+direto com o endpoint real — ele já sabe se comportar sem modelo.
+
+**Decisão central do fluxo de envio** (`frontend/src/services/alertas.ts`):
+a chamada a `/classify` **nunca lança exceção** — 503 (sem modelo), timeout,
+erro de rede, tudo vira `null`. Se lançasse, o alerta ficaria travado em
+`status = 'processando'` para sempre, com a foto já salva mas invisível para
+a Defesa Civil. Uma foto sem classificação automática ainda vale mais do que
+uma foto que nunca chegou à triagem.
+
+### Lacuna real encontrada: Storage sem política de RLS
+
+A migration `0001` criava RLS para as tabelas do app, mas **não** para
+`storage.objects` — que rege uploads no Supabase Storage separadamente. Sem
+isso, todo upload de foto falharia com "permission denied" num projeto real,
+mesmo com o bucket existindo. Corrigido em
+`supabase/migrations/0003_storage_alertas.sql`: cria o bucket `alertas` (não
+precisa mais criar manualmente pelo painel, como o README pedia antes) e as
+políticas de INSERT/SELECT baseadas no primeiro segmento do caminho do
+arquivo (`{usuario_id}/{arquivo}`).
+
+### Telas e suporte novos
+
+| Arquivo | O que faz |
+|---|---|
+| `pages/NovoAlerta.tsx` | foto, tipo de anomalia, descrição opcional, localização, envio |
+| `services/alertas.ts` | orquestra upload → insert → classificação → update |
+| `lib/imagem.ts` | comprime a foto (canvas, máx. 1600px, JPEG 82%) antes do envio |
+| `hooks/useGeolocalizacao.ts` | estado explícito da permissão de GPS |
+| `components/ui/Select.tsx`, `Textarea.tsx` | faltavam no design system |
+
+**Decisões que valem registro:**
+
+- **Compressão antes do envio, não depois.** Foto de celular moderna passa
+  de 10–20 MB; o limite do `/classify` é 8 MB (definido desde o Sprint 1) e
+  não tem motivo para exigir resolução nativa da câmera para classificar
+  risco estrutural. Sem isso, boa parte dos envios seria rejeitada de cara.
+- **Permissão de localização com explicação antes do prompt nativo**, como o
+  plano pede na seção 4: a interface mostra "Sua localização exata ajuda a
+  Defesa Civil a chegar mais rápido" e só dispara o prompt do navegador
+  quando o usuário toca em "Permitir localização" — nunca automático ao abrir
+  a tela.
+- **Fallback de endereço manual na recusa de GPS**, também pedido no plano —
+  o schema já suportava isso desde a `0001` (`endereco_manual` +
+  a constraint que exige um dos dois campos); Sprint 4 foi o primeiro lugar
+  que efetivamente usa esse caminho.
+- **Captura via `<input capture="environment">`**, não `getUserMedia`. O
+  plano cita as duas opções; escolhi a mais simples — sem stream de vídeo ao
+  vivo para gerenciar, funciona em mais navegadores/versões de mobile, e
+  cobre o caso de uso real (uma foto, não um vídeo).
+- **Perfil completo o que o Sprint 2 tinha deixado como placeholder.** A
+  lista real de "Meus alertas" (com `SeloRisco` ou "Em análise" para quem
+  ainda não foi classificado) só fazia sentido depois que `alertas` passou a
+  existir de verdade — implementada agora com TanStack Query.
+
+### Bug pego e corrigido antes de sobrar para depois
+
+O botão "Enviar outro" na tela de confirmação ia navegar (`<Link
+to="/novo-alerta" replace>`) para a mesma rota em que o componente já estava
+montado — React Router **não remonta** o componente nesse caso, então o
+formulário continuaria com a foto/campos antigos preenchidos. Troquei por um
+callback de reset local (`aoReiniciar`) chamado direto, sem depender de
+navegação.
+
+### O que ficou pendente desta rodada
+
+- **O formulário de "Novo Alerta" em si não foi visto rodando.** Consegui
+  verificar ao vivo que a rota `/novo-alerta` está corretamente protegida
+  (mostra o aviso de configuração sem sessão) e que não há erro de console
+  em nenhuma rota — mas testar a captura de foto, o fluxo de permissão de
+  GPS e o envio de verdade exige um Supabase real com usuário autenticado,
+  que ainda não existe neste ambiente.
+- Migrations `0001`–`0003` seguem não aplicadas em nenhum projeto real.
+- Sem compressão testada contra uma foto de celular de verdade (só
+  type-checada) — o algoritmo é padrão (canvas + `toBlob`), mas vale
+  conferir com uma foto real assim que houver ambiente para isso.
 
 ---
 
@@ -435,26 +539,27 @@ sessão — aguardando sua revisão.
 
 **Para você:**
 
-1. Abrir [localhost:5180](http://localhost:5180) e navegar por `/cadastro`,
-   `/entrar` e `/design-system` — sem Supabase configurado ainda, as duas
-   primeiras devem mostrar o aviso de configuração pendente, não uma tela
-   quebrada.
-2. Criar o projeto no Supabase e rodar as migrations `0001` e `0002`, nessa
-   ordem (nenhuma foi aplicada em ambiente real ainda).
+1. Criar o projeto no Supabase e rodar as migrations `0001`, `0002` e `0003`,
+   **nessa ordem** (nenhuma foi aplicada em ambiente real ainda — a `0003` é
+   nova nesta rodada e cria o bucket de fotos, então não pule ela).
+2. Com o Supabase configurado, testar o fluxo completo de verdade: cadastro
+   → confirmar e-mail → login → Novo Alerta → foto + localização → envio.
+   Esta é a primeira vez que dá para testar isso ponta a ponta — até aqui só
+   validei roteamento e o que não depende de conta.
 3. **Começar a coleta do dataset de imagens em paralelo.** O próprio plano
    aponta isso como o item de maior risco de prazo. Enquanto o código avança,
-   o dataset não se resolve sozinho.
+   o dataset não se resolve sozinho — e agora que "Novo Alerta" existe, dá
+   pra usar o próprio app pra começar a coletar fotos reais do território.
 
-**Para o desenvolvimento (continuação/verificação):**
+**Para o desenvolvimento (continuação):**
 
-- Terminar a verificação ao vivo do Sprint 2 (cadastro → confirmação →
-  login → perfil) contra um Supabase real, e então remover o Playwright
-  temporário do `frontend/`.
-- **Sprint 3 — Coleta e curadoria do dataset de imagens:** não é código, é
-  trabalho de dados; só avança com sua participação.
-- **Sprint 4 — Captura, câmera e geolocalização:** tela "Novo Alerta" com
-  `getUserMedia`/`<input capture>` e Geolocation API, envio para o
-  `alertas` + chamada a `/classify`.
+- **Sprint 5 — Treinamento do MobileNetV2:** depende do dataset rotulado do
+  Sprint 3 existir primeiro; não dá pra adiantar em código sem esses dados.
+- **Sprint 7 — Painel da Defesa Civil (MVP):** mapa Leaflet com os alertas
+  de `vw_fila_triagem`, lista priorizada — não depende do dataset/modelo,
+  pode avançar em paralelo à coleta.
+- Terminar a verificação ao vivo do formulário de Novo Alerta assim que
+  houver um Supabase real disponível (item 2 acima é pré-requisito).
 
 ---
 
@@ -465,10 +570,10 @@ sessão — aguardando sua revisão.
 | 1 | Ícones do PWA (`pwa-192x192.png`, `pwa-512x512.png`, `favicon.svg`) não existem — gerar a partir da logo. Sem efeito em `npm run dev` (PWA desligado em dev), mas bloqueia build de produção | `frontend/public/` |
 | 2 | Lint/format não configurado — decidir entre ESLint+Prettier ou Biome | `frontend/` |
 | 3 | Nenhum teste no frontend ainda (Vitest + Testing Library, já decidido no plano) | `frontend/` |
-| 4 | Migrations `0001` e `0002` não aplicadas em nenhum Supabase real ainda | `supabase/` |
+| 4 | Migrations `0001`–`0003` não aplicadas em nenhum Supabase real ainda | `supabase/` |
 | 5 | Tabela `bairros` está vazia — carregar os polígonos oficiais do Rio (data.rio) | `supabase/` |
 | 6 | Termos de Uso do plano precisam de revisão jurídica antes de publicar | — |
 | 7 | CI (GitHub Actions) não configurado | — |
 | 8 | Porta 5173/8000 colidem com outros projetos locais nesta máquina — usar 5180/8001 (já refletido no código e docs) | — |
-| 9 | `playwright` ficou instalado como devDependency do `frontend/` — a verificação do Sprint 2 foi interrompida antes de remover | `frontend/package.json` |
-| 10 | Sprint 2 ainda não foi visto rodando num navegador — só type-checou limpo | `frontend/` |
+| 9 | Formulário de "Novo Alerta" (captura de foto, permissão de GPS, envio) não testado ao vivo — precisa de Supabase real com sessão | `frontend/src/pages/NovoAlerta.tsx` |
+| 10 | Algoritmo de compressão de imagem não testado contra foto de celular real, só type-checado | `frontend/src/lib/imagem.ts` |

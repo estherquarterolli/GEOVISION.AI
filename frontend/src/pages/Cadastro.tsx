@@ -5,7 +5,7 @@ import { Botao } from '@/components/ui/Botao'
 import { Campo } from '@/components/ui/Campo'
 import { Cartao } from '@/components/ui/Cartao'
 import { Checkbox } from '@/components/ui/Checkbox'
-import { ConfiguracaoPendente } from '@/components/ConfiguracaoPendente'
+import logoImg from '@/assets/logo.jpg'
 
 const SENHA_MINIMA = 6
 
@@ -23,7 +23,7 @@ function traduzirErro(mensagem: string): string {
 }
 
 export function Cadastro() {
-  const { configurado, session, cadastrar } = useAuth()
+  const { session, cadastrar } = useAuth()
 
   const [nome, setNome] = useState('')
   const [email, setEmail] = useState('')
@@ -35,9 +35,7 @@ export function Cadastro() {
   const [erros, setErros] = useState<Record<string, string>>({})
   const [erroGeral, setErroGeral] = useState<string | null>(null)
   const [enviando, setEnviando] = useState(false)
-  const [cadastroFeito, setCadastroFeito] = useState(false)
 
-  if (!configurado) return <ConfiguracaoPendente />
   if (session) return <Navigate to="/perfil" replace />
 
   function validar(): boolean {
@@ -62,7 +60,6 @@ export function Cadastro() {
     setEnviando(true)
     try {
       await cadastrar({ nome: nome.trim(), email, senha, bairroTexto: bairro.trim() })
-      setCadastroFeito(true)
     } catch (e) {
       setErroGeral(traduzirErro(e instanceof Error ? e.message : 'Falha ao criar conta.'))
     } finally {
@@ -70,35 +67,33 @@ export function Cadastro() {
     }
   }
 
-  if (cadastroFeito) {
-    return (
-      <div className="mx-auto max-w-md px-5 py-16">
-        <Cartao className="flex flex-col gap-3 p-6 text-center">
-          <h1 className="text-lg">Confira seu e-mail</h1>
-          <p className="text-tinta-suave text-sm">
-            Enviamos um link de confirmação para <strong className="text-tinta">{email}</strong>.
-            Confirme para poder entrar.
-          </p>
-          <Link to="/entrar" className="text-marca-azul mt-2 text-sm font-medium hover:underline">
-            Ir para a tela de login
-          </Link>
-        </Cartao>
-      </div>
-    )
-  }
-
   return (
-    <div className="mx-auto max-w-md px-5 py-10">
-      <h1 className="mb-1 text-2xl">Criar conta</h1>
-      <p className="text-tinta-suave mb-6 text-sm">
-        Leva menos de um minuto. Você vai poder enviar e acompanhar alertas de risco.
-      </p>
+    <div className="relative mx-auto max-w-md px-5 py-8 select-none">
+      {/* Background glowing effects */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 h-72 w-72 rounded-full bg-gradient-to-tr from-marca-laranja/15 to-marca-azul/10 blur-[60px]" />
+      <div className="absolute bottom-1/4 right-1/4 -z-10 h-60 w-60 rounded-full bg-marca-azul/10 blur-[65px]" />
 
-      <Cartao className="p-5">
+      <div className="flex flex-col items-center mb-6 text-center">
+        <div className="relative group mb-3">
+          <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-marca-laranja to-marca-azul opacity-30 blur-md" />
+          <img
+            src={logoImg}
+            alt="GeoVision.AI Logo"
+            className="relative h-16 w-16 rounded-2xl border border-borda/40 bg-white object-contain p-1 shadow-sm"
+          />
+        </div>
+        <h1 className="text-2xl font-bold text-tinta">Criar conta</h1>
+        <p className="text-tinta-suave mt-1.5 text-sm max-w-[280px]">
+          Faça seu cadastro para começar a reportar riscos estruturais.
+        </p>
+      </div>
+
+      <Cartao className="bg-white/95 backdrop-blur-md border border-white/20 shadow-lg hover:shadow-xl transition-shadow p-5 sm:p-6 flex flex-col gap-4">
         <form onSubmit={aoSubmeter} className="flex flex-col gap-4" noValidate>
           <Campo
             rotulo="Nome completo"
             required
+            placeholder="Seu nome completo"
             autoComplete="name"
             value={nome}
             onChange={(e) => setNome(e.target.value)}
@@ -108,6 +103,7 @@ export function Cadastro() {
             rotulo="E-mail"
             type="email"
             required
+            placeholder="seu@email.com"
             autoComplete="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -115,7 +111,7 @@ export function Cadastro() {
           <Campo
             rotulo="Bairro"
             ajuda="Usamos para mostrar os riscos mapeados perto de você."
-            placeholder="Engenho de Dentro"
+            placeholder="Ex: Engenho de Dentro"
             autoComplete="address-level3"
             value={bairro}
             onChange={(e) => setBairro(e.target.value)}
@@ -124,6 +120,7 @@ export function Cadastro() {
             rotulo="Senha"
             type="password"
             required
+            placeholder="Mínimo 6 caracteres"
             autoComplete="new-password"
             value={senha}
             onChange={(e) => setSenha(e.target.value)}
@@ -133,6 +130,7 @@ export function Cadastro() {
             rotulo="Confirmar senha"
             type="password"
             required
+            placeholder="Digite a senha novamente"
             autoComplete="new-password"
             value={confirmarSenha}
             onChange={(e) => setConfirmarSenha(e.target.value)}
@@ -149,10 +147,10 @@ export function Cadastro() {
                 <Link
                   to="/termos"
                   target="_blank"
-                  className="text-marca-azul underline"
+                  className="text-marca-azul font-semibold underline"
                   onClick={(e) => e.stopPropagation()}
                 >
-                  Termos de Uso e Política de Privacidade
+                  Termos de Uso
                 </Link>
                 .
               </>
@@ -165,15 +163,16 @@ export function Cadastro() {
             </p>
           )}
 
-          <Botao type="submit" largura="cheia" carregando={enviando}>
-            Criar conta
+          <Botao type="submit" largura="cheia" variante="secundaria" carregando={enviando} className="mt-2 relative overflow-hidden group">
+            <span className="absolute inset-0 bg-gradient-to-r from-marca-azul to-marca-petroleo opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <span className="relative z-10">Criar conta</span>
           </Botao>
         </form>
       </Cartao>
 
       <p className="text-tinta-suave mt-4 text-center text-sm">
         Já tem conta?{' '}
-        <Link to="/entrar" className="text-marca-azul font-medium hover:underline">
+        <Link to="/entrar" className="text-marca-azul font-semibold hover:underline">
           Entrar
         </Link>
       </p>

@@ -5,8 +5,6 @@ import {
   useState,
   type ReactNode,
 } from 'react'
-import type { Session } from '@supabase/supabase-js'
-import { supabase, supabaseConfigurado } from '@/lib/supabase'
 import type { Usuario } from '@/types/dominio'
 
 interface DadosCadastro {
@@ -19,7 +17,7 @@ interface DadosCadastro {
 interface ContextoAuth {
   configurado: boolean
   carregando: boolean
-  session: Session | null
+  session: any | null
   usuario: Usuario | null
   cadastrar: (dados: DadosCadastro) => Promise<void>
   entrar: (email: string, senha: string) => Promise<void>
@@ -28,94 +26,83 @@ interface ContextoAuth {
 
 const ContextoAuthReact = createContext<ContextoAuth | null>(null)
 
+const API_URL = import.meta.env.VITE_AI_SERVICE_URL || 'http://localhost:8001'
+
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const [session, setSession] = useState<Session | null>(null)
+  const [session, setSession] = useState<any | null>(null)
   const [usuario, setUsuario] = useState<Usuario | null>(null)
   const [carregando, setCarregando] = useState(true)
 
   useEffect(() => {
-    if (!supabaseConfigurado) {
+    const token = localStorage.getItem('geovision_token')
+    if (!token) {
       setCarregando(false)
       return
     }
 
-    supabase.auth.getSession().then(({ data }) => {
-      setSession(data.session)
-      if (!data.session) setCarregando(false)
-    })
-
-    const { data: assinatura } = supabase.auth.onAuthStateChange((_evento, novaSession) => {
-      setSession(novaSession)
-      if (!novaSession) {
-        setUsuario(null)
-        setCarregando(false)
-      }
-    })
-
-    return () => assinatura.subscription.unsubscribe()
-  }, [])
-
-  // Busca o perfil (tabela `usuarios`) sempre que a sessão muda — é onde
-  // vivem nome, bairro e papel, que não fazem parte do auth.users.
-  useEffect(() => {
-    if (!session) return
-
-    let cancelado = false
-    setCarregando(true)
-
-    supabase
-      .from('usuarios')
-      .select('*')
-      .eq('id', session.user.id)
-      .single()
-      .then(({ data, error }) => {
-        if (cancelado) return
-        if (error) {
-          console.error('Falha ao carregar perfil do usuário:', error.message)
-        }
-        setUsuario(data ?? null)
+    fetch(`${API_URL}/api/auth/me?token=${token}`)
+      .then((res) => {
+        if (!res.ok) throw new Error('Token inválido')
+        return res.json()
+      })
+      .then((user) => {
+        setUsuario(user)
+        setSession({ user: { id: user.id } })
+      })
+      .catch((err) => {
+        console.error('Falha ao restaurar sessão local:', err)
+        localStorage.removeItem('geovision_token')
+      })
+      .finally(() => {
         setCarregando(false)
       })
-
-    return () => {
-      cancelado = true
-    }
-  }, [session])
+  }, [])
 
   async function cadastrar({ nome, email, senha, bairroTexto }: DadosCadastro) {
-    // termos_aceitos_em vai junto do signUp: o trigger fn_criar_perfil_usuario
-    // (migration 0002) lê esses metadados para criar a linha em `usuarios` no
-    // mesmo instante da conta, sem depender de sessão ativa — necessário
-    // porque, com confirmação de e-mail ligada, não há sessão até o usuário
-    // confirmar o e-mail.
-    const { error } = await supabase.auth.signUp({
-      email,
-      password: senha,
-      options: {
-        data: {
-          nome,
-          bairro_texto: bairroTexto || null,
-          termos_aceitos_em: new Date().toISOString(),
-        },
-      },
+    const resposta = await fetch(`${API_URL}/api/auth/signup`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ nome, email, senha, bairroTexto }),
     })
 
-    if (error) throw error
+    if (!resposta.ok) {
+      const erroInfo = await resposta.json().catch(() => ({}))
+      throw new Error(erroInfo.detail || 'Erro ao realizar cadastro.')
+    }
+
+    const dados = await resposta.json()
+    localStorage.setItem('geovision_token', dados.token)
+    setUsuario(dados.usuario)
+    setSession({ user: { id: dados.usuario.id } })
   }
 
   async function entrar(email: string, senha: string) {
-    const { error } = await supabase.auth.signInWithPassword({ email, password: senha })
-    if (error) throw error
+    const resposta = await fetch(`${API_URL}/api/auth/login`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, senha }),
+    })
+
+    if (!resposta.ok) {
+      const erroInfo = await resposta.json().catch(() => ({}))
+      throw new Error(erroInfo.detail || 'E-mail ou senha incorretos.')
+    }
+
+    const dados = await resposta.json()
+    localStorage.setItem('geovision_token', dados.token)
+    setUsuario(dados.usuario)
+    setSession({ user: { id: dados.usuario.id } })
   }
 
   async function sair() {
-    await supabase.auth.signOut()
+    localStorage.removeItem('geovision_token')
+    setSession(null)
     setUsuario(null)
   }
 
   return (
     <ContextoAuthReact.Provider
-      value={{ configurado: supabaseConfigurado, carregando, session, usuario, cadastrar, entrar, sair }}
+      value={{ configurado: true, carregando, session, usuario, cadastrar, entrar, sair }}
     >
       {children}
     </ContextoAuthReact.Provider>

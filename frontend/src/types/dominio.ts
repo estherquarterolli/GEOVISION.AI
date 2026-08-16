@@ -41,6 +41,8 @@ export interface Alerta {
   usuario_id: string
   foto_path: string
   endereco_manual: string | null
+  latitude: number | null
+  longitude: number | null
   bairro_id: string | null
   tipo_anomalia: TipoAnomalia | null
   descricao: string | null

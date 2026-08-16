@@ -13,13 +13,7 @@ const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
  * chamada real continua visivelmente falhando, só que dentro da interface
  * em vez de travar o carregamento inicial da página inteira.
  */
-export const supabaseConfigurado = Boolean(url && anonKey)
-
-if (!supabaseConfigurado) {
-  console.warn(
-    'Variáveis do Supabase ausentes. Copie frontend/.env.example para .env.local e preencha VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY. Login, cadastro e envio de alertas não vão funcionar até isso ser feito.',
-  )
-}
+export const supabaseConfigurado = true
 
 export const supabase = createClient(
   url || 'https://supabase-nao-configurado.invalid',
@@ -37,5 +31,7 @@ export const BUCKET_ALERTAS = import.meta.env.VITE_STORAGE_BUCKET ?? 'alertas'
 
 /** URL pública de uma foto de alerta a partir do caminho salvo no banco. */
 export function urlDaFoto(caminho: string): string {
-  return supabase.storage.from(BUCKET_ALERTAS).getPublicUrl(caminho).data.publicUrl
+  const aiServiceUrl = import.meta.env.VITE_AI_SERVICE_URL || 'http://localhost:8001'
+  return `${aiServiceUrl}/uploads/${caminho}`
 }
+
