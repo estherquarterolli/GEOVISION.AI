@@ -51,10 +51,21 @@ async def ciclo_de_vida(app: FastAPI):
     classificador.carregar()
     app.state.classificador = classificador
 
+    from app.services.classificador_roboflow import ClassificadorRoboflow
+    classificador_roboflow = ClassificadorRoboflow(
+        api_key=config.roboflow_api_key,
+        workspace=config.roboflow_workspace,
+        workflow_id=config.roboflow_workflow_id,
+        confianca_minima=0.5
+    )
+    classificador_roboflow.carregar()
+    app.state.classificador_roboflow = classificador_roboflow
+
     logger.info(
-        "Serviço iniciado (ambiente=%s, modelo_carregado=%s)",
+        "Serviço iniciado (ambiente=%s, modelo_carregado=%s, roboflow_carregado=%s)",
         config.ambiente,
         classificador.carregado,
+        classificador_roboflow.carregado,
     )
     yield
     logger.info("Serviço encerrado.")

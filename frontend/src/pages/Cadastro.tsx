@@ -7,16 +7,25 @@ import { Cartao } from '@/components/ui/Cartao'
 import { Checkbox } from '@/components/ui/Checkbox'
 import logoImg from '@/assets/logo.jpg'
 
-const SENHA_MINIMA = 6
+// Precisa acompanhar o mínimo do backend (app/routers/auth.py). Com um
+// número menor aqui, o cadastro passaria na validação da tela e só falharia
+// no servidor, devolvendo a mensagem crua do Pydantic em inglês.
+const SENHA_MINIMA = 8
 
 function traduzirErro(mensagem: string): string {
   if (mensagem.includes('User already registered') || mensagem.includes('already registered')) {
     return 'Já existe uma conta com este e-mail. Tente entrar.'
   }
-  if (mensagem.includes('Password should be at least')) {
+  if (
+    mensagem.includes('Password should be at least') ||
+    mensagem.includes('String should have at least')
+  ) {
     return `A senha precisa ter pelo menos ${SENHA_MINIMA} caracteres.`
   }
-  if (mensagem.includes('Unable to validate email address')) {
+  if (
+    mensagem.includes('Unable to validate email address') ||
+    mensagem.includes('value is not a valid email address')
+  ) {
     return 'E-mail inválido.'
   }
   return mensagem
@@ -36,7 +45,7 @@ export function Cadastro() {
   const [erroGeral, setErroGeral] = useState<string | null>(null)
   const [enviando, setEnviando] = useState(false)
 
-  if (session) return <Navigate to="/perfil" replace />
+  if (session) return <Navigate to="/" replace />
 
   function validar(): boolean {
     const proximosErros: Record<string, string> = {}

@@ -1,0 +1,57 @@
+# GeoVision.AI — stack de produção.
+#
+# Sobe independente do n8n: a API não publica porta nenhuma (só o nginx
+# alcança ela pela rede interna) e o frontend sai numa porta alta, sem
+# disputar a 80/443 com o Traefik que já atende o n8n nesta VPS.
+#
+#   docker compose up -d --build
+#
+# Para colocar atrás do Traefik com HTTPS, veja docker-compose.traefik.yml.
+
+name: geovision
+
+services:
+  api:
+    build:
+      context: ./ai-service
+    container_name: geovision-api
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      # O banco e as fotos moram no volume, não na imagem: sem isto, cada
+      # rebuild apagaria todos os alertas já enviados.
+      GEOVISION_DATA_DIR: /data
+    volumes:
+      - dados:/data
+    expose:
+      - "8001"
+    networks:
+      - interna
+    logging: &registro
+      driver: json-file
+      options:
+        # Sem teto, o log de uma API que roda meses enche o disco da VPS.
+        max-size: "10m"
+        max-file: "5"
+
+  web:
+    build:
+      context: ./frontend
+    container_name: geovision-web
+    restart: unless-stopped
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      # Mude PORTA_WEB no .env se 8080 já estiver em uso nesta VPS.
+      - "${PORTA_WEB:-8080}:80"
+    networks:
+      - interna
+    logging: *registro
+
+volumes:
+  dados:
+
+networks:
+  interna:
+    driver: bridge

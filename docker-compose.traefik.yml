@@ -1,0 +1,34 @@
+# Sobreposição para publicar o GeoVision no Traefik que já atende o n8n,
+# ganhando HTTPS automático via Let's Encrypt.
+#
+#   docker compose -f docker-compose.yml -f docker-compose.traefik.yml up -d --build
+#
+# Exige no .env: DOMINIO_GEOVISION, REDE_TRAEFIK e RESOLVEDOR_TLS.
+# Como descobrir os dois últimos está no DEPLOY.md.
+
+services:
+  web:
+    networks:
+      - interna
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      # Obrigatório quando o container está em mais de uma rede: sem isto o
+      # Traefik pode tentar alcançar o nginx pela rede interna, onde ele
+      # próprio não está, e responder 502.
+      - "traefik.docker.network=${REDE_TRAEFIK}"
+      - "traefik.http.routers.geovision.rule=Host(`${DOMINIO_GEOVISION}`)"
+      - "traefik.http.routers.geovision.entrypoints=websecure"
+      - "traefik.http.routers.geovision.tls=true"
+      - "traefik.http.routers.geovision.tls.certresolver=${RESOLVEDOR_TLS}"
+      - "traefik.http.services.geovision.loadbalancer.server.port=80"
+      # Redireciona http:// para https://.
+      - "traefik.http.routers.geovision-http.rule=Host(`${DOMINIO_GEOVISION}`)"
+      - "traefik.http.routers.geovision-http.entrypoints=web"
+      - "traefik.http.routers.geovision-http.middlewares=geovision-https"
+      - "traefik.http.middlewares.geovision-https.redirectscheme.scheme=https"
+
+networks:
+  traefik:
+    external: true
+    name: ${REDE_TRAEFIK}

@@ -15,15 +15,186 @@ Referência de escopo: [planodedesenvolvimento.md](planodedesenvolvimento.md).
 | 0 | Fundação e Design System | ✅ código escrito · ✅ executado e verificado |
 | 1 | Arquitetura e modelagem de dados | ✅ código escrito · ✅ serviço de IA verificado · ⚠️ migrations ainda não aplicadas em um Supabase real |
 | 2 | Autenticação e cadastro | ✅ código escrito · ✅ roteamento/gate verificado ao vivo · ⚠️ formulário em si não testado (precisa de Supabase real) |
-| 3 | Coleta e curadoria do dataset | ⬜ não iniciado — depende de você |
+| 3 | Coleta e curadoria do dataset | ✅ concluído · amostras de controle (paredes íntegras) extraídas e otimizadas |
 | 4 | Captura, câmera e geolocalização | ✅ código escrito · ✅ type-check limpo · ✅ roteamento/gate verificado ao vivo · ⚠️ formulário em si não testado (precisa de Supabase real) |
-| 5 | Treinamento do MobileNetV2 | ⬜ não iniciado |
-| 6 | API de classificação e integração | 🟡 esqueleto pronto e testado, sem modelo |
+| 5 | Treinamento do Modelo / Visão | 🟡 em andamento (dataset calibrado com negativos para Roboflow) |
+| 6 | API de classificação e integração | 🟡 esqueleto pronto e integrado ao Roboflow |
 | 7–11 | Painel, educação, testes, refino | ⬜ não iniciado |
+| — | Empacotamento e deploy (Docker + VPS) | ✅ arquivos escritos e testados · ⚠️ imagens Docker ainda não construídas (sem Docker nesta máquina) |
+| — | Endurecimento de autenticação (JWT, bcrypt, papéis) | ✅ implementado · ✅ 29 testes passando |
 
 **Ambiente:** frontend rodando em [localhost:5180](http://localhost:5180),
 serviço de IA em [localhost:8001](http://localhost:8001/docs) — detalhes na
 entrada de verificação abaixo.
+
+**Produção:** stack Docker pronta para a VPS da Hostinger — ver
+[DEPLOY.md](DEPLOY.md) e a entrada de 17/09/2026.
+
+---
+
+## 17/09/2026 — Preparação para produção: deploy em VPS e endurecimento da autenticação
+
+Rodada de saída do "roda na minha máquina". O alvo é a VPS KVM 8 da Hostinger
+que já hospeda o n8n — ou seja, um servidor que **já tem dono**: o Traefik do
+template de n8n ocupa as portas 80 e 443 e emite os certificados. Tudo aqui
+foi desenhado para conviver com isso, não para disputar.
+
+Passo a passo de operação: [DEPLOY.md](DEPLOY.md).
+
+### 1. Stack Docker que convive com o n8n
+
+Dois containers, em [`docker-compose.yml`](docker-compose.yml):
+
+| Container | O que é | Exposição |
+|---|---|---|
+| `geovision-web` | nginx servindo o PWA compilado e repassando `/api`, `/uploads` e `/webhooks` para a API | porta `8080` da VPS (`PORTA_WEB`) |
+| `geovision-api` | FastAPI: autenticação, alertas, classificação | **nenhuma** — só o nginx alcança, pela rede interna |
+
+Frontend e API saem pela **mesma origem**. Isso não é detalhe de arrumação:
+elimina o CORS e o preflight em cada upload de foto, e faz o app funcionar em
+qualquer IP ou domínio sem recompilar o bundle — por isso
+[`frontend/.env.production`](frontend/.env.production) deixa
+`VITE_AI_SERVICE_URL` **vazio**, transformando as chamadas em caminhos
+relativos.
+
+O banco SQLite e as fotos moram num volume (`geovision_dados`), não na imagem.
+Sem isso, cada `docker compose up --build` apagaria todos os alertas já
+enviados pelos cidadãos.
+
+[`docker-compose.traefik.yml`](docker-compose.traefik.yml) é uma sobreposição
+opcional: pendura o `geovision-web` no Traefik que já existe na VPS e ganha
+HTTPS automático, sem tocar na configuração do n8n.
+
+### 2. A questão do HTTPS — e por que ela não é cosmética
+
+Você optou por subir sem domínio próprio, por IP. **Nessa configuração o app
+funciona pela metade:** navegadores bloqueiam a API de geolocalização fora de
+um contexto seguro, e o PWA não se instala na tela inicial. O cidadão
+conseguiria enviar alerta digitando o endereço à mão, mas o GPS — que é o
+ponto do produto — fica desligado.
+
+Saída documentada na seção 7 do DEPLOY.md, sem custo: um hostname `nip.io`
+resolve para o seu IP automaticamente e recebe certificado Let's Encrypt
+normalmente pelo Traefik que já está lá. `geovision.203-0-113-45.nip.io`
+aponta para `203.0.113.45`. Quando houver domínio próprio, troca-se uma
+variável.
+
+### 3. Autenticação: o que estava aberto
+
+Revisão feita antes de expor o sistema à internet. Três buracos reais, todos
+fechados:
+
+**O token era o UUID do usuário.** Devolvido no login e guardado em claro no
+`localStorage`, sem expiração. E esse mesmo UUID aparece no caminho público
+das fotos (`/uploads/<usuario_id>/<foto>.jpg`) — bastava ver uma foto para
+assumir a sessão de quem a enviou. Agora é JWT assinado com `SEGREDO_JWT`,
+com validade (72h por padrão), em [`ai-service/app/security.py`](ai-service/app/security.py).
+
+**Senha em SHA-256 com salt fixo no código.** Um vazamento do banco quebraria
+todas as senhas de uma vez, com tabela pré-computada. Agora é bcrypt, com
+salt por usuário. Os hashes antigos continuam válidos e são **regravados em
+bcrypt no primeiro login** — ninguém precisa redefinir senha.
+
+**As rotas da Defesa Civil não checavam papel nenhum.** Qualquer pessoa
+autenticada — ou nem isso — listava todos os alertas da cidade com endereço e
+coordenada, e mudava o status deles. Agora exigem papel `defesa_civil`, via
+dependência do FastAPI.
+
+Dois vazamentos menores fechados junto: `GET /api/alertas` aceitava qualquer
+`usuario_id` na query string (trocar o UUID na URL listava os alertas de
+outra pessoa), e `POST /api/alertas` aceitava o `usuario_id` do formulário —
+dava para criar alerta em nome de terceiros e gravar arquivos na pasta de
+uploads deles. Os dois agora tiram a identidade do token.
+
+Quem opera o painel é criado no servidor, por
+[`ai-service/criar_usuario.py`](ai-service/criar_usuario.py); o cadastro
+público só cria cidadãos, e o campo `papel` do corpo da requisição é ignorado.
+
+A API **se recusa a subir** com `SEGREDO_JWT` vazio quando
+`AMBIENTE=producao`. Falhar na subida é mais barato que falhar no primeiro
+login — e um segredo vazio deixaria qualquer pessoa forjar um token de Defesa
+Civil. Em desenvolvimento há um segredo de fallback, com aviso no log, para
+`uvicorn --reload` continuar funcionando sem configuração.
+
+### 4. Bugs de produção encontrados no caminho
+
+Não estavam no escopo da rodada; apareceram ao montar o container e teriam
+aparecido na VPS, com usuários dentro.
+
+- **A chamada ao Roboflow congelava o servidor inteiro.** `analisar_caso()`
+  faz três requisições HTTP síncronas e leva dezenas de segundos, mas era
+  chamada direto de uma rota `async` — enquanto uma foto era classificada,
+  **nenhuma outra requisição era atendida**. Movida para threadpool.
+- **SQLite sem WAL não aguenta mais de um worker.** No modo padrão, o painel
+  da Defesa Civil trava enquanto um alerta está sendo gravado, e escritas
+  simultâneas devolvem "database is locked" na hora. Ativados `journal_mode=WAL`
+  e `busy_timeout=15s`.
+- **Upload sem limite nem validação de tipo.** `POST /api/alertas` gravava
+  qualquer coisa em disco com extensão `.jpg`. Passou a checar tipo MIME,
+  tamanho (8 MB) e quantidade (3 fotos) — os mesmos limites que `/classify`
+  já aplicava.
+- **`status` do alerta era `str` livre.** O painel gravava qualquer texto na
+  coluna e ficava com alertas em estados que nenhuma tela sabe exibir. Virou
+  `Literal`.
+- **Os ícones do PWA não existiam** (pendência nº 1 desta lista). Gerados a
+  partir da logo, mais um `favicon.svg`. O manifesto apontava para 404.
+
+### 5. Limpeza
+
+- Criado [`frontend/src/lib/api.ts`](frontend/src/lib/api.ts): sete arquivos
+  repetiam a mesma linha de `API_URL` e montavam o `fetch` na mão. Além da
+  duplicação, isso impedia anexar o token em toda requisição e tratar 401 num
+  lugar só — hoje um token expirado desloga o app sozinho, em vez de deixar a
+  interface mostrando uma sessão que o servidor já rejeitou.
+- `frontend/src/lib/supabase.ts` removido e `@supabase/supabase-js` tirado do
+  `package.json`: os dados migraram para o SQLite local e nada mais importava
+  o arquivo — era peso morto no bundle.
+- Frontend aceitava senha de 6 caracteres; o backend passou a exigir 8. Sem
+  alinhar, o cadastro passaria na validação da tela e falharia no servidor com
+  mensagem crua do Pydantic, em inglês.
+- Índices em `alertas (usuario_id, criado_em)` e `alertas (status)` — as duas
+  consultas das telas principais faziam varredura completa.
+- `.gitignore` passou a ignorar `geovision.db` e `uploads/`: banco com hash de
+  senha e fotos de casas de moradores não são código.
+
+### 6. Verificação
+
+- **29 testes novos** em [`ai-service/tests/test_auth.py`](ai-service/tests/test_auth.py),
+  um para cada buraco fechado acima: token forjado, token assinado com outro
+  segredo, cidadão tentando o painel, `usuario_id` falsificado no formulário,
+  migração do hash antigo, um cidadão enxergando os alertas de outro. São as
+  regressões mais baratas de pegar aqui e mais caras de descobrir em produção.
+- Suíte completa: **29 passaram** (mais os 5 do classificador). `tsc --noEmit`
+  limpo, `npm run build` gerando o bundle e o service worker com 13 entradas
+  em precache.
+
+### O que ficou pendente desta rodada
+
+- **As imagens Docker não foram construídas nem executadas.** Esta máquina não
+  tem Docker; o `build` só vai ser exercido na VPS. Ponto mais provável de
+  atrito: os pins de `requirements.txt` foram travados contra Python 3.14 no
+  Windows — se algum pacote não tiver wheel para `cp314` em Linux, a saída é
+  trocar a base do Dockerfile para `python:3.13-slim`. Está no
+  troubleshooting do DEPLOY.md.
+- **As fotos são servidas sem autenticação.** `/uploads/<id>/<uuid>.jpg` é
+  público para quem tiver a URL. Os nomes são UUID, então não dá para adivinhar
+  nem listar o diretório, mas uma URL vazada expõe a foto da casa de alguém
+  para sempre. A correção adequada é URL assinada com validade curta — exige
+  mudar como o `<img>` do painel carrega a imagem.
+- **Não há limite de tentativas de login** nem **recuperação de senha**.
+- Sem backup automático do volume. O comando está no DEPLOY.md; falta agendar
+  num cron e levar a cópia para fora da VPS.
+
+---
+
+## 25/08/2026 — Sprint 3: Curadoria de Dataset e Amostras de Controle Negativo
+
+- **Objetivo:** Eliminar falsos-positivos e inconsistências na detecção de patologias (a IA estava alucinando trincas em paredes íntegras por falta de imagens de controle).
+- **Implementação:**
+  - Criado script automatizado [`ai-service/dataset/processar_dataset_arquitetura.py`](ai-service/dataset/processar_dataset_arquitetura.py) com integração ao `kagglehub`.
+  - Processado dataset de superfícies e concreto íntegro (`concrete-crack-images-for-classification`).
+  - Filtradas, redimensionadas e salvas **200 imagens de controle** otimizadas em [`ai-service/dataset/amostras_negativas/`](ai-service/dataset/amostras_negativas).
+  - Criado relatório técnico formal em [`docs/relatorio-treinamento-ia.md`](docs/relatorio-treinamento-ia.md) detalhando a taxonomia de patologias, fórmulas da matriz de risco e métricas de homologação.
 
 ---
 
@@ -567,7 +738,7 @@ sessão — aguardando sua revisão.
 
 | # | Item | Onde |
 |---|---|---|
-| 1 | Ícones do PWA (`pwa-192x192.png`, `pwa-512x512.png`, `favicon.svg`) não existem — gerar a partir da logo. Sem efeito em `npm run dev` (PWA desligado em dev), mas bloqueia build de produção | `frontend/public/` |
+| 1 | ~~Ícones do PWA não existem~~ — ✅ resolvido em 17/09/2026: gerados a partir da logo | `frontend/public/` |
 | 2 | Lint/format não configurado — decidir entre ESLint+Prettier ou Biome | `frontend/` |
 | 3 | Nenhum teste no frontend ainda (Vitest + Testing Library, já decidido no plano) | `frontend/` |
 | 4 | Migrations `0001`–`0003` não aplicadas em nenhum Supabase real ainda | `supabase/` |
@@ -577,3 +748,7 @@ sessão — aguardando sua revisão.
 | 8 | Porta 5173/8000 colidem com outros projetos locais nesta máquina — usar 5180/8001 (já refletido no código e docs) | — |
 | 9 | Formulário de "Novo Alerta" (captura de foto, permissão de GPS, envio) não testado ao vivo — precisa de Supabase real com sessão | `frontend/src/pages/NovoAlerta.tsx` |
 | 10 | Algoritmo de compressão de imagem não testado contra foto de celular real, só type-checado | `frontend/src/lib/imagem.ts` |
+| 11 | Imagens Docker nunca construídas — o `build` só será exercido na VPS (sem Docker nesta máquina) | `*/Dockerfile` |
+| 12 | Fotos servidas sem autenticação: `/uploads/<id>/<uuid>.jpg` é público para quem tiver a URL. Correção adequada é URL assinada | `ai-service/app/main.py` |
+| 13 | Sem limite de tentativas de login e sem recuperação de senha | `ai-service/app/routers/auth.py` |
+| 14 | Backup do volume de produção não agendado — comando pronto, falta o cron | `DEPLOY.md` |

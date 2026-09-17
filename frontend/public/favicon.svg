@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="GeoVision.AI">
+  <rect width="64" height="64" rx="14" fill="#0E5C82"/>
+  <!-- Alfinete de mapa: o app é, no fundo, um ponto no território. -->
+  <path d="M32 14c-7.2 0-13 5.8-13 13 0 9.8 13 23 13 23s13-13.2 13-23c0-7.2-5.8-13-13-13z" fill="#FAFAF8"/>
+  <circle cx="32" cy="27" r="5.5" fill="#0E5C82"/>
+</svg>

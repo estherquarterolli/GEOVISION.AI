@@ -159,53 +159,26 @@ ar, sem outra peça de infraestrutura para manter.
 
 ## 5. Termos e Condições de Uso — base
 
-> Rascunho inicial para revisão jurídica antes de publicar. Cobre os pontos essenciais
-> para um sistema que coleta imagem, localização e dado de conta de usuário no Brasil
-> (LGPD).
-
-**Termos de Uso e Política de Privacidade — GeoVision.AI**
-
-1. **Objeto.** O GeoVision.AI é uma plataforma de apoio à triagem de riscos estruturais
- (rachaduras, inclinações de muros de arrimo, infiltrações), desenvolvida no âmbito do
- Programa Jovens Cientistas Cariocas 2026. O sistema **não substitui** vistoria técnica
- oficial, laudo de engenharia ou avaliação humana da Defesa Civil — a classificação de
- risco gerada por Inteligência Artificial é uma estimativa de apoio à priorização.
-
-2. **Cadastro.** Para usar o sistema, o usuário deve fornecer nome, e-mail e bairro de
- residência. O usuário é responsável pela veracidade dos dados informados e pela
- guarda de sua senha.
-
-3. **Coleta e uso de dados.** Ao enviar um alerta, o usuário compartilha: (a) uma
- fotografia da anomalia estrutural; (b) sua geolocalização no momento do envio; (c)
- data e hora do registro. Esses dados são usados exclusivamente para: classificação
- automática de risco, encaminhamento à Defesa Civil e geração de mapas agregados de
- risco por região. Não são vendidos ou compartilhados com terceiros fora dessa
- finalidade.
-
-4. **Base legal e LGPD.** O tratamento de dados segue a Lei Geral de Proteção de Dados
- (Lei nº 13.709/2018), com base no consentimento do usuário e no legítimo interesse
- público de prevenção de desastres. O usuário pode, a qualquer momento, solicitar
- acesso, correção ou exclusão de seus dados pelo contato abaixo.
-
-5. **Limitação de responsabilidade.** A classificação de risco é gerada por modelo de
- Inteligência Artificial e pode conter erros. O GeoVision.AI e seus desenvolvedores não
- se responsabilizam por danos decorrentes de decisões tomadas exclusivamente com base
- na classificação automática, sem confirmação por vistoria oficial. Em caso de risco
- iminente, o usuário deve sempre contatar diretamente a Defesa Civil (199) ou os
- serviços de emergência (193).
-
-6. **Uso adequado.** É proibido enviar imagens falsas, de outras localidades, ou
- utilizar o sistema para fins diferentes do reporte de riscos estruturais reais.
-
-7. **Propriedade intelectual.** O sistema, sua marca, design e modelo de IA são de
- autoria do projeto GeoVision.AI (Programa JCC 2026) e não podem ser reproduzidos sem
- autorização.
-
-8. **Alterações.** Estes termos podem ser atualizados; alterações relevantes serão
- comunicadas por e-mail ou aviso no aplicativo.
-
-9. **Contato.** Dúvidas, solicitações de dados ou denúncias de uso indevido:
- estherquarterollii@gmail.com
+> [!IMPORTANT]
+> **Termos de Uso e Política de Privacidade — GeoVision.AI (Integrado à Defesa Civil)**
+> 
+> 1. **Objeto e Integração.** O GeoVision.AI é uma plataforma de triagem de riscos estruturais integrada diretamente ao painel de monitoramento da Defesa Civil. Desenvolvida no âmbito do Programa Jovens Cientistas Cariocas 2026, serve como canal de alerta auxiliar. O sistema otimiza a triagem, mas não substitui o laudo técnico oficial emitido pelos engenheiros da Defesa Civil após vistoria presencial.
+> 
+> 2. **Cadastro e Responsabilidade.** Para usar o sistema, o usuário deve se cadastrar com nome, e-mail e bairro de residência. Ao submeter um alerta, o usuário assume total responsabilidade pela veracidade das informações. O envio de alertas falsos (trote) ou simulações maliciosas é passível de punição legal por mobilização indevida de serviços públicos de emergência.
+> 
+> 3. **Coleta de Dados e Geolocalização.** Para a triagem e atendimento, a plataforma coleta: (a) 3 fotografias em diferentes ângulos da anomalia; (b) a geolocalização exata do local (coordenadas GPS); (c) data e hora do registro. A permissão de geolocalização é indispensável para que as equipes de vistoria da Defesa Civil localizem o ponto com precisão.
+> 
+> 4. **Base Legal e LGPD.** O tratamento de dados segue a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), com base no consentimento do usuário e no legítimo interesse público de prevenção de desastres. Os dados são usados exclusivamente para a segurança pública e prevenção de acidentes.
+> 
+> 5. **Limitação de Responsabilidade e IA.** A classificação de risco é gerada por modelo de Inteligência Artificial e consiste em uma estimativa inicial de urgência para a fila de atendimento da Defesa Civil. A decisão final de intervenção técnica e evacuação é sempre humana. O GeoVision.AI e seus desenvolvedores não se responsabilizam por danos decorrentes de decisões tomadas sem confirmação por vistoria oficial. Em caso de risco iminente, o usuário deve sempre ligar diretamente para 199 (Defesa Civil) ou 193 (Corpo de Bombeiros).
+> 
+> 6. **Uso Adequado.** É proibido enviar imagens falsas, de outras localidades, ou utilizar o sistema para fins diferentes do reporte de riscos estruturais reais.
+> 
+> 7. **Propriedade Intelectual.** O sistema, sua marca, design e modelo de IA são de autoria do projeto GeoVision.AI (Programa JCC 2026) e sua cessão de fluxo de dados é de uso exclusivo da Defesa Civil do Rio de Janeiro.
+> 
+> 8. **Alterações.** Estes termos podem ser atualizados; alterações relevantes serão comunicadas por e-mail ou aviso no aplicativo.
+> 
+> 9. **Contato.** Dúvidas, solicitações de dados ou denúncias de uso indevido: estherquarterollii@gmail.com
 
 ---
 

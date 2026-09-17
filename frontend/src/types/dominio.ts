@@ -51,6 +51,10 @@ export interface Alerta {
   modelo_versao: string | null
   status: StatusAlerta
   observacao_defesa_civil: string | null
+  gravidade_percebida: string | null
+  tempo_surgimento: string | null
+  evolucao: string | null
+  local_anomalia: string | null
   criado_em: string
   classificado_em: string | null
   resolvido_em: string | null
@@ -69,6 +73,10 @@ export interface ItemFilaTriagem {
   longitude: number | null
   bairro: string | null
   autor: string | null
+  gravidade_percebida: string | null
+  tempo_surgimento: string | null
+  evolucao: string | null
+  local_anomalia: string | null
 }
 
 export interface MetricasPainel {
@@ -103,6 +111,33 @@ export const ROTULO_ANOMALIA: Record<TipoAnomalia, string> = {
   rachadura: 'Rachadura',
   inclinacao_muro: 'Muro inclinado',
   infiltracao: 'Infiltração',
+  outro: 'Outro',
+}
+
+export const ROTULO_GRAVIDADE: Record<string, string> = {
+  baixo: 'Baixa (estética)',
+  medio: 'Média (preocupante)',
+  alto: 'Alta (urgente/perigo)',
+}
+
+export const ROTULO_TEMPO: Record<string, string> = {
+  recente: 'Menos de 1 semana',
+  semanas: 'Entre 1 e 4 semanas',
+  meses: 'Mais de 1 mês',
+}
+
+export const ROTULO_EVOLUCAO: Record<string, string> = {
+  estavel: 'Estável (não mudou)',
+  aumentando: 'Aumentando devagar',
+  rapido: 'Aumentando rápido',
+}
+
+export const ROTULO_LOCAL: Record<string, string> = {
+  parede: 'Parede',
+  viga_pilar: 'Viga ou Pilar',
+  laje_piso: 'Laje ou Piso',
+  muro_arrimo: 'Muro de Arrimo',
+  solo_talude: 'Solo ou Talude',
   outro: 'Outro',
 }
 

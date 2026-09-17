@@ -39,6 +39,13 @@ ai-service/models/*
 ai-service/dataset/*
 !ai-service/dataset/.gitkeep
 
+# Banco local e fotos enviadas — dados de usuário, não código.
+# Se geovision.db já estiver versionado: git rm --cached ai-service/geovision.db
+ai-service/geovision.db
+ai-service/geovision.db-wal
+ai-service/geovision.db-shm
+ai-service/uploads/
+
 # Editor / SO
 .vscode/*
 !.vscode/extensions.json

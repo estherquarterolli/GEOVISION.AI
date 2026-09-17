@@ -4,6 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 
+import { apiJson } from '@/lib/api'
 import { Cartao } from '@/components/ui/Cartao'
 import { SeloRisco } from '@/components/ui/SeloRisco'
 import { ROTULO_ANOMALIA, type NivelRisco, type TipoAnomalia } from '@/types/dominio'
@@ -19,8 +20,6 @@ L.Icon.Default.mergeOptions({
   iconRetinaUrl: markerIcon2x,
   shadowUrl: markerShadow,
 })
-
-const API_URL = import.meta.env.VITE_AI_SERVICE_URL || 'http://localhost:8001'
 
 const FORMATADOR_DATA = new Intl.DateTimeFormat('pt-BR', { dateStyle: 'short' })
 
@@ -40,9 +39,9 @@ export function MapaBairro() {
   const { data: alertasPublicos = [], isLoading } = useQuery<AlertaPublico[]>({
     queryKey: ['public-alerts'],
     queryFn: async () => {
-      const res = await fetch(`${API_URL}/api/alertas/publicos`)
-      if (!res.ok) throw new Error('Falha ao obter alertas públicos')
-      return await res.json()
+      return await apiJson<AlertaPublico[]>('/api/alertas/publicos', {
+        mensagemPadrao: 'Falha ao obter alertas públicos',
+      })
     }
   })
 
@@ -67,9 +66,7 @@ export function MapaBairro() {
         <svg className="size-4 text-marca-azul flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
           <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
-        <span>
-          Para proteger a privacidade dos moradores, o mapa exibe apenas a localização e o tipo do risco de forma **anônima**, sem fotos ou dados de perfil.
-        </span>
+        <span>Mapa 100% anônimo: sem fotos ou dados pessoais.</span>
       </div>
 
       {/* Map container */}

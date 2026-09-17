@@ -15,7 +15,7 @@ export function Login() {
   const [enviando, setEnviando] = useState(false)
 
   if (session) {
-    const origem = (location.state as { de?: string } | null)?.de ?? '/perfil'
+    const origem = (location.state as { de?: string } | null)?.de ?? '/'
     return <Navigate to={origem} replace />
   }
 

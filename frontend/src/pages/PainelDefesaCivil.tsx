@@ -9,12 +9,17 @@ import { cn } from '@/lib/cn'
 import { Cartao } from '@/components/ui/Cartao'
 import { Botao } from '@/components/ui/Botao'
 import { SeloRisco } from '@/components/ui/SeloRisco'
-import { urlDaFoto } from '@/lib/supabase'
+import { apiJson, urlDaFoto } from '@/lib/api'
 import {
   ROTULO_RISCO,
   ROTULO_STATUS,
   ROTULO_ANOMALIA,
+  ROTULO_GRAVIDADE,
+  ROTULO_TEMPO,
+  ROTULO_EVOLUCAO,
+  ROTULO_LOCAL,
   type Alerta,
+  type MetricasPainel,
   type StatusAlerta
 } from '@/types/dominio'
 
@@ -32,8 +37,6 @@ L.Icon.Default.mergeOptions({
   shadowUrl: markerShadow,
 })
 
-const API_URL = import.meta.env.VITE_AI_SERVICE_URL || 'http://localhost:8001'
-
 const FORMATADOR_DATA = new Intl.DateTimeFormat('pt-BR', {
   dateStyle: 'short',
   timeStyle: 'short'
@@ -48,21 +51,32 @@ function AtualizadorCentroMapa({ coords }: { coords: [number, number] }) {
   return null
 }
 
+const CORES_RISCO_BG: Record<string, string> = {
+  critico: 'bg-risco-critico',
+  medio: 'bg-risco-medio',
+  baixo: 'bg-risco-baixo',
+}
+
 export function PainelDefesaCivil() {
-  const { usuario } = useAuth()
+  const { usuario, sair } = useAuth()
   const queryClient = useQueryClient()
   const [alertaSelecionado, setAlertaSelecionado] = useState<Alerta | null>(null)
   const [observacaoText, setObservacaoText] = useState('')
   const [centroMapa, setCentroMapa] = useState<[number, number]>([-22.8988, -43.2930]) // Default center: Engenho de Dentro
   const [abaAtiva, setAbaAtiva] = useState<'fila' | 'mapa'>('fila')
+  const [fotoAtivaIndice, setFotoAtivaIndice] = useState(0)
+
+  useEffect(() => {
+    setFotoAtivaIndice(0)
+  }, [alertaSelecionado])
 
   // Load alerts
   const { data: alertas = [], isLoading: carregandoAlertas } = useQuery<Alerta[]>({
     queryKey: ['defesa-civil-alertas'],
     queryFn: async () => {
-      const res = await fetch(`${API_URL}/api/alertas/defesa-civil/listar`)
-      if (!res.ok) throw new Error('Falha ao obter alertas da Defesa Civil')
-      return await res.json()
+      return await apiJson<Alerta[]>('/api/alertas/defesa-civil/listar', {
+        mensagemPadrao: 'Falha ao obter alertas da Defesa Civil',
+      })
     }
   })
 
@@ -70,22 +84,21 @@ export function PainelDefesaCivil() {
   const { data: metricas, isLoading: carregandoMetricas } = useQuery({
     queryKey: ['defesa-civil-metricas'],
     queryFn: async () => {
-      const res = await fetch(`${API_URL}/api/alertas/defesa-civil/metricas`)
-      if (!res.ok) throw new Error('Falha ao obter métricas da Defesa Civil')
-      return await res.json()
+      return await apiJson<MetricasPainel>('/api/alertas/defesa-civil/metricas', {
+        mensagemPadrao: 'Falha ao obter métricas da Defesa Civil',
+      })
     }
   })
 
   // Mutation to update alert status
   const atualizarStatusMutacao = useMutation({
     mutationFn: async ({ id, status, observacao }: { id: string; status: StatusAlerta; observacao: string }) => {
-      const res = await fetch(`${API_URL}/api/alertas/${id}/status`, {
+      return await apiJson<Alerta>(`/api/alertas/${id}/status`, {
         method: 'PUT',
+        mensagemPadrao: 'Erro ao atualizar status do alerta',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status, observacao_defesa_civil: observacao })
       })
-      if (!res.ok) throw new Error('Erro ao atualizar status do alerta')
-      return await res.json()
     },
     onSuccess: (dadoAtualizado) => {
       queryClient.invalidateQueries({ queryKey: ['defesa-civil-alertas'] })
@@ -127,7 +140,7 @@ export function PainelDefesaCivil() {
     <div className="tema-painel min-h-dvh flex flex-col font-corpo select-none pb-8">
       
       {/* Header painel */}
-      <header className="border-b border-borda py-4 px-6 bg-superficie shadow-sm">
+      <header className="border-b border-borda py-3 px-6 bg-superficie shadow-sm">
         <div className="mx-auto max-w-7xl flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <img src={logoImg} alt="GeoVision Logo" className="h-9 w-9 md:h-10 md:w-10 rounded-lg object-contain p-0.5 bg-white border border-borda/40" />
@@ -138,14 +151,32 @@ export function PainelDefesaCivil() {
               <p className="text-[10px] md:text-xs text-tinta-suave">Painel de Triagem · Defesa Civil RJ</p>
             </div>
           </div>
-          
-          <div className="flex items-center gap-2 md:gap-4 text-xs md:text-sm">
-            <span className="text-tinta-suave hidden sm:inline">
-              Operador: <strong>{usuario?.nome || 'Defesa Civil'}</strong>
-            </span>
-            <div className="px-2 py-0.5 rounded text-[10px] bg-marca-laranja text-white uppercase font-bold tracking-wider">
-              Comando
+
+          <div className="flex items-center gap-3">
+            <div className="hidden sm:flex items-center gap-2.5">
+              <div className="flex size-8 shrink-0 items-center justify-center rounded-full bg-marca-laranja text-xs font-bold text-white">
+                {(usuario?.nome || 'DC').slice(0, 2).toUpperCase()}
+              </div>
+              <div className="leading-tight">
+                <p className="text-xs font-semibold">{usuario?.nome || 'Defesa Civil'}</p>
+                <p className="text-marca-laranja text-[10px] font-semibold uppercase tracking-wider">Comando</p>
+              </div>
             </div>
+            <button
+              type="button"
+              onClick={() => void sair()}
+              title="Sair"
+              aria-label="Sair"
+              className="text-tinta-suave hover:bg-marca-azul-suave hover:text-marca-azul flex size-9 items-center justify-center rounded-full transition-colors"
+            >
+              <svg className="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </header>
@@ -175,34 +206,60 @@ export function PainelDefesaCivil() {
       {/* Main dashboard space */}
       <main className="flex-1 max-w-7xl w-full mx-auto p-4 lg:p-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
         
-        {/* Left Column: Metrics & Map */}
-        <div className={cn("lg:col-span-8 flex flex-col gap-6", abaAtiva === 'mapa' ? 'flex' : 'hidden lg:flex')}>
+        {/* Situational column: Metrics & Map — glanceable overview, secondary to the triage workflow */}
+        <div className={cn("lg:col-span-5 lg:order-2 flex flex-col gap-6", abaAtiva === 'mapa' ? 'flex' : 'hidden lg:flex')}>
           
           {/* Metrics Row */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <Cartao contexto="painel" className="p-3 bg-superficie">
-              <p className="text-tinta-suave text-[10px] uppercase font-semibold">Alertas Ativos</p>
+              <div className="flex items-center gap-1.5 text-tinta-suave">
+                <svg className="size-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <p className="text-[10px] uppercase font-semibold">Alertas Ativos</p>
+              </div>
               <p className="metrica text-2xl font-extrabold mt-0.5 text-tinta">
                 {carregandoMetricas ? '...' : metricas?.alertas_ativos}
               </p>
             </Cartao>
-            
-            <Cartao contexto="painel" className="p-3 border-l-4 border-l-risco-critico bg-superficie">
-              <p className="text-[10px] uppercase font-semibold text-risco-critico">Críticos</p>
+
+            <Cartao
+              contexto="painel"
+              className={cn(
+                'p-3 border-l-4 border-l-risco-critico bg-superficie',
+                Boolean(metricas?.criticos_ativos) && 'shadow-[0_0_0_1px_rgba(217,70,59,0.35)]',
+              )}
+            >
+              <div className="flex items-center gap-1.5 text-risco-critico">
+                <svg className="size-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+                <p className="text-[10px] uppercase font-semibold">Críticos</p>
+              </div>
               <p className="metrica text-2xl font-extrabold mt-0.5 text-risco-critico">
                 {carregandoMetricas ? '...' : metricas?.criticos_ativos}
               </p>
             </Cartao>
 
             <Cartao contexto="painel" className="p-3 bg-superficie">
-              <p className="text-tinta-suave text-[10px] uppercase font-semibold">Recebidos 24h</p>
+              <div className="flex items-center gap-1.5 text-tinta-suave">
+                <svg className="size-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <p className="text-[10px] uppercase font-semibold">Recebidos 24h</p>
+              </div>
               <p className="metrica text-2xl font-extrabold mt-0.5 text-tinta">
                 {carregandoMetricas ? '...' : metricas?.ultimas_24h}
               </p>
             </Cartao>
 
             <Cartao contexto="painel" className="p-3 bg-superficie">
-              <p className="text-tinta-suave text-[10px] uppercase font-semibold">Tempo Resposta</p>
+              <div className="flex items-center gap-1.5 text-tinta-suave">
+                <svg className="size-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                <p className="text-[10px] uppercase font-semibold">Tempo Resposta</p>
+              </div>
               <p className="metrica text-2xl font-extrabold mt-0.5 text-marca-laranja">
                 {carregandoMetricas ? '...' : `${metricas?.tempo_medio_resposta_horas}h`}
               </p>
@@ -254,8 +311,8 @@ export function PainelDefesaCivil() {
           </Cartao>
         </div>
 
-        {/* Right Column: Alerts list & Details panel */}
-        <div className={cn("lg:col-span-4 flex flex-col gap-6", abaAtiva === 'fila' ? 'flex' : 'hidden lg:flex')}>
+        {/* Triage column: queue + details — the actual workflow, given the most room */}
+        <div className={cn("lg:col-span-7 lg:order-1 flex flex-col gap-6", abaAtiva === 'fila' ? 'flex' : 'hidden lg:flex')}>
           
           {/* Alerts List (Hidden on mobile if looking at details) */}
           <Cartao
@@ -282,12 +339,19 @@ export function PainelDefesaCivil() {
                       <button
                         onClick={() => setAlertaSelecionado(alerta)}
                         className={cn(
-                          "w-full text-left p-3 border rounded-painel transition duration-150 flex items-center justify-between gap-3 text-xs",
-                          isActive 
-                            ? "bg-marca-azul-suave border-marca-azul text-marca-azul-escuro font-semibold shadow-sm" 
+                          "relative w-full text-left p-3 pl-4 border rounded-painel transition duration-150 flex items-center justify-between gap-3 text-xs overflow-hidden",
+                          isActive
+                            ? "bg-marca-azul-suave border-marca-azul text-marca-azul-escuro font-semibold shadow-sm"
                             : "bg-superficie border-borda hover:bg-fundo text-tinta"
                         )}
                       >
+                        <span
+                          aria-hidden="true"
+                          className={cn(
+                            'absolute inset-y-0 left-0 w-1',
+                            alerta.nivel_risco ? CORES_RISCO_BG[alerta.nivel_risco] : 'bg-borda',
+                          )}
+                        />
                         <div className="truncate">
                           <p className="font-semibold truncate">
                             {alerta.tipo_anomalia ? ROTULO_ANOMALIA[alerta.tipo_anomalia] : 'Anomalia'}
@@ -337,17 +401,77 @@ export function PainelDefesaCivil() {
                   )}
                 </h2>
 
-                {/* Photo */}
-                <div className="relative h-44 rounded-painel border border-borda bg-black/10 overflow-hidden flex items-center justify-center">
-                  <img
-                    src={urlDaFoto(alertaSelecionado.foto_path)}
-                    alt="Foto do Risco"
-                    className="h-full w-full object-cover"
-                  />
-                  <div className="absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-black/60 text-white backdrop-blur">
-                    {ROTULO_STATUS[alertaSelecionado.status]}
-                  </div>
-                </div>
+                {/* Photo Gallery / Carousel */}
+                {(() => {
+                  const fotosArray = alertaSelecionado.foto_path.split(',')
+                  const temMultiplasFotos = fotosArray.length > 1
+                  
+                  return (
+                    <div className="flex flex-col gap-2">
+                      <div className="relative h-56 rounded-painel border border-borda bg-black/10 overflow-hidden flex items-center justify-center group">
+                        <img
+                          src={urlDaFoto(fotosArray[fotoAtivaIndice] || fotosArray[0] || '')}
+                          alt={`Foto do Risco - ${fotoAtivaIndice + 1}`}
+                          className="h-full w-full object-cover"
+                        />
+                        <div className="absolute top-2 right-2 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-black/60 text-white backdrop-blur z-20">
+                          {ROTULO_STATUS[alertaSelecionado.status]}
+                        </div>
+                        
+                        {temMultiplasFotos && (
+                          <>
+                            {/* Overlay caption */}
+                            <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-[10px] px-3 py-1 text-center font-medium backdrop-blur">
+                              {fotoAtivaIndice === 0 && 'Foto 1: Visão Geral / Contexto'}
+                              {fotoAtivaIndice === 1 && 'Foto 2: Detalhe da Anomalia'}
+                              {fotoAtivaIndice === 2 && 'Foto 3: Close-up com Escala'}
+                            </div>
+
+                            {/* Left/Right buttons */}
+                            <button
+                              type="button"
+                              onClick={() => setFotoAtivaIndice(prev => (prev > 0 ? prev - 1 : fotosArray.length - 1))}
+                              className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-black/40 hover:bg-black/60 text-white transition z-20 cursor-pointer"
+                              aria-label="Foto anterior"
+                            >
+                              <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                              </svg>
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => setFotoAtivaIndice(prev => (prev < fotosArray.length - 1 ? prev + 1 : 0))}
+                              className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-black/40 hover:bg-black/60 text-white transition z-20 cursor-pointer"
+                              aria-label="Próxima foto"
+                            >
+                              <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                              </svg>
+                            </button>
+                          </>
+                        )}
+                      </div>
+                      
+                      {/* Dots / Selectors */}
+                      {temMultiplasFotos && (
+                        <div className="flex justify-center gap-1.5 mt-1">
+                          {fotosArray.map((_, idx) => (
+                            <button
+                              key={idx}
+                              type="button"
+                              onClick={() => setFotoAtivaIndice(idx)}
+                              className={cn(
+                                "size-2 rounded-full transition-all cursor-pointer",
+                                fotoAtivaIndice === idx ? "bg-marca-laranja w-4" : "bg-borda hover:bg-tinta-suave"
+                              )}
+                              title={`Ver Foto ${idx + 1}`}
+                            />
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )
+                })()}
 
                 {/* Details list */}
                 <div className="flex flex-col gap-2.5 text-xs">
@@ -363,6 +487,38 @@ export function PainelDefesaCivil() {
                       {alertaSelecionado.endereco_manual || 'Coordenadas GPS capturadas'}
                     </span>
                   </div>
+
+                  {/* Seção de Dados Informados pelo Cidadão */}
+                  <div className="border-t border-borda/60 pt-2.5 mt-1">
+                    <span className="text-marca-azul font-bold text-[10px] uppercase tracking-wider block mb-2">Triagem do Cidadão</span>
+                    <div className="grid grid-cols-2 gap-2 bg-fundo/40 p-2.5 rounded-painel border border-borda/30">
+                      <div>
+                        <span className="text-tinta-suave block text-[9px]">Localização exata</span>
+                        <span className="font-semibold text-tinta text-[11px]">
+                          {alertaSelecionado.local_anomalia ? ROTULO_LOCAL[alertaSelecionado.local_anomalia] : 'Não informado'}
+                        </span>
+                      </div>
+                      <div>
+                        <span className="text-tinta-suave block text-[9px]">Tempo de surgimento</span>
+                        <span className="font-semibold text-tinta text-[11px]">
+                          {alertaSelecionado.tempo_surgimento ? ROTULO_TEMPO[alertaSelecionado.tempo_surgimento] : 'Não informado'}
+                        </span>
+                      </div>
+                      <div>
+                        <span className="text-tinta-suave block text-[9px]">Evolução relatada</span>
+                        <span className="font-semibold text-tinta text-[11px]">
+                          {alertaSelecionado.evolucao ? ROTULO_EVOLUCAO[alertaSelecionado.evolucao] : 'Não informado'}
+                        </span>
+                      </div>
+                      <div>
+                        <span className="text-tinta-suave block text-[9px]">Gravidade estimada</span>
+                        <span className="font-semibold text-tinta text-[11px]">
+                          {alertaSelecionado.gravidade_percebida ? ROTULO_GRAVIDADE[alertaSelecionado.gravidade_percebida] : 'Não informado'}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
                   {alertaSelecionado.descricao && (
                     <div>
                       <span className="text-tinta-suave block text-[10px]">Observações do Cidadão</span>

@@ -1,10 +1,18 @@
 import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useState,
   type ReactNode,
 } from 'react'
+import {
+  apiJson,
+  EVENTO_SESSAO_EXPIRADA,
+  guardarToken,
+  limparToken,
+  obterToken,
+} from '@/lib/api'
 import type { Usuario } from '@/types/dominio'
 
 interface DadosCadastro {
@@ -12,6 +20,11 @@ interface DadosCadastro {
   email: string
   senha: string
   bairroTexto: string
+}
+
+interface RespostaAuth {
+  usuario: Usuario
+  token: string
 }
 
 interface ContextoAuth {
@@ -26,78 +39,76 @@ interface ContextoAuth {
 
 const ContextoAuthReact = createContext<ContextoAuth | null>(null)
 
-const API_URL = import.meta.env.VITE_AI_SERVICE_URL || 'http://localhost:8001'
-
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [session, setSession] = useState<any | null>(null)
   const [usuario, setUsuario] = useState<Usuario | null>(null)
   const [carregando, setCarregando] = useState(true)
 
+  const encerrarSessao = useCallback(() => {
+    limparToken()
+    setSession(null)
+    setUsuario(null)
+  }, [])
+
+  // O token agora expira (72h por padrão). Sem ouvir isto, a interface
+  // continuaria mostrando o usuário logado enquanto toda requisição falha.
   useEffect(() => {
-    const token = localStorage.getItem('geovision_token')
-    if (!token) {
+    window.addEventListener(EVENTO_SESSAO_EXPIRADA, encerrarSessao)
+    return () => window.removeEventListener(EVENTO_SESSAO_EXPIRADA, encerrarSessao)
+  }, [encerrarSessao])
+
+  useEffect(() => {
+    if (!obterToken()) {
       setCarregando(false)
       return
     }
 
-    fetch(`${API_URL}/api/auth/me?token=${token}`)
-      .then((res) => {
-        if (!res.ok) throw new Error('Token inválido')
-        return res.json()
-      })
+    apiJson<Usuario>('/api/auth/me')
       .then((user) => {
         setUsuario(user)
         setSession({ user: { id: user.id } })
       })
       .catch((err) => {
         console.error('Falha ao restaurar sessão local:', err)
-        localStorage.removeItem('geovision_token')
+        limparToken()
       })
       .finally(() => {
         setCarregando(false)
       })
   }, [])
 
-  async function cadastrar({ nome, email, senha, bairroTexto }: DadosCadastro) {
-    const resposta = await fetch(`${API_URL}/api/auth/signup`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ nome, email, senha, bairroTexto }),
-    })
-
-    if (!resposta.ok) {
-      const erroInfo = await resposta.json().catch(() => ({}))
-      throw new Error(erroInfo.detail || 'Erro ao realizar cadastro.')
-    }
-
-    const dados = await resposta.json()
-    localStorage.setItem('geovision_token', dados.token)
+  function aplicarSessao(dados: RespostaAuth) {
+    guardarToken(dados.token)
     setUsuario(dados.usuario)
     setSession({ user: { id: dados.usuario.id } })
+  }
+
+  async function cadastrar({ nome, email, senha, bairroTexto }: DadosCadastro) {
+    aplicarSessao(
+      await apiJson<RespostaAuth>('/api/auth/signup', {
+        method: 'POST',
+        autenticado: false,
+        mensagemPadrao: 'Erro ao realizar cadastro.',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nome, email, senha, bairroTexto }),
+      }),
+    )
   }
 
   async function entrar(email: string, senha: string) {
-    const resposta = await fetch(`${API_URL}/api/auth/login`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, senha }),
-    })
-
-    if (!resposta.ok) {
-      const erroInfo = await resposta.json().catch(() => ({}))
-      throw new Error(erroInfo.detail || 'E-mail ou senha incorretos.')
-    }
-
-    const dados = await resposta.json()
-    localStorage.setItem('geovision_token', dados.token)
-    setUsuario(dados.usuario)
-    setSession({ user: { id: dados.usuario.id } })
+    aplicarSessao(
+      await apiJson<RespostaAuth>('/api/auth/login', {
+        method: 'POST',
+        autenticado: false,
+        mensagemPadrao: 'E-mail ou senha incorretos.',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, senha }),
+      }),
+    )
   }
 
   async function sair() {
-    localStorage.removeItem('geovision_token')
-    setSession(null)
-    setUsuario(null)
+    encerrarSessao()
   }
 
   return (

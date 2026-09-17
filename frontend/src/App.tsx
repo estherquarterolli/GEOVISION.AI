@@ -4,6 +4,7 @@ import { Cabecalho } from '@/components/layout/Cabecalho'
 import { RotaProtegida } from '@/components/RotaProtegida'
 import { Login } from '@/pages/Login'
 import { Cadastro } from '@/pages/Cadastro'
+import { Inicio } from '@/pages/Inicio'
 import { Perfil } from '@/pages/Perfil'
 import { NovoAlerta } from '@/pages/NovoAlerta'
 import { TermosDeUso } from '@/pages/TermosDeUso'
@@ -14,9 +15,18 @@ import { MapaBairro } from '@/pages/MapaBairro'
 
 import { NavegacaoInferior } from '@/components/layout/NavegacaoInferior'
 
-function Inicio() {
-  const { session } = useAuth()
-  return <Navigate to={session ? '/perfil' : '/entrar'} replace />
+function RaizAutenticada() {
+  const { carregando, session } = useAuth()
+
+  if (carregando) {
+    return (
+      <div className="flex min-h-[50vh] items-center justify-center">
+        <div className="progresso-ia w-48" />
+      </div>
+    )
+  }
+
+  return session ? <Inicio /> : <Navigate to="/entrar" replace />
 }
 
 function Layout() {
@@ -27,7 +37,7 @@ function Layout() {
       <Cabecalho />
       <main className={session ? 'flex-1 pb-24' : 'flex-1'}>
         <Routes>
-          <Route path="/" element={<Inicio />} />
+          <Route path="/" element={<RaizAutenticada />} />
           <Route path="/entrar" element={<Login />} />
           <Route path="/cadastro" element={<Cadastro />} />
           <Route path="/termos" element={<TermosDeUso />} />
@@ -76,10 +86,13 @@ export function App() {
       <Routes>
         {/* Fora do Layout: tela cheia, sem cabeçalho de app autenticado. */}
         <Route path="/design-system" element={<VitrineDesignSystem />} />
+        {/* O painel expõe o endereço de todos os alertas da cidade. A API já
+            recusa quem não é da equipe; isto evita a tela quebrada de
+            requisições em 403 para um cidadão que abra a URL. */}
         <Route
           path="/painel"
           element={
-            <RotaProtegida>
+            <RotaProtegida papeisPermitidos={['defesa_civil', 'admin']}>
               <PainelDefesaCivil />
             </RotaProtegida>
           }

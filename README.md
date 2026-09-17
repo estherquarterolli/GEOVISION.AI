@@ -21,6 +21,7 @@ Autora: Esther Quarterolli dos Santos
 | [planodedesenvolvimento.md](planodedesenvolvimento.md) | Plano completo: produto, identidade, stack, sprints |
 | [relatorio.md](relatorio.md) | Registro de tudo que foi implementado, sprint a sprint |
 | [docs/contratos-api.md](docs/contratos-api.md) | Contratos entre frontend, Supabase e serviço de IA |
+| [DEPLOY.md](DEPLOY.md) | Como colocar no ar numa VPS com Docker |
 
 ---
 
@@ -31,7 +32,8 @@ GEOVISION.AI/
 ├── frontend/            App do Cidadão + Painel da Defesa Civil (React PWA)
 ├── ai-service/          Classificação de risco (FastAPI + MobileNetV2)
 ├── supabase/migrations/ Esquema do banco (PostgreSQL + PostGIS)
-└── docs/                Contratos de API
+├── docs/                Contratos de API
+└── docker-compose.yml   Stack de produção — ver DEPLOY.md
 ```
 
 ---

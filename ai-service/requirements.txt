@@ -15,6 +15,14 @@ pydantic==2.13.4
 pydantic-settings==2.15.0
 python-multipart==0.0.32      # upload de imagem via multipart/form-data
 
+# --- Autenticação ------------------------------------------------------------
+# Faixa em vez de versão exata: estes dois entraram junto com o deploy e não
+# foram travados contra um ambiente já testado como o resto do arquivo.
+# bcrypt publica wheel abi3, então funciona em qualquer CPython >= 3.9.
+PyJWT>=2.10,<3
+bcrypt>=4.2,<6
+email-validator>=2.2,<3
+
 # --- Imagem ------------------------------------------------------------------
 pillow==12.3.0
 numpy==2.5.2
@@ -33,3 +41,11 @@ supabase==2.31.0
 # --- Testes ------------------------------------------------------------------
 pytest==9.1.1
 pytest-asyncio==1.4.0
+
+# --- Roboflow Integration ---------------------------------------------------
+inference-sdk==1.4.1
+supervision==0.30.0
+av==18.1.0
+pydeprecate==0.11.0
+defusedxml==0.7.1
+python-decouple==3.8

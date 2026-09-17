@@ -1,0 +1,16 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+tests/
+dataset/
+uploads/
+geovision.db
+geovision.db-wal
+geovision.db-shm
+.env
+.env.*
+!.env.example
+*.md
