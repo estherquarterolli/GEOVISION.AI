@@ -37,6 +37,14 @@ USER geovision
 # Banco e fotos no volume, fora da imagem — ver app/db.py.
 ENV GEOVISION_DATA_DIR=/data
 
+# A imagem assume produção por padrão. Isto é uma trava, não conveniência:
+# sem ela, um .env que não chega ao container faz o serviço cair no modo de
+# desenvolvimento e subir **com o segredo de fallback publicado no
+# repositório** — sem nenhum erro visível. Com AMBIENTE=producao embutido, a
+# ausência de SEGREDO_JWT derruba o container e o log diz exatamente o porquê.
+# Para rodar a imagem em modo de desenvolvimento, passe AMBIENTE explicitamente.
+ENV AMBIENTE=producao
+
 EXPOSE 8001
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=40s --retries=3 \

@@ -189,6 +189,28 @@ Vale registrar o método: a verificação foi feita com
 --only-binary=:all:`, que resolve o grafo de dependências para o alvo Linux
 sem precisar de Docker na máquina de desenvolvimento.
 
+### 8. Uma falha de desenho corrigida em campo: fallback silencioso
+
+Com o sistema já no ar na VPS, o `/health` respondeu `ambiente:
+desenvolvimento` em vez de `producao`. O `.env` estava preenchido, mas o valor
+não chegava ao container.
+
+O sintoma expôs um erro meu, mais grave que a causa: quando `AMBIENTE` não
+chega, a aplicação assume `desenvolvimento` e sobe **com o segredo de
+fallback publicado no repositório** — sem erro, sem aviso visível. Ou seja, o
+modo inseguro era o comportamento padrão de uma configuração ausente, e o
+serviço parecia perfeitamente saudável assim.
+
+A trava do `SEGREDO_JWT` obrigatório existia, mas dependia de `AMBIENTE` já
+estar correto para disparar — uma verificação que se desarma sozinha quando
+a configuração falha é uma verificação que não existe.
+
+Correção: `ENV AMBIENTE=producao` embutido na imagem
+([`ai-service/Dockerfile`](ai-service/Dockerfile)). A imagem de produção agora
+assume produção por padrão; um `.env` que não chega derruba o container com a
+causa no log, em vez de virar um serviço aparentemente normal rodando com
+segredo público.
+
 ### O que ficou pendente desta rodada
 
 - **As imagens Docker não foram construídas nesta máquina** (sem Docker aqui).
