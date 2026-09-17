@@ -168,14 +168,32 @@ aparecido na VPS, com usuários dentro.
   limpo, `npm run build` gerando o bundle e o service worker com 13 entradas
   em precache.
 
+### 7. Primeira tentativa de build na VPS — e o que ela revelou
+
+O build falhou na VPS, como previsto, mas por um motivo mais interessante que
+"falta wheel": **o `inference-sdk` do Roboflow declara `Requires-Python
+>=3.10,<3.13`**. Nenhuma versão dele instala em 3.13 ou 3.14. O container
+passou a rodar **Python 3.12**, que é o teto real do ecossistema aqui.
+
+Ao verificar o resto do conjunto para linux/cp312, apareceu um problema que
+estava escondido no ambiente local: **`inference-sdk` exige `numpy<2.4`, mas
+`requirements.txt` fixava `numpy==2.5.2`**. Em Python 3.14 não existe numpy
+abaixo de 2.4 — ou seja, a instalação local convive com uma combinação que o
+Roboflow não suporta oficialmente, e que torna o conjunto impossível de
+resolver de forma limpa. O pino virou faixa (`numpy>=2.2,<2.4`); todos os
+outros pins exatos foram preservados, depois de confirmar um a um que existem
+para linux/cp312.
+
+Vale registrar o método: a verificação foi feita com
+`pip install --dry-run --python-version 3.12 --platform manylinux_2_28_x86_64
+--only-binary=:all:`, que resolve o grafo de dependências para o alvo Linux
+sem precisar de Docker na máquina de desenvolvimento.
+
 ### O que ficou pendente desta rodada
 
-- **As imagens Docker não foram construídas nem executadas.** Esta máquina não
-  tem Docker; o `build` só vai ser exercido na VPS. Ponto mais provável de
-  atrito: os pins de `requirements.txt` foram travados contra Python 3.14 no
-  Windows — se algum pacote não tiver wheel para `cp314` em Linux, a saída é
-  trocar a base do Dockerfile para `python:3.13-slim`. Está no
-  troubleshooting do DEPLOY.md.
+- **As imagens Docker não foram construídas nesta máquina** (sem Docker aqui).
+  A resolução de dependências para linux/cp312 foi verificada, mas o build em
+  si só roda na VPS.
 - **As fotos são servidas sem autenticação.** `/uploads/<id>/<uuid>.jpg` é
   público para quem tiver a URL. Os nomes são UUID, então não dá para adivinhar
   nem listar o diretório, mas uma URL vazada expõe a foto da casa de alguém
@@ -748,7 +766,8 @@ sessão — aguardando sua revisão.
 | 8 | Porta 5173/8000 colidem com outros projetos locais nesta máquina — usar 5180/8001 (já refletido no código e docs) | — |
 | 9 | Formulário de "Novo Alerta" (captura de foto, permissão de GPS, envio) não testado ao vivo — precisa de Supabase real com sessão | `frontend/src/pages/NovoAlerta.tsx` |
 | 10 | Algoritmo de compressão de imagem não testado contra foto de celular real, só type-checado | `frontend/src/lib/imagem.ts` |
-| 11 | Imagens Docker nunca construídas — o `build` só será exercido na VPS (sem Docker nesta máquina) | `*/Dockerfile` |
+| 11 | Imagens Docker nunca construídas nesta máquina — só na VPS (dependências já verificadas para linux/cp312) | `*/Dockerfile` |
+| 15 | Ambiente local roda Python 3.14 com `numpy 2.5.2`, fora da faixa que o `inference-sdk` declara suportar (`<2.4`). O container usa 3.12 e resolve certo; o local segue divergente até ser recriado | `ai-service/.venv` |
 | 12 | Fotos servidas sem autenticação: `/uploads/<id>/<uuid>.jpg` é público para quem tiver a URL. Correção adequada é URL assinada | `ai-service/app/main.py` |
 | 13 | Sem limite de tentativas de login e sem recuperação de senha | `ai-service/app/routers/auth.py` |
 | 14 | Backup do volume de produção não agendado — comando pronto, falta o cron | `DEPLOY.md` |

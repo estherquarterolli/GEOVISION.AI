@@ -1,12 +1,11 @@
 # GeoVision.AI — Serviço de classificação de risco
 #
-# Versões travadas nesta instalação, feita com Python 3.14 (única versão
-# disponível na máquina de desenvolvimento no momento). Se o ambiente de
-# deploy usar Python 3.11–3.13, os pacotes originalmente planejados
-# (fastapi 0.115, pydantic 2.10, numpy 2.2, onnxruntime 1.20 etc.) também
-# funcionam — a atualização abaixo foi necessária só porque essas versões
-# mais antigas não têm wheel pré-compilado para cp314 e falhavam ao tentar
-# compilar do source (Rust/PyO3 e Cython ausentes no ambiente).
+# Versões travadas contra Python 3.14 na máquina de desenvolvimento (única
+# versão disponível lá no momento). Em produção o container roda **Python
+# 3.12**, e não 3.14: o inference-sdk do Roboflow declara `Requires-Python
+# >=3.10,<3.13`, então o pip se recusa a instalá-lo em 3.13+. Todas as
+# versões fixadas abaixo existem nas duas (verificado por resolução de
+# dependências para linux/cp312) — ver ai-service/Dockerfile.
 
 # --- API ---------------------------------------------------------------------
 fastapi==0.141.1
@@ -25,7 +24,11 @@ email-validator>=2.2,<3
 
 # --- Imagem ------------------------------------------------------------------
 pillow==12.3.0
-numpy==2.5.2
+# Faixa, e não pino exato: o inference-sdk exige `numpy<2.4`. Em Python 3.14
+# não existe numpy abaixo de 2.4, então o ambiente local acabou com a 2.5.2 —
+# uma combinação que o Roboflow não suporta oficialmente e que impede a
+# instalação limpa do conjunto. Em 3.12 o pip resolve para 2.2.x/2.3.x.
+numpy>=2.2,<2.4
 
 # --- Inferência --------------------------------------------------------------
 # ONNX Runtime em vez de TensorFlow completo em produção: a imagem final fica

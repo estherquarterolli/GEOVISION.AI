@@ -180,10 +180,11 @@ docker compose exec -e AMBIENTE=dev api python seed.py
 **A API não sobe e o log diz `SEGREDO_JWT vazio`**
 Esperado: preencha `SEGREDO_JWT` no `.env` e rode `docker compose up -d`.
 
-**Build falha em alguma dependência Python**
-As versões de `ai-service/requirements.txt` foram travadas contra Python 3.14.
-Se algum pacote não tiver wheel para cp314 em Linux, troque a primeira linha de
-`ai-service/Dockerfile` para `FROM python:3.13-slim` e afrouxe os pins.
+**Build falha em `No matching distribution found for inference-sdk`**
+O container roda **Python 3.12**, e não a 3.14 do ambiente de desenvolvimento:
+o `inference-sdk` do Roboflow declara `Requires-Python >=3.10,<3.13` e o pip se
+recusa a instalá-lo acima disso. Se alguém subir a versão base do
+`ai-service/Dockerfile`, o build volta a quebrar exatamente aqui.
 
 **Alertas chegam sem nível de risco**
 `ROBOFLOW_API_KEY` ou `ROBOFLOW_WORKFLOW_ID` vazios, ou a conta do Roboflow sem

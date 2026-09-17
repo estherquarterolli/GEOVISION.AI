@@ -1,9 +1,10 @@
 # GeoVision.AI — serviço de classificação (FastAPI)
 #
-# 3.14-slim e não 3.13: as versões de requirements.txt foram travadas contra
-# Python 3.14. Se alguma dependência não tiver wheel para cp314 em Linux, o
-# caminho é trocar esta linha por 3.13-slim e afrouxar os pins do arquivo.
-FROM python:3.14-slim AS base
+# 3.12 e não 3.14 (a versão usada no desenvolvimento): o inference-sdk do
+# Roboflow declara `Requires-Python >=3.10,<3.13`, então o pip se recusa a
+# instalá-lo em qualquer coisa acima disso. 3.12 é o teto real do ecossistema
+# aqui, e todos os pins de requirements.txt existem para linux/cp312.
+FROM python:3.12-slim AS base
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
