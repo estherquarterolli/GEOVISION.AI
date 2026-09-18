@@ -157,7 +157,8 @@ docker compose up -d traefik
 Confirme que ele ficou nas **duas** redes antes de seguir:
 
 ```bash
-docker inspect traefik-1   -f '{{range $k, $v := .NetworkSettings.Networks}}{{println $k}}{{end}}'
+docker inspect traefik-1 \
+  -f '{{range $k, $v := .NetworkSettings.Networks}}{{println $k}}{{end}}'
 # n8n_default
 # geovision_borda
 ```
@@ -229,15 +230,94 @@ que o Traefik já usa.
 
 ## 6. Criar o acesso da Defesa Civil
 
-O cadastro público só cria cidadãos. Quem opera o painel é criado no servidor:
+O cadastro público do app **sempre** cria cidadãos. O papel é fixado no
+servidor, nunca vem do corpo da requisição (`routers/auth.py`):
 
-```bash
-docker compose exec api python criar_usuario.py   --email defesa@prefeitura.gov.br --nome "Defesa Civil" --papel defesa_civil
+```python
+# O papel nunca vem do corpo da requisição: aceitar isso deixaria
+# qualquer pessoa se cadastrar como Defesa Civil.
+papel = "cidadao"
 ```
 
-A senha é pedida no terminal (não passa por argumento, que ficaria no
-histórico do shell). Esse usuário entra pela tela normal de login e acessa
-`/painel`.
+Faz sentido quando se olha o que o painel mostra: endereço, coordenadas e
+fotos da casa de **todos** os alertas da cidade. Se o papel viesse do
+formulário, bastaria alguém mandar `"papel": "defesa_civil"` no cadastro para
+ver tudo isso. Por isso a conta de operação só nasce por quem tem acesso ao
+servidor — este passo.
+
+### O comando
+
+Com os containers no ar:
+
+```bash
+cd /opt/geovision
+docker compose exec api python criar_usuario.py \
+  --email defesa@prefeitura.gov.br \
+  --nome "Defesa Civil" \
+  --papel defesa_civil
+```
+
+A senha é pedida no terminal, duas vezes:
+
+```
+Senha:
+Confirme a senha:
+Usuário defesa@prefeitura.gov.br criado com papel 'defesa_civil'.
+```
+
+**A senha não é argumento de propósito.** Argumento de linha de comando fica
+gravado no histórico do shell e aparece para qualquer usuário do servidor num
+`ps`. Mínimo de 8 caracteres.
+
+Feito isso, a pessoa entra pela tela normal de login (`/entrar`) e o `/painel`
+passa a abrir.
+
+### O que a conta destrava
+
+Na API, três rotas protegidas por `exigir_defesa_civil`:
+
+| Rota | O que faz |
+|---|---|
+| `GET /api/alertas/defesa-civil/listar` | todos os alertas da cidade, com endereço e fotos |
+| `GET /api/alertas/defesa-civil/metricas` | os números do topo do painel |
+| `PUT /api/alertas/{id}/status` | muda o status e grava a observação técnica |
+
+No app, a rota `/painel`. Um cidadão que digite a URL vê "Acesso restrito".
+
+**Quem decide de verdade é a API.** O papel viaja assinado dentro do JWT e é
+reconferido a cada requisição; a checagem do frontend existe só para a tela
+não mentir. Esconder o menu não seria segurança nenhuma.
+
+### Rodar de novo com o mesmo e-mail atualiza, não dá erro
+
+O script faz `UPDATE` quando o e-mail já existe. São dois usos legítimos:
+
+- **Trocar senha esquecida.** Não há recuperação de senha no app (ver
+  Limitações) — este comando é o contorno.
+- **Promover um cidadão já cadastrado** a `defesa_civil`.
+
+⚠️ **O inverso também vale, e é o tropeço fácil:** rodar com `--papel cidadao`
+num e-mail que era Defesa Civil **rebaixa** a conta. E a senha é sempre
+regravada — não existe modo "só muda o papel". Confira o `--papel` antes de dar
+Enter.
+
+### Detalhes que valem saber
+
+**Senha forte importa mais nesta conta.** Não há limite de tentativas de login
+(ver Limitações). O bcrypt deixa a força bruta lenta, mas esta é a conta que vê
+o endereço e a foto da casa de todo mundo que usou o app.
+
+**A conta mora no volume `geovision_dados`**, junto com o banco. Sobrevive a
+`git pull` e a `docker compose up -d --build`; morre num `docker compose down -v`.
+Está coberta pelo backup do volume, na seção Operação.
+
+**`--papel admin` funciona e hoje dá o mesmo acesso.** A checagem é
+`papel in ("defesa_civil", "admin")` e não existe rota exclusiva de admin — é um
+gancho para o futuro. Para uso real, `defesa_civil`.
+
+**O comando exige o container no ar.** `docker compose exec` só funciona com o
+serviço rodando; se der `service "api" is not running`, confira
+`docker compose ps` antes.
 
 ## 7. Enquanto o domínio não sai
 
@@ -355,7 +435,8 @@ Você adicionou `networks:` ao Traefik sem `- default`, e ele saiu da
 `n8n_default`. Confirme e conserte:
 
 ```bash
-docker inspect $(docker ps -qf name=traefik)   -f '{{range $k, $v := .NetworkSettings.Networks}}{{println $k}}{{end}}'
+docker inspect $(docker ps -qf name=traefik) \
+  -f '{{range $k, $v := .NetworkSettings.Networks}}{{println $k}}{{end}}'
 ```
 
 Tem de listar **`n8n_default` e `geovision_borda`**. Se faltar a primeira,
