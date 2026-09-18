@@ -1,12 +1,19 @@
 # GeoVision.AI — stack de produção.
 #
-# Sobe independente do n8n: a API não publica porta nenhuma (só o nginx
-# alcança ela pela rede interna) e o frontend sai numa porta alta, sem
-# disputar a 80/443 com o Traefik que já atende o n8n nesta VPS.
-#
 #   docker compose up -d --build
 #
-# Para colocar atrás do Traefik com HTTPS, veja docker-compose.traefik.yml.
+# Arquivo único, de propósito: não existe mais sobreposição de Traefik. O
+# GeoVision roda na VPS que já hospeda o n8n e o Kalli, mas numa rede própria
+# (`interna`), sem enxergar o postgres, o redis nem o n8n daquele stack. O
+# único ponto de contato é o container `web`, que entra também na rede do
+# Traefik de produção (`borda`) para receber o tráfego do domínio.
+#
+# Por que não um Traefik próprio: o Traefik do /docker/n8n já ocupa as portas
+# 80 e 443 do host. Um segundo Traefik nesta VPS falha no `up` com "port is
+# already allocated" — não há como dois dividirem as mesmas portas.
+#
+# Exige no .env: REDE_TRAEFIK, DOMINIO_GEOVISION e RESOLVEDOR_TLS.
+# Ver DEPLOY.md, seção 4.
 
 name: geovision
 
@@ -23,10 +30,23 @@ services:
       GEOVISION_DATA_DIR: /data
     volumes:
       - dados:/data
+    # Sem `ports`: nada da API chega ao host. Quem fala com ela é o nginx do
+    # `web`, pela rede interna.
     expose:
       - "8001"
     networks:
       - interna
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          # Teto obrigatório, não afinação: esta VPS também roda o n8n, o
+          # postgres e os apps do Kalli. Sem limite, um pico do opencv ao
+          # classificar fotos derruba o stack de produção junto.
+          memory: 2G
+        reservations:
+          memory: 256M
     logging: &registro
       driver: json-file
       options:
@@ -43,15 +63,56 @@ services:
       api:
         condition: service_healthy
     ports:
-      # Mude PORTA_WEB no .env se 8080 já estiver em uso nesta VPS.
-      - "${PORTA_WEB:-8080}:80"
+      # Acesso direto por IP, para usar enquanto o domínio não resolve.
+      # O padrão 127.0.0.1 não abre porta nenhuma para a internet — chega-se
+      # nele por túnel SSH:  ssh -L 8080:127.0.0.1:8080 usuario@IP
+      # Para expor de verdade na porta alta, ponha BIND_WEB=0.0.0.0 no .env
+      # (e libere a porta no ufw e no firewall do painel da Hostinger).
+      - "${BIND_WEB:-127.0.0.1}:${PORTA_WEB:-8080}:80"
     networks:
       - interna
+      - borda
+    security_opt:
+      - no-new-privileges:true
+    labels:
+      # O Traefik de produção sobe com --providers.docker.exposedbydefault=false,
+      # então sem esta linha ele ignora o container por completo.
+      - "traefik.enable=true"
+      # Obrigatório com o container em duas redes: sem isto o Traefik pode
+      # tentar alcançar o nginx pela rede `interna`, onde ele próprio não
+      # está, e responder 502.
+      - "traefik.docker.network=${REDE_TRAEFIK}"
+      - "traefik.http.routers.geovision.rule=Host(`${DOMINIO_GEOVISION}`)"
+      - "traefik.http.routers.geovision.entrypoints=websecure"
+      - "traefik.http.routers.geovision.tls=true"
+      - "traefik.http.routers.geovision.tls.certresolver=${RESOLVEDOR_TLS}"
+      - "traefik.http.services.geovision.loadbalancer.server.port=80"
+      # Não há router de redirecionamento http->https aqui: o Traefik de
+      # produção já redireciona a entrypoint `web` inteira para a `websecure`
+      # (--entrypoints.web.http.redirections.*), o que vale para todos os
+      # hosts, inclusive este.
+      - "traefik.http.middlewares.geovision-hsts.headers.stsSeconds=31536000"
+      - "traefik.http.middlewares.geovision-hsts.headers.stsIncludeSubdomains=true"
+      - "traefik.http.middlewares.geovision-hsts.headers.forceSTSHeader=true"
+      - "traefik.http.routers.geovision.middlewares=geovision-hsts@docker"
+    deploy:
+      resources:
+        limits:
+          memory: 128M
     logging: *registro
 
 volumes:
   dados:
 
 networks:
+  # api <-> web. Não é `internal: true` de propósito: a API precisa de saída
+  # para a internet para chamar o Roboflow e enviar e-mail/WhatsApp.
   interna:
     driver: bridge
+
+  # A rede que o Traefik do /docker/n8n já criou. `external` significa que
+  # este compose só entra nela — nunca a cria nem a apaga, então um
+  # `docker compose down` aqui não encosta no stack de produção.
+  borda:
+    external: true
+    name: ${REDE_TRAEFIK}
