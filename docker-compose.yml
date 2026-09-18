@@ -3,17 +3,22 @@
 #   docker compose up -d --build
 #
 # Arquivo único, de propósito: não existe mais sobreposição de Traefik. O
-# GeoVision roda na VPS que já hospeda o n8n e o Kalli, mas numa rede própria
-# (`interna`), sem enxergar o postgres, o redis nem o n8n daquele stack. O
-# único ponto de contato é o container `web`, que entra também na rede do
-# Traefik de produção (`borda`) para receber o tráfego do domínio.
+# GeoVision roda na VPS que já hospeda o n8n e o Kalli, mas em redes só dele:
+#
+#   interna  api <-> web. Ninguém de fora entra.
+#   borda    web <-> Traefik, e mais nada. É uma rede DEDICADA ao GeoVision
+#            (`geovision_borda`), não a rede padrão do stack do n8n: assim o
+#            `web` não alcança o postgres, o redis nem o n8n por DNS, nem eles
+#            a ele. O Traefik de produção é anexado a ela — um container pode
+#            estar em várias redes.
 #
 # Por que não um Traefik próprio: o Traefik do /docker/n8n já ocupa as portas
 # 80 e 443 do host. Um segundo Traefik nesta VPS falha no `up` com "port is
 # already allocated" — não há como dois dividirem as mesmas portas.
 #
-# Exige no .env: REDE_TRAEFIK, DOMINIO_GEOVISION e RESOLVEDOR_TLS.
-# Ver DEPLOY.md, seção 4.
+# Exige no .env: REDE_BORDA, DOMINIO_GEOVISION e RESOLVEDOR_TLS.
+# A rede `borda` precisa existir ANTES do primeiro `up`, e o Traefik precisa
+# estar nela — os dois passos estão no DEPLOY.md, seções 1 e 3.
 
 name: geovision
 
@@ -80,8 +85,8 @@ services:
       - "traefik.enable=true"
       # Obrigatório com o container em duas redes: sem isto o Traefik pode
       # tentar alcançar o nginx pela rede `interna`, onde ele próprio não
-      # está, e responder 502.
-      - "traefik.docker.network=${REDE_TRAEFIK}"
+      # está, e responder 502. Tem de ser a rede compartilhada com o Traefik.
+      - "traefik.docker.network=${REDE_BORDA}"
       - "traefik.http.routers.geovision.rule=Host(`${DOMINIO_GEOVISION}`)"
       - "traefik.http.routers.geovision.entrypoints=websecure"
       - "traefik.http.routers.geovision.tls=true"
@@ -110,9 +115,10 @@ networks:
   interna:
     driver: bridge
 
-  # A rede que o Traefik do /docker/n8n já criou. `external` significa que
-  # este compose só entra nela — nunca a cria nem a apaga, então um
-  # `docker compose down` aqui não encosta no stack de produção.
+  # Rede dedicada ao GeoVision, compartilhada só com o Traefik. `external`
+  # significa que ela não pertence a nenhum dos dois composes: é criada uma vez
+  # à mão (DEPLOY.md, seção 1) e nenhum `docker compose down` a remove. Isso
+  # evita a ordem frágil de "quem sobe primeiro" entre este stack e o do n8n.
   borda:
     external: true
-    name: ${REDE_TRAEFIK}
+    name: ${REDE_BORDA}
