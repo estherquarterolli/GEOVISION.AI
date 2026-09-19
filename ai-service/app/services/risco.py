@@ -5,9 +5,18 @@ from app.config import obter_config
 logger = logging.getLogger(__name__)
 
 # Configurações de pesos por classe de defeito
+# exposed_rebar e spalling já existem na ontologia do projeto no Roboflow,
+# mas em 18/09/2026 ainda tinham 0 exemplos de treino (ver investigação da
+# pasta ai-service/dataset/) — então não aparecem em predicoes_brutas até
+# que o dataset seja curado e um novo treino rode. Pesos calibrados de
+# acordo com docs/relatorio-treinamento-ia.md (seção 5.1) e o checklist
+# IBAPE citado em docs/metodologia-priorizacao-gut.md (seção 5) — manter
+# em sincronia com PESO_POR_CLASSE em classificador_roboflow.py.
 PESO_POR_CLASSE = {
+    "exposed_rebar": 4,  # armadura exposta — achado estrutural (IBAPE)
     "crack": 3,          # rachadura
     "deterioration": 3,  # deterioração
+    "spalling": 3,       # desplacamento — mesma severidade de deterioration
     "corrosion": 2,      # corrosão
     "moisture": 2,       # umidade
     "mold": 1,           # mofo
@@ -40,7 +49,7 @@ def detectar_defeitos(caminho_imagem: str) -> list[dict]:
             workspace_name=config.roboflow_workspace,
             workflow_id=config.roboflow_workflow_id,
             images={"image": caminho_imagem},
-            parameters={"classes": "crack, corrosion, stain, mold, deterioration, moisture"},
+            parameters={"classes": "crack, corrosion, stain, mold, deterioration, moisture, exposed_rebar, spalling"},
             use_cache=True,
         )
 
@@ -100,9 +109,12 @@ def calcular_risco_da_foto(defeitos: list[dict]) -> str:
         pontuacao_total += peso * confianca * fator_tamanho
 
         # Regra para Crítico automático:
-        # Apenas se for uma classe grave (peso 3: crack ou deterioration),
-        # com alta confiança (>80%) e uma área realmente significativa (>= 60.000 pixels, ex: >245x245px).
-        if peso == 3 and confianca > 0.8 and area >= 60000:
+        # Se for uma classe grave (peso >= 3: crack, deterioration, spalling
+        # ou exposed_rebar — este último com peso 4, tratado pelo IBAPE como
+        # achado estrutural, ver docs/relatorio-treinamento-ia.md seção 5.1),
+        # com alta confiança (>80%) e uma área realmente significativa
+        # (>= 60.000 pixels, ex: >245x245px).
+        if peso >= 3 and confianca > 0.8 and area >= 60000:
             tem_defeito_grave_e_grande = True
 
     # Limites de risco mais adequados:

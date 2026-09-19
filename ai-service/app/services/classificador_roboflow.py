@@ -6,9 +6,19 @@ from app.schemas import NivelRisco, RespostaClassificacao
 logger = logging.getLogger(__name__)
 
 # Regras de severidade das classes
+# exposed_rebar e spalling já existem na ontologia do projeto no Roboflow,
+# mas em 18/09/2026 ainda tinham 0 exemplos de treino (ver investigação da
+# pasta ai-service/dataset/) — então não aparecem em predicoes_brutas até
+# que o dataset seja curado e um novo treino rode. Pesos calibrados aqui
+# de acordo com docs/relatorio-treinamento-ia.md (seção 5.1) e o checklist
+# IBAPE citado em docs/metodologia-priorizacao-gut.md (seção 5): armadura
+# exposta é achado estrutural (peso 4, igual ou maior que crack), e
+# desplacamento é tratado como a mesma família de deterioration (peso 3).
 PESO_POR_CLASSE = {
+    "exposed_rebar": 4,  # armadura exposta — achado estrutural (IBAPE)
     "crack": 3,          # rachadura
     "deterioration": 3,  # deterioração
+    "spalling": 3,       # desplacamento — mesma severidade de deterioration
     "corrosion": 2,      # corrosão
     "moisture": 2,       # umidade
     "mold": 1,           # mofo
@@ -56,7 +66,7 @@ class ClassificadorRoboflow:
                 workspace_name=self.workspace,
                 workflow_id=self.workflow_id,
                 images={"image": caminho_imagem},
-                parameters={"classes": "crack, corrosion, stain, mold, deterioration, moisture"},
+                parameters={"classes": "crack, corrosion, stain, mold, deterioration, moisture, exposed_rebar, spalling"},
                 use_cache=True,
             )
 
@@ -112,9 +122,12 @@ class ClassificadorRoboflow:
             pontuacao_total += peso * confianca * fator_tamanho
 
             # Regra para Crítico automático:
-            # Apenas se for uma classe grave (peso 3: crack ou deterioration),
-            # com alta confiança (>80%) e uma área realmente significativa (>= 60.000 pixels, ex: >245x245px).
-            if peso == 3 and confianca > 0.8 and area >= 60000:
+            # Se for uma classe grave (peso >= 3: crack, deterioration, spalling
+            # ou exposed_rebar — este último com peso 4, tratado pelo IBAPE como
+            # achado estrutural, ver docs/relatorio-treinamento-ia.md seção 5.1),
+            # com alta confiança (>80%) e uma área realmente significativa
+            # (>= 60.000 pixels, ex: >245x245px).
+            if peso >= 3 and confianca > 0.8 and area >= 60000:
                 tem_defeito_grave_e_grande = True
 
         # Limites de risco mais adequados:

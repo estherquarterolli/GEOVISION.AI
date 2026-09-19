@@ -107,11 +107,27 @@
    -------------------------------------------------------------------------- */
 @layer components {
   .tema-painel {
-    --color-fundo: #0a3a52;
-    --color-superficie: #0f4964;
-    --color-tinta: #eef6fa;
-    --color-tinta-suave: #93b4c6;
-    --color-borda: #1a5c7d;
+    --color-fundo: #090d16;
+    --color-superficie: #0f172a;
+    --color-tinta: #f8fafc;
+    --color-tinta-suave: #94a3b8;
+    --color-borda: #334155;
+
+    --color-marca-azul: #38bdf8;
+    --color-marca-azul-escuro: #0284c7;
+    --color-marca-azul-suave: #1e293b;
+
+    --color-marca-laranja: #fb923c;
+    --color-marca-laranja-escuro: #ea580c;
+    --color-marca-laranja-suave: #291809;
+
+    --color-risco-baixo: #4ade80;
+    --color-risco-medio: #fbbf24;
+    --color-risco-critico: #f87171;
+
+    --color-risco-baixo-suave: rgba(74, 222, 128, 0.15);
+    --color-risco-medio-suave: rgba(251, 191, 36, 0.15);
+    --color-risco-critico-suave: rgba(248, 113, 113, 0.15);
 
     background-color: var(--color-fundo);
     color: var(--color-tinta);

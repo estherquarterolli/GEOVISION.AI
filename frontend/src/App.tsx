@@ -12,6 +12,7 @@ import { VitrineDesignSystem } from '@/pages/VitrineDesignSystem'
 import { PainelDefesaCivil } from '@/pages/PainelDefesaCivil'
 import { Educacao } from '@/pages/Educacao'
 import { MapaBairro } from '@/pages/MapaBairro'
+import { AdminLogin } from '@/pages/AdminLogin'
 
 import { NavegacaoInferior } from '@/components/layout/NavegacaoInferior'
 
@@ -80,12 +81,32 @@ function Layout() {
   )
 }
 
+function RaizAdmin() {
+  const { carregando, session, usuario } = useAuth()
+
+  if (carregando) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-slate-950">
+        <div className="size-8 rounded-full border-2 border-cyan-500/30 border-t-cyan-400 animate-spin" />
+      </div>
+    )
+  }
+
+  if (session && usuario && (usuario.papel === 'admin' || usuario.papel === 'defesa_civil')) {
+    return <Navigate to="/painel" replace />
+  }
+
+  return <Navigate to="/admin/login" replace />
+}
+
 export function App() {
   return (
     <AuthProvider>
       <Routes>
         {/* Fora do Layout: tela cheia, sem cabeçalho de app autenticado. */}
         <Route path="/design-system" element={<VitrineDesignSystem />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin" element={<RaizAdmin />} />
         {/* O painel expõe o endereço de todos os alertas da cidade. A API já
             recusa quem não é da equipe; isto evita a tela quebrada de
             requisições em 403 para um cidadão que abra a URL. */}

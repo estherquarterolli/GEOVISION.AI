@@ -17,7 +17,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
 from app.config import obter_config
-from app.routers import classificacao, webhooks, auth, alertas
+from app.routers import classificacao, webhooks, auth, alertas, admin
 from app.schemas import RespostaSaude
 from app.services.classificador import Classificador
 from app.db import inicializar_banco, UPLOADS_DIR
@@ -87,7 +87,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=obter_config().origens_permitidas,
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allow_headers=["*"],
 )
 
@@ -99,6 +99,7 @@ app.include_router(classificacao.roteador)
 app.include_router(webhooks.roteador)
 app.include_router(auth.roteador)
 app.include_router(alertas.roteador)
+app.include_router(admin.roteador)
 
 
 

@@ -24,9 +24,12 @@ export function NovoAlerta() {
   const { usuario } = useAuth()
   const geo = useGeolocalizacao()
 
-  const inputRef1 = useRef<HTMLInputElement>(null)
-  const inputRef2 = useRef<HTMLInputElement>(null)
-  const inputRef3 = useRef<HTMLInputElement>(null)
+  const cameraRef1 = useRef<HTMLInputElement>(null)
+  const galeriaRef1 = useRef<HTMLInputElement>(null)
+  const cameraRef2 = useRef<HTMLInputElement>(null)
+  const galeriaRef2 = useRef<HTMLInputElement>(null)
+  const cameraRef3 = useRef<HTMLInputElement>(null)
+  const galeriaRef3 = useRef<HTMLInputElement>(null)
 
   const [fotos, setFotos] = useState<(File | null)[]>([null, null, null])
   const [previas, setPrevias] = useState<(string | null)[]>([null, null, null])
@@ -62,6 +65,19 @@ export function NovoAlerta() {
     const novasPrevias = [...previas]
     if (novasPrevias[indice]) URL.revokeObjectURL(novasPrevias[indice]!)
     novasPrevias[indice] = URL.createObjectURL(arquivo)
+    setPrevias(novasPrevias)
+  }
+
+  function aoRemoverFoto(indice: number) {
+    const novasFotos = [...fotos]
+    novasFotos[indice] = null
+    setFotos(novasFotos)
+
+    const novasPrevias = [...previas]
+    if (novasPrevias[indice]) {
+      URL.revokeObjectURL(novasPrevias[indice]!)
+      novasPrevias[indice] = null
+    }
     setPrevias(novasPrevias)
   }
 
@@ -158,127 +174,160 @@ export function NovoAlerta() {
         
         {/* Bloco de Upload de Imagens */}
         <div className="flex flex-col gap-4">
-          <p className="text-xs font-bold text-tinta uppercase tracking-wider">Fotos Obrigatórias</p>
-          
-          {/* Foto 1 */}
-          <Cartao className="p-4 border-borda/60">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-xs font-semibold text-tinta">Foto 1: Visão Geral</span>
-              {!fotos[0] && <span className="text-[10px] text-risco-critico font-medium">* Obrigatória</span>}
-            </div>
-            <input
-              ref={inputRef1}
-              type="file"
-              accept="image/*"
-              capture="environment"
-              className="hidden"
-              onChange={(e) => aoEscolherFoto(0, e.target.files?.[0])}
-            />
-            {previas[0] ? (
-              <div className="relative">
-                <img src={previas[0]} alt="Visão Geral" className="rounded-cidadao aspect-video w-full object-cover" />
-                <button
-                  type="button"
-                  onClick={() => inputRef1.current?.click()}
-                  className="absolute bottom-2 right-2 px-3 py-1 rounded bg-black/60 hover:bg-black/80 text-[11px] text-white backdrop-blur font-semibold transition"
-                >
-                  Alterar foto
-                </button>
-              </div>
-            ) : (
-              <button
-                type="button"
-                onClick={() => inputRef1.current?.click()}
-                className="w-full border-2 border-dashed border-borda/80 hover:border-marca-azul/60 rounded-cidadao p-5 flex flex-col items-center justify-center gap-1.5 transition text-tinta bg-superficie"
-              >
-                <svg className="size-6 text-tinta-suave" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <span className="text-xs font-medium text-tinta-suave">Capturar foto</span>
-              </button>
-            )}
-          </Cartao>
+          <div className="flex items-center justify-between">
+            <p className="text-xs font-bold text-tinta uppercase tracking-wider">3 Fotos Obrigatórias</p>
+            <span className="text-xs text-tinta-suave">
+              {fotos.filter(Boolean).length} de 3 selecionadas
+            </span>
+          </div>
 
-          {/* Foto 2 */}
-          <Cartao className="p-4 border-borda/60">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-xs font-semibold text-tinta">Foto 2: Detalhe</span>
-              {!fotos[1] && <span className="text-[10px] text-risco-critico font-medium">* Obrigatória</span>}
-            </div>
-            <input
-              ref={inputRef2}
-              type="file"
-              accept="image/*"
-              capture="environment"
-              className="hidden"
-              onChange={(e) => aoEscolherFoto(1, e.target.files?.[0])}
-            />
-            {previas[1] ? (
-              <div className="relative">
-                <img src={previas[1]} alt="Detalhe da Anomalia" className="rounded-cidadao aspect-video w-full object-cover" />
-                <button
-                  type="button"
-                  onClick={() => inputRef2.current?.click()}
-                  className="absolute bottom-2 right-2 px-3 py-1 rounded bg-black/60 hover:bg-black/80 text-[11px] text-white backdrop-blur font-semibold transition"
-                >
-                  Alterar foto
-                </button>
-              </div>
-            ) : (
-              <button
-                type="button"
-                onClick={() => inputRef2.current?.click()}
-                className="w-full border-2 border-dashed border-borda/80 hover:border-marca-azul/60 rounded-cidadao p-5 flex flex-col items-center justify-center gap-1.5 transition text-tinta bg-superficie"
-              >
-                <svg className="size-6 text-tinta-suave" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <span className="text-xs font-medium text-tinta-suave">Capturar foto</span>
-              </button>
-            )}
-          </Cartao>
+          {[
+            {
+              indice: 0,
+              titulo: 'Foto 1: Visão Geral',
+              subtitulo: 'Contexto amplo (2 a 3m)',
+              cameraRef: cameraRef1,
+              galeriaRef: galeriaRef1,
+            },
+            {
+              indice: 1,
+              titulo: 'Foto 2: Detalhe',
+              subtitulo: 'Foco na anomalia (~1m)',
+              cameraRef: cameraRef2,
+              galeriaRef: galeriaRef2,
+            },
+            {
+              indice: 2,
+              titulo: 'Foto 3: Close-up com Escala',
+              subtitulo: 'Aproximada com referência (~30cm)',
+              cameraRef: cameraRef3,
+              galeriaRef: galeriaRef3,
+            },
+          ].map(({ indice, titulo, subtitulo, cameraRef, galeriaRef }) => {
+            const fotoAtual = fotos[indice]
+            const previaAtual = previas[indice]
 
-          {/* Foto 3 */}
-          <Cartao className="p-4 border-borda/60">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-xs font-semibold text-tinta">Foto 3: Close-up com Escala</span>
-              {!fotos[2] && <span className="text-[10px] text-risco-critico font-medium">* Obrigatória</span>}
-            </div>
-            <input
-              ref={inputRef3}
-              type="file"
-              accept="image/*"
-              capture="environment"
-              className="hidden"
-              onChange={(e) => aoEscolherFoto(2, e.target.files?.[0])}
-            />
-            {previas[2] ? (
-              <div className="relative">
-                <img src={previas[2]} alt="Close-up" className="rounded-cidadao aspect-video w-full object-cover" />
-                <button
-                  type="button"
-                  onClick={() => inputRef3.current?.click()}
-                  className="absolute bottom-2 right-2 px-3 py-1 rounded bg-black/60 hover:bg-black/80 text-[11px] text-white backdrop-blur font-semibold transition"
-                >
-                  Alterar foto
-                </button>
-              </div>
-            ) : (
-              <button
-                type="button"
-                onClick={() => inputRef3.current?.click()}
-                className="w-full border-2 border-dashed border-borda/80 hover:border-marca-azul/60 rounded-cidadao p-5 flex flex-col items-center justify-center gap-1.5 transition text-tinta bg-superficie"
-              >
-                <svg className="size-6 text-tinta-suave" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <span className="text-xs font-medium text-tinta-suave">Capturar foto</span>
-              </button>
-            )}
-          </Cartao>
+            return (
+              <Cartao key={indice} className="p-4 border-borda/60">
+                {/* Inputs ocultos: um para acionar a câmera e outro para a galeria */}
+                <input
+                  ref={cameraRef}
+                  type="file"
+                  accept="image/jpeg,image/png,image/webp,image/heic,image/*"
+                  capture="environment"
+                  className="hidden"
+                  onChange={(e) => {
+                    aoEscolherFoto(indice, e.target.files?.[0])
+                    e.target.value = ''
+                  }}
+                />
+                <input
+                  ref={galeriaRef}
+                  type="file"
+                  accept="image/jpeg,image/png,image/webp,image/heic,image/*"
+                  className="hidden"
+                  onChange={(e) => {
+                    aoEscolherFoto(indice, e.target.files?.[0])
+                    e.target.value = ''
+                  }}
+                />
+
+                <div className="flex items-center justify-between mb-2">
+                  <div>
+                    <span className="text-xs font-semibold text-tinta">{titulo}</span>
+                    <span className="text-[11px] text-tinta-suave ml-2">({subtitulo})</span>
+                  </div>
+                  {fotoAtual ? (
+                    <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold bg-emerald-500/10 px-2 py-0.5 rounded-full">
+                      ✓ Pronta
+                    </span>
+                  ) : (
+                    <span className="text-[10px] text-risco-critico font-medium">* Obrigatória</span>
+                  )}
+                </div>
+
+                {previaAtual ? (
+                  <div className="relative rounded-cidadao overflow-hidden border border-borda">
+                    <img
+                      src={previaAtual}
+                      alt={titulo}
+                      className="aspect-video w-full object-cover"
+                    />
+                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-2.5 flex items-center justify-between gap-2 backdrop-blur-[2px]">
+                      <div className="flex items-center gap-1.5">
+                        <button
+                          type="button"
+                          onClick={() => cameraRef.current?.click()}
+                          className="px-2.5 py-1 rounded bg-white/20 hover:bg-white/30 text-[11px] text-white font-medium transition flex items-center gap-1"
+                          title="Tirar outra foto com a câmera"
+                        >
+                          <svg className="size-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+                          Câmera
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => galeriaRef.current?.click()}
+                          className="px-2.5 py-1 rounded bg-white/20 hover:bg-white/30 text-[11px] text-white font-medium transition flex items-center gap-1"
+                          title="Escolher outra imagem da galeria"
+                        >
+                          <svg className="size-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                          Galeria
+                        </button>
+                      </div>
+
+                      <button
+                        type="button"
+                        onClick={() => aoRemoverFoto(indice)}
+                        className="px-2 py-1 rounded bg-rose-500/80 hover:bg-rose-600 text-[11px] text-white font-medium transition flex items-center gap-1"
+                        title="Remover foto"
+                      >
+                        <svg className="size-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                        </svg>
+                        Remover
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-2 gap-2.5 pt-1">
+                    <button
+                      type="button"
+                      onClick={() => cameraRef.current?.click()}
+                      className="border-2 border-dashed border-borda/80 hover:border-marca-azul/60 hover:bg-marca-azul/5 rounded-cidadao p-4 flex flex-col items-center justify-center gap-1.5 transition text-tinta bg-superficie group"
+                    >
+                      <div className="size-8 rounded-full bg-marca-azul/10 text-marca-azul flex items-center justify-center group-hover:scale-110 transition">
+                        <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                      </div>
+                      <span className="text-xs font-semibold text-tinta">Tirar foto</span>
+                      <span className="text-[10px] text-tinta-suave">Abrir câmera</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => galeriaRef.current?.click()}
+                      className="border-2 border-dashed border-borda/80 hover:border-marca-azul/60 hover:bg-marca-azul/5 rounded-cidadao p-4 flex flex-col items-center justify-center gap-1.5 transition text-tinta bg-superficie group"
+                    >
+                      <div className="size-8 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center group-hover:scale-110 transition">
+                        <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                      </div>
+                      <span className="text-xs font-semibold text-tinta">Galeria</span>
+                      <span className="text-[10px] text-tinta-suave">Importar mídia</span>
+                    </button>
+                  </div>
+                )}
+              </Cartao>
+            )
+          })}
         </div>
 
         {/* Informações adicionais do Morador */}

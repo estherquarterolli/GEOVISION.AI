@@ -100,16 +100,58 @@ def inicializar_banco():
             except sqlite3.OperationalError:
                 pass
 
-        # O painel lista por risco e data e o app filtra por usuário; sem
-        # índice as duas telas viram varredura completa conforme a base cresce.
+        # Tabela de logs de auditoria
+        cursor.execute("""
+        CREATE TABLE IF NOT EXISTS logs_auditoria (
+            id TEXT PRIMARY KEY,
+            usuario_id TEXT,
+            usuario_email TEXT,
+            acao TEXT NOT NULL,
+            detalhes TEXT,
+            ip_origem TEXT,
+            criado_em TEXT NOT NULL
+        )
+        """)
+
+        # Índices de performance
         cursor.execute(
             "CREATE INDEX IF NOT EXISTS idx_alertas_usuario ON alertas (usuario_id, criado_em DESC)"
         )
         cursor.execute(
             "CREATE INDEX IF NOT EXISTS idx_alertas_status ON alertas (status)"
         )
+        cursor.execute(
+            "CREATE INDEX IF NOT EXISTS idx_logs_criado_em ON logs_auditoria (criado_em DESC)"
+        )
 
         conn.commit()
+
+
+def registrar_log_auditoria(
+    acao: str,
+    usuario_id: str | None = None,
+    usuario_email: str | None = None,
+    detalhes: str | None = None,
+    ip_origem: str | None = None,
+) -> None:
+    """Registra uma ação de auditoria no banco de dados SQLite."""
+    import uuid
+    import datetime
+
+    agora = datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z")
+    try:
+        with obter_conexao() as conn:
+            cursor = conn.cursor()
+            cursor.execute(
+                """
+                INSERT INTO logs_auditoria (id, usuario_id, usuario_email, acao, detalhes, ip_origem, criado_em)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+                """,
+                (str(uuid.uuid4()), usuario_id, usuario_email, acao, detalhes, ip_origem, agora),
+            )
+            conn.commit()
+    except Exception:
+        pass
 
 
 def _truncar(senha: str) -> bytes:
