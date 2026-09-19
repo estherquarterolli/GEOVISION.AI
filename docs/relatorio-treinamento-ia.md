@@ -119,6 +119,21 @@ Para homologação do modelo em produção:
 
 ## 7. Próximos Passos de Execução
 
-1. **Validação Técnica com Especialista:** Condução da entrevista estruturada com a Engenheira Civil para refinamento fino da tabela de pesos e limites de abertura de fissuras.
+1. **Validação Técnica com Especialista:** ✅ **Concluída em 16/09/2026.** A
+   engenheira civil consultora avaliou as perguntas enviadas. Sobre peso ×
+   confiança × área em pixels (itens abaixo), ela apontou que são parâmetros
+   de sistema, fora da área dela, e recomendou avaliação por alguém de
+   sistemas — portanto **seguem inalterados** nesta rodada:
+   - Peso por classe de defeito, confiança mínima e o fator de escala por
+     área na foto continuam como estão (`risco.py`,
+     `classificador_roboflow.py`) até essa avaliação técnica de sistemas.
+   - Sobre priorização de alertas críticos em massa — pergunta que **é** da
+     área dela —, ela descreveu usar SWOT em laudos individuais, mas não o
+     divulga por ser privado, e recomendou postergar uma análise própria
+     para uma segunda/terceira etapa. Em vez de esperar, adotou-se um método
+     equivalente em propósito, porém público e citável: o método GUT. Ver
+     `docs/metodologia-priorizacao-gut.md` para a implementação completa,
+     incluindo a nova pergunta de ruído/vibração percebida e a ampliação das
+     categorias de anomalia com base no checklist IBAPE.
 2. **Re-anotação de Dataset (Active Learning):** Utilizar as imagens capturadas em testes de campo com anotação semi-automática assistida e revisão humana.
 3. **Deploy de Nova Versão:** Publicação dos pesos atualizados no Roboflow e atualização dos serviços FastAPI (`classificador_roboflow.py` e `risco.py`).

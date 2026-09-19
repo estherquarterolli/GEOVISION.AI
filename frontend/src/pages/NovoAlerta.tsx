@@ -15,6 +15,7 @@ import {
   ROTULO_TEMPO,
   ROTULO_EVOLUCAO,
   ROTULO_LOCAL,
+  ROTULO_RUIDO,
   type Alerta,
   type TipoAnomalia
 } from '@/types/dominio'
@@ -35,6 +36,7 @@ export function NovoAlerta() {
   const [tempoSurgimento, setTempoSurgimento] = useState('')
   const [evolucao, setEvolucao] = useState('')
   const [gravidadePercebida, setGravidadePercebida] = useState('')
+  const [ruidoPercebido, setRuidoPercebido] = useState('')
   const [descricao, setDescricao] = useState('')
   const [enderecoManual, setEnderecoManual] = useState('')
 
@@ -84,6 +86,7 @@ export function NovoAlerta() {
         tempoSurgimento: tempoSurgimento || undefined,
         evolucao: evolucao || undefined,
         localAnomalia: localAnomalia || undefined,
+        ruidoPercebido: ruidoPercebido || undefined,
       })
       setAlertaEnviado(resultado)
     } catch (e) {
@@ -101,6 +104,7 @@ export function NovoAlerta() {
     setTempoSurgimento('')
     setEvolucao('')
     setGravidadePercebida('')
+    setRuidoPercebido('')
     setDescricao('')
     setEnderecoManual('')
     setErro(null)
@@ -343,6 +347,19 @@ export function NovoAlerta() {
           >
             <option value="">Selecione...</option>
             {Object.entries(ROTULO_GRAVIDADE).map(([valor, rotulo]) => (
+              <option key={valor} value={valor}>
+                {rotulo}
+              </option>
+            ))}
+          </Select>
+
+          <Select
+            rotulo="Você notou algum barulho ou vibração no local?"
+            value={ruidoPercebido}
+            onChange={(e) => setRuidoPercebido(e.target.value)}
+          >
+            <option value="">Selecione...</option>
+            {Object.entries(ROTULO_RUIDO).map(([valor, rotulo]) => (
               <option key={valor} value={valor}>
                 {rotulo}
               </option>

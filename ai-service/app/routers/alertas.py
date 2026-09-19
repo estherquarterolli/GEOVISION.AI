@@ -11,6 +11,7 @@ from starlette.concurrency import run_in_threadpool
 from app.db import obter_conexao, UPLOADS_DIR
 from app.security import Sessao, exigir_defesa_civil, sessao_atual
 from app.services.classificador import ModeloIndisponivelError
+from app.services.priorizacao import ordenar_fila_por_prioridade
 
 # Mesmos limites de /classify: fotos de celular passam de 5 MB com facilidade,
 # e sem teto um único envio pode encher o disco da VPS.
@@ -41,6 +42,13 @@ class AlertaResposta(BaseModel):
     tempo_surgimento: str | None = None
     evolucao: str | None = None
     local_anomalia: str | None = None
+    ruido_percebido: str | None = None
+    # Calculados na hora (não gravados no banco) só para a fila da Defesa
+    # Civil — ver app/services/priorizacao.py. None fora dessa rota.
+    pontuacao_gut: int | None = None
+    gut_gravidade: int | None = None
+    gut_urgencia: int | None = None
+    gut_tendencia: int | None = None
     criado_em: str
 
 class AtualizarStatusRequisicao(BaseModel):
@@ -75,6 +83,7 @@ async def criar_alerta(
     tempo_surgimento: str | None = Form(None),
     evolucao: str | None = Form(None),
     local_anomalia: str | None = Form(None),
+    ruido_percebido: str | None = Form(None),
     fotos: list[UploadFile] = File(...),
     sessao: Sessao = Depends(sessao_atual),
 ):
@@ -135,13 +144,13 @@ async def criar_alerta(
             INSERT INTO alertas (
                 id, usuario_id, foto_path, endereco_manual, latitude, longitude,
                 tipo_anomalia, descricao, gravidade_percebida, tempo_surgimento,
-                evolucao, local_anomalia, status, criado_em
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                evolucao, local_anomalia, ruido_percebido, status, criado_em
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 alerta_id, usuario_id, foto_path, endereco_manual, latitude, longitude,
                 tipo_anomalia, descricao, gravidade_percebida, tempo_surgimento,
-                evolucao, local_anomalia, "processando", criado_em
+                evolucao, local_anomalia, ruido_percebido, "processando", criado_em
             )
         )
         conn.commit()
@@ -205,7 +214,8 @@ async def criar_alerta(
             SELECT id, usuario_id, foto_path, endereco_manual, latitude, longitude,
                    tipo_anomalia, descricao, nivel_risco, confianca_ia, modelo_versao,
                    status, observacao_defesa_civil, classificado_em, resolvido_em,
-                   gravidade_percebida, tempo_surgimento, evolucao, local_anomalia, criado_em
+                   gravidade_percebida, tempo_surgimento, evolucao, local_anomalia,
+                   ruido_percebido, criado_em
             FROM alertas WHERE id = ?
             """,
             (alerta_id,)
@@ -226,7 +236,8 @@ async def listar_alertas(sessao: Sessao = Depends(sessao_atual)):
             SELECT id, usuario_id, foto_path, endereco_manual, latitude, longitude,
                    tipo_anomalia, descricao, nivel_risco, confianca_ia, modelo_versao,
                    status, observacao_defesa_civil, classificado_em, resolvido_em,
-                   gravidade_percebida, tempo_surgimento, evolucao, local_anomalia, criado_em
+                   gravidade_percebida, tempo_surgimento, evolucao, local_anomalia,
+                   ruido_percebido, criado_em
             FROM alertas
             WHERE usuario_id = ?
             ORDER BY criado_em DESC
@@ -239,6 +250,10 @@ async def listar_alertas(sessao: Sessao = Depends(sessao_atual)):
 
 @roteador.get("/defesa-civil/listar", response_model=list[AlertaResposta])
 async def listar_alertas_defesa_civil(_: Sessao = Depends(exigir_defesa_civil)):
+    # A ordenação final é feita em Python por ordenar_fila_por_prioridade
+    # (nível de risco, depois método GUT, depois data) — a cláusula ORDER
+    # BY aqui é só para deixar a leitura do SQLite já razoavelmente
+    # ordenada antes disso; não é a ordem que o painel usa.
     with obter_conexao() as conn:
         cursor = conn.cursor()
         cursor.execute(
@@ -246,21 +261,20 @@ async def listar_alertas_defesa_civil(_: Sessao = Depends(exigir_defesa_civil)):
             SELECT id, usuario_id, foto_path, endereco_manual, latitude, longitude,
                    tipo_anomalia, descricao, nivel_risco, confianca_ia, modelo_versao,
                    status, observacao_defesa_civil, classificado_em, resolvido_em,
-                   gravidade_percebida, tempo_surgimento, evolucao, local_anomalia, criado_em
+                   gravidade_percebida, tempo_surgimento, evolucao, local_anomalia,
+                   ruido_percebido, criado_em
             FROM alertas
-            ORDER BY 
-                CASE nivel_risco 
-                    WHEN 'critico' THEN 1 
-                    WHEN 'medio' THEN 2 
-                    WHEN 'baixo' THEN 3 
-                    ELSE 4 
-                END ASC, 
-                criado_em DESC
+            ORDER BY criado_em DESC
             """
         )
         rows = cursor.fetchall()
 
-    return [AlertaResposta(**dict(row)) for row in rows]
+    # ordenar_fila_por_prioridade ordena por nível de risco e, dentro de
+    # cada nível, pelo método GUT — e grava pontuacao_gut/gut_* em cada
+    # dict, que a resposta abaixo já inclui.
+    alertas = ordenar_fila_por_prioridade([dict(row) for row in rows])
+
+    return [AlertaResposta(**alerta) for alerta in alertas]
 
 @roteador.get("/defesa-civil/metricas", response_model=MetricasDefesaCivil)
 async def obter_metricas_defesa_civil(_: Sessao = Depends(exigir_defesa_civil)):
@@ -350,7 +364,8 @@ async def atualizar_status_alerta(
             SELECT id, usuario_id, foto_path, endereco_manual, latitude, longitude,
                    tipo_anomalia, descricao, nivel_risco, confianca_ia, modelo_versao,
                    status, observacao_defesa_civil, classificado_em, resolvido_em,
-                   gravidade_percebida, tempo_surgimento, evolucao, local_anomalia, criado_em
+                   gravidade_percebida, tempo_surgimento, evolucao, local_anomalia,
+                   ruido_percebido, criado_em
             FROM alertas WHERE id = ?
             """,
             (alerta_id,)

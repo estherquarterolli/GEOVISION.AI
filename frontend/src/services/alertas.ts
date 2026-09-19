@@ -14,6 +14,7 @@ export interface NovoAlertaEntrada {
   tempoSurgimento?: string
   evolucao?: string
   localAnomalia?: string
+  ruidoPercebido?: string
 }
 
 export async function enviarAlerta(entrada: NovoAlertaEntrada): Promise<Alerta> {
@@ -39,6 +40,9 @@ export async function enviarAlerta(entrada: NovoAlertaEntrada): Promise<Alerta> 
   }
   if (entrada.localAnomalia) {
     dados.append('local_anomalia', entrada.localAnomalia)
+  }
+  if (entrada.ruidoPercebido) {
+    dados.append('ruido_percebido', entrada.ruidoPercebido)
   }
 
   // Comprime e anexa todas as fotos

@@ -88,6 +88,12 @@ def inicializar_banco():
             "tempo_surgimento TEXT",
             "evolucao TEXT",
             "local_anomalia TEXT",
+            # Pergunta adicionada após a validação com a engenheira civil
+            # consultora (16/09/2026): ela apontou que a leitura sensorial
+            # do morador (som, vibração ao pisar) capta risco que uma foto
+            # sozinha não capta. Alimenta a Tendência do método GUT — ver
+            # app/services/priorizacao.py.
+            "ruido_percebido TEXT",
         ):
             try:
                 cursor.execute(f"ALTER TABLE alertas ADD COLUMN {coluna}")

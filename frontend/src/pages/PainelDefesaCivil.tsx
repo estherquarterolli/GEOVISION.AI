@@ -18,6 +18,7 @@ import {
   ROTULO_TEMPO,
   ROTULO_EVOLUCAO,
   ROTULO_LOCAL,
+  ROTULO_RUIDO,
   type Alerta,
   type MetricasPainel,
   type StatusAlerta
@@ -360,11 +361,21 @@ export function PainelDefesaCivil() {
                             {FORMATADOR_DATA.format(new Date(alerta.criado_em))} · {ROTULO_STATUS[alerta.status]}
                           </p>
                         </div>
-                        {alerta.nivel_risco ? (
-                          <SeloRisco nivel={alerta.nivel_risco} tamanho="sm" />
-                        ) : (
-                          <span className="text-[10px] text-tinta-suave">Sem IA</span>
-                        )}
+                        <div className="flex shrink-0 items-center gap-1.5">
+                          {alerta.pontuacao_gut != null && (
+                            <span
+                              className="metrica text-[9px] font-bold text-marca-laranja bg-marca-laranja/10 rounded px-1.5 py-0.5"
+                              title="Prioridade GUT dentro do nível de risco"
+                            >
+                              GUT {alerta.pontuacao_gut}
+                            </span>
+                          )}
+                          {alerta.nivel_risco ? (
+                            <SeloRisco nivel={alerta.nivel_risco} tamanho="sm" />
+                          ) : (
+                            <span className="text-[10px] text-tinta-suave">Sem IA</span>
+                          )}
+                        </div>
                       </button>
                     </li>
                   )
@@ -516,8 +527,34 @@ export function PainelDefesaCivil() {
                           {alertaSelecionado.gravidade_percebida ? ROTULO_GRAVIDADE[alertaSelecionado.gravidade_percebida] : 'Não informado'}
                         </span>
                       </div>
+                      <div>
+                        <span className="text-tinta-suave block text-[9px]">Barulho / vibração</span>
+                        <span className="font-semibold text-tinta text-[11px]">
+                          {alertaSelecionado.ruido_percebido ? ROTULO_RUIDO[alertaSelecionado.ruido_percebido] : 'Não informado'}
+                        </span>
+                      </div>
                     </div>
                   </div>
+
+                  {/* Prioridade GUT — desempate dentro do mesmo nível de risco.
+                      Ver app/services/priorizacao.py e docs/metodologia-priorizacao-gut.md. */}
+                  {alertaSelecionado.pontuacao_gut != null && (
+                    <div className="border-t border-borda/60 pt-2.5 mt-1">
+                      <span className="text-marca-laranja font-bold text-[10px] uppercase tracking-wider block mb-2">
+                        Prioridade dentro do nível de risco (GUT)
+                      </span>
+                      <div className="flex items-center justify-between gap-2 bg-fundo/40 p-2.5 rounded-painel border border-borda/30">
+                        <div className="flex gap-3 text-[10px] text-tinta-suave">
+                          <span>G={alertaSelecionado.gut_gravidade}</span>
+                          <span>U={alertaSelecionado.gut_urgencia}</span>
+                          <span>T={alertaSelecionado.gut_tendencia}</span>
+                        </div>
+                        <span className="metrica font-extrabold text-marca-laranja text-sm" title="Gravidade × Urgência × Tendência (Gomide, Pujadas e Fagundes Neto, 2009)">
+                          {alertaSelecionado.pontuacao_gut}
+                        </span>
+                      </div>
+                    </div>
+                  )}
 
                   {alertaSelecionado.descricao && (
                     <div>
