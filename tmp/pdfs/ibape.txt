@@ -1,0 +1,1205 @@
+
+===== PAGE 1 =====
+CHECK-LIST PARA INSPEÇÕES PREDIAIS RESIDENCIAIS DE MÚLTIPLOS PAVIMENTOS:
+DESENVOLVIMENTO E APLICAÇÃO
+EMERSON MEIRELES DE CARVALHO
+LEVY SANTOS ALMEIDA
+
+===== PAGE 2 =====
+Check-list para inspeções prediais residenciais de múltiplos pavimentos:
+desenvolvimento e aplicação
+Resumo
+Com o aumento do número de acidentes e do custo de manutenção nas edificações,
+cresce cada vez mais a conscientização sobre a importância da inspeção predial. O
+objetivo deste trabalho é agregar e fornecer as orientações e procedimentos
+necessários para a realização da inspeção predial, através da elaboração de um
+check-list que contém um roteiro prático fundamentado nas normas pertinentes, para
+servir como fonte de consulta para profissionais habilitados que atuam ou desejam
+atuar nesta área, além de exemplificar um laudo de inspeção, com o auxílio de
+formulários produzidos. Através deste modelo, verifica-se que a inspeção predial é
+uma ferramenta importante para avaliação do estado de conservação das
+edificações e proporciona informações relevantes para a organização das futuras
+ações de manutenção. Sendo assim, o modelo proposto é compatível com a
+doutrina técnica, com diretrizes suficientes para a construção do laudo de inspeção
+predial que disseminarão os conceitos e benefícios deste instrumento e poderão
+auxiliar os profissionais atuantes nesta área.
+Palavras-chaves: Inspeção predial, Engenharia diagnóstica, Modelo de check-list,
+Laudo de inspeção.
+1
+
+===== PAGE 3 =====
+1. Exposição
+A Norma de Inspeção Predial do IBAPE/NA (2012) define: “Inspeção predial é
+a análise isolada ou combinada das condições técnicas, de uso e de manutenção da
+edificação”.
+Logo, a inspeção predial é uma vistoria aprimorada, que avalia as condições
+físicas e funcionais dos imóveis de uma edificação, a fim de identificar anomalias e
+falhas, sendo então, um instrumento importante de orientação das atividades de
+manutenção.
+A Norma do IBAPE/NA (2012) indica um roteiro prático para elaboração da
+inspeção, com indicação da obtenção de informações preliminares da edificação,
+análise da documentação, levantamento das irregularidades, classificação das
+irregularidades quanto ao grau de risco, definição das prioridades, fornecimento das
+recomendações técnicas, avaliação do estado de manutenção e uso, além de
+abrangência de aspectos sustentáveis.
+2. Desenvolvimento
+A ABNT (2012) e IBAPE/SP (2012) declaram que o check-list deve orientar a
+inspeção, considerando:
+a) Um roteiro de inspeções dos sistemas, subsistemas, elementos,
+equipamentos e componentes da edificação, ou seja, uma ordem cronológica da
+vistoria;
+b) As formas de manifestações patológicas esperadas por causa da
+degradação natural da edificação associados à sua vida útil. Deve-se observar as
+características de projeto dos elementos construtivos e o Manual de Operação, Uso
+e Manutenção.
+c) Os itens inspecionados devem verificar se as necessidades e exigências
+dos usuários estão sendo atendidas pelos sistemas construtivos e pelo plano de
+manutenção.
+A Norma do IBAPE/NA indica que a inspeção predial deve incluir,
+minimamente, os seguintes sistemas construtivos e elementos: estrutura,
+impermeabilização, instalações hidráulicas e elétricas, revestimentos externos em
+geral, esquadrias, revestimentos internos, elevadores, climatização, exaustão
+mecânica, ventilação, coberturas, telhados, combate a incêndio e SPDA.
+O check-list desenvolvido e aplicado é apresentado no Apêndice e abrange os
+seguintes tópicos:
+2.1. Obtenção de informações
+Entrevista preliminar com síndicos e/ou funcionários de terceirizadas, antes
+da inspeção, para fornecer informações importantes quanto às possíveis
+modificações e reformas da edificação original, assim como permitir melhor
+entendimento das práticas rotineiras de conservação e manutenção.
+2.2. Verificação e análise da documentação
+A verificação documental tem por objetivo identificar não conformidades
+técnicas e legais. As documentações administrativas, técnicas e de manutenção e
+operação devem ser solicitadas pelo inspetor predial para verificação, antes mesmo
+da inspeção propriamente dita. Após análise, devem ser registradas como
+2
+
+===== PAGE 4 =====
+orientações técnicas as possíveis ressalvas encontradas a documentação. Vale
+destacar, porém, que a inspeção predial não almeja legalizar a edificação.
+2.3. Formulário da inspeção de campo
+A inspeção de campo tem por objetivo constatar as condições do edifício,
+através do preenchimento do check-list e do registro fotográfico dos aspectos
+relevantes.
+Gomide, Pujadas e Fagundes Neto (2014) destacam que “tal listagem deverá
+abranger os sistemas construtivos das áreas externas e internas da edificação ou
+obra, bem como dos equipamentos e instalações”.
+O inspetor deve elaborar uma lista de verificação dos sistemas e subsistemas
+construtivos, adequando-a a complexidade da edificação. Os itens da lista serão,
+portanto, os tópicos inspecionados.
+O formulário desenvolvido contém o roteiro da vistoria por sistemas, para
+ambientes internos, e por áreas da edificação, para ambientes externos.
+Esta parte do check-list também inclui itens de avaliação da manutenção e do
+uso, assim como das recomendações gerais e de sustentabilidade, por considerar
+que as informações requeridas por estes tópicos devem ser obtidas durante a
+inspeção de campo.
+2.4. Avaliação da manutenção
+A inspeção predial é uma ferramenta importante de análise do plano de
+manutenção, o qual pode ser ajustado para suprir as reais necessidades do
+empreendimento. Segundo a Norma do IBAPE-NA, devem ser verificados o Plano
+de Manutenção e as condições de execução das atividades propostas.
+As manutenções são avaliadas como: ATENDE, ATENDE PARCIALMENTE
+ou NÃO ATENDE.
+2.5. Avaliação do uso
+Quanto ao uso, compara-se as premissas de projeto com as condições reais
+de utilização. A ABNT (2013a) determina que os projetos especifiquem o uso
+previsto para a edificação. Caso não seja possível acessar os projetos, o perito deve
+registrar no laudo e basear sua avaliação nas referências técnicas, leis específicas
+ou instruções técnicas pertinentes. A IBAPE/NA (2012) classifica como:
+a) Uso regular – condições de uso da edificação coerentes com as
+estabelecidas em projeto.
+b) Uso irregular – condições de uso de projeto não são respeitadas, uso real
+em desacordo com o pressuposto.
+2.6. Recomendações gerais e de sustentabilidade
+A Norma do IBAPE Nacional considera que a sustentabilidade deve
+contemplar além dos aspectos ambientais (permeabilidade de solo, descartes
+irregulares para redes públicas, contaminação do esgoto doméstico, etc), questões
+como o uso racional de recursos naturais e preservação do conforto e segurança
+dos usuários.
+IBAPE/SP (2012) cita outros tópicos que devem ser considerados neste
+tópico, por exemplo:
+• Situações de interdição parcial ou total de sistemas e da própria edificação;
+3
+
+===== PAGE 5 =====
+• Situações administrativas que envolvam interdições pelos órgãos públicos e
+multas;
+• Falta de acessibilidade em determinados locais ou sistemas. Observar
+cumprimento da NBR 9050;
+• Existência ou não de plano de manutenção, bem como registros das
+atividades de manutenção realizadas;
+• Mudanças significativas no uso que causem deficiências futuras;
+• Periodicidade das inspeções prediais futuras.
+2.7. Registro fotográfico
+O relatório fotográfico é fundamental para facilitar a identificação das não
+conformidades. A planilha desenvolvida do registro fotográfico contém, além das
+descrições das irregularidades, as respectivas classificações e recomendações
+técnicas.
+2.8. Classificação das anomalias e falhas
+A Norma de Inspeção Predial do IBAPE-NA propõe a seguinte classificação:
+ Anomalia: endógena, exógena, natural ou funcional.
+ Falha: de planejamento, de execução, operacional ou gerencial.
+2.9. Classificação quanto ao grau de criticidade
+A classificação quanto à criticidade de uma anomalia ou falha deve ser
+realizada levando em consideração aspectos técnicos, como probabilidade de
+causar acidentes, custo de reparo, grau de deterioração, comprometimento do valor
+imobiliário e perda do desempenho desejado.
+Segundo a Norma do IBAPE Nacional, são classificadas da seguinte forma:
+a) CRÍTICO: risco de provocar danos contra a saúde e segurança das
+pessoas e do meio ambiente; perda excessiva de desempenho e funcionalidade
+causando possíveis paralisações; aumento excessivo de custo de manutenção e
+recuperação; comprometimento sensível de vida útil.
+b) MÉDIO: risco de provocar a perda parcial de desempenho e funcionalidade
+da edificação sem prejuízo à operação direta de sistemas, e deterioração precoce.
+c) MÍNIMO: risco de causar pequenos prejuízos à estética ou atividade
+programável e planejada, sem incidência ou sem a probabilidade de ocorrência dos
+riscos críticos e regulares, além de baixo ou nenhum comprometimento do valor
+imobiliário.
+2.10. Recomendações técnicas
+As recomendações técnicas devem ser dadas com linguagem inteligível,
+simples, para permitir o entendimento inclusive de pessoas sem conhecimento
+técnico, afinal, não se trata de uma prescrição técnica, sendo esta de
+responsabilidade dos profissionais contratados para sua realização, não faz parte do
+trabalho de inspeção.
+2.11. Indicação de prioridade (geral e por sistema)
+Após o levantamento das anomalias e falhas, torna-se necessário priorizar as
+ações corretivas para melhor aproveitamento dos recursos e diminuição dos
+impactos de redução do desempenho.
+4
+
+===== PAGE 6 =====
+Neste trabalho será utilizado o método GUT para ordenamento das
+prioridades. Esta ferramenta de gerenciamento de risco faz parte da teoria da
+decisão econômica, contudo pode ser ajustada para uso em outras áreas, inclusive
+a engenharia civil (KNAPP; OLIVAN, 2015).
+Como explicam Costa e Zancan (2012), para adequar o método à inspeção
+predial, “deve-se atribuir pesos a cada anomalia existente e fazer a multiplicação
+entre eles obtendo-se assim, o total de pontos”.
+Gomide, Pujadas e Fagundes Neto (2009) propuseram a adaptação do
+sistema GUT para manutenção predial, conforme Figura 1:
+Figura 1 – Critérios do grau de risco e pesos referentes a metodologia utilizada para
+a classificação da ordem de prioridades das irregularidades (GOMIDE, PUJADAS E
+FAGUNDES NETO, 2009)
+Quanto maior o valor final maior a criticidade e prioridade. Pode-se então
+facilmente elencar as prioridades, com menor subjetividade no trabalho. Esta
+ordenação servirá para avaliar e auxiliar o plano de manutenção da edificação, bem
+como verificar não conformidades concentradas em um sistema, subsistema ou área
+específica.
+Para facilitar as ações de manutenção, o check-list prevê a organização das
+irregularidades por sistemas.
+3. Conclusão
+Foi produzida uma ferramenta que agrega as orientações e procedimentos
+para elaboração do laudo de inspeção, segundo a metodologia da Norma de
+Inspeção Predial Nacional do IBAPE/NA e os princípios da inspeção predial
+observados em livros, revistas e publicações técnicas, exemplificado pela inspeção
+5
+
+===== PAGE 7 =====
+executada. Estas diretrizes constituem uma fonte de informações para os futuros
+trabalhos neste assunto.
+O check-list elaborado apresentou-se eficaz e de fácil aplicação, uma
+ferramenta importante para auxiliar o inspetor durante o desenvolvimento da
+inspeção predial. Deve-se ressaltar que a inspeção requer um conhecimento
+diversificado, obtido com a prática profissional. Sendo assim, o check-list pode ser
+aprimorado a cada ganho de experiência.
+Como sugestão para novos trabalhos ligados ao tema, recomenda-se o
+desenvolvimento da inspeção predial com os princípios da qualidade predial total,
+considerando a visão sistêmica tridimensional, que são as condições técnicas, de
+manutenção e uso, atribuindo pesos igualitários para estes critérios.
+Outra proposta é inserir critérios que avaliem, de maneira objetiva, o
+atendimento às exigências dos usuários, com itens de segurança, habitabilidade e
+sustentabilidade, haja vista o que preconiza a NBR 15575 (2013).
+4. Bibliografia
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 5674:
+Manutenção de edificações - requisitos para o sistema de gestão de manutenção.
+Rio de Janeiro, 2012.
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 15575: Edifícios
+habitacionais - desempenho. Rio de Janeiro, 2013.
+COSTA, A. dos S.; ZANCAN, E. C. Inspeção predial: estudo de caso de um
+edifício residencial. Artigo submetido ao Curso de Engenharia Civil da UNESC como
+requisito parcial para obtenção do título de Engenheiro Civil. Criciúma, 2012.
+GOMIDE, T. L. F.; PUJADAS, F. Z. A.; FAGUNDES NETO, J. C. P.
+Engenharia diagnóstica em edificações. São Paulo: Pini, 2009.
+GOMIDE, T. L. F.; PUJADAS, F. Z. A.; FAGUNDES NETO, J. C. P. Inspeção
+predial total: diretrizes e laudos no enfoque da qualidade total e da engenharia
+diagnóstica. 2. ed. São Paulo: Pini, 2014.
+INSTITUTO BRASILEIRO DE AVALIAÇÕES E PERÍCIAS DE ENGENHARIA.
+Norma de inspeção predial nacional. São Paulo, 2012. Disponível em:
+<http://ibape-nacional.com.br/biblioteca/wp-content/uploads/2012/12/Norma-de-
+Inspe%C3%A7%C3%A3o-Predial-IBAPE-Nacional.pdf>. Acesso em: 13 jun. 2017.
+INSTITUTO BRASILEIRO DE AVALIAÇÕES E PERÍCIAS DE ENGENHARIA
+DE SÃO PAULO. Inspeção predial: check-up predial: guia da boa manutenção. 3.
+ed. São Paulo, 2012.
+KNAPP, L.; OLIVAN, L. I. Classificação de desempenho de edificação
+habitacional – método GUT - estruturas metálicas. In: INSTITUTO BRASILEIRO DE
+AVALIAçõES E PERíCIAS (IBAPE). Proc. XVIII Congresso Brasileiro de
+Engenharia de Avaliações e Perícias. Belo Horizonte, 2015. CD-ROM.
+6
+
+===== PAGE 8 =====
+Apêndices
+7
+
+===== PAGE 9 =====
+Apêndice A – Entrevista para obtenção de informações preliminares da
+edificação
+ENTREVISTA PRELIMINAR
+Responsável: Data:
+ITEM ANOMALIAS APRESENTADAS LOCALIZAÇÕES OBSERVAÇÕES
+1 Trincas/rachaduras em fachadas/paredes
+2 Desprendimento de revestimento de fachadas/paredes
+3 Desprendimento de revestimento de tetos e forros
+4 Trincas/rachaduras em pisos
+5 Desprendimento/afundamento dos pisos
+6 Caimento irregular dos pisos
+7 Desgaste anormal de piso cimentado
+8 Vazamentos pelas prumadas no subsolo ou áreas comuns do térreo
+9 Infiltrações pelas paredes do subsolo
+10 Esquadrias soltas, desalinhadas ou outro
+11 Ferragens e metais avariados
+12 Falta de energia elétrica/água
+13 Curto-circuito/sobrecarga elétrica
+14 Problemas no funcionamento dos elevadores
+15 Problemas no funcionamento do sistema de abastecimento de água
+16 Problemas no funcionamento do ar-condicionado
+17 Problemas no funcionamento do sistema de segurança
+18 Problemas de funcionamento do gerador
+19 Problemas de funcionamento da pressurização
+20 Problemas de funcionamento das bombas
+21 Problemas de funcionamento dos portões
+22 Outros:
+23 Outros:
+24 Outros:
+25 Outros:
+8
+
+===== PAGE 10 =====
+ITEM FALHAS APRESENTADAS LOCALIZAÇÕES OBSERVAÇÕES
+1 Ausência/precariedade de repintura
+2 Ausência/precariedade de limpeza
+3 Ausência/precariedade de lubrificação
+4 Ausência/precariedade de revisão das esquadrias
+5 Ausência/precariedade de revisão elétrica
+6 Ausência/precariedade de revisão hidráulica
+7 Ausência/precariedade de revisão paisagismo
+8 Outros:
+9 Outros:
+10 Outros:
+ITEM IRREGULARIDADES/REFORMAS LOCALIZAÇÕES OBSERVAÇÕES
+1 Coleta de lixo em local indevido
+2 Simultaneidade de chamadas de elevadores
+3 Antenas instaladas em locais indevidos
+4 Vagas de garagens insuficientes
+5 Dificuldade de comunicação
+6 Pichações em paredes
+7 Sujidades na piscina
+8 Reformas não previstas/autorizadas na garagem
+9 Reformas no térreo
+10 Reformas na cobertura
+11 Outros:
+12 Outros:
+13 Outros:
+14 Outros:
+9
+
+===== PAGE 11 =====
+Apêndice B – Análise de documentos
+VERIFICAÇÃO E ANÁLISE DA DOCUMENTAÇÃO
+Responsável: Data:
+Renovação /
+DOCUMENTAÇÃO Possui? Observação
+atualização
+Relação de proprietários e moradores A cada alteração
+Quando
+Regimento interno do Condomínio
+necessário
+Livro de atas de assembleias/presença A cada alteração
+Ata de eleição do síndico (última) -
+A cada alteração
+Inscrição do condomínio na Receita Federal (CNPJ)
+do síndico
+Manual de Uso, Operação e Manutenção (Manual do Proprietário e do
+-
+Síndico)
+Plano de Manutenção e Operação e Controle e seus relatórios Quando
+(PMOC) necessário
+Projetos legais -
+Memorial descritivo dos sistemas construtivos -
+Atestado de Regularidade do Corpo de Bombeiros (LEI Nº 4183) Anualmente N° Val.: / /
+Selos dos extintores (INMETRO) e validade da recarga - Val.: / /
+Relatório de manutenção dos extintores Anualmente Val.: / /
+Relatório de manutenção das mangueiras dos hidrantes Anualmente Val.: / /
+Relatório de inspeção das mangueiras dos hidrantes 6 meses Val.: / /
+Relatório de Inspeção Anual de Elevadores (RIA) Anualmente N° Val.: / /
+Atestado do Sistema de Proteção a Descarga Atmosférica - SPDA Anualmente N° Val.: / /
+Atestado de medição ôhmica 5 anos N° Val.: / /
+Certificado de limpeza e desinfecção dos reservatórios 6 meses N° Val.: / /
+Relatório do acompanhamento de rotina da Manutenção Geral -
+Relatórios dos acompanhamentos das manutenções dos sistemas
+-
+específicos (elevador, gerador, bomba, ar condicionado, etc)
+Apólice de seguro de incêndio ou outro sinistro que causa destruição
+Anualmente N° Val.: / /
+(obrigatório - Lei n° 4.591)
+Laudos de vistorias/inspeções anteriores 5 anos
+Legenda: S - Sim N - Não NA - Não se Aplica
+10
+
+===== PAGE 12 =====
+Apêndice C – Lista de verificação utilizada na inspeção de campo
+CHECK-LIST - INSPEÇÃO PREDIAL
+Responsável pela inspeção: Data:
+Nome do edifício:
+End.: Bairro:
+Complemento: CEP:
+CNPJ: Responsável pela edificação:
+Fone: Email:
+Tipologia: ( ) Residencial ( ) Comercial ( ) Industrial ( ) Outros:
+Nº de pavimentos: Ano de construção:
+Construtora: Administradora:
+Resp. para acompanhamento:
+Áreas e equipamentos específicos:
+Piscina Elevadores
+Playground Geradores
+Quadras esportivas Central ar cond.
+Salão de Jogos SPDA
+Brinquedoteca Central de GLP
+Academia Outros: _______________________
+Outros: _______________________ _______________________
+_______________________ _______________________
+_______________________
+Observações relevantes
+11
+
+===== PAGE 13 =====
+TÓPICOS DA INSPEÇÃO DE CAMPO
+( ) Concreto armado ( ) Madeira ( ) Metálica ( ) Alv. Estrutural
+1. ESTRUTURAS
+Local Foto n° Observação
+Fissuras
+Destacamento / desagregação / desplacamento
+Armadura exposta
+Corrosão
+Peça estrutural com deformação excessiva
+Irregularidades geométricas, falhas de concretagem
+Eflorescência / lixiviação / infiltração
+Outro:
+2. FUNDAÇÃO Local Foto n° Observação
+Erosão do solo
+Recalque diferencial
+Outro:
+3. VEDAÇÃO Local Foto n° Observação
+Fissura/Trinca
+Eflorescência
+Infiltração
+Irregularidades geométricas (esquadro / prumo / nível /
+planeza)
+Outro:
+4. REVESTIMENTO
+( ) PVC ( ) Gesso ( ) Madeira ( ) Outro:
+4. 1. FORRO
+Local Foto n° Observação
+Deformação excessiva
+Fissura
+Desencaixe
+Utilização de material sujeito a corrosão
+Deficiência no dimensionamento ou inexistência de
+alçapões
+Outro:
+12
+
+===== PAGE 14 =====
+( ) Argamassado ( ) Pintura ( ) Cerâmico ( ) Gesso
+4. 2. PAREDE
+Local Foto n° Observação
+Fissura
+Destacamento / desagregação / descolamento
+Infiltração
+Eflorescência / manchas de mofo / bolor
+Falta ou deficiência nas juntas de trabalho e rejunte
+Descascamento / bolhas / enrugamento
+Falha rejunte
+Abertura improvisada para passagem de cabos
+Som cavo
+Outro:
+( ) Argamassado ( ) Cerâmico ( ) Alta resist. ( ) Outro:
+4. 3. PISO
+Local Foto n° Observação
+Fissura
+Falta ou deficiência nas juntas de trabalho e rejunte
+Destacamento / descolamento
+Caimento inadequado nas áreas molháveis ou laváveis
+Escadas sem proteção antiderrapante e pisos externos
+escorregadios
+Manchas decorrentes de umidade ascendente do solo /
+Eflorescência
+Abatimento do piso
+Som cavo
+Outro:
+( ) Pintura ( ) Cerâmico ( ) Outro:
+4. 4. FACHADA
+Local Foto n° Observação
+Fissura
+Destacamento / desagregação / descolamento
+Descascamento / bolhas / enrugamento
+Eflorescência / manchas de mofo / bolor
+Falta ou deficiência nas juntas de trabalho e rejunte
+Deficiência na pintura, oxidação e corrosão das
+esquadrias
+Desgaste (fissuras, escurecimentos, perda de cor) das
+esquadrias
+Ataque de pragas nas esquadrias
+13
+
+===== PAGE 15 =====
+Vidros soltos ou quebrados
+Rompimento ou descolamento do material selante
+Caixa de ar condicionado danificada
+Outro:
+( ) Argamassado ( ) Cerâmico ( ) Madeira ( ) Outro:
+5. ESQUADRIA
+Local Foto n° Observação
+Deficiência na pintura, oxidação e corrosão
+Ataque de pragas
+Perda de mobilidade e/ou deficiências na abertura e
+fechamento
+Folga na fixação dos vidros, vidros soltos ou quebrados
+Rompimento ou descolamento do material selante /
+Infiltração
+Componentes danificados
+Outro:
+6. IMPERMEABILIZAÇÃO Local Foto n° Observação
+Infiltração
+Descolamento da manta
+Sistema de impermeabilização perfurado
+Ressecamento e/ou craqueamento do sistema
+impermeabilizante por falta de proteção mecânica
+Falta de junta de dilatação em proteção mecânica
+Falta de caimento para os ralos
+Falta de impermeabilização no teto dos reservatórios
+Outro:
+7. INSTALAÇÃO HIDROSSANITÁRIA Local Foto n° Observação
+Vazamento
+Deterioração / deformação nas tubulações
+Tampas de reservatórios de água inadequadas
+Não conformidade na pintura das tubulações
+Falta de identificação nos registros do barrilete
+Tubulações obstruídas
+Entupimento / extravasamento de calhas / ralos
+Outro:
+14
+
+===== PAGE 16 =====
+8. INSTALAÇÃO DE GÁS Local Foto n° Observação
+Vazamento
+Deterioração / corrosão das tubulações
+Não conformidade na pintura das tubulações
+Não conformidade nas dimensões mínimas do abrigo
+Falta de abertura inferior do abrigo
+Abertura do abrigo permitindo acesso pela via pública
+Falta de sinalização obrigatória
+Outro:
+9. INSTALAÇÃO ELÉTRICA Local Foto n° Observação
+Lâmpadas queimadas / ausência de lâmpadas
+Ataque de pragas urbanas em quadros elétricos e de
+telefonia com fundo de madeira
+Modificações das instalações elétricas / improvisos
+Superaquecimento
+Fiações e cabos elétricos aparentes / com muitas
+emendas / partes vivas expostas
+Curto circuito
+Quadro de luz obstruído / trancado / sem identificação dos
+circuitos
+Ausência proteção barramento
+Falha de tomada / interruptor
+Cerca elétrica danificada
+Outro:
+10. MECANIZAÇÃO
+10. 1. ELEVADORES Local Foto n° Observação
+Cabina desprovida de corrimão
+Quebra de botões da cabina / pavimentos
+Porta da cabina abre em movimento ou não fecha
+totalmente
+Falha de funcionamento do alarme / interfone / iluminação
+/ ventilação
+Movimento do elevador com trepidações ou paradas
+bruscas
+Desnível entre o piso da cabina e o pavimento maior que
+5mm / 20mm (com inclinação)
+Poço de elevador molhado / sujo / obstruído / com falha
+do sistema de iluminação
+Vazamento óleo das máquinas
+Outro:
+15
+
+===== PAGE 17 =====
+10. 2. CLIMATIZAÇÃO Local Foto n° Observação
+Filtro de ar com excesso de sujeira
+Ruídos anormais durante funcionamento dos
+condicionares
+Aparelho subdimensionado
+Ar condicionado não ajustado conforme a ABNT NBR
+6401
+Outro:
+10. 3. VENTILAÇÃO E EXAUSTÃO MECÂNICA Local Foto n° Observação
+Erros no dimensionamento / instalação do sistema
+Falta de testes periódicos
+Aparelho subdimensionado
+Falta de treinamento de operadores locais
+Presença de contaminantes próximos às tomadas de ar
+Falta de limpeza periódica dos filtros e caixas de gordura
+Outro:
+10. 4. MOTOR ELÉTRICO Local Foto n° Observação
+Aquecimento excessivo do motor
+Partidas demoradas
+Falha do funcionamento do quadro de comando elétrico
+Degradação da fiação e dos isolantes elétricos
+Local com excesso de poeiras
+Ataques por vapores ácidos e corrosivos
+Vazamentos de óleos e graxas
+Outro:
+10. 5. BOMBA HIDRÁULICA Local Foto n° Observação
+Problemas de vedação
+rda de lubrificação
+Materiais armazenados inadequadamente na casa de
+bomba
+Óleo degradado / contaminado
+Níveis de ruído / vibração muito altos
+Vazamentos na carcaça da bomba
+Outro:
+16
+
+===== PAGE 18 =====
+Estrut.: ( ) Madeira ( ) Metálica ( ) Laje imperm. ( ) Outro:
+11. COBERTURA Telha: ( ) Cerâmica ( ) Metálica ( ) Fibrocimento ( ) Outro:
+Local Foto n° Observação
+Deformações excessivas
+Abertura de frestas
+Umidade na estrutura
+Deslocamentos, desalinhamentos e quebras de telhas
+Corrosão de parafusos de fixação / rufo metálico / calha
+metálica
+Ressecamentos das borrachas de vedação / vedantes de
+calhas e rufos
+Destacamentos de rufos
+Transbordamento e entupimento de calha / ralo
+Ausência da grelha do ralo
+Ausência de extravasor da calha
+Caimento do telhado insuficiente
+Falta de condições de segurança
+Outro:
+12. COMBATE A INCÊNDIO
+12. 1. EXTINTORES Local Foto n° Observação
+Descarregados / prazos de validade vencidos
+Lacre violado / vencido
+Sem indicação da sua classe
+Quadro de instruções ilegível ou inexistente
+Quantidade insuficiente / instalados acima de 1,60m /
+abaixo de 0,20m do piso acabado
+Mangueira de descarga apresenta danos / deformação /
+ressecamento
+Sinalização incorreta
+Outro:
+12. 2. HIDRANTES Local Foto n° Observação
+Falta de conservação e sinalização da bomba de incêndio
+Dispositivo de comando da bomba quebrado / em mau
+estado de conservação
+Mau estado de conservação das caixas de hidrantes
+Mangueira do hidrante enrolada inadequadamente /
+furada / cortada / ausente
+Registro emperrado/com vazamento
+Mangueira conectada
+17
+
+===== PAGE 19 =====
+Ausência da mangueira
+Ausência do esguicho
+Outro:
+12. 3. SAÍDA DE EMERGÊNCIA Local Foto n° Observação
+Ausência de sinalização das rotas de fuga e saídas de
+emergência
+Portas obstruídas
+Portas corta-fogo em mau estado de funcionamento das
+fechaduras
+Portas corta-fogo abertas e travadas com objetos
+Falha de iluminação autônoma
+Portas que abrem para o interior do edifício
+Saídas com menos de 1,20m de largura
+Escada sem corrimão
+Outro:
+12. 4. CHUVEIROS AUTOMÁTICOS Local Foto n° Observação
+Detectores sujos / pintados
+Área de atuação prejudicada por obstáculos
+Materiais como fios e encanamentos amarrados nas
+tubulações do sistema
+Outro:
+13. SPDA Local Foto n° Observação
+Ausência do sistema (A>1500m² ou H>12m)
+Queda de haste / antenas
+Corrosão em cabos / conexões / hastes
+Descidas insuficientes (exigência de uma descida a cada
+20m de perímetro)
+Ausência de luz de topo na haste do SPDA
+Outro:
+18
+
+===== PAGE 20 =====
+14. ÁREA DE LAZER
+14. 1. PISCINA Local Foto n° Observação
+Falha da impermeabilização
+Afundamento / trinca / descolamento / desgaste do
+revestimento / piso
+Falha no rejunte
+Equipamento de apoio / proteção com folga / solto /
+corrosão / ausente
+Armazenar cloro em local não ventilado
+Outro:
+14. 2. PLAYGROUND Local Foto n° Observação
+Falha na estrutura
+Afrouxamento / rompimento de pinos / porcas / parafusos
+Peças ausentes / dobradas / rompidas / afrouxadas e/ou
+ganchos gastos / corrosão
+Arestas ou cantos vivos
+Falta de lubrificação / emperramento / movimento anormal
+Barra de segurança / corrimão / barreira ausentes,
+rompidas ou afrouxadas
+Piso / degrau quebrado ou sem superfície antiderrapante
+Problema de escoamento da água pluvial
+Outro:
+14. 3. QUADRA ESPORTIVA Local Foto n° Observação
+Desgaste da pintura / do piso
+Corrosão da estrutura do alambrado de fechamento ou
+das cestas
+Furos no piso para encaixe de postes sem tampas
+Piso com falha no caimento
+Outro:
+14. 4. BRINQUEDOTECA E SALÃO DE JOGOS Local Foto n° Observação
+Tomadas baixas desprotegidas
+Quinas vivas em paredes / mobiliários
+Pisos desprotegidos / com emborrachado danificado
+Outro:
+19
+
+===== PAGE 21 =====
+15 - AVALIAÇÃO DA MANUTENÇÃO Há plano de manutenção? ( ) Sim ( ) Não
+Grau de atendimento
+CRITÉRIOS
+Superior Regular Inferior
+Plano de manutenção coerente em relação ao especificado pelos
+fabricantes, Normas e instruções técnicas
+Adequação de rotinas e frequências dos serviços à idade das instalações,
+ao uso, exposição ambiental
+Condições mínimas necessárias de acesso aos equipamentos e sistemas,
+permitindo a plena realização das atividades propostas no Plano de
+Manutenção
+Condições de segurança para o mantenedor e usuários da edificação,
+durante a execução da manutenção
+Documentos pertinentes à manutenção
+Atendimento à ABNT NBR 5674
+Observações:
+A MANUTENÇÃO: ( ) ATENDE ( ) ATENDE PARCIALMENTE ( ) NÃO ATENDE
+16 - AVALIAÇÃO DO USO
+Condições de uso da edificação coerentes com as estabelecidas em projeto: ( ) SIM ( ) NÃO
+Observações:
+17 - RECOMENDAÇÕES DE SUSTENTABILIDADE
+Medidores de consumo de água individuais ( ) SIM ( ) NÃO
+Medidores de consumo de energia individuais ( ) SIM ( ) NÃO
+Instalação de lâmpadas eficientes ( ) SIM ( ) NÃO
+Coleta seletiva de lixo ( ) SIM ( ) NÃO
+Treinamento dos funcionários e usuários para evitar desperdício e poluição ( ) SIM ( ) NÃO
+Observações:
+18 - RECOMENDAÇÕES GERAIS
+Situações de interdição parcial ou total de sistemas e da própria edificação ( ) SIM ( ) NÃO
+Situações administrativas que envolvam interdições pelos órgãos públicos e
+( ) SIM ( ) NÃO
+multas
+Falta de acessibilidade em determinados locais ou sistemas ( ) SIM ( ) NÃO
+Existência de plano de manutenção ( ) SIM ( ) NÃO
+Mudanças significativas no uso que causem deficiências futuras ( ) SIM ( ) NÃO
+Periodicidade das inspeções prediais ( ) SIM ( ) NÃO
+Observações:
+20
+
+===== PAGE 22 =====
+Apêndice D – Exemplo de laudo de inspeção predial
+Laudo de Inspeção Predial
+Abril/2017
+21
+
+===== PAGE 23 =====
+1. Informações gerais
+– Identificação do solicitante
+Com o propósito de manter em sigilo a identidade do imóvel, não serão
+divulgados dados do solicitante e acompanhante da inspeção, assim como detalhes
+da localização.
+– Classificação do objeto da inspeção
+Imóvel.
+– Localização
+Xxxxxxxxxx
+– Data da diligência
+A inspeção ocorreu nos dias 15, 16 e 20 de abril de 2017.
+– Descrição técnica do objeto
+Edifício residencial construído na cidade de xxxxxxxxx, composto por 1 bloco
+com 12 andares, sendo 4 unidades residenciais por andar, e pavimento térreo.
+Prédio executado em estrutura de concreto armado, com alvenaria de vedação em
+bloco cerâmico, telhamento de fibrocimento e fachadas em revestimento cerâmico e
+pintura.
+Possui 2 elevadores, piscina, salão de festas, copa, bicicletário, casa de lixo,
+casa de gás, casa de bombas, casa do gerador e centro de medição de energia
+elétrica.
+– Tipologia e padrão construtivo
+Prédio residencial multifamiliar - padrão normal.
+– Idade da edificação
+Aproximadamente 35 anos.
+2. Nível de inspeção
+Em razão da idade da edificação, complexidade de sistemas, tipologia
+construtiva e padrão construtivo, classifica-se a inspeção como Nível 2 – edificações
+de média complexidade, com vários pavimentos e participação de empresas
+especializadas para manutenção de equipamentos específicos.
+3. Documentação solicitada, entregue e analisada
+Antes da vistoria, foram solicitados e analisados os principais documentos
+técnicos e legais que requerem atenção por parte do condomínio. A lista de
+documentos é compatível com a norma nacional de inspeção predial, adaptada para
+a edificação, em concordância com o tipo e complexidade, instalações e sistemas
+construtivos a serem inspecionados, a seguir descrita:
+ Relação de proprietários e moradores
+ Regimento interno do Condomínio
+ Livro de atas de assembleias/presença
+ Ata de eleição do síndico (última)
+22
+
+===== PAGE 24 =====
+ Inscrição do condomínio na Receita Federal (CNPJ)
+ Manual de Uso, Operação e Manutenção (Manual do Proprietário e do
+Síndico)
+ Plano de Manutenção e Operação e Controle e seus relatórios (PMOC)
+ Projetos legais
+ Memorial descritivo dos sistemas construtivos
+ Atestado de Regularidade do Corpo de Bombeiros (Lei nº XXXX)
+ Selos dos extintores (INMETRO) e validade da recarga
+ Relatório de manutenção dos extintores
+ Relatório de manutenção das mangueiras dos hidrantes
+ Relatório de inspeção das mangueiras dos hidrantes
+ Relatório de Inspeção Anual de Elevadores (RIA)
+ Atestado do Sistema de Proteção a Descarga Atmosférica - SPDA
+ Atestado de medição ôhmica
+ Certificado de limpeza e desinfecção dos reservatórios
+ Relatório do acompanhamento de rotina da Manutenção Geral
+ Relatórios dos acompanhamentos das manutenções dos sistemas
+específicos (elevador, gerador, bomba, ar condicionado, etc.)
+ Apólice de seguro de incêndio ou outro sinistro que causa destruição
+(obrigatório - Lei n° 4.591)
+Constatou-se a ausência dos manuais de operação e manutenção, entre os
+quais os manuais do síndico e do proprietário, assim como não existe plano de
+manutenção, condição severamente prejudicial para os serviços de manutenção
+predial, haja vista que o condomínio executa apenas a manutenção corretiva ao
+invés da preventiva. Consequentemente, há um desgaste precoce de algumas
+partes do imóvel e os custos com a manutenção são elevados.
+Destaca-se que o imóvel não possui projeto de prevenção de combate a
+incêndio, bem como Atestado de Regularidade do Corpo de Bombeiros. Como
+resultado, há deficiências e falhas no sistema de combate a incêndio, tais como:
+ausência de iluminação de emergência, sinalização precária da rota de fuga, apenas
+um extintor por andar, tipo BC (exigência de no mínimo dois, sendo um do tipo A e
+outro do tipo BC, ou um do tipo ABC), assim como caixas dos hidrantes e
+mangueiras comprometidas (sem registro de manutenção). Esta situação coloca em
+risco a vida dos moradores e a integridade da edificação, pois em caso de incêndio
+não terá as condições mínimas exigidas para combate-lo. Além disso, o condomínio
+está suscetível a sofrer penalidades em caso de fiscalização do Corpo de
+Bombeiros. O imóvel pode ainda receber sanções do Corpo de Bombeiros por não
+dispor de registro de medição ôhmica do SPDA. Este teste é essencial para
+comprovar a eficiência do sistema de para-raios.
+Vale acentuar que o Regimento Interno se encontra desatualizado. Sua
+revisão é necessária para favorecer um convívio harmonioso entre os moradores e
+proprietários.
+Por fim, ressalta-se a importância dos cuidados com o arquivo, com a
+necessidade de preservação da documentação e transferência formal a cada
+mudança de síndico.
+4. Informações obtidas
+23
+
+===== PAGE 25 =====
+Com a finalidade de conhecer melhor as práticas rotineiras de manutenção,
+bem como a situação geral de conservação do prédio, foi realizado uma entrevista
+preliminar com a zeladoria, seguindo um roteiro preestabelecido. Além disso, a
+síndica do condomínio forneceu informações relevantes sobre o histórico da
+edificação.
+5. Planejamento da inspeção
+Nos dias 15 e 16 de abril de 2017 foram realizadas a entrevista com a
+zeladoria e a análise da documentação, respectivamente. A inspeção de campo foi
+feita no dia 20 de março de 2017, desenvolvida no sentido da cobertura para os
+pavimentos inferiores, incluindo todas as áreas comuns, com acompanhamento
+parcial da zeladoria.
+Foram levantadas todas as falhas e anomalias aparentes da edificação,
+através do preenchimento do check-list e registro fotográfico.
+6. Lista de verificação dos elementos construtivos
+Para auxiliar a anotação das não conformidades foi utilizada uma lista de
+verificação (check-list), com base nas orientações da Norma Nacional de Inspeção
+Predial, levando em consideração a tipologia, padrão e as manifestações
+patológicas esperadas.
+24
+
+===== PAGE 26 =====
+7. Relatório fotográfico
+FOTO N° 1
+NÃO CONFORMIDADE Constadada parte da estrutura de fixação da escada solta.
+SISTEMA
+COBERTURA
+RECOMENDAÇÕES TÉCNICAS
+Providenciar chumbamento da estrutura
+de fixação.
+Exógena
+Endógena
+Anomalia Crítico
+Natural
+Funcional
+Classificação Criticidade Médio
+Planejamento
+Execução
+Falha Mínimo
+Operacional
+Gerencial
+FOTO N° 2
+Improvisações nas instalações das centrais telefônica, internet e tv a cabo. Centrais
+NÃO CONFORMIDADE
+eletrônicas próximas à janela, sujeitas à aspersão de água.
+SISTEMA
+INSTALAÇÃO ELÉTRICA
+RECOMENDAÇÕES TÉCNICAS
+O respingo de água pode comprometer
+as instalações. Sugere-se transferir as
+centrais para outra parede. Organizar
+centrais e cabos.
+Exógena
+Endógena
+Anomalia Crítico
+Natural
+Funcional
+Classificação Criticidade Médio
+Planejamento
+Execução
+Falha Mínimo
+Operacional
+Gerencial
+25
+
+===== PAGE 27 =====
+FOTO N° 3
+NÃO CONFORMIDADE Corrosão das tubulações de ferro galvanizado do barrilete.
+SISTEMA
+INST. HIDROSSANITÁRIA
+RECOMENDAÇÕES TÉCNICAS
+Não há projeto hidráulico. Contratar
+empresa especializada para verificar
+integridade de todo o sistema hidráulico
+e elaborar projeto.
+Exógena
+Endógena
+Anomalia Crítico
+Natural
+Funcional
+Classificação Criticidade Médio
+Planejamento
+Execução
+Falha Mínimo
+Operacional
+Gerencial
+FOTO N° 4
+Corrosão e vazamento nas tubulações e conexões de ferro galvanizado do sistema
+NÃO CONFORMIDADE
+hidráulico
+SISTEMA
+INST. HIDROSSANITÁRIA
+RECOMENDAÇÕES TÉCNICAS
+Não há projeto hidráulico. Contratar
+empresa especializada para verificar
+integridade de todo o sistema hidráulico
+e elaborar projeto.
+Exógena
+Endógena
+Anomalia Crítico
+Natural
+Funcional
+Classificação Criticidade Médio
+Planejamento
+Execução
+Falha Mínimo
+Operacional
+Gerencial
+26
+
+===== PAGE 28 =====
+FOTO N° 5
+NÃO CONFORMIDADE Corrosão de caixas de hidrantes. Mangueiras ressecadas.
+SISTEMA
+COMBATE A INCÊNDIO
+RECOMENDAÇÕES TÉCNICAS
+Reparar ou, se necessário, substituir as
+caixas de hidrantes que estão em mau
+estado de conservação. Substituir todas
+as mangueiras dos hidrantes.
+Exógena
+Endógena
+Anomalia Crítico
+Natural
+Funcional
+Classificação Criticidade Médio
+Planejamento
+Execução
+Falha Mínimo
+Operacional
+Gerencial
+FOTO N° 6
+NÃO CONFORMIDADE Extintor descarregado e sem lacre do INMETRO - 6º andar.
+SISTEMA
+COMBATE A INCÊNDIO
+RECOMENDAÇÕES TÉCNICAS
+Recarregar extintor. Conforme NBR
+15808, deve-se observar se o ponteiro do
+indicador de pressão encontra-se na faixa
+verde.
+Exógena
+Endógena
+Anomalia Crítico
+Natural
+Funcional
+Classificação Criticidade Médio
+Planejamento
+Execução
+Falha Mínimo
+Operacional
+Gerencial
+27
+
+===== PAGE 29 =====
+FOTO N° 7
+NÃO CONFORMIDADE Vazamento de óleo do gerador. Pode acarretar em desgaste excessivo das peças.
+SISTEMA
+MECANIZAÇÃO (GERADORES)
+RECOMENDAÇÕES TÉCNICAS
+Consultar engenheiro mecânico para
+solução do vazamento.
+Exógena
+Endógena
+Anomalia Crítico
+Natural
+Funcional
+Classificação Criticidade Médio
+Planejamento
+Execução
+Falha Mínimo
+Operacional
+Gerencial
+FOTO N° 8
+Não há espaçamento suficiente entre os recipientes e a parede da central, não conforme
+NÃO CONFORMIDADE
+NBR 13523 item 5. 4. 6. Central do GLP sem ventilação na parte inferior.
+SISTEMA
+INSTALAÇÃO DE GÁS
+RECOMENDAÇÕES TÉCNICAS
+Sugere-se alterar dimensões da central
+de gás para adequação à Norma. Se
+houver vazamento o gás se acumulará na
+parte de baixo da central. Sugere-se
+providenciar abertura inferior conforme
+a NBR 13523.
+Exógena
+Endógena
+Anomalia Crítico
+Natural
+Funcional
+Classificação Criticidade Médio
+Planejamento
+Execução
+Falha Mínimo
+Operacional
+Gerencial
+28
+
+===== PAGE 30 =====
+FOTO N° 9
+NÃO CONFORMIDADE Fissuras e sinais de infiltração na laje da casa de gás.
+SISTEMA
+ESTRUTURA
+RECOMENDAÇÕES TÉCNICAS
+As fissuras permitem a passagem de água
+no interior da laje e, consequentemente,
+facilita o processo de corrosão da
+armadura. Consultar engenheiro civil
+para verificar causa e tratar as fissuras.
+Exógena
+Endógena
+Anomalia Crítico
+Natural
+Funcional
+Classificação Criticidade Médio
+Planejamento
+Execução
+Falha Mínimo
+Operacional
+Gerencial
+FOTO N° 10
+Corrosão generalizada da laje da casa do filtro da piscina. Constatado infiltração nos
+NÃO CONFORMIDADE
+períodos de chuva.
+SISTEMA
+ESTRUTURA
+RECOMENDAÇÕES TÉCNICAS
+Consultar engenheiro civil para verificar a
+causa da infiltração e integridade da
+estrutura e, se necessário, elaborar
+projeto de reforço estrutural.
+Exógena
+Endógena
+Anomalia Crítico
+Natural
+Funcional
+Classificação Criticidade
+Médio
+Planejamento
+Execução
+Falha Mínimo
+Operacional
+Gerencial
+29
+
+===== PAGE 31 =====
+8. Indicação de prioridade
+8.1. Geral
+DEFINIÇAO DAS PRIORIDADES
+Descrição da irregularidade Ordem Critério GUT Foto nº
+Corrosão generalizada da laje da casa do filtro da piscina. Constatado infiltração
+1º 640 10
+nos períodos de chuva.
+Corrosão das tubulações de ferro galvanizado do barrilete. 2º 512 3
+Corrosão e vazamento nas tubulações e conexões de ferro galvanizado do
+3º 512 4
+sistema hidráulico
+Vazamento de óleo do gerador. Pode acarretar em desgaste excessivo das peças. 4º 480 7
+Fissuras e sinais de infiltração na laje da casa de gás. 5º 480 9
+Corrosão de caixas de hidrantes. Mangueiras ressecadas. 6º 240 5
+Extintor descarregado e sem lacre do INMETRO - 6º andar. 7º 100 6
+Não há espaçamento suficiente entre os recipientes e a parede da central, não
+8º 100 8
+conforme NBR 13523 item 5. 4. 6. Central do GLP sem ventilação na parte inferior.
+Constadada parte da estrutura de fixação da escada solta. 9º 80 1
+Improvisações nas instalações das centrais telefônica, internet e tv a cabo.
+10º 60 2
+Centrais eletrônicas próximas à janela, sujeitas à aspersão de água.
+30
+
+===== PAGE 32 =====
+8.2. Separado por sistemas
+NÃO CONFORMIDADES POR SISTEMAS
+Estrutura
+Grau de
+Descrição Ordem Foto n°
+risco
+Corrosão generalizada da laje da casa do filtro da piscina. Constatado infiltração
+1º Crítico 10
+nos períodos de chuva.
+Fissuras e sinais de infiltração na laje da casa de gás. 5º Crítico 9
+Instalação Hidrossanitária
+Grau de
+Descrição Ordem Foto n°
+risco
+Corrosão das tubulações de ferro galvanizado do barrilete. 2º Crítico 3
+Corrosão e vazamento nas tubulações e conexões de ferro galvanizado do
+3º Crítico 4
+sistema hidráulico
+Instalação Elétrica
+Grau de
+Descrição Ordem Foto n°
+risco
+Improvisações nas instalações das centrais telefônica, internet e tv a cabo.
+10º Mínimo 2
+Centrais eletrônicas próximas à janela, sujeitas à aspersão de água.
+Mecanização (Gerador)
+Grau de
+Descrição Ordem Foto n°
+risco
+Vazamento de óleo do gerador. Pode acarretar em desgaste excessivo das peças. 4º Crítico 7
+Instalação de gás
+Grau de
+Descrição Ordem Foto n°
+risco
+Não há espaçamento suficiente entre os recipientes e a parede da central, não
+8º Crítico 8
+conforme NBR 13523 item 5. 4. 6. Central do GLP sem ventilação na parte inferior.
+Cobertura
+Grau de
+Descrição Ordem Foto n°
+risco
+Constadada parte da estrutura de fixação da escada solta. 9º Crítico 1
+Combate a Incêndio
+Grau de
+Descrição Ordem Foto n°
+risco
+Corrosão de caixas de hidrantes. Mangueiras ressecadas. 6º Crítico 5
+Extintor descarregado e sem lacre do INMETRO - 6º andar. 7º Crítico 6
+31
+
+===== PAGE 33 =====
+9. Avaliação da manutenção
+A manutenção é avaliada como: ATENDE, ATENDE PARCIALMENTE ou
+NÃO ATENDE.
+Para sua classificação, leva-se em conta que a maioria das irregularidades
+encontradas são falhas, ou seja, referem-se à deficiência ou inexistência da
+manutenção. A ausência do Plano de Manutenção é uma das razões para esta
+situação, pois através deste as atividades preventivas de manutenção podem ser
+planejadas. Como consequência desta falta, boa parte dos serviços executados são
+corretivos ao invés de preventivos, fato que aumenta consideravelmente o custo com
+a manutenção.
+Além disso, a análise estatística ainda demonstra que boa parte das não
+conformidades são grau de risco crítico, ou seja, colocam em risco a saúde e
+segurança das pessoas e a integridade do patrimônio, além de comprometer a vida
+útil dos sistemas.
+Destaca-se também que a cobertura contém áreas sem condições adequadas
+de segurança para os mantenedores.
+Portanto, a manutenção é classificada como NÃO ATENDE.
+Sugere-se que o condomínio promova ações para atendimento à NBR 5674.
+10. Avaliação das condições de uso
+O uso da edificação pode ser classificado como uso regular ou irregular.
+Verifica-se que as condições de uso do condomínio são coerentes com as instruções
+técnicas pertinentes, logo classifica-se como uso regular.
+11. Recomendações gerais e de sustentabilidade
+A edificação deve consultar um profissional habilitado para elaborar projeto de
+prevenção de combate a incêndio, em seguida sua legalização junto ao Corpo de
+Bombeiros, através da obtenção do Atestado de Regularidade do Corpo de
+Bombeiros, em cumprimento da Lei estadual n° XXXX.
+O condomínio necessita realizar vistorias técnicas periódicas, a cada 5 anos,
+em observância às Leis municipais n° XXXX e n° XXXX. Além do caráter legal, há
+benefícios para a segurança das pessoas, manutenção do imóvel, economia a longo
+prazo, aumento da vida útil e valorização patrimonial.
+Recomenda-se a contratação de um engenheiro civil para elaborar um plano
+de manutenção, adaptado para a idade e manifestações patológicas do prédio. Esta
+ferramenta é fundamental para o planejamento das atividades de manutenção e
+facilitará a rotina dos serviços. A longo prazo, a realização da manutenção
+preventiva significará economia.
+Sugere-se a instalação de medidores de água individuais. Vários estudos
+demonstram que esta ação promove o uso consciente, com redução significativa no
+consumo de água, além de diminuição da taxa condominial geral (pois a água passa
+a ser cobrada individualmente).
+Ainda na perspectiva sustentável, é interessante que o condomínio
+incremente a coleta seletiva de lixo e conscientize os funcionários e usuários para
+evitar o desperdício e poluição.
+12. Responsabilidades
+32
+
+===== PAGE 34 =====
+A responsabilidade é limita-se exclusivamente ao escopo da inspeção predial,
+eximindo-se o profissional de análises de problemas ocultos ou de projeto, de
+construção, manutenção, bem como implementação das orientações mencionadas
+neste Laudo, sendo esta de responsabilidade do síndico e proprietários.
+A ordenação das irregularidades deverá ser reavaliada periodicamente, uma
+vez que as avarias e os riscos oferecidos são evolutivos e sofrem influências
+externas diárias.
+Pontua-se que não foi possível acessar parte da cobertura que, segundo
+depoimentos da zeladoria e síndica, apresenta infiltração que atinge apartamentos,
+por falta de condições mínimas de segurança.
+13. Ressalvas
+Durante a aplicação do check-list desenvolvido neste trabalho não foi possível
+a entrega de questionários aos moradores e proprietários, assim como não obteve-
+se informações sobre reformas dentro dos apartamentos.
+Este laudo se trata de um trabalho acadêmico, sem valor legal.
+Xxxxxxxxxx, 01 de abril de 2017
+33

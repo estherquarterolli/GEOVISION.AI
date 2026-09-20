@@ -1,0 +1,126 @@
+
+===== PAGE 1 =====
+GeoVision.AI : Relatório para Validação
+Técnica com Engenharia Estrutural
+Programa Jovens Cientistas Cariocas 2026 · Documento de apoio para orientar a validação técnica
+do sistema.
+Autora: Esther Quarterolli dos Santos
+Data: Setembro de 2026
+1. O que é o GeoVision.AI
+O GeoVision.AI é um sistema que usa o celular do morador como um sensor de risco estrutural. O
+cidadão fotografa uma rachadura, um muro inclinado ou uma infiltração; um modelo de visão
+computacional classifica o risco em Baixo, Médio ou Crítico e envia o alerta, com localização, para
+um painel de triagem da Defesa Civil.
+O objetivo declarado do projeto não é substituir a vistoria técnica de um engenheiro — é ajudar
+a priorizar qual chamado a Defesa Civil deve checar primeiro, em vez de depender só da ordem de
+chegada das ligações. É exatamente esse ponto que precisa ser validado: o sistema está, de fato,
+priorizando de um jeito que faz sentido do ponto de vista estrutural?
+2. Como o sistema funciona hoje, passo a passo
+1. O cidadão tira 1 a 3 fotos da anomalia pelo app (PWA) e descreve: tipo de anomalia, há
+quanto tempo notou, se está piorando, e o quão grave parece a ele.
+2. As fotos são enviadas para um serviço de IA (FastAPI) que roda um modelo de detecção de
+objetos hospedado no Roboflow.
+3. O modelo tenta identificar rachaduras nas fotos, devolvendo uma classe (hoje: "crack" ou "no
+crack"), uma confiança (0 a 100%) e a área aproximada da rachadura detectada, em pixels
+da foto.
+4. Um código local combina esses números numa pontuação de risco (detalhado na seção 3) e
+classifica o caso como Baixo, Médio ou Crítico — ou marca como "incerto" se a confiança for
+baixa demais, e nesse caso nenhum nível é sugerido.
+5. O alerta entra na fila de triagem da Defesa Civil, ordenado por gravidade (Crítico primeiro),
+com foto, localização e as respostas que o cidadão deu.
+6. Um agente da Defesa Civil abre o alerta, vê a foto e as informações, e decide: iniciar vistoria,
+resolver, ou marcar como sem risco.
+3. Como a pontuação de risco é calculada hoje
+Esta é a parte que mais precisa de olhar técnico de engenharia, porque os números abaixo foram
+definidos por estimativa, não a partir de critério de vistoria estrutural real.
+Elemento Como entra na conta
+Peso da classe de defeito Rachadura ("crack") = peso 3. Outras classes
+(corrosão, deterioração, umidade, mofo,
+mancha) já têm peso definido no código, mas o
+modelo atual ainda não sabe reconhecer
+nenhuma delas — só rachadura.
+Confiança do modelo 0 a 1 (ex: 0.81 = 81% de confiança de que
+aquilo é uma rachadura)
+
+===== PAGE 2 =====
+Elemento Como entra na conta
+Fator de tamanho Se a área detectada na foto for menor que
+10.000 px², o peso conta pela metade. Isso é
+uma proxy de "rachadura pequena importa
+menos" — mas a área na foto depende muito
+da distância de quem tirou a foto, não só do
+tamanho real da rachadura.
+Pontuação final peso × confiança × fator de tamanho, somado
+entre as fotos do mesmo alerta
+Limiares Pontuação ≥ 4,5 → Crítico. ≥ 2,0 → Médio.
+Abaixo disso → Baixo. Também existe uma
+regra à parte: se a confiança for > 80% E a
+área for ≥ 60.000 px², vira Crítico automático.
+Confiança mínima Se a confiança do modelo for menor que 60%,
+o sistema não sugere nenhum risco — o alerta
+vai para a Defesa Civil sem palpite de IA, para
+triagem 100% humana.
+4. O que já foi testado com fotos reais
+Rodamos o pipeline completo (não simulado) com 5 fotos reais de paredes e rachaduras, de banco
+de imagens de uso livre, para ver como o sistema se comporta na prática:
+Foto O modelo detectou? Confiança Risco final
+Rachadura vista de Não detectou nada — Baixo
+muito perto (close-up)
+Superfície de concreto Sim, "crack" 81% Médio
+com rachaduras finas
+Parede de concreto Não detectou nada — Baixo
+rachada
+Textura de parede Sim, "crack" 61% Baixo
+rachada
+Armadura (ferro) Sim, mas classificou 50% Baixo
+exposta e enferrujada como "crack"
+Dois achados chamam atenção para a conversa com a engenharia: primeiro, duas fotos com
+rachadura claramente visível não foram detectadas, o que sugere sensibilidade a ângulo/distância
+da foto. Segundo, a foto de armadura exposta e enferrujada — que a olho nu parece um caso mais
+grave que rachadura simples — foi rotulada como "crack" de baixa confiança, porque o modelo
+hoje não tem uma classe própria para corrosão/armadura exposta.
+5. Limitações conhecidas (para não gerar expectativa
+maior que o real)
+● O modelo em produção hoje só distingue "tem rachadura" ou "não tem" — não diferencia
+rachadura superficial de reboco de rachadura estrutural passante, nem leva em conta
+orientação (horizontal costuma ser mais preocupante que vertical, por exemplo) ou padrão
+(mapa de fissuras, degrau, etc.).
+● Corrosão, infiltração/umidade, mofo e deterioração ainda não são reconhecidos como
+classes próprias, embora o sistema de pontuação já preveja pesos para elas.
+● A "área" usada no cálculo é a área na foto, em pixels — não a área real da rachadura. Duas
+rachaduras do mesmo tamanho real podem gerar áreas bem diferentes dependendo de quão
+
+===== PAGE 3 =====
+perto o cidadão tirou a foto.
+● Os limiares numéricos (4,5 / 2,0 / 60.000 px² / confiança mínima de 60%) foram definidos por
+estimativa da autora, não calibrados contra casos reais avaliados por um profissional.
+● O sistema é uma ferramenta de priorização de triagem, não um laudo técnico — isso já está
+declarado no projeto, mas vale confirmar com a engenheira se a forma como o risco é
+comunicado no app deixa isso claro o suficiente para o cidadão e para a Defesa Civil.
+6. Perguntas para validar com a engenheira
+Estas são as dúvidas que mais preciso esclarecer para saber se o sistema "funciona de verdade",
+do ponto de vista de quem entende de estrutura:
+1. A lógica de pontuação (peso do tipo de defeito × confiança da IA × tamanho na foto) faz
+sentido como proxy de gravidade estrutural, ou existe um critério mais adequado que eu
+deveria usar no lugar da "área em pixels"?
+2. Os limiares que separam Baixo / Médio / Crítico hoje são um chute meu. Existe alguma
+referência técnica (largura de fissura em mm, por exemplo, como usada em normas de
+patologia das construções) que eu possa usar para calibrar isso de forma mais defensável?
+3. Orientação e padrão da rachadura (vertical, horizontal, diagonal, em mapa, em degrau)
+mudam o significado estrutural. Pra uma primeira versão que só detecta "tem ou não tem
+rachadura", isso é uma limitação aceitável para uma ferramenta de priorização, ou
+compromete a utilidade a ponto de a ferramenta não dever sugerir nível de risco ainda?
+4. Rachadura em reboco/acabamento vs. rachadura estrutural (passante, em viga/pilar) têm
+gravidade muito diferente. Existe alguma pista visual simples (que desse pra pedir ao
+cidadão fotografar, ou que a IA pudesse aprender a notar) que ajude a diferenciar as duas
+sem precisar de vistoria?
+5. A foto de armadura exposta/enferrujada foi mal classificada (virou "crack" de baixa confiança)
+porque o modelo não tem essa classe ainda. Na sua experiência, corrosão de armadura
+exposta deveria pesar mais que rachadura simples na priorização? Quanto mais?
+6. Existe algum conjunto de casos que a Defesa Civil ou você já vistoriou (com o desfecho real:
+era grave ou não era) que eu poderia usar para comparar contra o que a IA teria classificado,
+mesmo que de forma retroativa e informal?
+7. Do ponto de vista de responsabilidade técnica: a forma como o app comunica o resultado
+("estimativa de apoio à priorização, não substitui vistoria", que já aparece no sistema) é
+suficiente, ou há alguma formulação que uma engenheira recomendaria para deixar ainda
+mais claro o limite do que a IA está dizendo?
