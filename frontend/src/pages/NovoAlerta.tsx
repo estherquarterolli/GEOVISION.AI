@@ -144,6 +144,45 @@ export function NovoAlerta() {
           Instruções: 3 Fotos Obrigatórias
         </h2>
         <p className="text-tinta-suave text-xs mb-3.5">3 fotos, 3 distâncias — assim a IA consegue triar o risco:</p>
+
+        <figure className="mb-4 overflow-hidden rounded-cidadao border border-marca-azul/20 bg-superficie shadow-sm">
+          <a
+            href="/exemplo-fotos-fissura.webp"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Abrir o exemplo de fotos em tamanho maior"
+          >
+            <img
+              src="/exemplo-fotos-fissura.webp"
+              alt="Exemplo da mesma fissura fotografada de longe, a uma distância intermediária e em close-up"
+              className="aspect-[3/2] w-full object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+          <figcaption className="grid grid-cols-3 divide-x divide-borda border-t border-borda text-center">
+            <span className="px-1 py-2 text-[10px] leading-tight text-tinta-suave">
+              <strong className="block text-tinta">1. Geral</strong>
+              2 a 3 metros
+            </span>
+            <span className="px-1 py-2 text-[10px] leading-tight text-tinta-suave">
+              <strong className="block text-tinta">2. Detalhe</strong>
+              aproximadamente 1 metro
+            </span>
+            <span className="px-1 py-2 text-[10px] leading-tight text-tinta-suave">
+              <strong className="block text-tinta">3. Close-up</strong>
+              aproximadamente 30 cm
+            </span>
+          </figcaption>
+        </figure>
+
+        <p className="mb-3.5 rounded-cidadao bg-white/70 px-3 py-2 text-[11px] leading-relaxed text-tinta-suave dark:bg-white/5">
+          Fotografe <strong className="text-tinta">a mesma anomalia</strong> nas três
+          distâncias. No close-up, coloque uma moeda, caneta ou régua ao lado da
+          fissura para indicar a escala, sempre que isso puder ser feito com segurança.
+          Toque na imagem para ampliar.
+        </p>
+
         <div className="flex flex-col gap-3.5 mt-2">
           <div className="flex gap-2.5">
             <div className="flex size-6 shrink-0 items-center justify-center rounded-full bg-marca-azul text-[11px] font-bold text-white">1</div>
