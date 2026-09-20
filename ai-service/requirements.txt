@@ -1,11 +1,7 @@
 # GeoVision.AI — Serviço de classificação de risco
 #
-# Versões travadas contra Python 3.14 na máquina de desenvolvimento (única
-# versão disponível lá no momento). Em produção o container roda **Python
-# 3.12**, e não 3.14: o inference-sdk do Roboflow declara `Requires-Python
-# >=3.10,<3.13`, então o pip se recusa a instalá-lo em 3.13+. Todas as
-# versões fixadas abaixo existem nas duas (verificado por resolução de
-# dependências para linux/cp312) — ver ai-service/Dockerfile.
+# O serviço roda em Python 3.12 porque o TensorFlow 2.21 não publica wheel
+# para Python 3.14. A inferência é totalmente local; Roboflow não é usado.
 
 # --- API ---------------------------------------------------------------------
 fastapi==0.141.1
@@ -24,18 +20,11 @@ email-validator>=2.2,<3
 
 # --- Imagem ------------------------------------------------------------------
 pillow==12.3.0
-# Faixa, e não pino exato: o inference-sdk exige `numpy<2.4`. Em Python 3.14
-# não existe numpy abaixo de 2.4, então o ambiente local acabou com a 2.5.2 —
-# uma combinação que o Roboflow não suporta oficialmente e que impede a
-# instalação limpa do conjunto. Em 3.12 o pip resolve para 2.2.x/2.3.x.
-numpy>=2.2,<2.4
+numpy==2.5.3
 
 # --- Inferência --------------------------------------------------------------
-# ONNX Runtime em vez de TensorFlow completo em produção: a imagem final fica
-# na casa das dezenas de MB em vez de ~1 GB, o que importa no plano gratuito
-# do Railway/Fly.io. O treino (Sprint 5) usa TensorFlow em notebook separado e
-# exporta para ONNX — não é dependência deste serviço.
-onnxruntime==1.28.0
+# Modelo MobileNetV2 exportado em Keras/HDF5.
+tensorflow==2.21.0
 
 # --- Integrações -------------------------------------------------------------
 httpx==0.28.1                 # chamadas ao Supabase, Resend e WhatsApp Cloud API
@@ -44,11 +33,3 @@ supabase==2.31.0
 # --- Testes ------------------------------------------------------------------
 pytest==9.1.1
 pytest-asyncio==1.4.0
-
-# --- Roboflow Integration ---------------------------------------------------
-inference-sdk==1.4.1
-supervision==0.30.0
-av==18.1.0
-pydeprecate==0.11.0
-defusedxml==0.7.1
-python-decouple==3.8

@@ -8,16 +8,12 @@ residenciais de múltiplos pavimentos: desenvolvimento e aplicação". XIX
 COBREAP, Foz do Iguaçu, 2017. A tabela de pesos original e a justificativa
 completa da adoção estão em docs/metodologia-priorizacao-gut.md.
 
-Por que GUT, e não a fórmula peso×confiança×área nem o SWOT da engenheira
-consultora:
+Por que GUT e não usar novamente a pontuação visual da IA:
 
-- A fórmula peso×confiança×área em pixels (app/services/risco.py) decide SE
-  um alerta é baixo/médio/crítico — é uma decisão de visão computacional
-  (peso da classe detectada pelo Roboflow, confiança do modelo, tamanho do
-  bounding box) e está fora do escopo deste módulo. Continua como está até
-  uma avaliação técnica de sistemas (ver docs/relatorio-treinamento-ia.md,
-  seção 7) — a própria engenheira consultora disse não ter como validar
-  esse parâmetro, por não ser da área dela.
+- A classificação baixo/médio/crítico já é calculada pelo MobileNetV2 local,
+  combinando as três perspectivas e os sinais contextuais do formulário.
+  Reaproveitar a confiança da rede como gravidade duplicaria o efeito da IA
+  e voltaria a confundir certeza estatística com severidade estrutural.
 - O problema que sobrou, levantado por ela em 16/09/2026, é diferente: com
   centenas ou milhares de alertas "crítico" por dia, o que desempata quem a
   Defesa Civil vê primeiro? O SWOT que ela usa em laudos próprios não é
@@ -63,11 +59,10 @@ _ORDEM_NIVEL_RISCO_DESCONHECIDO = 3
 def _gravidade(nivel_risco: str | None) -> int:
     """G — Gravidade: dano potencial se nada for feito.
 
-    Vem da classificação da IA (Roboflow), que já pondera tipo de
-    patologia, confiança e área na foto (ver risco.py). Aqui só traduzimos
-    baixo/médio/crítico para a escala 1–10 do GUT, nos mesmos três degraus
-    que a Norma de Inspeção Predial do IBAPE/NA usa para "grau de
-    criticidade" (crítico/médio/mínimo).
+    Vem da classificação contextual das três imagens pelo MobileNetV2 local.
+    Aqui apenas traduzimos baixo/médio/crítico para a escala 1–10 do GUT,
+    nos mesmos três degraus que a Norma de Inspeção Predial do IBAPE/NA usa
+    para "grau de criticidade" (crítico/médio/mínimo).
     """
     return {
         "critico": _PESO_TOTAL,

@@ -225,13 +225,23 @@ def foto_jpeg() -> bytes:
     return buffer.getvalue()
 
 
+def tres_fotos_validas():
+    return [
+        ("fotos", (f"foto-{indice}.jpg", foto_jpeg(), "image/jpeg"))
+        for indice in range(1, 4)
+    ]
+
+
 def test_arquivo_que_nao_e_imagem_e_recusado(cliente):
     token = cadastrar(cliente)
     resposta = cliente.post(
         "/api/alertas",
         headers=bearer(token),
         data={"tipo_anomalia": "rachadura"},
-        files=[("fotos", ("x.txt", b"nao sou imagem", "text/plain"))],
+        files=[
+            ("fotos", ("x.txt", b"nao sou imagem", "text/plain")),
+            *tres_fotos_validas()[:2],
+        ],
     )
     assert resposta.status_code == 415
 
@@ -245,7 +255,7 @@ def test_alerta_pertence_a_quem_esta_autenticado(cliente):
         headers=bearer(token),
         # usuario_id forjado: a API tem de ignorar.
         data={"tipo_anomalia": "rachadura", "usuario_id": "vitima-123"},
-        files=[("fotos", ("f.jpg", foto_jpeg(), "image/jpeg"))],
+        files=tres_fotos_validas(),
     )
     assert resposta.status_code == 200, resposta.text
     assert resposta.json()["usuario_id"] != "vitima-123"
@@ -257,7 +267,7 @@ def test_cidadao_so_ve_os_proprios_alertas(cliente):
         "/api/alertas",
         headers=bearer(token_a),
         data={"tipo_anomalia": "rachadura"},
-        files=[("fotos", ("f.jpg", foto_jpeg(), "image/jpeg"))],
+        files=tres_fotos_validas(),
     )
 
     token_b = cadastrar(cliente, email="outro@exemplo.com")

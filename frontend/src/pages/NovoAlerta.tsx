@@ -553,8 +553,7 @@ function TelaConfirmacao({ alerta, aoReiniciar }: TelaConfirmacaoProps) {
             <p className="text-sm font-semibold text-tinta">Triagem automática concluída</p>
             <p className="mt-1 text-xs leading-relaxed text-tinta-suave">
               O resultado da IA é preliminar e será usado apenas para organizar a
-              análise da Defesa Civil. Ele não representa uma porcentagem de risco,
-              chance de desabamento ou laudo estrutural.
+              análise da Defesa Civil.
             </p>
           </div>
         ) : (

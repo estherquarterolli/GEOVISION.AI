@@ -106,7 +106,7 @@ calibração. O endpoint atual usa `argmax` para escolher a classe de maior valo
 mas retorna somente o nome da classe; os quatro percentuais não fazem parte do
 JSON atual.
 
-### 4. Consolidação das três fotos: regra do pior cenário
+### 4. Consolidação das três fotos: perspectivas ponderadas
 
 Cada foto é inferida separadamente. Depois, a API atribui estes pesos ordinais:
 
@@ -117,11 +117,26 @@ Cada foto é inferida separadamente. Depois, a API atribui estes pesos ordinais:
 | `medio` | 2 |
 | `critico` | 3 |
 
-A classificação geral é a classe de maior peso encontrada nas três fotos.
-Não há média nem votação majoritária. Por exemplo,
-`baixo + sem_risco + critico` resulta em `critico`. A recomendação é
-`ACIONAR_DEFESA_CIVIL` para `medio` ou `critico`; nos demais casos é
-`MONITORAMENTO_COMUNITARIO`.
+A primeira versão usava a regra do pior cenário: uma única foto classificada
+como crítica tornava todo o caso crítico. Testes em campo mostraram que isso
+amplificava falsos positivos, principalmente no close-up, em que uma fissura de
+poucos milímetros ocupa grande parte da imagem.
+
+A versão `3v-contexto-v1` calcula a severidade esperada de cada foto e agrega
+as probabilidades com estes pesos:
+
+| Perspectiva | Peso |
+|---|---:|
+| Visão geral (2–3 m) | 45% |
+| Detalhe (aproximadamente 1 m) | 35% |
+| Close-up (aproximadamente 30 cm) | 20% |
+
+O close-up isolado não pode mais promover o alerta para crítico. O nível
+`critico` exige simultaneamente score visual agregado de pelo menos `2,45`,
+duas perspectivas com probabilidade crítica de pelo menos 80% e ao menos um
+sinal contextual: evolução rápida, estalos/vibração, anomalia estrutural,
+local estrutural sensível ou gravidade percebida alta. Sem essa confirmação,
+o resultado visual é limitado a `medio` e segue para revisão humana.
 
 ### 5. Configuração de treinamento recuperada do arquivo `.h5`
 
@@ -194,10 +209,10 @@ confiança `softmax` do classificador como 96% de risco estrutural ou de chance
 de colapso, interpretação que o modelo não sustenta.
 
 A confirmação de envio do cidadão deixou de exibir o percentual e o diagnóstico
-automático. Agora informa que a triagem é preliminar, será usada para organizar
-a análise da Defesa Civil e não substitui laudo ou vistoria. Sinais observáveis
-de perigo imediato — queda de material, estalos e movimentação visível — geram
-orientação independente para afastamento e contato com 199/193.
+automático. Agora informa apenas que a triagem é preliminar e será usada para
+organizar a análise da Defesa Civil. Sinais observáveis de perigo imediato —
+queda de material, estalos e movimentação visível — geram orientação independente
+para afastamento e contato com 199/193.
 
 No painel técnico, o valor continua disponível para depuração, mas passou a ser
 rotulado por extenso como `Confiança da IA: 96%`, acompanhado da explicação de
@@ -208,6 +223,19 @@ enganosa por outra.
 
 O front-end completo passou novamente por `tsc --noEmit` e build de produção
 do Vite/PWA sem erros após a alteração.
+
+### 9. Substituição do cálculo legado no fluxo real do site
+
+O formulário ainda estava conectado ao classificador Roboflow legado, embora a
+API MobileNetV2 local já existisse separadamente. O fluxo de `POST /api/alertas`
+foi migrado para o arquivo `.h5` local e o Roboflow deixou de ser inicializado.
+Foram removidas as dependências de inferência remota do ambiente de produção.
+
+O caso de referência anexado foi validado separando a montagem nas três
+perspectivas. Com `tipo_anomalia=rachadura`, `evolucao=estavel`,
+`local_anomalia=parede`, `ruido_percebido=nenhum` e percepção média, o resultado
+consolidado passou a ser `medio`, com confiança do modelo separada do nível de
+risco. A suíte total passou com 33 testes.
 
 ---
 

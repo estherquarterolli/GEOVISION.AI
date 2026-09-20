@@ -92,14 +92,14 @@ async def criar_alerta(
     # nome de outra e gravar arquivos na pasta de uploads dela.
     usuario_id = sessao.usuario_id
 
-    if len(fotos) > MAXIMO_FOTOS:
+    if len(fotos) != MAXIMO_FOTOS:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
-            detail=f"Envie no máximo {MAXIMO_FOTOS} fotos por alerta.",
+            detail=f"Envie exatamente {MAXIMO_FOTOS} fotos por alerta.",
         )
 
     caminhos_fotos = []
-    conteudo_principal = None
+    conteudos_fotos: list[bytes] = []
 
     pasta_usuario = UPLOADS_DIR / usuario_id
     pasta_usuario.mkdir(parents=True, exist_ok=True)
@@ -120,8 +120,7 @@ async def criar_alerta(
                 status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
                 detail=f"Imagem acima de {TAMANHO_MAXIMO_BYTES // 1024 // 1024} MB.",
             )
-        if i == 0:
-            conteudo_principal = conteudo
+        conteudos_fotos.append(conteudo)
 
         nome_foto = f"{uuid.uuid4()}.jpg"
         caminho_foto_local = pasta_usuario / nome_foto
@@ -160,42 +159,33 @@ async def criar_alerta(
     modelo_versao = None
     classificado_em = None
 
-    classificador_roboflow = request.app.state.classificador_roboflow
-    if classificador_roboflow.carregado:
-        try:
-            # Reconstrói os caminhos completos das fotos salvas localmente
-            caminhos_completos = [str(UPLOADS_DIR / p) for p in caminhos_fotos]
-            # run_in_threadpool: analisar_caso faz três chamadas HTTP síncronas
-            # ao Roboflow e leva segundos. Chamado direto de uma rota async, ele
-            # congela o event loop inteiro — nenhuma outra requisição é
-            # atendida enquanto uma foto é classificada.
-            resultado = await run_in_threadpool(
-                classificador_roboflow.analisar_caso, caminhos_completos
-            )
-            nivel_risco = resultado.risco.value if resultado.risco else None
-            confianca_ia = resultado.confianca
-            modelo_versao = resultado.versao_modelo
-            classificado_em = datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z")
-            logger.info("Classificação Roboflow realizada com sucesso: risco=%s, confianca=%s", nivel_risco, confianca_ia)
-        except Exception as e:
-            logger.error(f"Erro na classificação Roboflow: {e}")
-
-    # Fallback caso Roboflow não esteja ativo ou falhe
-    if classificado_em is None:
-        classificador = request.app.state.classificador
-        try:
-            resultado = await run_in_threadpool(
-                classificador.classificar, conteudo_principal
-            )
-            nivel_risco = resultado.risco.value if resultado.risco else None
-            confianca_ia = resultado.confianca
-            modelo_versao = resultado.versao_modelo
-            classificado_em = datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z")
-            logger.info("Classificação local realizada com sucesso (fallback): risco=%s", nivel_risco)
-        except ModeloIndisponivelError:
-            logger.warning("Modelo de IA local indisponivel para classificação (Sprint 5 pendente).")
-        except Exception as e:
-            logger.error(f"Erro inesperado na classificação por IA local: {e}")
+    classificador = request.app.state.classificador
+    try:
+        # A decisão usa as três perspectivas em conjunto. A visão geral tem
+        # peso maior e o close-up peso menor, evitando transformar zoom em
+        # severidade física. Sinais do formulário confirmam casos críticos.
+        resultado = await run_in_threadpool(
+            classificador.analisar_caso,
+            conteudos_fotos,
+            tipo_anomalia=tipo_anomalia,
+            evolucao=evolucao,
+            local_anomalia=local_anomalia,
+            ruido_percebido=ruido_percebido,
+            gravidade_percebida=gravidade_percebida,
+        )
+        nivel_risco = resultado.risco.value if resultado.risco else None
+        confianca_ia = resultado.confianca
+        modelo_versao = resultado.versao_modelo
+        classificado_em = datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z")
+        logger.info(
+            "Classificação local consolidada: risco=%s, confianca_modelo=%.3f",
+            nivel_risco,
+            confianca_ia,
+        )
+    except ModeloIndisponivelError:
+        logger.warning("Modelo MobileNetV2 local indisponível para classificação.")
+    except Exception:
+        logger.exception("Erro inesperado na classificação local consolidada.")
 
     with obter_conexao() as conn:
         cursor = conn.cursor()
@@ -387,4 +377,3 @@ async def obter_alertas_publicos(_: Sessao = Depends(sessao_atual)):
         )
         rows = cursor.fetchall()
     return [AlertaPublicoResposta(**dict(row)) for row in rows]
-

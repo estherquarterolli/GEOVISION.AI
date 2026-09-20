@@ -5,6 +5,7 @@ from __future__ import annotations
 import logging
 
 from fastapi import APIRouter, File, Form, HTTPException, Request, UploadFile, status
+from starlette.concurrency import run_in_threadpool
 
 from app.schemas import RespostaClassificacao
 from app.services.classificador import ModeloIndisponivelError
@@ -78,12 +79,8 @@ async def analisar(
     tem_moradores_no_local: bool = Form(..., description="Se há moradores residindo no local afetado"),
     tempo_percebido_dias: int = Form(..., description="Tempo de percepção da anomalia em dias"),
 ):
-    import os
-    import uuid
-    from app.db import UPLOADS_DIR
-    from app.services.risco import analisar_caso, calcular_prioridade
-
     imagens = [imagem1, imagem2, imagem3]
+    conteudos: list[bytes] = []
     for imagem in imagens:
         if imagem.content_type not in TIPOS_ACEITOS:
             raise HTTPException(
@@ -91,57 +88,53 @@ async def analisar(
                 detail=f"Formato não suportado: {imagem.content_type}. "
                 f"Aceitos: {', '.join(sorted(TIPOS_ACEITOS))}.",
             )
+        conteudo = await imagem.read(TAMANHO_MAXIMO_BYTES + 1)
+        if not conteudo:
+            raise HTTPException(
+                status.HTTP_400_BAD_REQUEST,
+                detail="Uma ou mais imagens enviadas estão vazias.",
+            )
+        if len(conteudo) > TAMANHO_MAXIMO_BYTES:
+            raise HTTPException(
+                status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
+                detail=f"Imagem acima de {TAMANHO_MAXIMO_BYTES // 1024 // 1024} MB.",
+            )
+        conteudos.append(conteudo)
 
-    pasta_temp = UPLOADS_DIR / "temp"
-    pasta_temp.mkdir(parents=True, exist_ok=True)
-
-    caminhos_locais = []
+    classificador = request.app.state.classificador
     try:
-        # Salva temporariamente os 3 arquivos
-        for imagem in imagens:
-            conteudo = await imagem.read()
-            if not conteudo:
-                raise HTTPException(
-                    status.HTTP_400_BAD_REQUEST,
-                    detail="Uma ou mais imagens enviadas estão vazias.",
-                )
-
-            nome_unico = f"temp_{uuid.uuid4()}.jpg"
-            caminho_local = pasta_temp / nome_unico
-            with open(caminho_local, "wb") as f:
-                f.write(conteudo)
-            caminhos_locais.append(str(caminho_local))
-
-        # Roda a análise de defeitos e riscos
-        resultado = analisar_caso(caminhos_locais)
-        risco_final = resultado["risco_final"]
-
-        # Calcula a prioridade da vistoria
-        prioridade = calcular_prioridade(
-            risco_final=risco_final,
-            piorando_rapido=piorando_rapido,
-            tem_moradores_no_local=tem_moradores_no_local,
-            tempo_percebido_dias=tempo_percebido_dias,
+        resultado = await run_in_threadpool(
+            classificador.analisar_caso,
+            conteudos,
+            evolucao="rapido" if piorando_rapido else "estavel",
+            gravidade_percebida="alto" if piorando_rapido else None,
         )
-
-        return {
-            "risco_final": risco_final,
-            "prioridade": prioridade,
-            "risco_por_foto": resultado["risco_por_foto"],
-            "defeitos_por_foto": resultado["defeitos_por_foto"],
-        }
+    except ModeloIndisponivelError as erro:
+        raise HTTPException(
+            status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail=f"Serviço de classificação indisponível: {erro}",
+        ) from erro
     except Exception as erro:
         logger.exception("Erro inesperado na análise de risco múltipla.")
         raise HTTPException(
             status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Falha na análise: {erro}",
+            detail="Falha ao analisar as imagens.",
         ) from erro
-    finally:
-        # Garante a limpeza dos arquivos temporários
-        for caminho in caminhos_locais:
-            try:
-                if os.path.exists(caminho):
-                    os.remove(caminho)
-            except Exception as erro_clean:
-                logger.error(f"Erro ao limpar arquivo temporário {caminho}: {erro_clean}")
 
+    risco_final = resultado.risco.value if resultado.risco else None
+    if risco_final == "critico":
+        prioridade = "alta"
+    elif risco_final == "medio":
+        prioridade = "alta" if piorando_rapido and tem_moradores_no_local else "media"
+    elif piorando_rapido or tempo_percebido_dias > 30:
+        prioridade = "media"
+    else:
+        prioridade = "baixa"
+
+    return {
+        "risco_final": risco_final,
+        "prioridade": prioridade,
+        "confianca_modelo": resultado.confianca,
+        "probabilidades_agregadas": resultado.probabilidades,
+        "versao_modelo": resultado.versao_modelo,
+    }

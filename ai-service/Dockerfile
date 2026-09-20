@@ -1,20 +1,12 @@
 # GeoVision.AI — serviço de classificação (FastAPI)
 #
-# 3.12 e não 3.14 (a versão usada no desenvolvimento): o inference-sdk do
-# Roboflow declara `Requires-Python >=3.10,<3.13`, então o pip se recusa a
-# instalá-lo em qualquer coisa acima disso. 3.12 é o teto real do ecossistema
-# aqui, e todos os pins de requirements.txt existem para linux/cp312.
+# 3.12 e não 3.14: o TensorFlow 2.21 usado para carregar o modelo `.h5`
+# disponibiliza wheel para cp312, mas não para cp314.
 FROM python:3.12-slim AS base
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1
-
-# libgl1/libglib2.0-0: o inference-sdk do Roboflow puxa opencv, que falha a
-# importar em imagem slim sem essas bibliotecas de sistema.
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends libgl1 libglib2.0-0 \
-    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 

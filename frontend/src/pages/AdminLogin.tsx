@@ -2,6 +2,7 @@ import { useState, useEffect, type FormEvent } from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import { useAuth } from '@/lib/auth'
 import logoImg from '@/assets/logo.jpg'
+import logoDefesaCivil from '@/assets/logo-defesa-civil-rj.png'
 
 const MAX_TENTATIVAS = 3
 const TEMPO_BLOQUEIO_SEGUNDOS = 30
@@ -77,7 +78,7 @@ export function AdminLogin() {
   const bloqueado = tempoBloqueio > 0
 
   return (
-    <div className="relative min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-center items-center px-4 py-10 selection:bg-cyan-500 selection:text-white">
+    <div className="relative min-h-screen overflow-x-hidden bg-slate-950 text-slate-100 flex flex-col justify-center items-center px-4 py-10 selection:bg-cyan-500 selection:text-white">
       {/* Background Cybernetic Glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 h-96 w-96 rounded-full bg-gradient-to-tr from-cyan-600/20 via-blue-600/15 to-emerald-500/10 blur-[100px]" />
       <div className="absolute bottom-10 right-10 -z-10 h-64 w-64 rounded-full bg-cyan-900/20 blur-[80px]" />
@@ -88,22 +89,25 @@ export function AdminLogin() {
       <div className="w-full max-w-md">
         {/* Header Institucional */}
         <div className="flex flex-col items-center mb-7 text-center">
-          <div className="relative group mb-3">
-            <div className="absolute -inset-1.5 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 opacity-60 blur-md transition duration-500 group-hover:opacity-100 animate-pulse" />
-            <div className="relative size-16 rounded-2xl border border-cyan-400/40 bg-slate-900 p-2 shadow-2xl flex items-center justify-center">
-              <img
-                src={logoImg}
-                alt="GeoVision.AI Admin"
-                className="size-full object-contain rounded-xl"
-              />
+          <div className="mb-5 flex w-full items-center justify-center gap-2 sm:gap-6">
+            <div className="relative group shrink-0">
+              <div className="absolute -inset-1.5 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 opacity-60 blur-md transition duration-500 group-hover:opacity-100" />
+              <div className="relative size-16 rounded-2xl border border-cyan-400/40 bg-white p-1.5 shadow-2xl sm:size-18">
+                <img
+                  src={logoImg}
+                  alt="GeoVision.AI"
+                  className="size-full rounded-xl object-contain"
+                />
+              </div>
             </div>
-          </div>
 
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-950/60 text-cyan-300 text-[11px] font-mono font-semibold tracking-wide uppercase mb-2 backdrop-blur">
-            <svg className="size-3.5 text-cyan-400 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-            </svg>
-            Área de Administração & Comando
+            <span aria-hidden="true" className="h-12 w-px bg-slate-700" />
+
+            <img
+              src={logoDefesaCivil}
+              alt="Defesa Civil do Estado do Rio de Janeiro"
+              className="h-auto w-[190px] max-w-[58%] object-contain sm:w-[240px] sm:max-w-none"
+            />
           </div>
 
           <h1 className="text-2xl font-bold tracking-tight text-white">

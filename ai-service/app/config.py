@@ -24,7 +24,7 @@ class Config(BaseSettings):
     ambiente: str = "desenvolvimento"
 
     # --- Modelo --------------------------------------------------------------
-    caminho_modelo: Path = RAIZ / "models" / "geovision-risco.onnx"
+    caminho_modelo: Path = RAIZ / "models" / "geovision_model_pronto.h5"
     # Gravado junto de cada classificação em alertas.modelo_versao. Sem isso,
     # um erro de classificação vira impossível de auditar depois de um retreino.
     versao_modelo: str = "sem-modelo"
@@ -32,11 +32,6 @@ class Config(BaseSettings):
     # para triagem humana sem sugestão de risco, em vez de exibir um palpite
     # fraco como se fosse conclusão.
     limiar_confianca: float = 0.60
-
-    # --- Roboflow ------------------------------------------------------------
-    roboflow_api_key: str = ""
-    roboflow_workspace: str = "esther-quarterolli"
-    roboflow_workflow_id: str = ""
 
     # --- Sessão --------------------------------------------------------------
     # Assina os JWTs de login. Vazio só é tolerado em desenvolvimento: em
@@ -68,7 +63,10 @@ class Config(BaseSettings):
     # Em produção o nginx serve o frontend e a API na mesma origem, então a
     # lista fica vazia e nenhuma origem externa é liberada. Só preencha se
     # algum cliente for hospedado em outro domínio.
-    origens_permitidas: list[str] = ["http://localhost:5180"]
+    origens_permitidas: list[str] = [
+        "http://localhost:5180",
+        "http://127.0.0.1:5180",
+    ]
 
     @property
     def em_producao(self) -> bool:
