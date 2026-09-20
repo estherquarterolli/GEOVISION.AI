@@ -17,8 +17,8 @@ Referência de escopo: [planodedesenvolvimento.md](planodedesenvolvimento.md).
 | 2 | Autenticação e cadastro | ✅ código escrito · ✅ roteamento/gate verificado ao vivo · ⚠️ formulário em si não testado (precisa de Supabase real) |
 | 3 | Coleta e curadoria do dataset | ✅ concluído · amostras de controle (paredes íntegras) extraídas e otimizadas |
 | 4 | Captura, câmera e geolocalização | ✅ código escrito · ✅ type-check limpo · ✅ roteamento/gate verificado ao vivo · ⚠️ formulário em si não testado (precisa de Supabase real) |
-| 5 | Treinamento do Modelo / Visão | 🟡 em andamento (dataset calibrado com negativos para Roboflow) |
-| 6 | API de classificação e integração | 🟡 esqueleto pronto e integrado ao Roboflow |
+| 5 | Treinamento do Modelo / Visão | ✅ MobileNetV2 exportada em `.h5` e carregada localmente · ⚠️ histórico numérico de validação não foi incluído no artefato |
+| 6 | API de classificação e integração | ✅ endpoint de triagem com 3 fotos implementado e testado sem Roboflow |
 | 7–11 | Painel, educação, testes, refino | ⬜ não iniciado |
 | — | Empacotamento e deploy (Docker + VPS) | ✅ arquivos escritos e testados · ⚠️ imagens Docker ainda não construídas (sem Docker nesta máquina) |
 | — | Endurecimento de autenticação (JWT, bcrypt, papéis) | ✅ implementado · ✅ 29 testes passando |
@@ -29,6 +29,185 @@ entrada de verificação abaixo.
 
 **Produção:** stack Docker pronta para a VPS da Hostinger — ver
 [DEPLOY.md](DEPLOY.md) e a entrada de 17/09/2026.
+
+---
+
+## 20/09/2026 — MobileNetV2 local: requisitos, cálculo de risco e métricas
+
+O classificador de triagem solicitado nesta rodada foi implementado em
+[`main.py`](main.py), usando diretamente o modelo
+`geovision_model_pronto.h5`. Esta API nova **não consulta o Roboflow**. O
+modelo foi carregado e inspecionado com TensorFlow 2.21.0 e apresenta entrada
+`(None, 224, 224, 3)` e saída `(None, 4)`.
+
+### 1. Requisitos para uma análise
+
+O endpoint `POST /api/triagem/analisar-fissura` exige, na mesma requisição
+`multipart/form-data`, estes três campos:
+
+| Campo | Perspectiva esperada | Finalidade |
+|---|---|---|
+| `foto_3m` | Visão a aproximadamente 3 metros | Contexto da estrutura e do entorno da anomalia |
+| `foto_1m` | Visão a aproximadamente 1 metro | Leitura intermediária do elemento afetado |
+| `foto_30cm` | Visão macro a aproximadamente 30 centímetros | Detalhe visual da fissura ou anomalia |
+
+Requisitos técnicos aplicados pela API:
+
+- as três fotos são obrigatórias; a ausência de qualquer campo retorna
+  HTTP `422`;
+- cada arquivo deve conter uma imagem realmente decodificável pelo Pillow;
+  renomear um texto para `.jpg` não o torna válido;
+- arquivo vazio ou inválido retorna HTTP `400`;
+- o limite é de 15 MiB por foto; acima disso a API retorna HTTP `413`;
+- a imagem é convertida para RGB, redimensionada para `224 × 224`, convertida
+  em `float32`, normalizada para o intervalo `[0, 1]` pela divisão por `255.0`
+  e recebe a dimensão de lote, resultando em `(1, 224, 224, 3)`.
+
+### 2. O que o modelo leva em consideração
+
+A MobileNetV2 recebe **somente os pixels das fotos**. Ela aprendeu, durante o
+treinamento, combinações visuais de cor, textura, bordas, formas e padrões
+associados às quatro pastas/classes de treinamento. A API não fornece ao
+modelo coordenadas geográficas, endereço, idade da construção, material,
+largura da fissura em milímetros, inclinação medida, chuva, tempo de evolução,
+presença de moradores ou laudo de engenharia.
+
+Portanto, a IA faz uma **classificação visual**, e não um cálculo físico de
+estabilidade ou de probabilidade de colapso. A distância também não entra no
+modelo como um número: ela é representada indiretamente pelas três perspectivas
+fotográficas enviadas em campos separados.
+
+### 3. Como surge a "porcentagem"
+
+A última camada do modelo é uma `Dense` com quatro saídas e ativação
+`softmax`. Para cada foto, ela produz quatro valores entre 0 e 1 que somam 1:
+
+```text
+P(baixo) + P(critico) + P(medio) + P(sem_risco) = 1
+```
+
+A ordem exata usada na integração, proveniente da ordenação alfabética das
+classes no Keras, é:
+
+| Índice | Classe |
+|---:|---|
+| 0 | `baixo` |
+| 1 | `critico` |
+| 2 | `medio` |
+| 3 | `sem_risco` |
+
+Exemplo hipotético: se uma foto produzir `[0,10; 0,65; 0,20; 0,05]`, o
+resultado vencedor será `critico`, com **confiança softmax de 65%**.
+
+Essa porcentagem significa "quanto esta saída favoreceu uma classe em relação
+às outras". Ela **não significa** "65% de chance de a estrutura cair" e só
+pode ser interpretada como probabilidade confiável depois de um estudo de
+calibração. O endpoint atual usa `argmax` para escolher a classe de maior valor,
+mas retorna somente o nome da classe; os quatro percentuais não fazem parte do
+JSON atual.
+
+### 4. Consolidação das três fotos: regra do pior cenário
+
+Cada foto é inferida separadamente. Depois, a API atribui estes pesos ordinais:
+
+| Classe | Peso de severidade |
+|---|---:|
+| `sem_risco` | 0 |
+| `baixo` | 1 |
+| `medio` | 2 |
+| `critico` | 3 |
+
+A classificação geral é a classe de maior peso encontrada nas três fotos.
+Não há média nem votação majoritária. Por exemplo,
+`baixo + sem_risco + critico` resulta em `critico`. A recomendação é
+`ACIONAR_DEFESA_CIVIL` para `medio` ou `critico`; nos demais casos é
+`MONITORAMENTO_COMUNITARIO`.
+
+### 5. Configuração de treinamento recuperada do arquivo `.h5`
+
+A inspeção do artefato permitiu confirmar:
+
+| Item | Valor gravado no modelo |
+|---|---|
+| Arquitetura base | MobileNetV2 |
+| Camadas no modelo | 157 |
+| Parâmetros | 2.263.108 |
+| Entrada | `224 × 224 × 3` RGB |
+| Cabeça final | `GlobalAveragePooling2D` → `Dropout(0,3)` → `Dense(4, softmax)` |
+| Função de perda | `categorical_crossentropy` |
+| Otimizador | Adam |
+| Taxa de aprendizado gravada | aproximadamente `0,001` |
+| Métrica configurada no treino | `accuracy` |
+| Versão do Keras que salvou o arquivo | 3.13.2 |
+
+`categorical_crossentropy` é a função de erro minimizada no treinamento:
+ela penaliza o modelo quando a probabilidade atribuída à classe correta é
+baixa. `accuracy` mede a proporção total de exemplos classificados corretamente.
+
+### 6. Quais resultados de qualidade estão disponíveis
+
+O `.h5` contém a arquitetura, os pesos e a configuração de compilação, mas
+**não contém o histórico do treinamento nem o resultado da avaliação em um
+conjunto de teste**. Assim, a partir do arquivo entregue não é possível afirmar
+valores reais de `accuracy`, `precision`, `recall`, F1 ou matriz de confusão.
+
+Os valores de mAP, recall e falso positivo descritos em
+[`docs/relatorio-treinamento-ia.md`](docs/relatorio-treinamento-ia.md) pertencem
+ao fluxo anterior de detecção Roboflow/YOLO, estavam marcados como estimados e
+**não devem ser atribuídos a esta MobileNetV2**.
+
+Para homologar o modelo atual, o conjunto de teste separado do treino deve ser
+avaliado e o relatório precisa registrar pelo menos:
+
+| Métrica | O que responde | Importância para o GeoVision.AI |
+|---|---|---|
+| Accuracy | Percentual total de acertos | Visão geral, mas pode esconder classes desbalanceadas |
+| Precision por classe | Entre as previsões de uma classe, quantas estavam corretas | Mede excesso de falsos alarmes |
+| Recall por classe | Entre os casos reais de uma classe, quantos foram encontrados | Prioridade máxima para `critico`; mede falsos negativos |
+| F1 por classe e macro-F1 | Equilíbrio entre precision e recall | Permite comparar as quatro classes sem favorecer a mais numerosa |
+| Matriz de confusão | Quais classes estão sendo trocadas | Mostra, por exemplo, quantos críticos viraram baixos ou sem risco |
+| Taxa de falso negativo crítico | Críticos classificados como outra classe | Métrica de segurança mais sensível para a triagem |
+| Brier score/ECE | Se 80% de confiança corresponde a cerca de 80% de acerto | Necessária antes de exibir softmax como porcentagem confiável |
+| Suporte por classe | Quantidade de amostras de teste de cada classe | Dá contexto e validade estatística às demais métricas |
+| Latência p50/p95 | Tempo típico e de cauda por inferência | Dimensiona CPU, concorrência e tempo de resposta da API |
+
+Até que essa avaliação seja executada sobre imagens rotuladas que nunca
+participaram do treino, a saída deve ser tratada como **apoio automatizado à
+triagem**, nunca como laudo estrutural ou substituição de vistoria da Defesa
+Civil.
+
+### 7. Verificação executada nesta rodada
+
+- Python 3.12.10 e ambiente virtual `.venv` configurados;
+- TensorFlow 2.21.0 carregou o modelo real sem erro;
+- formato de entrada e quatro saídas confirmados diretamente no modelo;
+- chamada HTTP real com três imagens retornou `200` e o JSON esperado;
+- imagem inválida retornou `400`;
+- ausência da terceira foto retornou `422`;
+- `pip check` não encontrou dependências quebradas.
+
+### 8. Correção da comunicação de risco ao cidadão
+
+Foi identificado que o front-end mostrava resultados como
+`Risco Crítico 96%`. Essa composição induzia o cidadão a interpretar a
+confiança `softmax` do classificador como 96% de risco estrutural ou de chance
+de colapso, interpretação que o modelo não sustenta.
+
+A confirmação de envio do cidadão deixou de exibir o percentual e o diagnóstico
+automático. Agora informa que a triagem é preliminar, será usada para organizar
+a análise da Defesa Civil e não substitui laudo ou vistoria. Sinais observáveis
+de perigo imediato — queda de material, estalos e movimentação visível — geram
+orientação independente para afastamento e contato com 199/193.
+
+No painel técnico, o valor continua disponível para depuração, mas passou a ser
+rotulado por extenso como `Confiança da IA: 96%`, acompanhado da explicação de
+que não representa probabilidade de colapso nem porcentagem de risco. O número
+não foi artificialmente reduzido para 80%: sem calibração em um conjunto de
+validação, qualquer conversão desse tipo apenas substituiria uma medida
+enganosa por outra.
+
+O front-end completo passou novamente por `tsc --noEmit` e build de produção
+do Vite/PWA sem erros após a alteração.
 
 ---
 

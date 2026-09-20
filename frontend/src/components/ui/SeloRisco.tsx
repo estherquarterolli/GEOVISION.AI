@@ -29,7 +29,10 @@ interface Props {
   /** Sólido para sobrepor a foto; suave para listas e cartões. */
   variante?: 'suave' | 'solido'
   tamanho?: 'sm' | 'md'
-  /** Exibe a confiança do modelo (0–1) ao lado do rótulo. */
+  /**
+   * Exibe a confiança estatística do modelo (0–1).
+   * Este valor não é uma porcentagem de risco estrutural.
+   */
   confianca?: number | null
   className?: string
 }
@@ -61,7 +64,12 @@ export function SeloRisco({
       />
       Risco {ROTULO_RISCO[nivel]}
       {confianca != null && (
-        <span className="metrica opacity-70">{Math.round(confianca * 100)}%</span>
+        <span
+          className="metrica border-l border-current/30 pl-1.5 text-[0.85em] opacity-80"
+          title="Confiança da classificação automática; não representa probabilidade de colapso ou porcentagem de risco estrutural."
+        >
+          Confiança da IA: {Math.round(confianca * 100)}%
+        </span>
       )}
     </span>
   )

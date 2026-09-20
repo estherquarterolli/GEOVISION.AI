@@ -8,7 +8,6 @@ import { Cartao } from '@/components/ui/Cartao'
 import { Select } from '@/components/ui/Select'
 import { Textarea } from '@/components/ui/Textarea'
 import { Campo } from '@/components/ui/Campo'
-import { SeloRisco } from '@/components/ui/SeloRisco'
 import {
   ROTULO_ANOMALIA,
   ROTULO_GRAVIDADE,
@@ -511,12 +510,25 @@ function TelaConfirmacao({ alerta, aoReiniciar }: TelaConfirmacaoProps) {
         <h1 className="text-lg">Alerta enviado</h1>
 
         {alerta.nivel_risco ? (
-          <SeloRisco nivel={alerta.nivel_risco} variante="solido" confianca={alerta.confianca_ia} />
+          <div className="w-full rounded-cidadao border border-marca-azul/20 bg-marca-azul/5 p-4 text-left">
+            <p className="text-sm font-semibold text-tinta">Triagem automática concluída</p>
+            <p className="mt-1 text-xs leading-relaxed text-tinta-suave">
+              O resultado da IA é preliminar e será usado apenas para organizar a
+              análise da Defesa Civil. Ele não representa uma porcentagem de risco,
+              chance de desabamento ou laudo estrutural.
+            </p>
+          </div>
         ) : (
           <p className="text-tinta-suave text-sm">
-            Sua foto foi encaminhada para análise da Defesa Civil.
+            Suas fotos foram encaminhadas para análise da Defesa Civil.
           </p>
         )}
+
+        <p className="rounded-cidadao bg-amber-50 p-3 text-xs leading-relaxed text-amber-900 dark:bg-amber-950/30 dark:text-amber-200">
+          Se houver queda de material, estalos, movimentação visível ou perigo
+          imediato, afaste-se do local e ligue para a Defesa Civil (199) ou para
+          os Bombeiros (193), independentemente do resultado automático.
+        </p>
 
         <p className="text-tinta-suave text-sm">
           Você pode acompanhar o status deste alerta no seu perfil.
