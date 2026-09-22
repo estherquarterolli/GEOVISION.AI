@@ -1,0 +1,54 @@
+Figura 144 - Asna de cobertura com supressão da linha (elemento horizontal inferior).
+Fonte: Arquivo do autor.
+
+Em edifícios com maiores dimensões em
+planta e sem juntas de dilatação, é frequente o
+aparecimento de fendilhação devida a deforma-
+ções impostas associadas a variações térmi-
+cas e higrométricas. A Figura 145 mostra uma
+situação em que a parede de alvenaria de um
+edifício escolar apresenta fendas verticais igual-
+mente espaçadas (na figura apresenta-se uma
+das fendas). Estas fendas foram provocadas por
+variações de temperatura e humidade e locali-
+zam-se nas zonas mais susceptíveis da parede,
+onde a sua espessura é menor. Apesar de não ser
+visível na imagem, na meia distância entre as ja-
+nelas, a parede é atravessada verticalmente por
+tubos de queda das águas provenientes da co-
+bertura, que diminuem a sua espessura efectiva.
+
+No caso dos edifícios antigos, é muito fre-
+quente a existência, ao longo do tempo, de inter-
+venções inadequadas, que podem ter também
+implicações estruturais. Na maior parte dos ca-
+sos, as intervenções são realizadas para aumen-
+tar os espaços existentes. Para isso, é habitual
+a intervenção individual, num dado pavimento,
+juntando espaços contíguos através da supres-
+são das paredes que os dividem. Outra situação
+recorrente é o aumento do número de pavimen-
+tos em altura.
+
+242 * MANUAL DE ENGENHARIA DIAGNÓSTICA,
+es o
+
+Figura 145 - Fenda vertical em zona
+de menor espessura de uma parede de
+alvenaria devido a efeitos térmicos e higrométricos.
+
+Fonte: Arquivo do autor.
+
+No primeiro caso, se as paredes suprimidas
+tiverem carácter estrutural, a sua substituição
+por uma viga ao nível do teto, como é habitual,
+corresponde a uma perda muito significativa de
+rigidez. Tal leva à deformação do teto naquele pa-
+vimento e à consequente deformação, por flexão e
+corte vertical, das paredes dos pavimentos sobre-
+jacentes. Esta situação é potencialmente grave,
+manifestando-se através de fendilhação das pare-
+des nos pavimentos acima, e a sua resolução pas-
+sa, preferencialmente, por restabelecer a situação
+original, reconstruindo a parede suprimida.
+

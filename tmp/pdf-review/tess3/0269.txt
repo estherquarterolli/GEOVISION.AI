@@ -1,0 +1,92 @@
+também na interseção entre dois elementos de
+materiais diferentes, como o encontro da estru-
+tura com alvenaria e nos topos de platibandas,
+onde além do efeito térmico, também há o efeito
+higroscópico, o que intensifica o aparecimento
+de fissuras.
+
+5.6.2.2 Ações da água
+
+A água é o agente agressivo mais potencial
+para o sistema estrutural, pois desencadeia a
+maior parte dos mecanismos de degradação. Por
+essa razão, é fundamental que as estruturas te-
+nham elementos de proteção com a finalidade de
+inibir a entrada de água após sua cura. Como pa-
+radoxo, a água é a maior aliada do concreto na
+obtenção de resistência e a cura deve ser obe-
+decida para que seja alcançado os parâmetros
+de projeto. Por outro lado, o fator água/cimento
+em proporções indesejáveis durante o preparo
+do concreto contribuirá para o decréscimo de
+resistência.
+
+Quando se trata da água de infiltração, na
+fase de uso, ela atua como agente agressivo, cujo
+mecanismo provoca o fenômeno da lixiviação,
+e a manifestação patológica (como o problema
+se apresenta na estrutura) denomina-se eflores-
+cência. A lixiviação é o carreamento de sais solú-
+veis inerentes ao concreto para fora da estrutu-
+ra e solidificam-se na superfície dos elementos.
+A água, ao entrar por entre os poros, promove
+a dissolução do hidróxido de cálcio (Ca)0H,),
+abundante na pasta de cimento, carreando-
+-o até a superfície, o que causa os indesejáveis
+“manchamentos / escorrimentos” nas superfí-
+cies dos elementos de concreto. Entretanto, esse
+composto é bastante importante para assegurar
+o alto pH do concreto, geralmente em torno de
+12, o que garante a passivação das armaduras.
+Com o Ca(0H), sendo carreado, esse pH tende
+a diminuir, efeito este que causará problemas
+futuros associados à despassivação da armadu-
+ra, o que deflagra o processo de corrosão nas
+
+estrutura. A eflorescência é caracterizada como
+um sal esbranquiçado que pode ser visto saindo
+de fissuras. Se trata do Ca(OH), que se solidifica
+nas superfícies da estrutura ao entrar em con-
+tato com dióxido de carbono (CO,) do ambiente
+e transforma-se em carbonato de cálcio (Caco,).
+Sua limpeza não é eficaz enquanto não sanar
+a entrada de água na estrutura por meio, por
+exemplo, da calafetação das fissuras por onde a
+água adentra a estrutura.
+
+5.6.2.3 Retração
+
+A retração por secagem, que gera manifes-
+tações patológicas ocorre devido à perda exces-
+siva de água por evaporação, nas primeiras 48
+horas seguidas do lançamento do concreto. Esse
+processo se desencadeará com mais facilidade
+em concretagens realizadas em dias quentes ou
+com muita incidência de vento, o que se acentua
+por cura insuficiente. Observa-se muitas fissuras
+passivas horizontais ao longo da peça logo nas
+primeiras horas de concretagem (BOLINA ET
+AL, 2019). Essas fissuras podem ser confundi-
+das com o efeito “crazing” que surge por exces-
+so de desempeno, entretanto, essas são fissuras
+com efeito craqueado.
+
+5.6.3 Ações químicas
+
+O ataque de caráter químico altera a com-
+posição do concreto e faz com que ele perca suas
+propriedades essenciais para desempenhar o
+que foi projetado. Muitas vezes se não há inter-
+venção, o ataque pode levar a ruptura da peça.
+Tem-se como exemplo de ataque químico ao
+concreto a ação de sulfatos, ácidos e álcalis. Já
+para o concreto armado, pode-se citar o ataque
+químico provenientes de íons cloreto ou dióxido
+de carbono, pois ambos desencadeiam proces-
+sos corrosivos na armadura.
+
+No que tange às ações químicas de degra-
+dação, alguns dos ensaios para determinação
+
+DIAGNÓSTICOS NA CONSTRUÇÃO CIVIL (MANIFESTAÇÕES PATOLÓGICAS) * 267
+

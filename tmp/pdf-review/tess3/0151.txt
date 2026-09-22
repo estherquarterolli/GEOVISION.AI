@@ -1,0 +1,80 @@
+Tabela 26 - Matriz GUT urgência.
+
+Grau iai = Urgência o Peso
+Total Impacto no funcionamento da edificação ou Atendimento imediato 10
+Alta Impacto no funcionamento do pavimento ou Atendimento a curto prazo 8
+Média Impacto no funcionamento do setor ou Atendimento a médio prazo 6
+Baixa Impacto ao usuário ou Atendimento a longo prazo 3
+Mínimo Sem impacto na atividade fim ou Atendimento não planejado 1
+
+Fonte: GOMIDE; PUJADAS; FAGUNDES NETO, 2006.
+
+Tabela 27 - Matriz GUT tendência.
+
+Grau Tendência Ex Peso
+Total Evolui em sua totalidade 10
+Alta Evolução rápida 8
+Média Evolução a médio prazo 6
+Baixa Evolução lenta 3
+Mínimo Problema não deve evoluir 1
+
+Fonte: GOMIDE; PUJADAS; FAGUNDES NETO, 2006.
+
+A Matriz GUT também é uma ferramenta risco aos usuários deverão ser reparadas pri-
+que auxilia a recuperação das manifestações pa-  meiramente (GOMIDE et al, 2019).
+
+tológicas, por elas serem ordenadas através de A segunda fase para a montagem do laudo
+um grau de prioridade, ou seja, aquelas que fo- (Etapa 7) inclui a verificação da documentação ad-
+rem consideradas mais prejudiciais e com maior  ministrativa e técnica, conforme quadros a seguir.
+
+Tabela 28 - Documentos administrativos.
+
+Documentos administrativos Raaporesira Documerito
+pelo forecimento apresentados
+
+Instituição, Especificação e Convenção de Condomínio;
+
+Regimento Interno do Condomínio;
+
+Alvará de Construção;
+
+Auto de Conclusão;
+
+IPTU;
+
+Programa de Prevenção de Riscos Ambientais (PPRA);
+
+Alvará do Corpo de Bombeiros;
+
+Ata de instalação do condomínio;
+
+Alvará de funcionamento;
+
+Certificado de Manutenção do Sistema de Segurança;
+
+Certificado de treinamento de brigada de incêndio; CONTRATANTE SIM ou NÃO
+
+Licença de funcionamento da prefeitura;
+
+Licença de funcionamento do órgão ambiental estadual;
+
+Cadastro no sistema de limpeza urbana;
+
+Comprovante da destinação de resíduos sólidos, etc;
+
+Relatório de danos ambientais, quando pertinente;
+
+Licença da vigilância sanitária, quando pertinente;
+
+Contas de consumo de energia elétrica, água e gás;
+
+PCMSO - Programa de Controle Médico de Saúde Ocupacional;
+
+Alvará de funcionamento;
+
+Certificado de Acessibilidade.
+
+Fonte: Adaptado pelo autor a partir da IBAPE, 2012.
+
+ETAPAS CONSTRUTIVAS * 149
+

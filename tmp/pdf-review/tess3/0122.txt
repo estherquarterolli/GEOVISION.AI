@@ -1,0 +1,113 @@
+obra e acarretando um estudo no projeto estru-
+tural bem mais detalhado.
+
+Também deve-se considerar que mesmo
+com o aumento da espessura da laje, corre-se o
+risco de não obter-se os níveis mínimos sonoros
+de impacto com índices determinados pela Nor-
+ma de Desempenho, conforme tabela 11.
+
+Tabela 11 - Critério e nível de pressão sonora de impacto
+padrão ponderado, L'nT,, (valores mínimos).
+
+EnT,
+
+a
+
+Elemento
+
+Sistema de piso separando unidades habitacio-
+nais autônomas posicionadas em pavimentos <80
+distintos
+
+Sistema de pisos de áreas de uso coletivo (ati-
+vidades de lazer e esportivas, como home thea-
+ter, salas de ginástica, salão de festas, salão de
+jogos, banheiros e vestiários coletivos, cozinhas e
+lavanderias coletivas) sobre unidades habitacio-
+nais autônomas
+
+<55
+
+Fonte: Norma de Desempenho ABNT NBR 15.575-3:2013.
+
+O nível de desempenho para o sistema de
+piso apresentar desempenho mínimo de dife-
+rença padronizada de nível ponderada, D,r
+pode ser observado na tabela 12.
+
+Tabela 12 - Critério de diferença padronizada de nível
+ponderada, D 1,
+
+UnT,
+a
+
+Elemento
+
+Sistema de piso separando unidades habitacionais
+autônomas de áreas em que um dos recintos seja
+dormitório
+
+245
+
+Sistema de piso separando unidades habitacionais
+autônomas de áreas comuns de trânsito eventu-
+| al, como corredores e escadaria nos pavimentos, |
+bem como em pavimentos distintos
+
+Sistema de piso separando unidades habitacio-
+| nais autônomas de áreas comuns de uso coletivo,
+para atividades de lazer e esportivas, como home
+theater, salas de ginástica, salão de festa, salão de
+jogos, banheiros e vestiários coletivos, cozinhas e
+
+245
+
+lavanderias coletivas
+Fonte: Norma de Desempenho ABNT NBR 15.575-3:2013.
+
+As soluções adotadas pelo mercado, para
+atingirmos o mínimo recomendado pela Norma
+
+120 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+de Desempenho, consiste em utilizarmos ma-
+teriais resilientes como isolador entre a laje
+estrutural e o contrapiso, tornando-se um piso
+flutuante e, com isso, minimizando o ruído na
+fonte receptora, apresentado como exemplo no
+detalhe apresentado na Figura 66.
+
+DETALHE 02
+
+PISO ISOLANTE ACUSTICO
+
+Figura 66 - Detalhe de instalação de material
+resiliente para solução de impacto de piso.
+
+Fonte: Adaptação autora.
+
+Medidas como a inclusão de materiais re-
+silientes, pode melhorar em até 20dB a isolação
+dos sons de impacto. Essa medida deve ser to-
+mada na fase de obra, pois a execução pós-obra
+dificultará todo o processo e ficará oneroso para
+o usuário final, tendo em vista a necessidade de
+retirada do revestimento instalado na unidade.
+
+Atualmente o mercado possuí materiais de-
+senvolvidos para ser aplicado no assentamento
+do revestimento cerâmico, o mais importante a
+ser considerado é qual o nível de redução sonora
+que pretende atender, considerando S - Supe-
+rior, 1 - Intermediário ou M - Mínimo, portanto
+ensaios são necessários para que sejam tomadas
+as aplicações de material resiliente compatível.
+
+Deve-se considerar que o material resilien-
+te elimine ou diminua as vibrações induzidas no
+contrapiso pelos choques para que não se trans-
+mitam para outros pontos da estrutura. É impor-
+tante que o contrapiso fique completamente iso-
+lado não só da laje estrutural mas também que
+

@@ -1,0 +1,28 @@
+INTRODUCAO
+Nem sempre,no entanto, a falha é apenas executiva, podendo ser
+proveniente tambem de projetos com insuficiencia de informacoes para
+uma boa execucao.
+1.2DEFINICOES
+Algumas definicoes serao abordadas a seguir para possibilitar o entendi-
+mento dostemas a serem dissertados.
+1.2.1 Alvenarias
+Sao conjuntos compostos de unidades menores,podendo ou nao ser
+sobrepoem umas as outras.
+1.2.2Alvenariasnaoestruturais
+Apresentam as seguintes finalidades: compartimentar ambientes,
+podendo ser internas ou externas (estas uiltimas delimitam a edificacao);
+leiras e lavatorios;resistir as cargas de ventos e as solicitacoes de tentativa
+de intrusao sem que a seguranca dos ocupantes da edificacao seja preju-
+dicada; resistir a certo nivel de impacto sem entrar em ruina; resistir a
+acao do fogo, nao contribuindo para o inicio de um incendio nem para
+a propagacao de chamas e calor, e nao produzindo gases toxicos quando
+em combustao.
+1.2.3Alvenariasestruturais
+Além de ter as mesmas finalidades da alvenaria nao estrutural, servem
+tambem como suporte estrutural.Conforme ocalculo dascargas a serem
+aumentarsuacapacidadeportante.
+1.2.4Unidadesquecompoemasalvenarias
+Sao materiais petreos,naturais ou artificiais. Algumas unidades mais
+comumente utilizadas sao:blocos de concreto,blocos ceramicos,blocos
+petreos e blocos silico-calcarios, entre outros. As unidades podem ser ou
+nao estruturais,conforme o tipo de alvenaria que irao compor. Caso tenham

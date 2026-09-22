@@ -1,0 +1,101 @@
+Nestes guias, são descritas e exemplificadas
+diversas ações, posturas, diretrizes e estratégias
+para os temas abrangidos em cada publicação,
+de sorte a orientar os técnicos atuantes no setor
+da construção sobre as posturas a serem ado-
+tadas no cumprimento das metas a serem atin-
+gidas, quer em termos de sustentabilidade, de-
+sempenho e atendimento aos 17 ODS - Objetivos
+de Desenvolvimento Sustentável?*.
+
+São muitas as variáveis a serem controla-
+das no decorrer do processo executivo de uma
+edificação, e mais ainda é exigido no controle
+tecnológico deste processo, para se eliminar ou
+minimizar as falhas. No campo da Engenharia
+Diagnóstica, pode-se estabelecer a natureza das
+falhas que afetam o desempenho das edificações
+como sendo as seguintes:
+
+* Surto: são falhas provocadas pelo empre-
+go de materiais ou componentes, que por
+motivo de falta ou falha de controle da qua-
+lidade venham a ser empregados nas obras
+acarretando falhas disseminadas, porém
+sistemáticas e idênticas nas edificações;
+
+* Endêmicas: são as falhas que ocorrem
+em obras executadas por uma mesma
+equipe (projetistas e operários); ou pelo
+emprego demateriaise componentes com
+problemas de um mesmo fornecedor, ou
+por especificações errôneas de projeto
+feitas pelo mesmo corpo de projetistas.
+Estas falhas são circunscritas a uma
+
+24 Nota: ODS - Objetivos de Desenvolvimento Sustentável -
+Transcrito de Agenda 2030: “Adotada em setembro de 2015
+por 193 Estados Membros da ONU (UN General Assembly
+Resolution 70/1), a Agenda 2030 para o Desenvolvimento
+Sustentável resultou de um processo global participativo
+de mais de dois anos, coordenado pela ONU, no qual go-
+vernos, sociedade civil, iniciativa privada e instituições de
+pesquisa contribuíram através da Plataforma 'My World".
+Sua implementação teve início em janeiro de 2016, dan-
+do continuidade à Agenda de Desenvolvimento do Milênio
+(2000-2015), e ampliando seu escopo. Abrange o desenvol-
+vimento econômico, a erradicação da pobreza, da miséria
+e da fome, a inclusão social, a sustentabilidade ambiental e
+a boa governança em todos os níveis, incluindo paz e segu-
+rança”, Fonte: https://odsbrasil.govbr/).
+
+94 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+mesma empresa (construtora) e ocorrem
+
+nas obras por ela executada;
+
+* Epidêmicas: são falhas ocasionadas pela
+utilização de materiais e componentes
+com problemas de um mesmo fornece-
+dor às diversas empresas; ou pela mi-
+gração de equipes de operários de uma
+empresa para outra(s), que por falta de
+conhecimento ou treinamento, incorrem
+em erros projetuais e executivos, propa-
+gando assim as falhas; ocorrendo o mes-
+mo, quando há migração de projetistas
+entre empresas, propagando especifica-
+ções errôneas. Estas falhas que ocorrem
+em diversas obras, de diversas empresas
+(construtoras);
+
+* Pandêmicas: são falhas decorrentes do
+uso de tecnologias, materiais, compo-
+nentes ou mesmo sistemas “importados”
+(estrangeiros), que devido à falta de do-
+mínio completo destes, podem redundar
+em falhas, ainda não conhecidas, quando
+adotadas nas obras nacionais. Estas fa-
+lhas ocorrem quando se pretende incor-
+porar novas tecnologias ou processos no-
+vos nas obras.
+
+Em função da natureza de falhas citadas, há
+várias proposições de ajustes ou correções de
+procedimentos envolvendo muito controle tec-
+nológico para todas. No caso de surto, o efetivo
+controle tecnológico dos insumos de obra pode
+detectar anomalias de certas características que
+podem causar falhas, e assim bloquear o empre-
+go destes insumos na obra, bem como implantar
+procedimentos de especificação e recepção que
+garantam que o insumo esteja dentro do padrão
+desejado de qualidade.
+
+Para as falhas endêmicas, há que se implan-
+tar procedimentos similares ao caso de surto,
+porém inserir treinamento de projetistas e ope-
+rários, além de procedimentos de realimentação
+de informações de falhas no decorrer da obra,
+

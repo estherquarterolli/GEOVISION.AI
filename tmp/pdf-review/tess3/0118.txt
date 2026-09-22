@@ -1,0 +1,96 @@
+usuários finais, não os constrangendo quando
+da execução de tarefas e hábitos particulares em
+suas unidades.
+
+4,2,41 Conforto acústico em edificações
+
+O conforto acústico dos ambientes, consis-
+te em impedir que os sons se propaguem de um
+lado para o outro, ou pelo menos, que ao trans-
+mitir-se percam a maior parte da sua intensida-
+de. Além disso, também consiste em estabelecer
+uma metodologia determinada na qualidade do
+projeto viabilizando a redução de ruídos com
+especificações corretas de materiais, análise dos
+índices acústicos determinados em medições de
+campo e tabelas pré-estabelecidas nas normas
+técnicas vigentes.
+
+O tratamento acústico trata-se da melhoria
+de redução de ruído para cada ambiente, geran-
+do a melhora da audição no interior de um local
+específico. O tratamento deve trazer conforto e
+privacidade para os ambientes residenciais, es-
+critórios, auditórios, igrejas e outros.
+
+Para que os ruídos não sejam transmitidos
+pela estrutura e paredes divisórias, o emprego
+de materiais e procedimentos construtivos de-
+vem ser contemplados no projeto ou no estudo
+preliminar, considerando materiais apropriados
+para as portas, janelas, pisos, forros e acessórios
+complementares para garantir a privacidade de
+todas as atividades no interior de cada ambiente
+da edificação.
+
+Considerando os tipos de ruídos que são ge-
+rados em uma edificação, o seu controle faz-se
+necessário para garantir o conforto e a privaci-
+dade do usuário final. Tendo em vista que todo
+controle de ruído envolve uma fonte sonora, a
+trajetória da sua transmissão e seu trajeto até
+a fonte receptora.
+
+Por esse motivo a atenção deve ser voltada
+para as fontes sonoras que são as mais diversas
+incluindo: máquinas, equipamentos e elementos
+
+116 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+construtivos. Também deve-se levar em conta o
+ruído gerado pelo ambiente externo ocasionado
+pelos automóveis que trafegam nas avenidas,
+ruas e rodovias, sistema ferroviário e aéreo.
+
+Para melhor entendimento, será abordado
+descrições básicas sobre os tipos de ruídos e
+suas formas de transmissão.
+
+a) Considerações Gerais - Acústica
+
+A Acústica é a ciência dedicada ao estudo
+do som e a suas inter-relações com o ser huma-
+no, conforme descrito por Mateus (2008), sen-
+do que a propagação desse pode ser através do
+meio gasoso, líquido ou sólido. O som pode ser
+definido como qualquer variação de pressão at-
+mosférica que o ouvido humano possa capturar,
+conforme mostrado na Figura 62.
+
+pressão
+
+som ruido
+
+tempo
+
+Figura 62 - Variação de pressão
+produzida por uma fonte sonora
+
+Fonte: Mateus (2008).
+
+Mateus (2008) ainda comenta que a dife-
+rença entre som e ruído é subjetiva, não depen-
+dendo apenas de sua frequência e de sua am-
+plitude, sendo, no entanto, o som associado às
+sensações de variação de pressão audível (como
+quando se ouve uma música ou a voz humana), e
+o ruído associado às sensações desagradáveis
+e indesejáveis. O autor descreve que o som é
+definido como um movimento ondulatório no
+ar (estímulo) ou em outro meio elástico, que
+provoca a excitação do mecanismo auditivo, re-
+sultando na sua percepção (sensação). Ou seja,
+simplificando, som é toda perturbação no ar que
+é causada pela vibração de um corpo ou de uma
+superfície e que pode ser ouvida.
+

@@ -1,0 +1,51 @@
+Estimativa p/Estado de Conservação
+
+Figura 231 - Gráfico da tendência do estado de conservação em relação ao valor total.
+Fonte: SisReN - Elaborada pela autora.
+
+Verifica-se que o coeficiente de determina-
+ção é igual a 0,9293515, isto é, existe uma pro-
+babilidade de 92,94% da variação do valor total
+do imóvel em relação aos atributos considerados
+ser explicada pela função de regressão.
+
+Testadas as hipóteses de que os regressores
+fossem nulos (isto é, que o valor encontrado fosse
+igual à zero), elas foram recusadas por terem sig-
+nificâncias inferiores aos níveis expressos pelas
+normas (regressor da área útil foi de 0,01, o re-
+gressor da idade estimada foi de 2,83 e o regres-
+sor do estado de conservação foi de 7,65). Logo,
+essas variáveis podem ser aceitas como impor-
+tantes para a formação do valor total do imóvel.
+
+Testada também a equação de regressão
+como um todo pelo teste de hipótese procedido
+através da análise da variância, a hipótese nula
+
+foi rejeitada a um nível de significância inferior
+a 1%, que se traduz, alternativamente, como ris-
+co de errar que ocorre ao ser afirmada a valida-
+de da equação inferida como interpretativa do
+acontecimento investigado.
+
+Foi verificada a possível existência de de-
+pendência linear entre as variáveis independen-
+tes e como as correlações encontradas foram in-
+feriores ao recomendado pelas normas técnicas,
+rejeitou-se a hipótese de multicolinearidade en-
+tre duas variáveis independentes.
+
+Examinados os resíduos (figura 232) entre
+os valores originais e aqueles estimados com o
+modelo inferido, pode-se concluir que são ra-
+zoavelmente aleatórios e sem a presença de ele-
+mentos discrepantes (outliers).
+
+Residuos Regressão
+
+Figura 232 - Gráfico dos resíduos da regressão.
+Fonte: SisReN - Elaborada pela autora,
+
+LAUDOS, PARECERES DIAGNÓSTICOS E DE CONSULTORIAS * 393
+

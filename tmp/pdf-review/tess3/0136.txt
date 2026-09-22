@@ -1,0 +1,56 @@
+Ensaio "A" Apartamento 430 m?
+Análise Comparativa (descarga com revestimento)
+Banheiro 1 X Suíte 3
+
+L(de(a))
+
+500 1000 2000
+Frequência (Hz)
+
+== Banheiro 1 - com revestimento =fesSuite 3 - com revestimento
+
+Figura 81 - Gráfico com a análise dos resultados no Banheiro 1 e na Suíte 3, 1618/16º andar para L,, ,,€ L,
+
+encontrados nos resultados das medições sonoras de tubulação de PVC com revestimento.
+Fonte: Arquivo da autora.
+
+Sm Tt
+
+Ensaio "A" Apartame
+Banheiro 1 (16% andar) - chuveiro com e sem revestimento
+
+500 1000 8000
+Frequência (Hz)
+
+«fem Banheiro 1 - com revestimento esfmsBanheiro 1- sem revestimento
+
+Figura 82 - Gráfico com o resultado encontrado na medição do ruído ocasionado
+pelo escoamento de água dos chuveiros, no Banheiro 1 (receptor), é de 37 dB(A) para L,.,
+atendendo perfeitamente ao desempenho mínimo exigido pela norma em vigor.
+
+Fonte: Arquivo da autora.
+
+Tabela 20 - Resumo dos resultados de L
+bulação de PVC com revestimento.
+
+se n7 E Lusmox at! encontrados nos resultados das medições sonoras de tu-
+
+Andares/Unidades Eniesorda Ambientes Resultados o salmão
+
+ruído
+Emissor Receptor Emissores Receptores
+
+Descarga Banheiro 1 Banheiro 1
+
+andar 6tandar161B — Descargas Banheiro 4 e 5 Suíte 3
+
+Chuveiros Banheiro 1 Banheiro 1
+
+Fonte: Elaborado pela autora.
+
+Os resultados encontrados nos ambientes de 2 dB(A), para chegar ao desempenho mínimo,
+receptores denominados Banheiro 1 e Suíte 3, considerando que as tubulações estavam totalmen-
+com L,., yr de 39 dB(A) apontam uma diferença te livres de qualquer outro tipo de revestimento
+
+134 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+

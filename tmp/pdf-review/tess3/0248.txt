@@ -1,0 +1,94 @@
+* as avaliações in-situ são, na sua maioria,
+visuais, sendo poucas as vezes em que
+são utilizadas outras técnicas auxiliares
+de diagnóstico (técnicas in-situ ou labo-
+ratoriais);
+
+a maioria dos edifícios não possui meios
+de acesso, ficando a avaliação limitada ao
+piso térreo ou são necessários meios de
+acesso auxiliares que aumentam os cus-
+tos (muitas das vezes, não previstos);
+
+a informação disponível é insuficiente
+(telas finais desatualizadas, desconheci-
+mento das características dos materiais
+aplicados, intervenções anteriores, entre
+outras lacunas); não existe historial do
+edifício.
+
+Pelas razões expostas, a adequada escolha
+do tipo de avaliação tendo em conta os revesti-
+mentos a diagnosticar, assim como dos meios
+técnicos envolvidos, é muito importante porque
+influencia significativamente os custos e prazos
+envolvidos, o tipo de equipamento a utilizar, a
+informação a recolher, o conhecimento necessá-
+rio para a realização de cada técnica, o tipo de
+recursos humanos (número de pessoas envolvi-
+das e respetiva formação técnica) e as atividades
+necessárias antes (exemplo: contabilização de
+meios de acesso temporários) e após a realiza-
+ção de cada ensaio (exemplo: reparações para
+repor as condições iniciais que existiam antes da
+realização dos ensaios).
+
+5.41 Observação visual
+
+A observação visual deve ser a primeira téc-
+nica de diagnóstico a ser aplicada, pois permite
+recolher as primeiras informações sobre as ano-
+malias, as quais poderão conduzir à determinação
+das causas prováveis ou à seleção de outras técni-
+cas que melhor se adaptem à situação em análise,
+nomeadamente, técnicas de ensaio in-situ. Embo-
+ra se utilize a designação de observação visual,
+
+246 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+em que a utilização dos olhos do inspetor é cru-
+cial, devem ser utilizados os restantes sentidos.
+A vantagem da sua utilização dependerá clara-
+mente da experiência de cadatécnico. Referem-se
+alguns exemplos em fachadas rebocadas:
+* avaliação táctil - a passagem com a mão
+na superfície molhada permite avaliar
+a existência de pulverulência ou desa-
+gregação; as “costas” das mãos são mais
+sensíveis à deteção de humidade nos pa-
+ramentos;
+avaliação olfativa - a existência de hu-
+midade elevada em determinadas zonas
+pode ser detetada pelo olfato e numa
+base comparativa;
+avaliação gustativa (a menos usual por
+razões óbvias) - as eflorescências solú-
+veis em água apresentam sabores dife-
+rentes (o sulfato de sódio de origem da
+reação reboco-tijolo tem um sabor salga-
+do, enquanto que o sulfato de cálcio de
+origem do tijolo não tem sabor). No en-
+tanto, este tipo de avaliação tem que ter
+em conta o risco de toxicidade de alguns
+compostos existentes à superfície dos re-
+vestimentos.
+
+Antes da realização da avaliação propria-
+mente dita, deve ser efetuada uma recolha dos
+elementos relacionados com o edifício a inspe-
+cionar (elementos de projeto, relatos de obra,
+relatórios ou relatos de anomalias anteriores,
+entre outros), pois a análise prévia daquela
+documentação permite preparar a avaliação a
+realizar no local. É nesta fase que se começa
+a revelar a subjetividade de todo o processo de
+diagnóstico - o técnico que procede à análise dos
+referidos elementos irá valer-se da sua capacida-
+de de diagnosticar, diretamente relacionada com
+a sua formação técnica, e da sua experiência,
+para distinguir e separar a informação relevante
+da não relevante.
+
+Atendendo à subjetividade que se encontra
+associada a uma observação unicamente visual,
+

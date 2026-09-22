@@ -1,0 +1,82 @@
+No caso do aumento do número de pavi-
+mentos, as paredes existentes sofrem, sobretu-
+do, um aumento das tensões de compressão a
+que estão sujeitas. A gravidade desta situação
+depende da “folga” de segurança existente, que,
+contudo, é normalmente difícil de avaliar, quer
+teoricamente quer experimentalmente.
+
+No que se refere ao comportamento das
+paredes existentes, o aumento do número de
+pavimentos pode produzir efeitos semelhantes
+ao aumento das sobrecargas de utilização.
+O principal problema é que, ao contrário dos es-
+forços que provocam tracção em alguma direcção
+da parede e consequente fendilhação (que é nor-
+malmente visível), a compressão excessiva não
+apresenta, em geral, sinais tão evidentes. Deste
+modo, o colapso por compressão de uma parede
+de alvenaria, ainda que seja um fenómeno raro,
+pode acontecer sem sinais prévios muito eviden-
+tes. Mesmo nos casos em que não ocorre colap-
+so, os esforços excessivos de compressão que se
+instalam fazem diminuir a resistência à flexão
+da parede, quer no seu plano quer na direcção
+perpendicular. Desta forma, pode-se afirmar que
+o excesso de compressão pode fazer diminuir a
+resistência sísmica da estrutura, o que é particu-
+larmente crítico no caso de edifícios localizados
+em zonas sujeitas a esse tipo de fenómeno.
+
+Uma das características que contribui de
+modo mais relevante para o comportamento
+estrutural de um edifício é a ligação entre os
+seus elementos estruturais. No caso dos edifí-
+cios de alvenaria, as ligações mais relevantes são
+entre paredes ortogonais, com particular desta-
+que para os cunhais (cantos do edifício), e entre
+os pavimentos e as paredes. As ligações entre
+os elementos estruturais asseguram a solidari-
+zação entre eles e o mútuo contraventamento.
+Quando este contraventamento não existe ou é
+deficiente, a capacidade resistente global do edi-
+fício reduz-se significativamente, sendo o caso
+da acção sísmica particularmente crítico. A figu-
+ra 146 apresenta uma destas situações, em que
+
+DIAGNÓSTICOS NA CONSTRUÇÃO CIVIL (MANIFESTAÇÕES PATOLÓGICAS) * 243
+
+se desenvolveu uma fenda vertical na ligação en-
+tre duas paredes perpendiculares entre si.
+
+Figura 146 - Desligamento entre paredes perpendiculares.
+Fonte: Arquivo do autor.
+
+5.3.2 Manifestações patológicas não
+estruturais
+
+A maior parte das anomalias de carácter
+não estrutural em paredes de alvenaria está,
+por norma, associada à presença de água e à au-
+sência ou deficiência de manutenção periódica.
+A origem da água nos edifícios pode ser diversa,
+nomeadamente, ser de precipitação, estar rela-
+cionada com humidade do terreno, com conden-
+sações, ou com avarias nos sistemas de abasteci-
+mento e drenagem.
+
+Alguns dos principais problemas que é ha-
+bitual encontrar em edifícios antigos estão as-
+sociados a infiltrações de água pluvial pela
+cobertura. Este facto está relacionado com a
+frequente inexistência de acessos que permitam
+uma inspecção da cobertura em condições de
+segurança e, menos ainda, a sua manutenção pe-
+riódica. Deste facto podem resultar situações tais
+como o entupimento dos sistemas de drenagem
+(caleiras e tubos de queda), ausência de ralos
+de pinha nas embocaduras dos tubos de queda
+(que pode causar o entupimento dos mesmos),
+secagem de selantes em rufos, telhas partidas e
+deslocadas, entre outros (Figura 147).
+

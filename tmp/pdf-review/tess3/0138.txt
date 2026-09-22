@@ -1,0 +1,88 @@
+“MRI
+
+Tabela 21 - Resumo dos resultados de L,., e Lo, mm encontrados nas medições sonoras, para tubulação de PVC
+
+com revestimentos diferentes.
+
+Resultados com
+
+Unidades Emiagor Materiais Ambientes revestimento dB(A)
+je ruido
+Emissora Receptora Emissor Receptor Ei: A qaici
+Descarga Materiais Banheiro 5 Penhilidos 43 47
+API Apm -
+Descarga  Material4  Banheiro5 Penha qides 48 52
+
+Fonte: Elaborado pela autora.
+
+materials 5 + 6
+
+tASmax,aT
+
+|
+|
+|
+L
+
+| Análise Comparativa LAeqg.,nT x LASmax,,nT
+| Tubulação com revestimentos diferentes
+
+t(de(a)
+
+30 ao so 60
+
+Figura 85 - Gráfico com análise dos resultados no Banheiro Hóspede da Unidade 71/72 andar, para L,
+
+“Asq nT. e Lasmas am
+
+encontrados nos resultados das medições sonoras da tubulação de PVC com revestimentos diferentes.
+Fonte: Arquivo da autora.
+
+As tubulações sem revestimento foram me-
+didas para o Lip qUe resultou em 55 dB(A). Já
+nos resultados encontrados nas mesmas tubula-
+ções com revestimento dos materiais 5 e 60 Lia
+passou para 43 dB(A) e, revestido com o mate-
+rial4,0 L,, foi de 48 dB(A), chegando a uma me-
+lhora nos níveis de ruídos de 12 dB(A) e 7 dB(A),
+respectivamente.
+
+Os resultados do L q. dos ensaios realizados
+para a válvula de descarga, mostram que nenhum
+dos dois atendem ao que é considerado desempe-
+nho mínimo na norma 15575-6 (ABNT, 2013).
+
+Os resultados encontrados nos Ensaios
+Ae B, em que foram aplicados materiais dife-
+rentes, mostram que a utilização dos materiais
+1e2 para envelopamento das tubulações tem
+um melhor desempenho nas faixas de fre-
+quência de maior sensibilidade ao ouvido
+humano, particularmente na faixa de 500 Hz,
+conforme valores obtidos em L,, de 33,2 dB(A)
+para o Ensaio A; e L,., de 39,2 dB(A) para o En-
+
+136 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+saio B. A diferença entre as faixas Lya ficou em
+6 dB(A), mostrando que os materiais 1 e 2, aten-
+dem melhor aos resultados determinados pela
+norma 15575-6 (ABNT, 2013), que explicita um
+desempenho mínimo de < 37 dB(A).
+
+4,2.4,4 Conclusão
+
+Conclui-se que, a partir da norma 15575
+(ABNT, 2013), para que as tubulações hidráuli-
+cas sanitárias e lajes atendam aos valores de de-
+sempenho mínimo, intermediário e máximo, as
+tubulações hidráulicas sanitárias devem receber
+materiais que absorvam e atenuem os ruídos,
+antes da colocação dos forros programados para
+os ambientes e o piso de uma unidade geradora,
+deve receber material resiliente para atenuação
+do ruído de impacto, para a obtenção dos resul-
+tados necessários.
+
+Kelly Ramos de Lima
+

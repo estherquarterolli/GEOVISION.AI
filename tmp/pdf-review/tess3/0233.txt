@@ -1,0 +1,123 @@
+(ii) Definição do problema
+
+A identificação do problema é a primeira
+etapa do processo de diagnóstico. Uma anoma-
+lia, ou sintoma, não necessariamente indica algo
+patológico, ou um problema. Por exemplo, uma
+fissura capilar no revestimento interno de uma
+parede de vedação, seria um problema?
+
+Para responder esta pergunta, pode ser usado
+como critério de definição de problema de constru-
+çãoo conceito de vício, trazido pelaABNT NBR 13752
+(1996, p. 5, grifo nosso) “Vícios: Anomalias que afe-
+tam o desempenho de produtos ou serviços, ou os tor:
+nam inadequados aos fins a que se destinam, causan-
+
+do transtornos ou prejuízos materiais ao consumidor.
+Podem decorrer de falha de projeto, ou da execução,
+ou ainda da informação defeituosa sobre sua utiliza-
+ção ou manutenção”, Desta forma, entende-se que
+vício (problema de construção) seria uma anomalia
+que afete o desempenho da edificação, ou torne-a
+inadequada ao uso (não atenda às necessidades dos
+usuários).
+
+A definição de desempenho, pelo menos para
+edificações habitacionais, pode ser consultada nas
+ABNT NBR 15575-1 (2013) e ISO 19208 (2016)
+sintetizadas na tabela 35, que servirá de guia mes-
+tra para definição de problemas de construção.
+
+Tabela 35 - Requisito de desempenho de edificações
+habitacionais.
+
+Requisito
+Segurança estrutural
+
+Segurança Segurança contra incêndio
+
+Segurança no uso e operação
+
+Estanqueidade
+
+Desempenho térmico,
+Desempenho acústico
+
+Habitabilidade Desempenho lumínico
+
+Saúde, higiene e qualidade do ar.
+
+Funcionalidade e acessibilidade
+
+Conforto tátil e antropodinâmico
+
+(iii) Observação
+
+A observação, ou também, coleta de dados
+é a parte crucial do processo de diagnóstico,
+que consiste em verificar as condições em que
+o problema ocorre e suas características espe-
+cíficas sob vários de pontos de vista (LEMES,
+2018). Apesar de óbvia, esta etapa não pode
+ser subestimada, sendo este um dos maiores
+diferenciais do detetive, personagem de fic-
+ção, Sherlock Homes, que esclarece esta ação
+de maneira bastante ilustrativa ao seu colega
+John Watson, em Escândalo na Boêmia (DOYLE,
+2015, p. 229, grifo nosso):
+
+JW.: - Quando ouço você enumerar suas
+razões - comentei -, tudo me parece tão
+ridiculamente simples que eu poderia
+com facilidade fazer o mesmo, mas a cada
+exemplo sucessivo do seu raciocínio, eu
+fico completamente confuso até você ex-
+
+plicar o processo. No entanto, acho que
+meus olhos são tão bons quanto os seus.
+
+Ss. Isso mesmo - ele respondeu, acen-
+dendo um cigarro e jogando-se numa pol-
+trona. - Você vê, mas não observa. A dife-
+rença é clara. Por exemplo, você viu muitas
+vezes os degraus que levam do hall a esta
+sala, não é?
+
+JW: - Sim.
+
+So Quantas vezes?
+
+1W.: - Bem, algumas centenas.
+
+Ss. Então quantos são?
+
+W.: - Quantos? Não sei.
+
+s. Aí está. Você não observou. No en-
+tanto, você viu.
+
+Com base neste exemplo, pode-se dizer que
+observar requer mais atenção, foco e processa-
+mento mental do que apenas ver. Para tanto, os
+requisitos necessários para uma boa observação
+são elencados por Konnikova (2013) como sendo:
+
+a) Seja seletivo: deve-se fazer o uso cons-
+ciente da atenção - atenção plena”;
+
+Durabilidade
+Manutenil de
+Adequação ambiental
+
+Fonte: Adaptado de ABNT NBR 15575-1 (2013); ISO 19208 (2016).
+
+Sustentabilidade
+
+* O conceito contemporâneo de “atenção plena; ou
+mindfulness, usado pela psicologia, designa um prestar
+atenção àquilo que é, de momento a momento, a “capacida-
+de de estar presente”, o “estar consciente do que se passa à
+
+DIAGNÓSTICOS NA CONSTRUÇÃO CIVIL (MANIFESTAÇÕES PATOLÓGICAS) * 231
+

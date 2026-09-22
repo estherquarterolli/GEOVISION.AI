@@ -1,0 +1,147 @@
+sentido. A auditoria de projetos é medida funda-
+mental para o bom diagnóstico de eventuais in-
+compatibilidades.
+
+Com isso, segue o terceiro passo apresenta-
+do pelo Engenheiro Luiz Henrique Ceotto:
+
+3º) CONSTRUÇÃO
+
+e Desenvolvimento do Plano de Qualida-
+de do Empreendimento:
+
+» definição de “como” será executa-
+da cada etapa;
+
+» condições de início da etapa e in-
+terferência com as demais fases;
+
+» procedimentos menos burocráti-
+cos e mais “maliciados”;
+
+» “Mock-ups”;
+
+» condições de recebimento, verifi-
+cações e testes de cada material,
+componente e sistema.
+
+* Atenção especial nas interfaces com os
+diversos sistemas (são nesses pontos
+onde acontecem os maiores problemas);
+
+* Rastreabilidade dos problemas de proje-
+toseas consequentes decisões de modi-
+ficações;
+
+* Controle da qualidade intenso e feito
+por pessoas que realmente entendem
+doassunto;
+
+* Procedimento de comissionamento
+dos sistemas prediais;
+
+* Lessonlearned (Lições Aprendidas) no
+final de cada etapa da obra. “Feed Back”
+para as equipes de projeto;
+
+* Modificações nos procedimentos e di-
+retrizes.
+
+E deve-se evitar:
+
+e Inexistência de um plano de qualidade
+ou plano meramente “burocrático”;
+
+* Processo de contratação mal feito (car-
+ta-convite, concorrência, contrato, etc.);
+
+e Inobservância do projeto na contrata-
+ção e no planejamento;
+
+* Fixação de prazos de construção in-
+compatíveis com o processo constru-
+tivo adotado;
+
+* Início do serviço com condições in-
+compatíveis;
+
+* Acompanhamento e controle da exe-
+cução mal feito ou pouco confiável;
+
+* Comissionamento dos sistemas insufi-
+ciente,
+
+É importante ressaltar que a fiscalização
+da obra está determinada pelos itens da ABNT
+NBR 12722 Discriminação de Serviços para
+Construção de Edifícios, em seu item 6 já trans-
+crito neste livro.
+
+Por fim, afirma o Engenheiro Ceotto:
+
+4º) USO
+* Se ater ao “envelope de uso” previstos
+no projeto;
+
+* Manual de uso do edifício completo e
+bem fundamentado;
+
+e Pesquisa pós ocupação;
+
+* Gerenciamento predial profissional;
+
+* Assistência técnica ágil (não deixar os
+problemas crescerem);
+
+* Relação adulto-adulto com o cliente;
+
+* “Lesson Learned” (Lições Aprendidas)
+no final de um período de ocupação;
+
+* Modificações nos procedimentos e di-
+retrizes de uso.
+
+E deve-se evitar:
+
+* Modificações e reformas sem análise
+de compatibilidade com os sistemas do
+edifício;
+
+* Condições de exposição incompatíveis
+com as premissas de projeto;
+
+* Gerenciamento “facilities” inadequado.
+
+5º) MANUTENÇÃO
+* Plano de manutenção abrangente e de-
+talhado;
+
+* Entrega do edifício com todos os con-
+tratos de manutenção efetivos;
+
+* Registro detalhado de mal funciona-
+mento. Rastreabilidade;
+
+* Relacionamento formal com a constru-
+tora/incorporadora;
+
+* “Lesson Learned” (Lições Aprendidas)
+no final de cada etapa de obra. “Feed
+Back” para as equipes de projeto e
+construção;
+
+* Modificações nos procedimentos e di-
+retrizes.
+
+E deve-se evitar:
+
+* Falta de um plano de manutenção;
+
+* Gestão de manutenção feita de forma
+rudimentar e pouco profissional.
+
+As condições de uso e manutenção po-
+dem ser devidamente monitoradas através de
+
+DESEMPENHO * 315
+

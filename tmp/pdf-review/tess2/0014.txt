@@ -1,0 +1,26 @@
+e 2 % PATOLOGIA DAS EDIFICAÇÕES
+
+do
+
+Fig. 2.2 Fissura através de argamassa e bloco
+
+Quando a solicitação da alvenaria ocorre por uma carga uniforme-
+mente distribuída, podem acontecer sobretudo duas formas de fissura. A
+configuração das fissuras apresenta-se em paredes sem aberturas como
+mostrado na Fig. 2.3 e, em paredes com aberturas, como mostrado na
+Fig. 2.4.
+
+A deformação excessiva dos componentes estruturais superiores e
+inferiores às alvenarias causa diferentes solicitações a essas alvenarias.
+No caso de excessiva deformação de ambos os componentes de forma
+idêntica, a configuração da fissuração se apresenta conforme a Fig. 2.5.
+Sendo a deformação do elemento estrutural de suporte da alvenaria
+
+T
+
++ +
+
+Fig. 2.3 Fissuras em trecho contínuo de alvenaria pela atuação de carga vertical
+uniformemente distribuída
+
+8

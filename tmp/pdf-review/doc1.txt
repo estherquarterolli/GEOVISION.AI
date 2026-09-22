@@ -1,0 +1,827 @@
+
+=== PAGINA 1 ===
+Noções de Avaliação de 
+Risco Estrutural 
+
+
+=== PAGINA 2 ===
+ 
+DEFESA CIVIL 
+- ES   
+ 
+DEFESA CIVIL - ES   
+ 
+Noções de Avaliação de Riscos 
+Estruturais   
+ 
+Instrutor:  Roney Gomes Nascimento   
+Eng.º Civil – Subcoordenador de Operações 
+ 
+ 
+ 
+
+
+=== PAGINA 3 ===
+Introdução 
+ 
+Dentre os inúmeros problemas patológicos que afetam as 
+edificações, 
+sejam 
+eles 
+residenciais, 
+comerciais 
+ou 
+institucionais, particularmente importante é o problema das 
+trincas, devido a três aspectos fundamentais: o aviso de um 
+eventual estado perigoso para a estrutura, o comprometimento 
+do desempenho da obra em serviço, e o constrangimento 
+psicológico que a fissuração da edificação exerce sobre seus 
+usuários.  
+Do ponto de vista físico uma edificação nada mais é do que a 
+interligação racional entre diversos materiais e componentes. 
+Não existe nenhum material infinitamente resistente; todos eles 
+irão trincar-se ou romper-se sob ação de um determinado nível 
+de carregamento, nível este que não deverá ser atingido no caso 
+de não se desejar na edificação componentes trincados ou 
+rompidos. 
+ 
+
+
+=== PAGINA 4 ===
+As fissuras podem ser causadas por: 
+ 
+• movimentações térmicas; 
+• movimentações higroscópicas; 
+• atuação de sobrecargas; 
+• deformabilidade excessiva de estruturas de 
+concreto armado; 
+• recalques de fundação; 
+• retração de produtos à base de cimento; 
+• alterações 
+químicas 
+dos 
+materiais 
+de 
+construção 
+ 
+
+
+=== PAGINA 5 ===
+Recuperação de componentes trincados 
+ 
+A recuperação de componentes trincados só 
+deverá ser procedida em função de um 
+diagnóstico seguramente firmado, e somente 
+após ter-se pleno conhecimento da implicação 
+das trincas no comportamento da edificação 
+como um todo. 
+ 
+
+
+=== PAGINA 6 ===
+As patogenias são problemas que se instalam nas 
+edificações e que a tornam doentia. Na sua 
+evolução, pode ocorrer uma deterioração das partes 
+afetadas e até mesmo a ruptura, comprometendo a 
+estabilidade 
+da 
+edificação. 
+Em outras palavras, às vezes, uma simples mancha 
+ou uma pequena trinca pode ser o sinal de que algo 
+grave está acontecendo com o prédio. 
+
+
+=== PAGINA 7 ===
+Muitas das patogenias originam-se durante a elaboração do 
+projeto. Profissionais mal preparados ou com formação em outro 
+país não conhecem as características climáticas, de insolação e 
+regime dos ventos do Brasil onde encontramos uma variedade 
+climática muito diversificada.  
+Além disso os materiais e os processos construtivos diferem 
+muito, nosso cimento é muito diferente do europeu, nossas casas 
+são construídas com tijolos ou blocos e nos EUA as casas e 
+sobrados são todas de madeira e assim por diante existem muitas 
+diferenças. 
+Outras patogenias surgem ao longo da vida do prédio - materiais 
+como madeira apodrecem, ficam fracos e caem. Até o concreto, 
+dependendo das circunstâncias, apodrece.  
+
+
+=== PAGINA 8 ===
+Vamos tomar o cuidado de não chamar de "patologia" 
+qualquer problema no prédio. Patologia de prédio é o estudo 
+das patogenias (doenças) que se instalam no prédio e que 
+precisam receber uma profilaxia (tratamento) para serem 
+erradicadas. Da mesma forma com que uma pessoa com o 
+braço quebrado não está "doente", uma viga trincada não é 
+patogenia e muito menos uma patologia. 
+
+
+=== PAGINA 9 ===
+Elementos Estruturais 
+
+
+=== PAGINA 10 ===
+ 
+ 
+
+
+=== PAGINA 11 ===
+O que será que está acontecendo na casa 
+desenhada no slide anterior? 
+1 - Trinca horizontal próxima ao teto pode ser 
+devido ao adensamento da argamassa de 
+assentamento dos tijolos ou falta de amarração 
+da parede com a viga superior; 
+2 - Fissuras nas paredes em direções aleatórias 
+pode ser devido à falta de aderência da pintura, 
+retração 
+da 
+argamassa 
+de 
+revestimento, 
+retração da alvenaria ou falta de aderência da 
+argamassa à parede;  
+
+
+=== PAGINA 12 ===
+ 
+3 -Trincas no piso podem ser produzidas por 
+vibrações de motores, excesso de peso sobre a 
+laje ou fraqueza da laje; verificar se há trincas na 
+parte de baixo (ver ítem 4); se tiver é grave; peça o 
+PARECER de um engenheiro de estruturas; 
+4 -Trincas no teto podem ser causadas pelo 
+recalque da laje,  falta de resistência da laje ou 
+excesso de peso sobre a laje; pode ser grave; 
+peça o PARECER de um engenheiro de estruturas;  
+5 -Trincas inclinadas nas paredes é sintoma de 
+recalques; um dos lados da fundação não 
+agüentou ou não está agüentando o peso e 
+afundou 
+ou 
+está 
+afundando; 
+geralmente 
+é 
+grave; peça o PARECER de um engenheiro de 
+estruturas;  
+
+
+=== PAGINA 13 ===
+ 
+6 – O abaulamento do piso pode ser causado por 
+recalque das estruturas, por expansão do sub-solo 
+ou colapso do revestimento; quando causados por 
+recalques, 
+são 
+acompanhados 
+por 
+trincas 
+inclinadas 
+nas 
+paredes; 
+os 
+solos 
+muito 
+compressíveis, com a presença da água, se 
+expandem e empurram o piso para cima;  
+7 - As trincas horizontais próximas ao piso podem 
+ser causadas pelo recalque do baldrame ou 
+mesmo pela subida da umidade pelas paredes, por 
+causa do colapso ou falta de impermeabilização do 
+baldrame; 
+8 - Trinca vertical na parede é causada, geralmente 
+pela falta de amarração da parede com algum 
+elemento estrutural como pilar ou outra parede que 
+nasce naquele ponto do outro lado da parede;   
+
+
+=== PAGINA 14 ===
+•
+Corrosão de armaduras: 
+ 
+–
+As reações de corrosão, independentemente de sua 
+natureza, produzem óxido de ferro, cujo volume é muitas 
+vezes maior do que o original do metal são; essa expansão 
+provoca o fissuramento e o lascamento do concreto nas 
+regiões próximas às armaduras; 
+ 
+–
+Destacam-se 
+como 
+meios 
+agressivos 
+ao 
+concreto: 
+ambientes marinhos (ricos em íons cloro), solos com 
+elevado teor de matéria orgânica em decomposição 
+(presença de ácido carbônico), solos contaminados, 
+atmosferas poluídas de grandes cidades (íons enxofre 
+provenientes da queima de combustíveis de motores a 
+explosão) e diversas atmosferas industriais (refinarias de 
+petróleo, indústrias de papel e celulose, cerveja, etc.); 
+também as paredes de galerias de esgotos domésticos são 
+bastante suscetíveis de ataque, particularmente acima do 
+nível do efluente; nesse caso, o gás sulfídrico que se 
+desprende do esgoto combina-se com o hidrogênio do ar, 
+transformando-se sucessivamente em ácido sulfuroso e 
+ácido sulfúrico. 
+
+
+=== PAGINA 15 ===
+ 
+– Na vistorias de corrosão das armaduras, deve ater-
+se mais às regiões da estrutura que estiverem 
+submetidas a ciclos de molhagem e secagem, à 
+estrutura voltada para a fachada, lajes descobertas, 
+pés de pilares e locais confinados, como as 
+garagens; muitas vezes existe a necessidade de 
+remoção e do concreto para melhor visualização da 
+manifestação patológica; 
+– A 
+vistoria 
+em 
+edificações 
+deve 
+levar 
+em 
+consideração 
+aspectos 
+importantes 
+como 
+infiltrações de água, corrosão de armaduras, 
+fissuras e deformações em elementos estruturais, 
+fissuras 
+em 
+alvenarias, 
+descolamentos 
+nos 
+revestimentos; deve ser feito o registro por meio de 
+fotografias e croquis; 
+
+
+=== PAGINA 16 ===
+ 
+ 
+ 
+– As trincas, em geral, são ocorrências muito comuns 
+nas casas e prédios; surgem em função de muitas 
+causas diferentes e são conhecidas também como 
+fissuras ou rachaduras; entretanto, existe uma 
+diferença 
+conceitual 
+entre 
+fissura, 
+trinca 
+e 
+rachadura; 
+ 
+– Os leigos, por terem dificuldade de compreenderem 
+os fenômenos físicos e mecânicos relacionados 
+com 
+os 
+diversos 
+componentes 
+construtivos 
+preferem diferenciar as aberturas dizendo que 
+fissura é uma abertura bem pequenina, que trinca é 
+uma abertura mediana e rachadura uma abertura 
+bem grande; 
+ 
+ 
+
+
+=== PAGINA 17 ===
+ 
+ 
+ 
+– Fissuras são muito comuns, mas isto não significa 
+que são normais; portanto não devem ser aceitas 
+passivamente; muitas vezes são bem pequenas, 
+quase invisíveis, mas podem ser sintomas de algo 
+muito grave que está acontecendo com a estrutura 
+da 
+sua 
+edificação; 
+em 
+diversos 
+casos 
+de 
+desabamentos de prédios, moradores já haviam 
+desconfiados de trincas que teriam aparecido dias 
+antes do desabamento, mas que não tinha sido 
+dada a importância que o caso merecia; se 
+tivessem feito a evacuação preventiva do prédio 
+muitas mortes poderiam ser evitadas; 
+ 
+ 
+
+
+=== PAGINA 18 ===
+ 
+ 
+ 
+– Fissuras: 
+é 
+o 
+estado 
+em 
+que 
+um 
+determinado 
+objeto 
+ou 
+parte 
+dele 
+apresenta aberturas finas e alongadas na 
+sua superfície; em geral, a fissura não 
+representa sinal de gravidade na estrutura; 
+em alguns casos, porém, podem ser o sinal 
+de uma possível rachadura em alguma 
+peça estrutural (laje, viga ou pilar); ex: A 
+aplicação de uma argamassa rica em 
+cimento, após a cura, muitas fissuras em 
+direções 
+aleatórias; 
+as 
+fissuras 
+são, 
+geralmente, superficiais e não implicam, 
+necessariamente, 
+em 
+diminuição 
+da 
+segurança de componentes estruturais; 
+ 
+
+
+=== PAGINA 19 ===
+ 
+ 
+ 
+– Trincas: é o estado em que um determinado 
+objeto ou parte dele se apresenta partido, separado 
+em partes; ex: A parede está trincada, isto é, está 
+separada em duas partes; em muitas situações a 
+trinca é tão fina que é necessário o emprego de 
+aparelho ou instrumento para visualizá-lo; as 
+trincas, por representarem a ruptura dos elementos, 
+podem diminuir a segurança dos componentes 
+estruturais de uma edificação, de modo que mesmo 
+que seja quase imperceptível deve ter as causas 
+minuciosamente pesquisadas; lembre-se: no caso 
+do Edifício Pálace II, no Rio de Janeiro, que caiu 
+matando diversas pessoas, um dos moradores 
+havia solicitado a opinião de um engenheiro uma 
+semana antes e este havia dito: “Isto é normal”; 
+
+
+=== PAGINA 20 ===
+ 
+– Rachaduras: é o estado em que um determinado 
+objeto ou parte dele apresenta uma abertura de tal 
+tamanho que ocasiona interferências indesejáveis; 
+ex: pela rachadura da parede entra vento e água da 
+chuva; as rachaduras, por proporcionarem a 
+manifestação de diversos tipos de interferências, 
+devem ser analisadas caso a caso e serem tratadas 
+do seu fechamento; 
+– Antes de pensar em “tampar” uma trinca, é 
+importante descobrir e eliminar a causa, isto é, 
+aquilo que está causando a trinca, pois a trinca é 
+apenas uma consequência, um sintoma de alguma 
+coisa ruim que está acontecendo com a sua casa ou 
+prédio;   
+ 
+
+
+=== PAGINA 21 ===
+ 
+São muitas as causas que provocam o 
+aparecimento de trincas; as mais 
+comuns são: 
+ 
+1 – RETRAÇÃO :  
+•
+A argamassa de revestimento, a tinta e outros 
+materiais que são aplicados úmidos, diminuem 
+de tamanho (retração) ao secar;   
+2 – ADERÊNCIA:  
+•
+As pinturas e os revestimentos que precisam 
+ficar bem "grudados" na parede, por algum 
+motivo, apresentam perda de aderência e 
+começam a descascar;  
+ 
+3 – DILATAÇÃO :  
+•
+Os materiais aumentam e diminuem de tamanho 
+em função da variação da umidade do meio 
+ambiente;  
+
+
+=== PAGINA 22 ===
+ 
+4 – MUITO CIMENTO:  
+• A argamassa de revestimento, quando 
+tiver um alto teor de cimento, sofre uma 
+grande retração e fica toda fissurada; 
+5 - AMARRAÇÃO:  
+• As 
+paredes 
+devem 
+ficar 
+bem 
+"amarradas" na estrutura do prédio;   
+6 – TREPIDAÇÃO:  
+• Elevadores, compressores e mesmo os 
+veículos que trafegam na rua, produzem 
+vibrações  que afetam as partes do 
+prédio;  
+
+
+=== PAGINA 23 ===
+7 – RECALQUE:  
+•
+O excesso de peso, a acomodação do prédio, a 
+fraqueza do material ou do terreno fazem com 
+que a peça se deforme ou afunde;  
+8 – CAPACIDADE:  
+•
+Por erro de cálculo ou por deficiência na hora da 
+confecção, as peças podem ficar fracas;    
+9 – MUDANÇA DO USO:  
+•
+Um 
+prédio 
+que 
+foi 
+projetado 
+para 
+uso 
+residencial, está sendo usado como comércio, 
+por exemplo;   
+10 – VIZINHANÇA:  
+•
+Construíram um "baita" prédio de 30 andares 
+que alterou o fluxo de água subterrânea da 
+região;   
+
+
+=== PAGINA 24 ===
+ 
+11 – ERRO DE PROJETO:  
+• Por falha na concepção da estrutura do 
+prédio, há partes em desarmonia com o 
+resto;   
+12 – INFILTRAÇÃO:  
+• Água e outros elementos podem se 
+infiltrar causando danos;    
+ 
+13 – MANUTENÇÃO:  
+• Falhas, 
+imperícias, 
+falta 
+de 
+conhecimento;   
+   
+ 
+
+
+=== PAGINA 25 ===
+ 
+ 
+ 
+ 
+ 
+14 – CORROSÃO:  
+•
+Saiba o que é corrosão eletroquímica ou 
+corrosão catódica;     
+ 
+15 – CIMENTO:  
+•
+Veja quais são os tipos de cimentos produzidos 
+no Brasil;   
+   
+ 
+
+
+=== PAGINA 26 ===
+Há reações dentro da estrutura de concreto 
+quando em contato com a água, provocando 
+inúmeras fissuras  
+
+
+=== PAGINA 27 ===
+Estruturas Colapsadas 
+“São estruturas que, por algum motivo, 
+deixaram de atender às funções para as 
+quais foram construídas apresentando, 
+eventualmente, risco para usuários 
+residuais, 
+ou 
+mesmo, 
+nos 
+casos 
+emergenciais, 
+para 
+as 
+ações 
+de 
+resgate” 
+
+
+=== PAGINA 28 ===
+Estruturas Colapsadas 
+      Vista lateral de viga de sustentação de ponte sobre o Rio Una  
+                                              Guarapari/ES 
+
+
+=== PAGINA 29 ===
+Estruturas Colapsadas 
+   Edificação comprometida próxima a desabamento de muro 
+de contenção – Pedro Canário/ES – Chuvas de jan/2005 
+
+
+=== PAGINA 30 ===
+Estruturas Colapsadas 
+                                             
+Estrutura comprometida de reservatório de água 
+             Taquaras– Pedro Canário/ES  
+
+
+=== PAGINA 31 ===
+Estruturas Colapsadas 
+                                             
+Estrutura comprometida de reservatório de água 
+             Taquaras– Pedro Canário/ES  
+
+
+=== PAGINA 32 ===
+Estruturas Colapsadas 
+                                             
+Coluna de sustentação comprometida de reservatório 
+de água - Taquaras– Pedro Canário/ES  
+
+
+=== PAGINA 33 ===
+Estruturas Colapsadas 
+                                             
+Edificação comprometida pelas chuvas de jan/2005 
+             Taquaras– Pedro Canário/ES  
+
+
+=== PAGINA 34 ===
+Estruturas Colapsadas 
+                                             
+Edificação comprometida pelas chuvas de nov/2006 
+             Ponto Belo/ES  
+
+
+=== PAGINA 35 ===
+Estruturas Colapsadas 
+                                             
+ Alvenaria desprotegida em edificação afetada pelas 
+chuvas de dez/2006 - Vila Pavão/ES  
+
+
+=== PAGINA 36 ===
+Estruturas Colapsadas 
+                                             
+ Desabamento de galeria em área urbana  
+Pinheiros/ES – jul/2009  
+
+
+=== PAGINA 37 ===
+Estruturas Colapsadas 
+                                             
+ Edificação com anomalia estrutural provocada por 
+galeria sob sua fundação - Pinheiros/ES – jul/2009  
+
+
+=== PAGINA 38 ===
+Estruturas Colapsadas 
+Efeitos de Incêndio 
+Estrutura colapsada por incêndio – Cariacica - ES 
+
+
+=== PAGINA 39 ===
+Estruturas Colapsadas 
+   Estrutura colapsada em pavto superior de edificação 
+       Timbuí – Fundão/ES – maio/2010 
+
+
+=== PAGINA 40 ===
+Estruturas Colapsadas 
+Efeitos de Incêndio 
+Estrutura colapsada por incêndio   
+ Cariacica - ES 
+
+
+=== PAGINA 41 ===
+Corrosão em Estrutura Metálica 
+ 
+Estrutura metálica de quadra de esportes 
+coberta - CREFES – Vila Velha - ES 
+
+
+=== PAGINA 42 ===
+Tipos de Construções e Estruturas: 
+• Principais sistemas construtivos: 
+– 3.1 - Alvenaria auto-portante; 
+• Blocos cerâmicos, concreto ou solo-cimento  
+– 3.2 - Concreto armado ou protendido; 
+• Pilares, vigas e lajes (maciças ou pré-fabricadas) 
+– 3.3 - Metálicas ou mistas; 
+• Prédios e galpões 
+– 3.4 - Madeira; 
+• Prédios, telhados e galpões 
+– 3.5 – Outros 
+• Pau-a-pique, estuque, palhas, solo-cimento, etc. 
+
+
+=== PAGINA 43 ===
+Zona Rural - Montanha - ES 
+
+
+=== PAGINA 44 ===
+Taquaras - Pedro Canário - ES 
+
+
+=== PAGINA 45 ===
+Praia Grande - Fundão - ES 
+
+
+=== PAGINA 46 ===
+Boa Esperança - ES 
+
+
+=== PAGINA 47 ===
+Tipos de danos e deteriorações das 
+estruturas  
+ 
+– Tipos de acidentes: 
+• Incêndio, Impactos ou Desabamento. 
+ 
+– Tipos de deterioração: 
+• Apodrecimento de madeiramentos; 
+• Corrosão das armaduras do concreto ou de 
+elementos metálicos; 
+• Destruição do concreto: 
+– Infiltrações, ataques químicos externos ou 
+internos. 
+ 
+– Falhas de projeto ou execução. 
+ 
+
+
+=== PAGINA 48 ===
+• Avaliação da probabilidade de ruína de 
+estruturas 
+• Sinais de instabilidade das estruturas: 
+– Estruturas de alvenaria auto-portante: 
+• Fissuras nas alvenarias; 
+– Diagonais, verticais e horizontais; 
+– Diagonais em cantos de janelas e portas; 
+– Fissuração generalizada. 
+• Falta de argamassas de assentamento ou ligação; 
+• Perda de verticalidade das alvenarias; 
+• Problemas nas esquadrias - funcionamento; 
+• Falta de suporte da estrutura do telhado; 
+• Deformações excessivas dos elementos de telhado; 
+• Vibrações excessivas; 
+• Insuficiência das fundações. 
+
+
+=== PAGINA 49 ===
+– Estruturas de Concreto Simples: 
+ 
+• Perda de verticalidade; 
+• Fissuras verticais; 
+• Fissuras diagonais; 
+• Esmagamento de trechos; 
+• Infiltrações; 
+• Problemas em fundações. 
+
+
+=== PAGINA 50 ===
+– Estruturas metálicas: 
+• Corrosão na base dos pilares; 
+• Corrosão nas regiões de ligação entre 
+elementos; 
+• Corrosão generalizada; 
+• Deformações excessivas globais; 
+• Deformações excessivas localizadas; 
+• Sinais de fragilidade estrutural; 
+• Fraturas por fadiga; 
+• Vibrações excessivas; 
+• Concentração de tensões nas 
+ligações; 
+• Insuficiência das fundações. 
+
+
+=== PAGINA 51 ===
+– Estruturas de Madeira: 
+ 
+• Ataques por fungos – apodrecimento – perda 
+de seção; 
+• Sinais de infiltração – apodrecimento; 
+• Deformações excessivas; 
+• Esmagamento de peças; 
+• Destruição das ligações entre elementos com 
+sinais de movimentação relativa; 
+• Separações excessivas das alvenarias de 
+vedação; 
+• Movimentações excessivas; 
+• Perda de verticalidade; 
+• Insuficiência das fundações. 
+
+
+=== PAGINA 52 ===
+ 
+ 
+• Análise de risco iminente: 
+ 
+– Lajes, Vigas, Pilares, Coberturas, Muros, Galpões  
+e Reservatórios: 
+ 
+• Observar fissuras e deformações; 
+• Observar integridade dos elementos 
+estruturais; 
+• Observar zonas de ligação e centro de vãos. 
+
+
+=== PAGINA 53 ===
+Viga de teto p/sustentação de ponte sobre o Rio 
+Perocão - Guarapari/ES - Março/2010 
+
+
+=== PAGINA 54 ===
+Edificação de baixo padrão construtivo – estruturada 
+colapsada - Iconha/ES - Ago/2008 
+
+
+=== PAGINA 55 ===
+Flambagem de pilar em estrutura de sustentação de varanda   
+Praia das Virtudes – Guarapari/ES - Ago/2007 
+
+
+=== PAGINA 56 ===
+Viga de teto comprometida em estrutura de pátio de 
+banho de sol - Presídio de Argolas – Vila Velha/ES - 
+Mai/2009 
+
+
+=== PAGINA 57 ===
+Escoramento em cabeceira comprometida de ponte em 
+Rodovia Estadual - Atílio Vivácqua/ES - Jan/2009 
+
+
+=== PAGINA 58 ===
+Escoramento em cabeceira de ponte em Rodovia 
+Estadual - Atílio Vivácqua/ES - Jan/2009 
+
+
+=== PAGINA 59 ===
+Vistoria na Represa PCH São Simão  
+Alegre/ES – Dez/2009 
+
+
+=== PAGINA 60 ===
+Vistoria em ombreira da Represa PCH São Simão  
+Alegre/ES – Dez/2009 
+
+
+=== PAGINA 61 ===
+Comprometimento de muro de gabião às margens da  
+Rodovia do Sol – Piúma/ES – Fev/2007 
+
+
+=== PAGINA 62 ===
+Ausência de manutenção em Ponte 
+ Guarapari/ES – Set/2008 
+
+
+=== PAGINA 63 ===
+Vista do prédio que adernou em direção a prédio vizinho 
+Ibatiba/ES – Abr/2009 
+
+
+=== PAGINA 64 ===
+Vista de beiral de laje de prédio adernado p/prédio vizinho 
+Ibatiba/ES – Abr/2009 
+
+
+=== PAGINA 65 ===
+Muito Obrigado! 
+ 
+• Eng.º Civil Roney Gomes Nascimento 
+• E-mail: defesacivil@bombeiros.es.gov.br 
+• E-mail: engroney@yahoo.com.br 
+• E-mail: engroney@gmail.com 
+• Tels: (27)-31374441/(27)-99752075 
+(CEDEC/ES)/(27)-99031694 (Part) 
+ 

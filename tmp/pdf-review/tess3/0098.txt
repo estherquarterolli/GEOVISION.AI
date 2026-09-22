@@ -1,0 +1,83 @@
+Tabela 6 - Denominações das normas ABNT.
+
+Denominações Qtdade Percentual
+NBR 5621 68%
+NBR ISO 1983 24%
+NBR NM 351 4%
+NBR IEC 333 4%
+Total 8288 100%
+
+Fonte: Adaptado de http;/Awww.abnt.org br/normalizacao/numeros-2017.
+
+No conjunto de 866 Normas aplicáveis ao
+macrossetor da Construção Civil e infraestrutu-
+ra, a ABNT adota a Classificação Internacional de
+Normas (CIN) (ABNT, 2016), e esta classificação
+tem como base a publicação “International Clas-
+sification for Standards”, da ISO (ISO, 2015), sen-
+do que serve de base para elaboração de catálo-
+gos de normas e outros documentos normativos
+internacionais, regionais e nacionais.
+
+No catálogo de Normas da ABNT, tem-se o
+acesso a todo o conjunto de normas brasileiras,
+conforme o sistema de classificação CIN, sendo
+que no caso da construção civil, estão designadas
+sob a classificação: “91 - Edificações e Materiais de
+Construção”, com respectivas sub-classificações.
+
+Numa consulta ao catálogo, que está dis-
+ponibilizado on-line, sob a classificação 91 e
+sub-classificações, foram identificadas 1.120
+normas, sendo que deste montante, 464 normas
+estão relacionadas às “Edificações e Materiais de
+Construção”, e que são importantes para o pro-
+cesso de produção de edificações.
+
+As 464 normas identificadas são do Tipo
+ABNT NBR; ANBT NM; E ABNT NBR ISO e se
+destinam 28 campos de aplicação que podem
+ser cotejados coma as fases do PPEURD, como
+apresentado no Tabela 7:
+
+Tabela 7 - Distribuição das normas ABNT para Edificações e Materiais de Construção” entre as fases do PPURD.
+
+e
+" £ 2 $
+
+Campo de aplicação 3 Ê n 8 g
++ Eb | ; & E
+CE: 5 3 8 &
+
+Amostragem o 2 LH a É
+
+Análise 3 = m o)
+
+Avaliação 6 E = m
+
+Classificação 4 E
+
+Coleta 2 Lo) a
+
+Controle tecnológico 4 Lo) E
+
+Determinação 34 E Lo
+
+Dimensões 1 m m = m Lo
+
+Diretrizes 6 = m Lo) = E
+
+Especificação 52 E E m o m
+
+Execução 14 = 1]
+
+Inspeção 1 É Õ m
+
+Instalação 4 = m m m
+
+Medição 10 o) E iu
+
+Método de ensaio 102 LJ E [o a
+
+96 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+

@@ -1,0 +1,96 @@
+Para realizar corretamente a verificação da
+estrutura que está sendo vistoriada, o profis-
+sional deverá fazer, se possível, a sua checagem
+através do exame do projeto original, conferir
+com o que encontra atualmente, e procurar se
+informar de alterações realizadas na edificação.
+Notar que, antigamente, houve muitos casos de
+prédios que foram aumentados e tiveram as suas
+estruturas modificadas durante a obra, como,
+por exemplo, o próprio Edifício Liberdade que
+ruiu em 2012. Nestes casos se faz imprescindível
+verificar os registros administrativos nos arqui-
+vos públicos.
+
+Se for constatada alteração na estrutura, o
+profissional deverá verificar se este acréscimo
+invadiu de modo perigoso o coeficiente de segu-
+rança original previsto. Para estimar este coefi-
+ciente, mede-se as seções dos pilares existentes
+por debaixo do acréscimo e calcula-se a sua ca-
+pacidade de carga mais o coeficiente de seguran-
+ça, segundo os preceitos da NBR 6118/2014 da
+ABNT, ou as suas versões anteriores conforme a
+idade do prédio. Apurada a capacidade de carre-
+gamento original, o profissional mede os acrés-
+cimos realizados no local e apura a carga adi-
+cional do carregamento, estimando o sobrepeso
+médio na estrutura de 1,00t/m2 de acréscimo.
+Distribuindo o valor encontrado sobre os pilares
+originais, verifica-se o quanto de sobrecarga está
+incidindo sobre o coeficiente previsto original-
+mente. Se for, por exemplo, de 15%, ou mesmo
+de 20% adentrando o coeficiente original calcu-
+lado, a edificação se mantém segura mesmo com
+esta alteração não regulamentar, se a estrutura
+estiver bem conservada. Porém, se o acréscimo
+invade 45% ou 60% do coeficiente de segurança
+original, o profissional deve considerar no seu
+laudo a edificação sob risco grave e determinar
+os reforços necessários.
+
+VSTO TO A
+
+Além destes cuidados, a verificação visual
+dos elementos estruturais no seu encontro com
+as paredes e esquadrias fornece dados impor-
+tantes para o profissional a respeito do desem-
+
+penho do conjunto. Se há muitas ocorrências de
+fissuras e trincas, indicativas de deformações
+na estrutura, o profissional deve verificar o que
+ocorre. Muitas vezes estas fissuras têm origem
+em dilatações térmicas, nada importante que
+condene a peça estrutural. Porém, se há sinais
+indicativos de flechas anômalas nas vigas, isto
+pode ser indicativo de subdimensionamento da
+estrutura ou de excesso de carregamento nesta
+parte do prédio. Mesma coisa deve ser examina-
+da na ocorrência de fissuras e trincas a 45º em
+uma mesma prumada da edificação, indicativo
+de provável recalque das fundações. Portanto,
+o exame visual é muito importante também na
+realização deste tipo de laudo técnico.
+
+Numa primeira Autovistoria a um edifício,
+o profissional deverá ter redobrada atenção em
+relação à qualidade da estrutura. E como verifi-
+car se a estrutura foi bem construída e se está
+em bom estado de conservação? Para esta cons-
+tatação é necessária a realização de testes na
+própria estrutura existente, testes estes que po-
+dem ser feitos através de visitas abertas nos re-
+vestimentos ou abrindo janelas nos tetos de ges-
+so. Nos prédios costumam existir também vários
+lugares em que a estrutura pode estar aparente,
+como em subsolos garagem por exemplo, o que
+irá facilitar os procedimentos expostos a seguir.
+
+Em primeiro lugar deve-se verificar a re-
+sistência do concreto da estrutura à compres-
+são, o que pode ser medido por três métodos
+diferentes.
+
+O ensaio mais simples é através de golpes
+de esclerômetro realizado conforme determi-
+na a NBR 7584/2012. Em uma superfície lisa e
+limpa da estrutura o profissional desenha um
+reticulado quadrado com espaços de 5cm entre
+a trama formando o mínimo de nove (9) quadra-
+dos. No meio de cada quadrado dispara-se per-
+pendicularmente a haste do esclerômetro e, ao
+final, analisa-se os resultados dos impactos de-
+vidamente anotados em um papel. Tira-se a mé-
+dia e desconsidera-se os resultados maiores ou
+
+ETAPAS CONSTRUTIVAS * 177

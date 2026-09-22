@@ -1,0 +1,73 @@
+V, = R$4.240,81/m? para os “prédios tortos”
+V, = R$ 4.960,34/m? para os outros edifícios
+
+Variação percentual média =
+
+Variação percentual média =
+
+(Valor Maior — Valor Menor) x
+pe ra ia tio
+
+(4.960,34 — 4.240,81)
+
+Valor Maior am,
+
+4.960,34 2100
+
+Variação percentual média = 14,5%
+
+Cabe ressaltar que a variação percentual máxima pode alcançar 22,1 % (limite da frontei-
+ra amostral - R$) quanto maior for a influência dessa patologia no edifício.
+
+Variação percentual média =
+
+(4.960,34 — 3.864,79)
+
+4.960,34 1
+
+Variação percentual média = 22,1%
+
+8.2.2.3 Comentários finais
+
+A presente avaliação, em razão do número
+de elementos pesquisados e pelo tratamento es-
+tatístico e de homogeneização, enquadra-se per-
+feitamente entre os níveis de fundamentação e
+precisão preconizados pela ABNT NBR 14.653-2
+(2011).
+
+Na aplicação do Método Comparativo com
+a utilização de modelos de regressão linear, con-
+forme item 9.2.1 da ABNT NBR 14653-2 (2011,
+p. 22-23), a presente avaliação se enquadra no
+grau Il de Fundamentação.
+
+Em função da amplitude do intervalo
+de confiança de 80% em torno do valor cen-
+tral da estimativa ter resultado inferior a 30%
+(17,73%), conforme item 9.2.3 da ABNT NBR
+14653-2 (2011, p. 26), a avaliação se enquadra
+no grau III de Precisão.
+
+8.2.2.4 Conclusão
+
+O impacto do recalque diferencial (Tabela
+62) no valor médio de mercado dos apartamen-
+tos localizados nos denominados “prédios tor-
+tos” na orla de Santos/SP, para a data-base de
+maio de 2020 é:
+
+Tabela 62 - Variação percentual do impacto do recal-
+que diferencial
+
+Faixa de influência do recalque %
+Mínima [o]
+] Média [ER
+art Máxima zoo.
+
+Fonte: Elaborada pela autora,
+
+Flávia Maluza Braga
+
+LAUDOS, PARECERES DIAGNÓSTICOS E DE CONSULTORIAS * 397
+

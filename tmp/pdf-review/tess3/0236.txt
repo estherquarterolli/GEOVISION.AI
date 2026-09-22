@@ -1,0 +1,94 @@
+indução e abdução, sendo a abdução o mais utili-
+zado, conforme será detalhado na subseção iv.5.
+
+Nesta etapa existe uma dificuldade na isen-
+ção, quando o “contador de histórias” que vive
+dentro da mente humana assume o controle,
+É um processo natural que procura formular
+conclusões para os fatos, basicamente pela cor-
+relação com crenças e experiências anteriores,
+que criam um pré-julgamento - mesmo que to-
+talmente sem lógica (KONNIKOVA, 2013). Este
+pré-julgamento pode ser identificado no dia-a-
+-dia: muitas pessoas apenas de olhar para outra,
+julgam seu intelecto, personalidade e caráter. Se
+tem aparência limpa, roupas novas e limpas de
+grife, é muito provável que em comparação com
+uma pessoa de rosto suado, roupas simples e su-
+jas, julgue-se o primeiro como mais competente,
+inteligente e honesto; conclusões sem base em
+nenhum raciocínio lógico.
+
+O mesmo pode ocorrer para análise de pro-
+blemas de construção, principalmente quando
+se tem certa experiência. As vivências passa-
+das de diagnósticos anteriores, podem distor-
+cer a compreensão dos fatos. “É um erro grave
+formular teorias antes de se conhecerem os fatos.
+Sem querer, começamos a distorcer os fatos para
+se adaptarem às teorias, em vez de formular
+teorias que se ajustem aos fatos” (DOYLE, 2015,
+p. 230). Tendo conciência deste processo, servi-
+rá de alerta para não concluir com base nele.
+
+(iv.5) Pensamento lógico
+
+O pensamento lógico, ou inferência, é di-
+vidido em dedução, indução e abdução, como
+exemplificado (BURCH, 2018, n.p):
+
+a) dedução: o silogismo AAA-1: (1) todos
+M são P; (2) todos S são M; (3) portan-
+to todos S são P. Este silogismo válido
+que Peirce aceitou como representan-
+te da dedução. Por exemplo: (1) todas
+as bolas nesta urna são vermelhas; (2)
+todas as bolas nessa amostra aleatória
+
+234 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+específica são retiradas dessa urna;
+(3) portanto, todas as bolas nessa amos-
+tra aleatória específica são vermelhas.
+indução: agora vamos ver o que acon-
+tece se formarmos um novo argumento
+trocando a conclusão (o resultado) pela
+premissa principal (a regra). (1) Todos
+S são P (resultado); (2) todos S são M
+(o caso); (3) logo todos M são P (regra).
+Este é um silogismo inválido AAA-3.
+Mas vamos agora interpretá-lo como re-
+ferente a tirar conclusões com base na
+coleta de amostras. O argumento então
+se torna: (1) todas as bolas nessa amos-
+tra aleatória específica são vermelhas;
+(2) todas as bolas nessa amostra aleató-
+ria específica são retiradas dessa urna;
+(3) portanto, todas as bolas nesta urna
+são vermelhas. O que temos aqui é um
+argumento de amostra para população.
+Esse tipo de argumento é o que Peirce
+entendeu como o significado principal
+da indução.
+
+abdução: vamos agora mais longe e ver
+o que acontece se, a partir da dedução
+AAA-1, formarmos um novo argumento
+trocando a conclusão (o resultado) pela
+premissa menor (o caso). O argumen-
+to resultante é: (1) todas as Ms são Ps
+(Regra); (2) todos os Ss são Ps (resulta-
+do); (3) portanto, todos os Ss são Ms (o
+caso). Este é o silogismo inválido AAA-2.
+Mas vamos considerar agora como ti-
+rar conclusões com base na coleta de
+amostras. O argumento então se torna:
+(1) todas as bolas nesta urna são verme-
+lhas; (2) todas as bolas nessa amostra
+aleatória em particular são vermelhas;
+(3) portanto, todas as bolas nessa
+amostra aleatória específica são retira-
+das dessa urna. O que temos aqui não é
+nada como um argumento de popula-
+ção para amostra ou um argumento de
+

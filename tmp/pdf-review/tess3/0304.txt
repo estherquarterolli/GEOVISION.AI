@@ -1,0 +1,69 @@
+| RESPONSABILIDADE SOCIAL —
+
+»orzoms »<oms
+
++
+
+DEMOLIÇÃO
+
+RECUPERAÇÃO REFORMA
+
+Figura 172 - Fluxograma da Engenharia Diagnóstica.
+Fonte; Diretrizes Técnicas do Instituto de Engenharia.
+
+Anorma de desempenho da ABNT não apre-
+senta, de forma objetiva, uma metodologia para
+a avaliação geral do desempenho da edificação,
+mas contém premissas, diretrizes e recomen-
+dações técnicas para as avaliações isoladas de
+desempenho dos cinco sistemas construtivos
+listados; ora através de “análise do projeto” (es-
+trutura, durabilidade e adequação ambiental -
+itens 7.2.2.1, 7.2.2.2, 14,2.2 e 18.4.3); ora através
+de “inspeção em protótipo ou ensaios” (seguran-
+ça contra incêndio - item 8.4.1); ora por “análise
+do projeto e métodos de ensaio específico” (es-
+tanqueidade - item 10.3.2); ora por “simulação
+computacional” (desempenho térmico - item
+11.3.2); ora por “medição in loco” (desempenho
+lumínico - item 13.2.4); ora por “inspeção pre-
+dial” (manutenibilidade - 14.3.3) e ainda por
+“métodos de ensaio estabelecidos pela legislação
+vigente” (saúde, higiene e qualidade do ar - itens
+15.3.1 e 15.4.2) - faltando, repita-se, a avaliação
+do todo integrado.
+
+E o que garante que as eventuais confor-
+midades do desempenho nas análises isoladas
+
+302 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+" a
+
+[E
+
+dos projetos e nas simulações computacionais
+se confirmarão na prática, no edifício pronto? E
+como medir o desempenho real da edificação?
+
+Que se consigne, mais uma vez, que a nova
+norma da ABNT não indica qualquer metodo-
+logia para a avaliação geral do desempenho ou
+durabilidade da edificação. E mais, ela é omissa
+quanto à forma de apresentação dos resultados
+da avaliação, pois no seu item 6.6.5consta que
+“o relatório deve ser elaborado pelo responsá-
+vel pela avaliação e deve atender aos requisitos
+estabelecidos em 6.7”, mas não há o item 6.7 no
+texto da norma.
+
+Portanto, s.m,j., entende-se que a avaliação
+geral do desempenho da edificação também po-
+derá ser uma “interpretação objetiva sobre o
+comportamento da edificação”, como sinaliza o
+item 6.1.2 paraos diversos sistemas. E entende-se
+que essa avaliação deve possuir metodologia téc-
+nica que englobe as análises individuais dos sis-
+temas construtivos e a análise conjunta de todas
+as avaliações das cinco etapas construtivas, pos-
+sibilitando conclusão fundamentada.
+

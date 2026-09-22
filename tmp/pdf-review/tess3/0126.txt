@@ -1,0 +1,96 @@
+atenuação de ruído de impacto e atendimento
+mínimo aos requisitos determinados na Norma
+de Desempenho, devendo cada edificação ava-
+liar qual o padrão de atenuação que deverá aten-
+der a sua obra (Superiores, Intermediários e Mí-
+nimos) e garantir o conforto acústico necessário
+para os usuários finais.
+
+4.2.4.3 Desempenho acústico no
+sistema hidrossanitário
+
+Os ruídos gerados no interior das edifica-
+ções podem ser ocasionados por diversos fato-
+res. O subcapítulo trata de ruídos ocasionados
+pelas instalações hidrossanitárias (IH), parti-
+cularmente os relativos ao acionamento das
+descargas de vasos sanitários, abordando-se as
+formas de tratamento existentes no mercado e
+as alternativas para se minimizar o incômodo ao
+usuário final.
+
+Entretanto, não obstante todas as atuali-
+zações e tecnologias envolvidas, as instalações
+hidrossanitárias (IH) estão presentes em todos
+os tipos de construção, sendo, muitas vezes, fon-
+te de sons incômodos. Com isso, a preocupação
+com o isolamento das tubulações hidráulicas e
+suas conexões vem se tornando primordial, até
+porque os tubos de quedas apresentam, hoje,
+grandes dimensões e transportam maiores va-
+zões, fazendo com que seja necessário garantir
+que os sons não ultrapassem as paredes ou lajes
+de cada unidade, para assegurar tranquilidade,
+conforto acústico e privacidade aos moradores.
+
+Osruídos são provenientes do recalque para
+os reservatórios superiores, de vibrações no sis-
+tema de recalque, do escoamento de água nas
+conexões curvas, de cotovelos, registros e vál-
+vulas de descarga, além do escoamento da água
+das louças instaladas nos banheiros, como cubas
+e banheiras. Os ruídos gerados pelas instalações
+hidrossanitárias devem se restringir apenas ao
+ambiente em que ele se origina, não podendo ul-
+trapassar paredes, lajes ou forros para unidades
+
+124 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+vizinhas ou até mesmo para outros ambientes da
+própria unidade.
+
+Para exemplificar, foram realizados ensaios
+em apartamentos de alto padrão, na Cidade de
+São Paulo, com áreas de 430 m? e 830 mº, Esses
+ensaios foram realizados em tubulações hidráu-
+licas de PVC, destinadas ao esgoto sanitário, re-
+vestidas com materiais disponíveis no mercado,
+normalmente recomendados pelos consultores
+e projetistas, obedecendo a critérios de envelo-
+pamento determinados pelos respectivos fabri-
+cantes e pela própria autora, com base em sua
+experiência profissional.
+
+Serão apresentados os resultados dos en-
+saios efetuados, em análise comparativa com os
+de ensaios de campo. Os ruídos nas tubulações
+foram medidos com e sem a aplicação dos reves-
+timentos anteriormente citados, tendo sido feita
+uma análise comparativa dos resultados obtidos.
+
+Sendo assim, o isolamento acústico, de fato,
+é essencial para preservar a vida particular dos
+usuários de espaços contíguos, a intimidade das
+famílias, e garantir que os indivíduos consigam
+exercer, em suas unidades, atividades rotineiras
+sem incomodar os vizinhos, de forma que pre-
+valeçam a paz e o bom convívio. Todas as pre-
+cauções em relação ao bom desempenho acústi-
+co de uma edificação devem ser pensadas já na
+concepção do projeto, visando o conforto dos
+futuros usuários em cada ambiente ou espaço da
+construção.
+
+A metodologia geral é tratada delineando
+os procedimentos adotados na execução dos
+ensaios realizados em dois apartamentos distin-
+tos, fundamentados pelas normas NBR 15575
+(ABNT, 2013) e ISO 16032 (ISO, 2004) que es-
+tabelecem critérios de desempenho e métodos
+adequados de avaliação.
+
+Os ensaios de campo incluem descrições
+das unidades, plantas, fotografias, além dos ma-
+teriais empregados e procedimentos utilizados
+para envelopamento. Os resultados encontrados
+

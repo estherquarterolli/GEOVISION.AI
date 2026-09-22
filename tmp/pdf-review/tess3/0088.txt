@@ -1,0 +1,97 @@
+Quando essa conexão ou integração ocorre
+em ferramentas da forma tradicional de projetar,
+algumas informações, acerca de interferências
+entre sistemas por exemplo, podem passar des-
+percebidas, resultando em projetos que provo-
+cam uma série de problemas durante a constru-
+ção resultantes da ausência de compatibilização.
+
+A falta de compatibilização, entre projeto
+arquitetônico e projetos complementares im-
+pacta de forma recorrente a fase de obra e man-
+tém o círculo vicioso de alterações improvisadas
+durante a obra e até mesmo à necessidade de re-
+fazer determinados trabalhos, a exemplo de di-
+vergências entre elementos estruturais e insta-
+lações hidráulicas, resolvidas no canteiro pelos
+profissionais responsáveis pela execução.
+
+Aliado do gestor de projetos, a metodologia
+BIM torna possível a verificação de compatibili-
+dade e eliminação de conflitos (clash detection)
+entre as diferentes áreas (engenharia estrutural,
+hidráulica, elétrica etc.), durante o processo de
+concepção do projeto, com a simulação da cons-
+trução do objeto arquitetônico, permitindo a
+identificação dos conflitos entre os sistemas e a
+análise das informações que antecipam os pro-
+blemas, o que permite corrigi-los em um plane-
+jamento mais coerente, antes mesmo de iniciar
+os trabalhos no canteiro de obra.
+
+O cliente BIM não quer apenas o projeto de
+um perfil estrutural ou de um quadro elétrico,
+ele quer uma solução completa, compatibilizada
+e customizada para atender à necessidade dele.
+Assim, ainda durante a fase de projeto, é possível
+adotar “famílias” (grupos de componentes que
+possuem alguma característica comum - por
+exemplo, famílias de portas) que fornecem in-
+formações para a escolha de soluções construti-
+vas, produtos de acordo com as normas técnicas
+vigentes e materiais com determinadas caracte-
+rísticas, tais como resistência e reação ao fogo,
+acústica, nível de umidade etc. Encontrar no
+mercado “famílias” completas com essas infor-
+mações, ainda é um desafio quando saímos dos
+
+86 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+grandes fabricantes. Empresas líderes de merca-
+do nos mais derivados sistemas, já desenvolve-
+ram e disponibilizaram seus produtos em plata-
+formas de download que falaremos adiante.
+
+O desafio não é garantir a geometria e a fun-
+cionalidade dos objetos, mas o controle e a preci-
+são para atender os novos padrões de exigência.
+Para projetar em BIM, é necessário ser um bom
+arquiteto ou engenheiro, conhecer os processos,
+etapas, materiais, etapas construtivas etc, ou irá
+modelar apenas um 3D bonito e não em BIM.
+
+O BIM requer a adoção de uma maneira de
+trabalhar em conjunto. Não importa a natureza
+da informação, se ela é geométrica, financeira,
+sobre materiais usados ou cronograma. Com o
+BIM, tudo está no mesmo lugar e disponível para
+as áreas relacionadas, agregando informações
+aos elementos construtivos, aumentando a con-
+fiabilidade nas estimativas de preços e no cum-
+primento dos prazos. É ter um olhar do projeto
+aderido ao seu cronograma e orçamento.
+
+Quando falamos em cronograma, o BIM aju-
+da alinhar projeto e execução da obra, evitando
+gastos desnecessários, erros e perdas de pro-
+dutividade, além da diminuição de retrabalhos
+e desperdícios, facilitados pela compatibilidade
+entre os projetos.
+
+A modelagem BIM, ao adicionar a variável
+“tempo”, torna possível realizar a simulação da
+construção, usando ferramentas como Autodesk
+Navisworks€, por exemplo, garantindo o plane-
+jamento inteligente da obra e a demonstração da
+sua evolução, o chamado BIM ou projeto 4D. Éa
+evolução do MS Project(f, é ter de maneira inte-
+grada as informações do modelo e do cronogra-
+ma, e assim acompanhar se a etapa da constru-
+ção está ou não conforme o cronograma.
+
+O BIM também é importante no auxílio à
+equipe de obra, tanto para o estudo das inter-
+faces entre as disciplinas envolvidas, quanto
+para a própria apresentação do projeto para os
+agentes, evitando que rotineiramente projetos
+

@@ -1,0 +1,97 @@
+O diagnóstico que recorre a ensaios de la-
+boratório não é tão frequente, devido princi-
+palmente ao tempo consumido desde a recolha
+in-situ até aos resultados após ensaios de labo-
+ratório, e ainda ao seu grau de intrusividade. Por
+estas razões, este tipo de avaliação é escolhido
+apenas quando é relevante o esclarecimento de
+resultados in-situ, em casos patológicos mais
+complexos. Em laboratório é, ainda possível, si-
+mular vários mecanismos de degradação através
+de ensaios de envelhecimento acelerado. No en-
+tanto, embora mais controlados, continuam a ca-
+recer de dados reais que correlacionem o com-
+portamento em serviço, em condições naturais
+de exposição.
+
+5.4.5 Conclusões
+
+O diagnóstico em serviço de revestimen-
+tos deve basear-se em parâmetros quantita-
+tivos, pelo que a realização de observações
+unicamente visuais nem sempre é suficiente,
+podendo conduzir a diagnósticos muito con-
+servativos sobre a real condição dos revesti-
+mentos e, por conseguinte, a maiores custos
+de intervenção. Neste contexto, a realização
+de ensaios in-situ pode melhorar significativa-
+mente a análise, incluindo (quando necessário)
+a recolha de amostras para análise em labora-
+tório. Salienta-se, no entanto, que a realização
+de muitos ensaios podem inviabilizar uma ava-
+liação in-situ.
+
+Assim, qualquer metodologia de diagnósti-
+co deve apoiar a decisão no sentido da melhor
+solução de compromisso entre os métodos de
+recolha (observação visual, meios auxiliares de
+diagnóstico, ensaios in-situ e em laboratório com
+a recolha de amostras), os resultados fornecidos,
+os prazos e custos envolvidos e a urgência de
+atuação.
+
+A experiência do inspetor na área da pato-
+logia e a conjugação de várias técnicas são fato-
+res importantes para reduzir a subjetividade do
+
+254 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+diagnóstico em serviço. Um diagnóstico mais
+fiável é desejável para melhor apoiar a decisão
+das ações de manutenção.
+
+Inês Flores-Colen
+
+5.5 DIAGNÓSTICOS NO SISTEMA
+DE COMBATE À INCENDIO
+
+O objetivo desse capítulo é o de apontar a
+necessidade do conhecimento prévio da legis-
+lação referente á engenharia de incêndios a fim
+de poder propiciar um correto diagnóstico das
+anomalias.
+
+Um estudo de caso testou a proposta de
+Check-List para inspeção predial da segurança
+contra incêndio para edifícios residenciais.
+
+O objeto da aplicação são imóveis residen-
+ciais multifamiliares de renda familiar média de
+20 (vinte) salários mínimos, com no mínimo de
+12 pavimentos, quatro apartamentos por pavi-
+mento, idade máxima de 10 anos de construção,
+para que possa ser enquadrado na vigência do
+Decreto Estadual nº 46.076/2001.
+
+Para a feitura destes 3 (três) estudos de ca-
+sos, procurou-se nos edifícios aproximadamente
+as mesmas características, que seguem:
+
+* vigor do Decreto Estadual nº 46.076/01
+à época de sua construção;
+classificação de padrão construtivo “apar-
+tamento médio”, segundo IBAPE/SP;
+localizado na cidade de São Paulo;
+mesma época de feitura dos laudos;
+edifícios residenciais altos com mais de
+12 metros de altura.
+
+5.51 Descrição dos imóveis
+
+O imóvel 1 tem as seguintes características:
+
+* Jocalizado no bairro do Ipiranga;
+
+* composto por 20 pavimentos tipo, dois
+subsolos e térreo;
+

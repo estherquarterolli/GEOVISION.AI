@@ -1,0 +1,90 @@
+resultados irão sinalizar a resistência superficial
+do concreto. Os ábacos fornecidos nos equipa-
+mentos trazem informações de concretos prede-
+terminados que muitas vezes não correspondem
+com o utilizado em campo e, também, deve-se
+ter em mente que a carbonatação do concreto
+torna a superfície mais dura, o que faz com que
+os resultados sejam majorados em concretos
+mais carbonatados. Também pode ser realizado
+ensaio de ultrassom a fim de verificar a homoge-
+neidade das peças, pacometria para identificar as
+armaduras e conferir se elas estão corretamente
+posicionadas e com dimensionamento apropria-
+do. Alguns equipamentos conseguem até estimar
+o cobrimento do concreto em relação a armadu-
+ra. Com esses conjunto de ensaios, a análise das
+origens e causas das manifestações patológicas
+tornam-se muito mais robusta e assertiva.
+
+Dentro das ações mecânicas, há duas clas-
+sificações: as ações de ordem congênita, quando
+a origem é da própria estrutura; e as de ordem
+induzida, quando a ação é causada por outros
+fatores extrínsecos à estrutura, como incêndios.
+
+(i) Ordem Congênita
+
+No que tange às fissuras de origem congê-
+nitas, é de extrema importância o acompanha-
+mento especializado de profissional, não apenas
+habilitado, como, também, necessariamente ca-
+pacitado em estruturas para que a estabilidade
+do sistema seja verificada com a expertise re-
+querida. Algumas fissuras são aceitáveis dentro
+das normas de cálculo de peças estruturais, o
+que não indica grandes problemas quanto a es-
+tabilidade estrutural, entretanto através da ótica
+de durabilidade, a incidência de fissuras é “porta
+de entrada” para agentes agressivos que pode-
+rão diminuir a vida útil da estrutura, com refle-
+xos na durabilidade do sistema estrutural.
+
+Com diversas causas prováveis, as fissuras
+devem ser analisadas, principalmente quanto ao
+seu direcionamento, abertura, profundidade e
+
+264 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+movimentação, esse último muito importante
+para determinar se a fissura é ativa (que se mo-
+vimenta), ou passiva (que não se movimenta)
+e principalmente se ela é progressiva, ou seja,
+se continua aumentando seu comprimento
+espessura, essas sinalizam graves problemas
+que merecem atenção especial. Uma maneira
+prática e usual de se verificar a movimenta-
+ção de fissuras é a utilização de selo de gesso,
+passando uma camada de gesso sobre a fissu-
+ra e observando, no decorrer do tempo, se ela
+volta a se abrir no trecho. Se isso ocorrer, de-
+monstra-se que a fissura é ativa. Note que esse
+procedimento tem caráter apenas qualitativo.
+Há diversas outras maneiras mais precisas de
+se verificar essa movimentações. A exemplo,
+têm-se a verificação de deslocamento vertical
+horizontal, com selos de vidro ou metal, e tra-
+ços de referência, como sugere Thomaz (1986)
+demonstrado abaixo na figura 154a em que 3z
+representa o monitoramento de deslocamento
+horizontal e 154b o monitoramento de desloca-
+mento vertical. As áreas hachuradas represen-
+tam a superfície que deve ser colada na estrutu-
+ra. Esse procedimento tem caráter quantitativo
+pois é possível medir o deslocamento.
+
+O)
+
+TRAÇO OE REFÊRENCIA SUP DE ADEnôncIS
+
+Figura 154 - Selo de vidro ou metal.
+Fonte: Thomaz (1986).
+
+Para o monitoramento de abertura das fis-
+suras de forma simplificada, o uso de “fissurô-
+metros” é indicado, entretanto, a medição deve
+ser realizada sempre no mesmo ponto para que
+os dados tenham coerência entre si e deve-se
+dar preferência aos pontos de maior abertura
+O horário da referida medição também deve ser
+

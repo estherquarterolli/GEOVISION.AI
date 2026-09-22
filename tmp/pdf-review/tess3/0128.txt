@@ -1,0 +1,91 @@
+ser realizado em um horário mais silencioso
+para que seja possível a medição.
+Nomenclatura para os parâmetros acústi-
+cos de verificação:
+* Lag »1:Nível de pressão sonora equivalen-
+te, padronizado de equipamento predial
+* Ligmáx nr: Nível de pressão sonora máximo,
+padronizado de equipamento predial
+* Ly:Nível de pressão sonora equivalente
+no ambiente interno, com equipamento
+
+fora de operação
+
+Ainda determinado na norma NBR 15575-6
+(ABNT, 2013), deve ser obtido o nível de pressão
+sonora contínua, equivalente, padronizada de
+um ciclo de operação do equipamento predial,
+LAegnT, e o nível de pressão sonora máximo,
+LASmax,nT, do ruído gerado pela operação do
+equipamento. O ciclo de operação do produto
+deve atender aos critérios especificados na nor-
+ma brasileira de cada produto.
+
+Na Figura 70 pode-se verificar um corte
+esquemático, demonstrando os ruídos gerados
+por equipamentos prediais, onde encontram-se
+o aparelho emissor e o ambiente receptor.
+
+E==== |
+
+Emissor |
+
+Receptor
+
+|
+
+Figura 70 - Ruídos gerados por equipamentos prediais
+(corte esquemático para ensaio de campo).
+
+Fonte: Instituto de Engenharia de
+São Paulo - Divisão de Acústica (2014).
+
+126 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+Conforme Bataglin (2014), a Parte 6 da
+norma ABNT NBR 15575 (2013), denominada
+“Requisitos para os Sistemas Hidrossanitários”,
+determina como devem ser os sistemas prediais
+de água fria e água quente, assim como o sistema
+de esgoto sanitário e a ventilação, contemplan-
+do ainda os sistemas de águas pluviais. Ainda de
+acordo com o mesmo autor, os sistemas hidros-
+sanitários devem resistir às solicitações mecâni-
+cas e dinâmicas, e não devem provocar golpes e
+vibrações no sistema hidráulico que impliquem
+risco à sua estabilidade estrutural.
+
+O conforto acústico de uma edificação, tem
+como prioridade preservar a individualidade dos
+ocupantes, tanto para unidades vizinhas como
+para o ambiente interno da unidade privativa,
+além de promover um ambiente agradável para
+o seu descanso em horários diurnos e noturnos.
+
+4.2.4.3.3 Método de trabalho
+
+Foram realizados ensaios em dois edifícios
+no Bairro Jardim Europa, em São Paulo/SP, com
+as mesmas características arquitetônicas de es-
+tilo neoclássico e de alto padrão, sendo que o
+edifício do Ensaio A (Edifício 1) é constituído
+por duas torres com 32 pavimentos, cobertura e
+barrilete, além de quatro subsolos e térreo inter-
+ligados. O edifício do Ensaio B (Edifício 2), con-
+siste em uma torre com 20 pavimentos, cobertu-
+ra e barrilete, além de quatro subsolos e térreo.
+
+As tubulações das instalações hidrossanitá-
+rias das unidades ensaiadas consistem em tubos
+de PVC, conexões e ralos sifonados.
+
+Os materiais utilizados para proteger as
+tubulações das instalações hidrossanitárias das
+unidades ensaiadas, localizadas nas Unidades
+do Ensaio A (16º andar e 17º andar do edifício
+1) eno Ensaio B (7º andar e 8º andar do edifício
+
+2), são:
+a) material 1 - Manta de feltro aerado
+termoacústica com espessura 10 mm,
+

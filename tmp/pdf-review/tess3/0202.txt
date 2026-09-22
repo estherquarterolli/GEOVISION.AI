@@ -1,0 +1,98 @@
+Portanto, considera-se que a edificação
+mantenha as características iniciais de seu pro-
+jeto até o grau de deterioração atingir um certo
+limite (mínimo aceitável) que irá depender de
+inúmeros fatores como a sua orientação de im-
+plantação, sua tipologia, seu aspecto estético,
+sua forma, dentre outros.
+
+A estas considerações deverão ser aplica-
+das todo o sistema, componente ou elemento
+que constitua a estrutura de um edifício, não
+importa qual seja o método ou sistema constru-
+tivo usado.
+
+Logo, compreende-se como impacto am-
+biental o conjunto das interferências biológicas,
+químicas e físicas no meio ambiente levadas
+como resultado do sistema produtivo humano,
+que tem consequências na saúde, segurança,
+bem estar da população, seja entre os seres hu-
+manos como também entre os biomas.
+
+Já os agentes degradantes advêm de sua na-
+tureza física, química, mecânica e/ou biológica e
+impactam sobre as edificações com intensidades
+diferentes.
+
+A orientação solar, por exemplo, é decisiva
+no que tange à absorção da radiação e a taxa de
+evaporação da água condensada. Os ciclos de
+temperatura podem ocasionar deterioração dos
+materiais componentes das edificações. A movi-
+mentação térmica ocorre devido às oscilações da
+temperatura ambiente e à radiação solar sobre
+os revestimentos externos e caracteriza-se por
+variações dimensionais (com formação de trin-
+cas e fissuras) e deterioração de revestimentos
+por ação das radiações ultravioleta (UV) e infra-
+vermelho (IR) - fotodegradação.
+
+Estudos apontam que as agressões físicas
+em estruturas de concreto crescem potencial-
+mente com o aumento da temperatura de sobre-
+posição. Já sobre sistemas de revestimentos cerâ-
+micos ou argamassados, pelas grandes variações
+higrotérmicas. As cores de elementos expostos
+podem determinar a capacidade refletiva ou
+
+200 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+absorvível das radiações solares e levar à forma-
+ção de manchas e perda precoce de desempenho
+dos sistemas de pintura,
+
+A água condensada permanece na super-
+fície dos elementos de vedação e revestimentos
+externos durante um tempo maior ou menor em
+função da orientação solar da fachada e da velo-
+cidade e direção do vento incidente sobre este
+elemento de vedação. Pelo fato de receberem
+quantidade menor de radiação solar nas faces
+sul das edificações brasileiras ou naquelas faces
+mais sombreadas, a taxa de evaporação da água
+condensada é menor, favorecendo o desenvolvi-
+mento de microrganismos.
+
+Os ventos que incidem sobre edificações
+altas e com elevados índices de esbeltez, deter-
+minarão seu grau de deslocamento e apontam
+para uma especificação de soluções construtivas
+que não causem insegurança ou risco aos seus
+ocupantes.
+
+Lendo trabalhos de Gilder Nader?', pesqui-
+sador do Laboratório de Vazão do IPT, referen-
+ciando-se no CTBUH (Council on Tall Building
+and Urban Habitat??), indica que edificações al-
+tas e esbeltas devem passar por testes em túnel
+de vento. Esta respeitável associação publicou
+no documento técnico Wind Tunnel Testing of
+High-Rise Building, as características destes
+edifícios “especiais”: mais de 120 m de altura
+e/ou altura pelo menos quatro vezes maior que
+sua menor largura (elevada esbeltez) e/ou em
+casos em que houver frequência natural de vibra-
+ção menor que 0,25 Hz (período de 4 segundos),
+os quais devem ser cuidadosamente projetados
+(Figura 118).
+
+*2 Gilder Nader é Bacharel e Mestre em Física pelo Insti-
+tuto de Física da UFF e Doutor em Engenharia Mecatrônica
+pela Escola Politécnica da USP.
+
+*2 Disponível em < https://www.ctbuh.org/>
+
+*º Disponível em <https://store.ctbuh.org/PDF Previews/
+Books/2013.WindTunnelGuide. Preview pdf>
+

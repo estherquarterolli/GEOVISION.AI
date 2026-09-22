@@ -1,0 +1,70 @@
+Portanto, as avaliações dos índices técnicos
+do desempenho, nas diversas etapas construti-
+vas, são fundamentais para se compreender os
+eventuais desvios, buscar formas de correção,
+medir, controlar e buscar melhoria contínua,
+através das ferramentas da Engenharia Diagnós-
+tica em Edificações, consoante metodologia dos
+cinco passos.
+
+Tito Lívio Ferreira Gomide
+
+Tabela 54 - Vida útil de projeto (VUP).
+
+6.3 VIDA ÚTIL E GARANTIA
+
+Tais questões foram abordadas nos Anexos
+Ce D da norma de desempenho, cabendo desta-
+car que há três níveis de desempenho estabeleci-
+dos: mínimo, intermediário e superior.
+
+As tabelas 54 e 55 apresentam os prazos
+de vida útil de projeto obrigatórios e recomen-
+dados, contemplados nos referidos anexos da
+norma.
+
+ vup:
+
+Sistema anos
+Mínimo Intermediário Superior
+
+Estrutura 250 >63 275
+
+Pisos internos 213 217 >20
+
+Vedação vertical externa >40 >50 7 > 60 o
+Vedação vertical interna >20 >25 >30
+
+“Cobertura 220 >25 >30
+“Hidrossanitário 20 >25 30
+
+* Considerando periodicidade e processos de manutenção segundo a ABNT NBR 5674 e especificados no respectivo manual
+de uso, operação e manutenção entregue ao usuário elaborado em atendimento à ABNT NBR 14037.
+
+Fonte: Tabela C.5 da ABNT NBR 1557541.
+
+Tabela 55 - Exemplos de VUP aplicando os conceitos da ABNT NBR 15575.
+
+VUP
+Parte da edificação Exemplos anos
+Mínimo Intermediário Superior
+Fundações, elementos estruturais
+pd (pilares, vigas, lajes e outros), paredes
+Ci ceriturals, estruturas perférios, RM ass =
+contenções e arrimos
+Estruturas Muros divisórios, estrutura >20 >25 >30
+auxiliares de escadas externas H =
+Paredes de vedação externas, paineis A, > a
+Vedaçãoedema qo fachada, fachadas cortina 40 di 280
+M Paredes e divisorias leves internas,
+j > >
+Maciça Inteira escadas internas, guarda-corpos 20 ii Raso
+' Revestimento de piso, parede e teto: de
+Revestimento argamassa, de gesso, ceramicos, pétreos, >8 >7 >20
+
+tamo abrigo de tacos e assoalhos e sintéticos
+
+Fonte: Trecho da tabela C.6 da ABNT NBR 15575-1
+
+DESEMPENHO * 307
+

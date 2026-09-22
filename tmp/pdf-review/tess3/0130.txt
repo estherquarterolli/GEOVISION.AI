@@ -1,0 +1,111 @@
+d)
+
+à)
+
+h)
+
+para determinar o canto inicial, que é o
+canto em que há maior emissão de ruí-
+do, considerado o canto crítico (CC) ou
+canto principal;
+
+abrir os chuveiros (duplo), para deter-
+minação da maior emissão de ruído,
+considerando os cantos determinados
+no item c;
+
+depois de determinado o canto críti-
+co, determinar mais dois cantos inter-
+mediários para o canto crítico (CC) de
+maior emissão de ruído;
+
+demarcar dois cantos adicionais de me-
+dição, denominados, respectivamente
+canto 1 (PA) e canto 2 (PB), ambos ten-
+do entre si e entre eles e os quatro can-
+tos (corners) uma distância mínima de
+0,50 metros;
+
+fazer duas medições em cada canto, sendo
+eles o P1(CC), PA e PB, respectivamente;
+medir a reverberação de ruído no am-
+biente - método de som interrompido.
+
+Com o auxílio de uma caixa dodecaédri-
+ca e um amplificador ajustado para emi-
+tir ruído rosa, foi determinado o tempo
+de reverberação do ruído no ambiente.
+posicionar o microfone no campo rever-
+berante: Foram definidas duas posições
+adicionais no campo de reverberação
+do ambiente, mantendo uma distân-
+cia mínima de pelo menos 1,5 m entre
+as posições 1 (canto principal), 2 e 3.
+A distância entre os cantos 2 e 3, no am-
+biente foi de, no mínimo, 0,75 m. Manter
+a altura acima do nível do piso acabado
+de pelo menos 0,5 m e não mais alto
+que 1,5 m, descrição determinada pela
+ISO 16032 (ISO, 2004).
+
+A seguir, detalhes apresentados nas Plantas
+1,2 e 3 para determinar o canto crítico e, poste-
+riormente, os demais cantos, para início das me-
+dições de pressão sonora.
+
+[ Planta 1 - Quatro cantos principais do Ba-
+nheiro 1 da Unidade 161B com uma área
+aproximada de 17 m?, para determinação do
+canto crítico.
+
+Planta 2 - Quatro cantos principais na
+Suíte 3 da Unidade 1618 com uma área
+aproximada de 18 mê, para determina-
+| ção do canto crítico.
+
+Planta 3 - Banheiro Hóspede com
+uma área aproximada de 6 mê, coma
+demarcação dos quatro cantos prin- |
+ciais e cantos intermediários. |
+
+a] esa
+
+cmo
+pa
+
+“BANHEIRO
+HÓSPEDE
+
+«Pb
+
+«Pta
+
+«pa
+.P
+
+Mostra os quatro cantos principais do Ba-
+nheiro 1 do Ensaio A para a determinação do
+canto crítico.
+
+Mostra os quatro cantos principais da
+Suíte 3 do Ensaio A para determinação
+do canto crítico.
+
+Mostra os quatro cantos principais |
+no Banheiro Hóspede do Ensaio B |
+para determinação do canto crítico. |
+
+Fonte: Elaborado pela autora,
+
+Os dois ensaios foram realizados em uni-
+dades receptoras que estavam em fase de obra.
+Isso significa, portanto, que nessas unidades
+
+ro
+
+128 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+não havia acabamentos e, o mais importante, os
+forros de gesso não estavam concluídos, o que foi
+relevante para medir os ruídos nas tubulações
+

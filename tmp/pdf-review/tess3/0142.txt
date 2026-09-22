@@ -1,0 +1,99 @@
+(i) Levantamento e análise de documentos
+
+A primeira etapa do processo deve ser a so-
+licitação de acesso para consulta e análise dos
+documentos, que devem ser no mínimo aque-
+les descritos na ABNT NBR 14037 (2014). Essa
+relação deve ser adequada em função do tipo e
+complexidade da edificação, de suas instalações
+e sistemas construtivos e ainda das característi-
+cas específicas, e das exigências legais do estado
+e município.
+
+Os documentos podem ser entregues em
+meio eletrônico, desde que seja possível a sua
+visualização sem ônus aos usuários (ABNT NBR
+14037, 2014). Como, por exemplo, a entrega de
+projetos no formato PDF, ao contrário de DWG,
+ou a entrega em DWG juntamente com software
+visualizador gratuito.
+
+A não disponibilização de qualquer um dos
+documentos deve ser considerado como uma
+não-conformidade.
+
+A análise dos documentos pode se restrin-
+gir a simples constatação da existência do docu-
+mento, ou, pela análise de seu conteúdo. Reco-
+menda-se que seja feita a análise de conteúdo,
+no mínimo, do Manual de Uso, Operação e Ma-
+nutenção em comparação com os requisitos da
+ABNT NBR 14037 e com os materiais e sistemas
+construtivos identificados nas etapas de levanta-
+mento de histórico e vistoria sensorial de campo.
+
+Alguns exemplos de como os documentos
+podem ser usados quando da realização da vis-
+toria de campo:
+
+a) material de venda: verificar se a edifica-
+ção possui as características, áreas, acaba-
+mentos, sistemas e equipamentos confor-
+me apresentado no material publicitário,
+no contrato de compromisso de compra e
+venda, no memorial descritivo, nas plan-
+tas e nos demais documentos vinculados
+à comercialização da edificação;
+documentos de incorporação: veri-
+ficar se a edificação possuí o correto
+registro das características, áreas e am-
+bientes;
+
+140 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+c) documentos de obra: verificar se a
+edificação possui os alvarás e licenças
+de execução expedidos pelos órgãos
+municipais, estaduais e federais;
+projetos e memoriais: verificar se as
+informações e detalhes constantes nos
+projetos, possíveis de serem evidencia-
+das na vistoria sensorial, foram obede-
+cidos conforme previsto;
+
+ART e RRT: verificar se todos os proje-
+tos e serviços executados possuem um
+atestado de responsável técnico habilita-
+do nos respectivos conselhos de classe;
+documentos de entrega: verificar se a
+edificação possui os alvarás e licenças
+necessárias, assim como se há os docu-
+mentos mínimos para realizar seu cor-
+reto uso, operação e manutenção;
+relatórios de ensaios, pareceres e
+atestados: verificar se os documen-
+tos estão com as informações mínimas
+necessárias, definindo-se o método de
+ensaio utilizado, a caracterização das
+amostras, os resultados obtidos e o res-
+ponsável técnico pela realização; tam-
+bém verificar se os resultados de ensaio
+atendem aos critérios definidos nas res-
+pectivas normas e/ou projetos;
+documentos após entrega da obra:
+verificar se foi formalizada a entrega de
+todos os documentos, mobiliários, equi-
+pamentos e acessórios previstos e se o
+representante legal da edificação visto-
+riou e aceitou as áreas comuns (a vistoria
+e aceite do representante legal pode ser
+substituída pela investigação prevista no
+trabalho que deu origem ao presente ar-
+tigo, quando o contratante for o usuário).
+
+(ii) Levantamento do histórico e intercorrência
+da obra
+Quando possível, é importante que seja
+realizado o levantamento do histórico e inter-
+corrência da obra, por meio de entrevistas e/ou
+

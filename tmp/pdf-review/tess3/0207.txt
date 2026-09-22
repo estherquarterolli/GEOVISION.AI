@@ -1,0 +1,32 @@
+Nivel de desempenho
+
+Note-se, pois, que eventos específicos que
+possam provocar a queda brusca de desempe-
+nho, em determinado momento, acabam por
+acelerar sua redução a níveis inferiores ao míni-
+mo aceitável, o que pode significar a antecipação
+do final da vida útil da estrutura.
+
+Considera-se que é o ponto onde os níveis
+de desempenho adentram à condição de infe-
+
+Temp
+
+Figura 120 - Perda natural de desempenho de uma estrutura, ao longo de sua vida útil.
+Fonte: Elaborado pelo autor.
+
+Tempo
+
+Figura 121 - Perda súbita de desempenho de uma estrutura, em determinado momento de sua vida útil.
+Fonte: Elaborado pelo autor.
+
+rioridade, em relação ao mínimo aceitável, que
+caracteriza o final da vida útil de uma estrutu-
+ra. Observe-se, portanto, que não é necessário,
+como muitos pensam, que uma estrutura atinja
+estado de ruína, para ter sua vida útil terminada.
+Atingindo as condições de inferioridade ao nível
+mínimo aceitável de desempenho, considera-se
+que a estrutura não mais está habilitada a
+
+ETAPAS CONSTRUTIVAS * 205

@@ -1,0 +1,104 @@
+Porém, as informações sobre vida útil dos
+produtos e sistemas construtivos são raras no
+mercado, o que dificulta a avaliação do requisi-
+to durabilidade na prática. A respeito disso, no
+item 5.3 da norma, incumbências dos projetis-
+tas, consta que:
+
+Os projetistas devem estabelecer a vida
+útil de projeto (VUP) de cada sistema que
+compõe esta parte, com base na secção 14.
+Cabe ao projetista o papel de especificar
+materiais, produtos e processos que aten-
+dam ao desempenho mínimo estabelecido
+nesta parte da ABNT 15575 com base nas
+normas prescritivas e no desempenho de-
+clarado pelos fabricantes dos produtos a
+serem empregados em projeto.
+
+Quando as normas especificas de produtos
+não caracterizam desempenho, ou quando
+não existem normas específicas, ou quan-
+do o fabricante não publica o desempenho
+de seu produto, é recomendável ao proje-
+tista solicitar informações ao fabricante
+para balizar as decisões de especificação.
+Quando forem considerados valores de
+VUP maiores que os mínimos estabeleci-
+dos nesta Norma, estes devem constar nos
+projetos e/ou memorial de cálculo. (ABNT
+NBR 15575)
+
+Ena secção 14 da norma consta o seguinte;
+
+Projetistas, construtores e incorporado-
+res são responsáveis pelos valores teóri-
+cos da vida útil de projeto que podem ser
+confirmados por meio de atendimento às
+Normas Brasileiras ou Internacionais (por
+exemplo, ISSO e IEC) ou Regionais (por
+exemplo Mercosul) e, não havendo estas,
+podem ser consideradas normas estran-
+geiras na data do projeto. Não obstante,
+não podem prever, estimar ou se respon-
+sabilizar pelo valor atingido de vida útil
+(VU), uma vez que esta depende de fatores
+fora de seu controle, como o correto uso
+e operação do edifício e de suas partes, a
+constância e efetividade das operações de
+limpeza e manutenção, alterações climáti-
+cas e níveis de poluição no local. Mudanças
+no entorno ao longo do tempo (trânsito de
+veículos, rebaixamento do nível do lençol
+
+308 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+freático, obras de infraestrutura, expansão
+urbana, etc.)
+
+O valor final atingido de vida útil (VU) será
+uma composição do valor teórico calcula-
+do como vida útil de projeto (VUP) influen-
+ciado positivamente ou negativamente
+pelas ações de manutenção, intempéries,
+e outros fatores internos de controle do
+usuário e externos (naturais) fora de seu
+controle, (ABNT NBR 15575)
+
+Portanto, muita dificuldade para se avaliar
+a durabilidade na prática, até mesmo para o de-
+sempenho mínimo, Nesse sentido, muitas infor-
+mações devem ser pesquisadas e muitos estudos
+deverão ser desenvolvidos.
+
+Nesse propósito, segue transcrito parcial-
+mente o artigo que publicamos no site do Institu-
+to de Engenharia sobre avaliação da vida útil de
+estrutura.
+
+AVALIAÇÃO DO DESEMPENHO ESTRUTURAL EM
+EDIFICAÇÕESEANBR 15575:2013 DA ABNT
+
+A avaliação do desempenho estrutural de
+uma edificação requer análises das 5 fases do em-
+preendimento (PPEEU), representadas pelo pla-
+nejamento (terreno), projeto, execução, entrega
+e uso, podendo-se reportar à metodologia dos 5
+passos das Diretrizes de Avaliação de Desempe-
+nho em Edificações do Instituto de Engenharia.
+
+Os dados do terreno e seu entorno, princi-
+palmente o clima e condições ambientais, da fase
+de planejamento, são fundamentais para que a
+fase seguinte, a do projeto da estrutura, se de-
+senvolva em atendimento às exigências das nor-
+mas da ABNT, principalmente as normas NBR
+6120 (cargas para o cálculo de estrutura em edi-
+ficações), NBR 8681 (ações e segurança nas es-
+truturas), NBR 6123 (forças devido ao vento em
+edificações), NBR 6118 (projeto de estruturas de
+concreto) e NBR 15200 (projeto de estruturas
+de concreto em situação de incêndio). A avalia-
+ção de desempenho estrutural nessas duas fases
+(planejamento e projeto), são bem explicitadas
+

@@ -1,0 +1,104 @@
+Tipos de imóveis
+
+Geralmente, os imóveis vistoriados pos-
+suem as seguintes tipologias:
+
+* edificações residenciais unifamiliares e
+multifamiliares;
+edificações comerciais;
+edificações mistas;
+galpões industriais;
+instalações rurais;
+postos de gasolina;
+prédios públicos em geral, dentre outros.
+
+Valor dos serviços
+
+A definição deste valor pode ser global - for-
+ma utilizada quando se consegue identificar exa-
+tamente o número de imóveis a ser vistoriado. Ou
+este valor pode ser unitário, por imóvel vistoriado
+em função de sua tipologia e uso. Quando se fala
+em valor unitário, refere-se ao valor unitário por
+imóvel vistoriado, por relatório técnico emitido.
+
+Mas o contratante nem sempre entende
+dessa forma, assim a definição de valores e imó-
+veis a serem vistoriados, bem como de relató-
+rios técnicos emitidos, devem ficar muito claros
+quando da contratação do serviço.
+
+Assim seguem exemplos de situações utili-
+zadas para determinação da quantidade de vis-
+torias e relatórios técnicos a serem pagos:
+
+* número na porta;
+
+* medidor de água;
+
+* medidor de luz;
+
+matrícula;
+uso;
+IPTU;
+SQL;
+lógica.
+
+b Exemplo 1
+Na prática, muitas vezes um mesmo imó-
+vel é subdividido em vários cômodos e
+cada um deles recebe um número, um
+responsável e um uso. Nessas situações
+
+80 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+normalmente o proprietário do imóvel é
+um só, mas os “responsáveis”, ocupantes
+dos cômodos são vários, como segue:
+
+» Rua José Antonio nº 452 - Cômodo 1
+- Frente residência principal - Uso co-
+mercial - Borracharia;
+
+» Rua José Antonio nº 452 - Cômodo 2 -
+Fundos residência principal - Uso re-
+sidencial;
+
+» Rua José Antonio nº 452 - Cômodo 3
+- Pavimento térreo - Edícula - Uso in-
+dustrial - Marcenaria;
+
+» Rua José Antonio nº 452 - Cômodo 4
+- Pavimento superior - Edícula - Uso
+comercial - Escritório de contabilidade.
+
+EdiculaTérreo | EdiculaSupenor
+
+Casa Principal
+Fundos
+
+Casaprincipal
+Frente
+
+Ruado joão
+
+Figura 59 - Croquis do imóvel nº 452
+Fonte: Elaborado pelos autores.
+
+b Exemplo 2
+Em um mesmo terreno existem várias
+casas (é aquele terreno que é “herança”
+e cada herdeiro construiu sua casa, sem
+regularizar os documentos do imóvel).
+
+Caa
+
+Casa5 | Casaá
+
+Canaj
+
+Rua José Antonio Visira 800
+
+Figura 60 - Croquis do imóvel nº 800.
+Fonte: Elaborado pelos autores.
+

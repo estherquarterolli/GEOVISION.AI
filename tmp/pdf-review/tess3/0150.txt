@@ -1,0 +1,79 @@
+de manutenção predial empregada no
+empreendimento.
+
+Torna-se relevante inserir no laudo as ques-
+tões de prioridades e o grau do risco observados
+pelo Engenheiro ou Arquiteto, possibilitando ao
+gestor predial priorizar as intervenções de acor-
+do com os riscos oferecidos por cada anomalia.
+
+As prioridades são:
+
+Prioridade 1: Perda de desempenho que
+compromete a saúde e/ou segurança
+dos usuários e/ou funcionamento dos
+sistemas construtivos e a vida útil. As
+intervenções devem ser realizadas com
+urgência.
+
+Prioridade 2: Perda parcial do desempenho
+sobre a funcionalidade da edificação.
+Prioridade 3: Perda de desempenho pode
+ocasionar pequenos prejuízos à estéti-
+ca, Não existe necessidade de interven-
+
+ções imediatas (IBAPE/SP, 2012).
+
+Em se tratando dos riscos, podem ser divi-
+didos:
+
+Crítico: Pode provocar danos contra a saú-
+de e segurança das pessoas e/ou meio
+
+Tabela 25 - Matriz GUT gravidade.
+
+ambiente, perda excessiva de desempe-
+nho causando possíveis paralisações,
+aumento de custo, comprometimento
+sensível de vida útil e desvalorização
+acentuada (IBAPE/SP, 2012).
+Regular: Pode provocar a perda de funcio-
+nalidade sem prejuízo à operação direta
+de sistemas, perda pontual de desem-
+penho (possibilidade de recuperação),
+deterioração precoce e pequena desva-
+lorização (IBAPE/SP, 2012).
+Mínimo: Pode causar pequenos prejuízos à
+estética ou atividade programável e pla-
+nejada, sem incidência ou sem a proba-
+bilidade de ocorrência dos riscos críti-
+cos e regulares, além e baixo ou nenhum
+comprometimento do valor imobiliário
+(IBAPE/SP, 2012).
+
+Profissionais, no intuito de agregar in-
+formações mais detalhadas na elaboração de
+seu laudo, deixando seu cliente ciente das con-
+dições do momento atual da edificação estu-
+do, ainda utilizam a denominada matriz GUT
+(Gravidade x Urgência x Tendência), conforme
+os quadros a seguir:
+
+Grau Gravidade o 5
+Risco à vida do usuário ou colapso da edificação
+Total " g
+(destruição do equipamento) ou dano ambiental grave
+Aide Risco de ferimento ao usuário ou avaria não recuperável na edificação
+(dano grave ao equipamento) ou contaminação localizada
+Insalubridade ao usuário ou deterioração elevada da edificação
+Média (deterioração contínua e rápida do equipamento) ou
+desperdício de recursos naturais /materiais
+incômodo aos usuários ou degradação da edificação
+Baixa (deterioração contínua e lenta do equipamento) ou uso não
+racional dos recursos naturais/materiais
+Mínimo Depreciação imobiliária
+
+Fonte: GOMIDE; PUJADAS; FAGUNDES NETO, 2006.
+
+148 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+

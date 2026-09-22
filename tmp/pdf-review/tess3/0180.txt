@@ -1,0 +1,54 @@
+menores em até 10% em torno da média (pro-
+vavelmente um golpe que teve um vergalhão por
+detrás). Com a nova média resultante vai-se na
+tabela e encontra-se a dureza superficial da peça
+de concreto armado em Mpa no ato da vistoria.
+O teste é procedido conforme a figura 97.
+
+Figura 97 - Teste com a utilização de esclerômetro.
+Fonte: Arquivo do autor,
+
+Mas atenção, o teste de esclerometria indi-
+
+ici que é quase
+
+sempre bem maior que a real resistência no inte-
+rior da peça estrutural. Para a correção necessá-
+ria, o profissional deverá ter um padrão anterior
+de ensaio com o mesmo aparelho utilizado em
+
+4
+
+concreto de resistência conhecida existente em
+outro local para se saber a relação entre eles.
+
+O segundo método para a se conhecer a re-
+sistência à compressão do concreto armado é o
+Método da Cravação de Pinos do Prof. Domingos
+Pontes Vieira. Embora não normatizado pela
+ABNT, este teste é simples e fornece resultado
+razoável se aplicado à estrutura de prédios cons-
+truídos anteriormente ao ano de 2000. Em anos
+posteriores o teste não funcionará a contento
+devido à alteração da fabricação do cimento com
+o advento dos novos CP em substituição aos an-
+tigos CP-1 e CP-II. Nestes concretos mais novos o
+pino apresenta cravação mais profunda do que
+nos concretos realizados antes do ano de 2000,
+indicando, assim, resultados errados.
+
+O teste é realizado da seguinte forma: em
+uma superfície lisa da peça estrutural a ser exa-
+minada, o profissional dispara de quatro a cinco
+tiros de pinos com pistola de gesseiro e mede
+o quanto eles entraram para dentro do concre-
+to. Em seguida, vai-se na tabela de penetração
+correspondente e obtém-se, a partir da média
+dos disparos, a sua resistência interna em MPa.
+O teste é feito conforme as figuras 98 e 99.
+
+Figuras 98 e 99 - Método da cravação de pinos do Prof. Domingos Pontes Vieira.
+Fonte: Arquivo do autor.
+
+178 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+

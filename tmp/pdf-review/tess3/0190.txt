@@ -1,0 +1,97 @@
+4.2.9.2 Planejamento e rastreabilidade
+
+Como visto anteriormente, deve-se co-
+meçar a pensar na manutenção já nas fases de
+Planejamento e Projeto de uma nova edificação,
+independentemente do porte, padrão ou uso a
+que ela se destina. Isso é possível? Sim. Exem-
+Plificando: a definição e o dimensionamento de
+equipamentos e componentes devem considerar
+a mão de obra a ser empregada nas revisões e re-
+paros, a periodicidade das manutenções neces-
+sárias e se essas atividades exigirão a paralisa-
+ção total ou parcial de um determinado sistema,
+e sua duração. A concepção das fachadas deve
+prever condição segura para que os serviços
+de manutenção sejam tecnicamente exequíveis,
+sem a necessidade do uso de grandes estruturas
+auxiliares, o que certamente aumentaria o cus-
+to envolvido. A especificação dos materiais de
+acabamento deve atender a condição de uso da
+edificação e de suas áreas específicas, indican-
+do suas características e os produtos necessá-
+rios para limpeza, conservação e reconstituição
+quando for preciso.
+
+Evidente que quanto mais informações e
+detalhamento houver sobre a edificação nas fa-
+ses de Planejamento e Projeto, mais produtiva e
+assertiva será a Execução, oferecendo condições
+favoráveis para a implementação do Programa
+de Manutenção durante o Uso da edificação.
+
+É chegada a hora de passar o bastão. Obra
+concluída, com suas documentações legais, apro-
+vações e atestados emitidos pela municipalida-
+de, órgãos públicos e concessionárias competen-
+tes. Entram em cena os novos responsáveis pela
+edificação, que terão a incumbência de conduzir
+a gestão da Pessoa Jurídica que acaba de nascer
+= o Condomínio - representando o interesse co-
+letivo dos seus usuários.
+
+Nesse momento cabe uma reflexão paralela,
+analisando um exemplo próximo da manutenção
+das edificações, usado por vários profissionais
+do mercado em cursos, palestras e algumas li-
+teraturas específicas, que é a manutenção dos
+
+188 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+automóveis particulares, cujo proprietário sabe
+que se não fizer as revisões e as manutenções pe-
+riódicas numa concessionária representante do
+fabricante, seguindo as diretrizes do manual que
+lhe foi entregue junto com o automóvel, não terá
+direito à garantia oferecida pelo fabricante caso
+este apresente alguma falha ou mau funciona-
+mento, cuja causa seja comprovada como a falta
+de manutenção. Ele sabe, também, que a falta de
+manutenção pode colocar em risco sua segurança
+e dos demais ocupantes do automóvel em caso de
+acidente de trânsito. E numa eventual inspeção
+veicular realizada pelas autoridades competen-
+tes, ele tem conhecimento das penalidades apli-
+cáveis caso seja identificada alguma irregularida-
+de tanto no automóvel como na documentação de
+porte obrigatório.
+
+Considerando o imóvel como o patrimônio
+acumulado de uma vida toda, parte dela, ou não,
+seja para residência, comércio ou investimento,
+cujo valor muitas vezes supera e muito o valor
+de um automóvel, salvo as exceções, seria no mí-
+nimo justificável encontrar a mesma fidelidade
+em relação à sua manutenção. Contudo, infeliz-
+mente é comum se deparar com situações onde
+Os responsáveis demonstram desconhecimento,
+desinteresse, e em casos extremos negligência
+em relação à importância da manutenção e con-
+servação das edificações.
+
+É inadmissível que não haja um bom pla-
+nejamento para as atividades de manutenção e
+conservação da edificação como um todo. Todos
+os sistemas, subsistemas, equipamentos e com-
+ponentes possuem vida útil, e não durarão para
+sempre. É fundamental que sejam cercados de
+muito cuidado. Via de regra, estes cuidados im-
+plantados, conforme o Programa de Manutenção,
+no mínimo contribuem para que a vida útil
+projetada seja atingida, podendo, inclusive, ser
+ampliada. A Tabela 31 mostra o trecho de um Pro-
+grama de Manutenção como exemplo.
+
+As atividades de manutenção geram diver-
+sos documentos que devem, obrigatoriamente,
+

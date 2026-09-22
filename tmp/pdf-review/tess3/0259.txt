@@ -1,0 +1,45 @@
+RT Imóvel 1 móvel 2 Imóvel 3
+Sim Não NA Sim Não NA Sim Não NA
+42 Unidade passagemde120m | x E x No:
+43 Corrimãos E xo "a Page?
+44 — Guarda-corpo x x x
+as Escadas abertas x x x
+46 — Escadas enclausuradas — xo x x Em
+47 Esc enclausuradas à prova de fumaça x x x
+48 — Portas corta-fogo com selo ABNT x x X
+49 Iluminação emergência autônoma x x x
+210 — Iluminação por gerador de energia x x x
+4m | Sinalização de piso x x x
+412 Sinalização de paredes e pilares x x E:
+413 fstomático de descida do elevador para o x x x
+434 — Emedifícios antigos X x x
+
+5 COMPARTIMENTAÇÃO
+51 Horizontal - paredes corta fogo x x X
+52 Vertical - envoltória do Edifício x x x
+53 Vertical - selos corta fogo x x x
+
+6 Planos de Abandono
+
+61 Brigadas de incêndio NBR14276 x x x
+6.2 Treinamento periódico
+
+7. RISCOS GERAIS
+
+71 Elétricos x x x
+711 Quadros x x X
+712 | Fiações tubuladas x x x
+713 Caixas de passagem x x x
+714 Caixas terminais x X É x
+a fleiios insilados em materiais inflamáveis x x %
+212 GÁS INFLAMÁVEL
+225 Sds calcado - Medidores internos x * x
+73 MATERIAIS INFLAMÁVEIS x Ê E Ê Ê
+731 Combustíveis líquidos (locais de estocagem) La o Xo x
+732 Tintas e vemizes (locais de estocagem) x x x
+
+Notas: Sim - Conforme as Normas. Não - Não conforme as Normas. N.A. - Não aplicável.
+Fonte: Elaborado pelo autor.
+
+DIAGNÓSTICOS NA CONSTRUÇÃO CIVIL (MANIFESTAÇÕES PATOLÓGICAS) * 257
+

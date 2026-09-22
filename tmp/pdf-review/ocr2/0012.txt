@@ -1,0 +1,42 @@
+PATOLOGIAS EM ALVENARIAS
+nao devem superar 2 mm em relacao a uma regua com 20 cm de
+comprimento.
+Porfim,o revestimento de argamassa deve apresentar aderencia
+com a base e entre suas camadas constituintes,conforme os itens a seguir:
+Avaliar aaderenciados revestimentos por meiode ensaios de
+percussao realizados atraves de impactos leves,nao contundentes,
+com martelo de madeira ou outro instrumento rijo.A avaliacao deve
+ser feita em cerca de 1 m²,a cada 50 m² para tetos e a cada 100 m²
+para paredes. Os revestimentos que apresentarem som cavo nessa
+inspecao por amostragem deverao serintegralmente percutidos para
+que seja estimada a area total com falha de aderencia a ser reparada.
+Sempre que a fiscalizacao julgar necessario, deve ser realizada ou
+seis ensaios de resistencia a tracao, conforme a NBR 13528 (ABNT,
+2010b), em pontos escolhidos aleatoriamente, a cada 100 m² ou
+menos da area suspeita.Orevestimento dessa area deve ser aceito
+se, em cada grupo de seis ensaios realizados (com idade igual ou
+superior a 28 dias),pelo menos quatro valores forem iguais ou
+superiores aos indicados na Tab.1.2.
+Deve-serealizaroensaiodeaderenciaderevestimentosde
+argamassa conforme as recomendacoes da NBR 13528 (ABNT, 2010b)
+para auxiliar no controle das variaveis que interferem no desempenho
+do produto.
+Tab.1.2 Limites de resistencia de aderenciaa tracao (Ra),para
+embocoecamadaunica
+Local
+Acabamento
+Ra (MPa)
+Pintura oubaseparareboco
+≥0,20
+Interna
+Ceramica ou laminado
+≥0,30
+Parede
+Pintura ou baseparareboco
+≥0,30
+Externa
+Ceramica
+≥0,30
+Teto
+≥0,20
+Fonte: ABNT (2013b).

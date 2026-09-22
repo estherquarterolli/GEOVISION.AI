@@ -1,0 +1,100 @@
+* Variável dependente: variável que se pre-
+tende explicar pelas variáveis indepen-
+dentes;
+
+* Variáveis independentes: variáveis que
+explicam e dão conteúdo lógico à forma-
+ção do valor do imóvel objeto da avaliação.
+
+As variáveis independentes podem ser clas-
+sificadas em quantitativas ou qualitativas.
+
+As quantitativas são aquelas que estão
+associadas a uma característica que pode ser
+medida ou contada, podendo ser subdivididas
+em discretas (números inteiros) ou contínuas
+(valores fracionários).
+
+As qualitativas são aquelas provenientes de
+uma característica de qualificação e por isso não
+podem ser medidas diretamente ou contadas,
+podendo ser subdivididas em nominal (inde-
+pendente, sem relação com as outras) ou ordinal
+(mantém relação de ordem com as outras).
+
+O comportamento do mercado imobiliário
+depende simultaneamente de fatores endógenos
+- próprios do mercado e específicos dos bens e
+das relações entre compradores e vendedores e
+de fatores exógenos - decorrentes de compor-
+tamento de outros mercados, em particular o
+financeiro, como crises econômicas.
+
+A investigação de modelos explicativos da
+formação de preços de mercado consiste em um
+processo analítico e interativo, que começa com
+o levantamento dos possíveis elementos de com-
+paração para compor uma amostra representati-
+va e com base neles identificar as suas principais
+variáveis, passando pela sua interpretação e va-
+lidação dos resultados.
+
+As transformações utilizadas para lineari-
+zar o modelo de regressão devem, tanto quanto
+possível, refletir o comportamento do merca-
+do, com preferência pelas transformações mais
+simples de variáveis, que resultem em modelo
+satisfatório.
+
+(iv) Valor Unitário Médio
+
+Para sua determinação, estudou-se o com-
+portamento dos valores de imóveis na região, em
+relação às seguintes variáveis independentes:
+
+* Variável 1: Área Útil, expressa em metros
+quadrados (m?);
+
+* Variável 2: Idade Estimada: variável que
+corrige distorções relativas à idade real
+do imóvel em relação ao seu tipo de cons-
+trução e possível modernização, expres-
+sa em anos;
+
+* Variável 3: Estado de Conservação: va-
+riável dicotômica que indica o estado de
+conservação, atendendo ao estudo “Va-
+lores de Edificações de Imóveis Urbanos
+- Santos/SP” (2007) do IBAPE/SP, sendo
+O - necessitando de reparos simples e 1 —
+necessitando de reparos importantes.
+
+Cabe salientar que foram testadas outras
+variáveis independentes tais como: índice fiscal,
+esquina, número de vagas de garagem, entre ou-
+tras, cujos resultados não foram significativos,
+sendo desprezada a influência nos valores dos
+elementos pesquisados.
+
+(w) Pesquisa Imobiliária
+
+Em levantamento de dados junto ao mer-
+cado imobiliário, obtiveram-se 22 (vinte e dois)
+elementos comparativos, cujos dados de análise
+constam na tabela 60.
+
+(vi) Análise Estatística
+
+Utilizando-se de programa de Estatística
+para Avaliações (SisReN), para maior facilida-
+de de cálculo organizou-se uma planilha, onde
+constam os dados dos elementos comparativos,
+isto é, os valores da variável dependente V, - va-
+lor total do imóvel e os valores das variáveis in-
+dependentes já citadas.
+
+Para a determinação da regressão múltipla
+que melhor explica a variação do valor total do
+
+LAUDOS, PARECERES DIAGNÓSTICOS E DE CONSULTORIAS * 391
+

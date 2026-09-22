@@ -1,0 +1,94 @@
+Parte 5: Determinação da mitigação da
+expansão em barras de argamassa pelo
+método acelerado;
+
+i. Parte 6: Determinação da expansão em
+prismas de concreto.
+
+Sua identificação é bastante característica
+por se tratar de fissuras mapeadas, muitas vezes
+com visibilidade de um gel esbranquiçado envol-
+to aos agregados. Embora possa ser confundida
+com etringita tardia, pela geometria de suas fis-
+suras, difere-se, principalmente, no tempo em
+que se manifesta na estrutura. Suas fissuras só
+são observadas em regiões onde as tensões de
+compressão não são atuantes. A força máxima de
+expansão é de aproximadamente 4 MPa fazendo
+com que o concreto confine essa força em áreas
+como na biela de compressão de sapatas, man-
+tendo o concreto íntegro.
+
+RAA é um problema bastante recorrente
+nas fundações da cidade de Recife. Não existe
+tratamento efetivo para este mecanismo, apenas
+intervenções de ordem paliativa, como o confi-
+namento da peça, para que resista aos pequenos
+esforços de tração que a reação expansiva causa,
+associado a impermeabilização superficial dos
+elementos, para cessar ou inibir a entrada de
+umidade.
+
+A reação álcali-agregado têm três vertentes
+a saber: álcali-sílica; álcali-silicato; e álcali-car-
+bonato. As reações álcali-sílica e álcali-silicato
+são ambas denominadas por RAS e álcali-car-
+bonato é denominada por RAC. Segundo Bolina
+et al (2019) a reação álcali-silicato é uma rami-
+ficação da álcali-sílica, ainda segundo os autores,
+essa é a reação mais comum no Brasil, apesar da
+literatura pouco considerá-la.
+
+5.6.3.4 Corrosão das armaduras
+
+Corrosão de armaduras é a manifestação
+patológica mais comumente encontrada em
+
+270 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+estruturas de concreto. Um primeiro alerta da
+incidência da corrosão são fissuras geométricas
+que ocorrem a partir da expansão das armadu-
+ras existentes dentro da peça estrutural, seguida
+de manchamento, muitas vezes com cor alaran-
+jada, e desplacamento do concreto pelas tensões
+geradas pela continuidade da corrosão.
+
+Para que o processo de corrosão de ar-
+madura ocorra, é preciso três elementos es-
+senciais: oxigênio, umidade e diferença de
+potencial, que pode ser deflagrado pelo pH di-
+ferenciado entre as regiões de concreto onde
+pH elevado será a região catódica e pH reduzi-
+do região anódica. Esta constituirá o local onde
+se apresentarão os sintomas preliminares das
+manifestações patológicas da corrosão, embo-
+ra toda a região faça parte do processo de cor-
+rosão. Esses três elementos essenciais deixam
+explícito que concreto armado submerso não
+sofrerá com a corrosão, pela falta de oxigênio,
+uma vez que seus poros estarão saturados e isso
+impedirá que grande parte do oxigênio presen-
+te na água, possa adentrar a estrutura. Assim
+como, em maiores profundidades, esse oxigênio
+estará presente em concentrações pouco im-
+portante para desencadear a corrosão. Quando
+o pH do concreto está acima de 9,8, considera-
+-se que a armadura está passivada, nessas con-
+dições ela está envolta a uma película prote-
+tora de óxidos, presente no concreto, ou seja,
+mesmo em presença de oxigênio e umidade,
+ela não irá desenvolver processo corrosivo. Um
+método prático de observar se essa passivação
+está presente na região da armadura é a medi-
+ção do pH do concreto mediante a aspersão de
+solução de fenolftaleína que apresenta, segundo
+Bolina et al (2019), coloração vermelho carmim
+para concretos com pH acima de 9,8, o que indi-
+ca que a região se encontra passivada; coloração
+rosa para pH entre 8,2 e 9,8 e incolor para pH
+abaixo de 8,2 o que indica região despassivada.
+
+O produto da corrosão é expansivo com vo-
+lume até sete vezes maior que o volume inicial e
+

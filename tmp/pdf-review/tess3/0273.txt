@@ -1,0 +1,99 @@
+a tensão de tração sofrida por conta da expansão
+é da ordem de 15MPa, Inevitavelmente, o con-
+creto irá fissurar e, num segundo momento, des-
+placar. Concretos porosos conseguem absorver
+esse produto decorrente da corrosão, com mani-
+festações menos visíveis, por essa razão, alguns
+ensaios, como potencial de corrosão e resistivi-
+dade do concreto são imprescindíveis para um
+bom diagnóstico.
+
+É importante atentar-se a perda de seção
+da armadura, processo esse de grande impacto
+nos quesitos estruturais. Segundo Helene
+(2004), uma perda de seção de 25% do aço
+numa peça estrutural levaria o sistema ao
+colapso, portanto os limites de perda são de 5 a
+10%, por já causarem grande dano a estrutura,
+principalmente aos estribos, o que faz com que
+a peça rompa por flambagem. Para bem ilustrar,
+numa barra de q25mm, apenas Imm de perda
+significa quase 8% de redução de seção, já numa
+barra de q10mm, nos mesmos critérios, significa
+19% de redução de seção, como demonstrado na
+equação 5. Uma perda sensível é bastante signi-
+ficativa do ponto de vista estrutural e precisa de
+acompanhamento técnico para adequado reparo
+e reforço, assim como um projeto de escoramen-
+to durante os processos de intervenção.
+
+nDâicia  TDfinal
+4 4
+TDriciar
+
+4
+
+Equação 5 - Cálculo perda de seção.
+
+PERDA DE SEÇÃO =
+
+A corrosão das armaduras pode ocorrer de
+duas formas distintas, por carbonatação e por
+ataque de fons cloreto.
+
+(i) Carbonatação
+
+Muito presente na atmosfera, o dióxido de
+carbono (CO,) tende a entrar na estrutura atra-
+vés dos poros do concreto, a fim de criar um equi-
+líbrio de concentração. Ao adentrar o concreto, o
+
+CO, encontra o Ca(OH),, nessa reação forma-se
+Caco, e água. Segundo Neville e Brooks (2013),
+a carbonatação confere um sensível aumento
+de resistência e diminuição na permeabilidade
+do concreto, o que mostra que o efeito para o
+concreto, propriamente dito, pode ser conside-
+rado positivo. A carbonatação será negativa do
+ponto de vista da armadura, pois o processo de
+carbonatação diminui, consideravelmente, o pH
+do concreto, o que elimina a passivação que a al-
+calinidade dá a armadura, e desencadeia, então,
+o processo de corrosão generalizado. A corrosão
+atuará de forma generalizada pois a frente de
+carbonatação se dá de forma homogênea, avan-
+çando mais em fissuras e falhas de concretagem
+(esses são facilitadores de entrada do agente
+agressivo e faz com que a carbonatação tenha
+maior velocidade de propagação nessas regiões
+fragilizadas).
+
+(ii) Cloreto
+
+A corrosão pode ser, também, desencadea-
+da por íons cloreto. Ela tem característica dife-
+rente da corrosão por carbonatação, onde o qua-
+dro é generalizado, pois a corrosão por cloretos
+se dá por “pites”, como pequenas “mordidas” na
+barra de aço, o que se torna extremamente pre-
+judicial, e faz com que a barra se rompa num pe-
+ríodo de tempo bastante inferior a corrosão por
+carbonatação.
+
+Os íons cloreto são bastante abundantes em
+brisas marinhas, na própria água do mar, nas im-
+purezas de agregados, na água de amassamento
+e em alguns processos industriais, podendo es-
+tar presentes, também, internamente ao concre-
+to, como no uso de aditivo acelerador de pega a
+base de CaCI, (cloreto de cálcio), bastante usado
+antigamente. Vale lembrar que os íons cloreto
+não atacam o concreto e sim as armaduras, por-
+tanto, se o concreto não for armado, o uso de adi-
+tivos a base de cloreto não é prejudicial.
+
+A forma de terapia para esta manifestação
+patológica requer substituição total do concreto
+
+DIAGNÓSTICOS NA CONSTRUÇÃO CIVIL (MANIFESTAÇÕES PATOLÓGICAS) * 271
+

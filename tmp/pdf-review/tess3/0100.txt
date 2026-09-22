@@ -1,0 +1,68 @@
+TE A = a
+
+destas informações para orientar eventuais tra-
+balhos técnicos durante a vida útil da Edificação.
+
+Considerando a grande capacidade de “ar-
+mazenamento em nuvem?”, é interessante que
+seja definido um sistema, ou aplicativo, no qual
+possam ser introduzidas todas as informações
+de Controle tecnológico de uma obra, sendo
+estas decorrentes de avaliações e ensaios, ou
+mesmo declarações que atestem a qualidade do
+material, componente ou sistema, de modo que
+o conjunto de todas as informações fiquem dis-
+poníveis no decorrer da vida útil da Edificação,
+
+avaliar, em diversas situações, o estado da Edi-
+ficação, e caso necessário diagnosticar qual a
+origem de defeitos, se for o intento, ou mesmo
+identificar que uma causa externa tenha afetado
+uma determinada característica, que tenha sido
+considerada adequada no momento da execu-
+ção, porém não tem mais a resposta esperada,
+e portanto deve ser plenamente restituída, quer
+suas funções recuperadas, quer seja a troca ou
+substituição do material ou componente, para
+que a característica original seja reestabelecida
+na Edificação.
+
+tornando-se um Prontuário, pelo qual se pode
+
+Tabela 08 - Relação nominal de normas ABNT aplicáveis ao controle tecnológico.
+
+Tipo Numeração Título
+ABNT NBR 145212011 Aceiação de lotes de medidores eletrônicos de energia elétrica - Procedi-
+ABNT NBR 16537:2016 Versão Acessibilidade - Sinalização tátil no piso - Diretrizes para elaboração de
+Corrigida 2:2018 projetos e instalação
+Acessibilidade - Sinalização tátil no piso - Diretrizes para elaboração
+ABNT NBR 16537:2016 Errata 2:2018 de projetos e instalação
+ABNT NBR 9050:2015 Acessibilidade a edificações, mobiliário, espaços e equipamentos urbanos.
+ABNTNBR Cd IDA Ações e segurança nas estruturas - Procedimento
+ABNT NBR 8681:2003 Errata 1:2004 Ações e segurança nas estruturas - Procedimento
+6120:2019 Versão e
+ABNT NBR Corrigida:2019 Ações para o cálculo de estruturas de edificações
+E Acústica - Medição de campo do isolamento acústico nas edificações e nos
+ABNTNBRISO 16285-:2016 elementos de edificações Parte 1: Isolamento a ruído aéreo
+j Acústica - Medição de parâmetros de acústica de salas Parte 1: Salas de
+ABNT NBRISO 3382-1:2017 espetáculos
+j Acústica - Medição de parâmetros de acústica de salas Parte 2: Tempo de
+ABNT NBRISO. «388242:2017 reverberação em salas comuns o
+g Acústica - Medição de parâmetros de acústica de salas Parte 3: Escritórios
+ABNTNBRISO 3382-3:2017 de planta livre ui
+Aderência aplicável em sistema de impermeabilização composto por
+ABNTNBR 121711992 cimento impermeabilizante e polímeros - Método de ensaio
+Ty Aditivos químicos para concreto de cimento Portland Parte 2: Ensaios de
+ABNT NBR 11768-2:2019 desempenho
+ABNT NBR 16814:2020 Adobe - Requisitos e métodos de ensaio
+ABNT NBR 15396:2018 Aduelas (galerias celulares) de concreto armado pré-moldadas - Requisi-
+
+tos e métodos de ensaios
+
+»
+
+25 Armazenamento em nuvem é uma expressão que se refere a um espaço online onde usuários podem armazenar vários
+tipos de dados. Fonte: https://webinsider.com.br/armazenamento-em-nuvem/<20/jun/2020>.
+
+98 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+

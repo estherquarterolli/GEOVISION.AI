@@ -1,0 +1,25 @@
+= Rá
+
+Também o Teste da Distância de Cook (figura 233) não detectou pontos influenciantes, dando
+confiabilidade ao modelo.
+
+Dutância 0 Coou
+
+Figura 233 - Gráfico da Distância de Cook,
+Fonte; SisReN - Elaborada pela autora.
+
+Outro ponto importante a ser analisado é o | observados na abscissa versus valores estimados
+poder de predição do modelo (figura 234) que, pelo modelo na ordenada, que deve apresentar
+segundo a ABNT NBR 14.653-2 (2011, p. 15) pontos próximos da bissetriz do primeiro qua-
+“deve ser verificado a partir do gráfico de preços  drante”.
+
+Figura 234 - Gráfico do poder de predição do modelo.
+Fonte: SisReN - Elaborada pela autora.
+
+Analisando o gráfico anterior e consideran- da reflete uma verdadeira situação de mercado
+do todos os demais testes estatísticos realizados, para a variação do valor total na região dos imó-
+conclui-se que a função de regressão encontra- veis estudados.
+
+394 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+ementa
+

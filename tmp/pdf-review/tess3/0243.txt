@@ -1,0 +1,79 @@
+Deste modo, se uma dada zona da parede sofrer
+um assentamento, a parede sofre uma deforma-
+ção distorcional, desenvolvendo fendas inclina-
+das, como no caso da Figura 143. A inclinação
+das fendas permite determinar a zona da parede
+que sofreu assentamentos (lado direito, no caso
+da Figura 143).
+
+Figura 143 - Assentamentos diferenciais de
+fundação com geração de fendilhação diagonal
+Fonte: Arquivo do autor.
+
+Os assentamentos diferenciais de fundação
+podem dever-se a um conjunto alargado de si-
+tuações. No caso de edifícios de alvenaria, em
+que estes assentamentos sejam relativamente
+recentes, há que procurar e identificar causas
+que sejam também recentes. Tal poderá ser o
+caso, por exemplo: da existência de escavações
+em terrenos contíguos, que provoquem a des-
+compressão do solo de fundação; da alteração
+do regime hídrico do subsolo, devido a interven-
+ções próximas que provoquem percolação no
+terreno de fundação com lavagem de finos (lixi-
+viação) ou que levem a um rebaixamento do ní-
+vel freático, que produz um aumento das tensões
+efectivas no solo; do aumento das cargas totais
+sobre a fundação (devido a uma alteração do uso
+do edifício, por exemplo); entre outros.
+
+No caso deste tipo de anomalia, um dos as-
+pectos mais relevantes a ter em consideração
+
+tema ver com o nível de actividade do fenómeno.
+De uma forma geral, os assentamentos diferen-
+ciais de fundação apresentam uma fase inicial,
+normalmente de curta duração, em que a sua
+velocidade aumenta com o tempo. Depois dessa
+fase, a velocidade da deformação tende a reduzir
+naturalmente (i.e. sem qualquer intervenção) e,
+na maior parte dos casos, a estabilizar.
+
+Noutros casos, porém, as deformações po-
+dem tender a aumentar até à ocorrência de si-
+tuações extremas que podem comprometer a
+segurança estrutural ou mesmo levar ao colap-
+so. Deste modo, uma das medidas que habitual-
+mente se implementa nestas situações, logo que
+o fenómeno é identificado, é a medição, ao longo
+do tempo, da abertura de algumas fendas mais
+representativas. Tal pode ser realizado de for-
+ma relativamente simples, usando testemunhos
+de gesso, para verificar se a fenda está ou não
+activa, ou de modo mais sofisticado, medindo a
+abertura através de deflectómetros eléctricos
+(que apresentam elevada precisão, da ordem do
+0,001 mm) ligados a uma unidade de aquisição
+automática de dados. Os dados recolhidos nesta
+análise são essenciais para definir a forma de in-
+tervenção no edifício e analisar a necessidade de
+implementação de medidas de emergência.
+
+Outro tipo de patologia estrutural relati-
+vamente recorrente em paredes de alvenaria
+tem origem em impulsos horizontais sobre
+estes elementos. Estas situações podem estar
+associadas ao apoio de estruturas em arco que
+não estejam devidamente compensadas do lado
+oposto, por exemplo, ou ao apoio de coberturas
+inclinadas. Neste último caso, os impulsos re-
+sultam de alterações estruturais inadequadas
+ou do aumento das cargas sobre a cobertura.
+Na Figura 144, apresenta-se uma destas situa-
+ções, em que a linha de uma asna de cobertura
+foi cortada, dando origem a impulsos laterais
+sobre as paredes de apoio.
+
+DIAGNÓSTICOS NA CONSTRUÇÃO CIVIL (MANIFESTAÇÕES PATOLÓGICAS) * 241
+

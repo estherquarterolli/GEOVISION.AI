@@ -1,0 +1,35 @@
+imóvel em função da sua área útil, da sua idade Foram pesquisados diversos modelos ma-
+
+estimada e do seu estado de conservação, utili- temáticos de regressão, os quais foram subme-
+
+zou-se o Método dos Mínimos Quadrados da Es- tidos a testes estatísticos convenientes, que per-
+
+tatística Inferencial. mitiram a obtenção de um modelo, cuja função
+de regressão é do tipo:
+
++ Pa 1
+Valor Total = —138640, 1207 + 71274,58572 x Área ÚtilZ
+
+19266604,95
+
++ Idade Estimada?” 45330,08191 x Estado de Conservação
+
+Toda a análise estatística encontra-se ao fi- lógica que, quanto maior for sua área útil (figura
+nal deste item na tabela 61. 229), menor sua idade estimada (figura 230) e
+A análise do modelo inferido revela ser o melhor seu estado de conservação (figura 231),
+mesmo coerente em função das variáveis utiliza- o valor total do imóvel também é maior.
+das, podendo através dela verificar a circunstância
+
+Estimativa piÁrea Útil
+
+Figura 229 - Gráfico da tendência da área útil em relação ao valor total.
+Fonte: SisReN - Elaborada pela autora,
+
+Estimativa piidade Estimada
+
+Figura 230 - Gráfico da tendência da idade estimada em relação ao valor total.
+Fonte: SisReN - Elaborada pela autora.
+
+392 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+cats
+

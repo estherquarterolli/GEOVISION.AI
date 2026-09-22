@@ -1,0 +1,91 @@
+“qualidade e das exigências dos usuários”, permi-
+te que predominemos conceitos de atendimento
+ao desempenho em todas as fases envolvidas na
+produção de um edifício.
+
+Segundo Gomide et al (2010), a visão sis-
+têmica na Engenharia Diagnóstica se manifesta
+em todas as etapas envolvidas na construção de
+uma edificação, quais sejam: Planejamento, Pro-
+jeto, Execução, Entrega, Uso, Reabilitação e Des-
+contrução (PPEURD).
+
+Outrossim, é importante resgatar a visão sis-
+têmica da edificação, que se postulou desde a déca-
+da de 1980 com as definições preconizadas pelas
+normas ISO 6240 e 6241 (ISO, 1980; ISO, 1984)
+que estabeleceram uma série de conceitos relacio-
+nados ao desempenho dos edifícios, bem como se
+compõe o sistema edificação e suas partes.
+
+Em 2016, estas normas foram revisadas
+e substituídas pela ISO 19208 (ISO, 2016) que
+promoveu uma atualização desses conceitos,
+incluindo as contribuições que um edifício deve
+contemplar ao desenvolvimento sustentável,
+considerando os aspectos positivos e negativos
+das especificações de materiais; métodos cons-
+trutivos e recursos envolvidos; energia consu-
+mida no uso; sistemas prediais de água, esgoto,
+
+Tabela 1 - Subsistemas que compõem o edifício.
+
+reuso e aproveitamento de água de chuva; con-
+dições econômicas locais; o meio ambiente; a
+sociedade e a qualidade de vida envolvidos em
+toda a cadeia construtiva da edificação.
+
+A Norma, ao atualizar os conceitos à nossa
+realidade mais próxima, reafirma que os envol-
+vidos no processo de produção de edifícios de-
+vem considerar os aspectos relativos: às exigên-
+cias dos usuários e expectativas da sociedade,
+quanto ao produto edifício; aos possíveis usos
+e espaços ocupados pelos edifícios, objetivando
+flexibilização do uso e adequação de implanta-
+ção; aos subsistemas que fazem parte do ediff-
+cio, realçando a visão sistêmica; e aos agentes
+exógenos e endógenos atuantes nos edifícios e
+suas consequências.
+
+Em todas as versões das Normas ISO citadas
+(ISO, 1980; ISO, 1984; ISO, 2016) estão definidos
+os subsistemas que constituem o sistema edifi-
+cação, fato este muito importante para se exer-
+cer o controle tecnológico em cada subsistema,
+visto que o mau desempenho de qualquer parte
+integrante do sistema pode afetar o desempenho
+de todo o sistema. O Tabela 1, a seguir, apresenta
+os referidos subsistemas.
+
+” Fundação
+
+E Misco 12 Superestrutura
+
+x 21 Abaixo do solo
+
+2 Envoltória Externa 22 Agina do solo
+31 Vertical
+
+3 Divisórias Espaciais Externas 32 Horizontal
+33 Inclinados
+41 Vertical
+
+4 Divisórias Espaciais Internas 42 Horizontal
+43 Inclinados
+51 Suprimento de água potável e disposição de águas servidas e pluviais
+5.2 Aquecimento e ventilação
+5.3 Distribuição interna de gás =
+
+5 Sistemas Prediais 54 Eletricidade
+
+(Instalações) 55 Telecomunicações
+
+5.6 Transporte mecânico
+s7 Transporte pneumático e por gravidade
+58 Segurança
+
+Fonte: Adaptado de ISO 6241 (IS0,1984) e ISO 19208 (IS0,2016),
+
+90 " MANUAL DE ENGENHARIA DIAGNÓSTICA
+

@@ -1,0 +1,93 @@
+5.8 PATOLOGIA DE
+REVESTIMENTOS
+
+Com a função de revestir estruturas, alve-
+narias e demais elementos de vedação, seja nos
+pisos, paredes ou tetos, os revestimentos de-
+sempenham papéis importantes além das ques-
+tões estéticas.
+
+A visualização da superfície final atém-se
+ao seu compromisso para com a estética e o con-
+forto táctil. O seu conjunto de camadas, forman-
+do o sistema de revestimento, é um dos elemen-
+tos responsáveis, juntamente com as vedações,
+pela capacidade de conforto acústico e térmico,
+além de proteger estruturas e alvenarias quan-
+to à entrada de agentes agressivos e infiltrações
+de água e gases no caso das fachadas (BAÍA;
+SABBATINI, 2017).
+
+Ao longo dos anos, houve mudanças subs-
+tanciais em relação à tecnologia dos materiais,
+às técnicas construtivas e ao desempenho dos
+revestimentos. Hoje há edificações antigas que
+necessitam de atenção e cuidado, e o olhar téc-
+nico deve voltar-se às funções relativas a cada
+camada do revestimento, possibilitando uma
+ampla avaliação das condições em que estas se
+encontram; esta análise auxiliará no planeja-
+mento de intervenções eficazes.
+
+5.81 Tipos de revestimento
+
+Há uma vasta diversidade de tipos de reves-
+timento, divididos em, basicamente, dois gru-
+pos: Revestimentos Aderidos e Não Aderidos. No
+caso dos aderidos - mais tradicionais no Brasil
+- as primeiras camadas são compostas, em sua
+maioria, por revestimentos argamassados, como
+é o caso do contrapiso para pisos e do conjunto
+“chapisco + emboço (camada única)” para as pa-
+redes. Sobre esta composição é aplicada a última
+camada do revestimento que, dentre as opções
+existentes, as mais tradicionais no Brasil são as
+pinturas, texturas e revestimentos cerâmicos.
+
+284 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+Existem alguns tipos de revestimentos que
+são aplicados diretamente sobre a base de alve-
+naria ou sobre uma camada de chapisco, no caso
+das estruturas em concreto. Dentre eles, é possí-
+vel citar a monocapa (tipo de revestimento em
+monocamada com argamassa decorativa), muito
+utilizada em fachadas de edifícios com alvenaria
+estrutural, e o gesso liso, utilizado em paredes
+internas.
+
+Com uma adoção cada vez mais cotidiana,
+temos os revestimentos não aderidos, com des-
+taque para os sistemas de pisos elevados e de
+fachadas ventiladas, na qual utiliza-se de estru-
+turas metálicas fixadas preferencialmente em
+estruturas de concreto; o revestimento é fixado
+por meio de encaixes e/ou ancoragens com pa-
+rafusos. Dentro deste grupo, destaca-se as placas
+cimentícias, mármores e granitos, porcelanato e
+concreto polímero.
+
+Por se tratar de elementos metálicos, é ne-
+cessária atenção quanto à especificação do tipo
+dos materiais, bem como ao seu tratamento
+superficial, com o objetivo de evitar corrosões
+e consequentemente queda das placas. As fixa-
+ções na estrutura da base também precisam ser
+avaliadas e projetadas de forma a garantir a es-
+tabilidade de todo o sistema de revestimento.
+Nos pisos elevados, deve ser dada uma atenção
+especial quanto à resistência mecânica da placa
+e, no caso das fachadas ventiladas, o olhar atento
+deve ser quanto à estanqueidade da base, uma
+vez que esta superfície ficará mais suscetível às
+infiltrações de água e gases.
+
+5.8.2 Definição da metologia
+
+Os revestimentos fazem parte dos sistemas
+de pisos internos, vedações verticais internas e
+externas, e precisam ser projetados de forma a
+garantir a mínima vida útil de projeto de acordo
+com os parâmetros da Norma ABNT NBR 15575
+(ABNT 20134).
+

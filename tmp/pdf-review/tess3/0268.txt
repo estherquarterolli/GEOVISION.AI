@@ -1,0 +1,77 @@
+pode ser resultado do tráfego de veículos numa
+pista de rolamento, que pode ocasionar esborci-
+namento de juntas (desgaste e quebra das bordas
+da junta), mostrado na figura 155, que, se não tra-
+tada, evolui para um desplacamento mais severo,
+e pode-se ser ser necessário a execução de um lá-
+bio polimérico, e pode-se ser expor o agregado e
+em uma forma mais avançada, ter suas partes de-
+sagregadas. Erosão é a ação de partículas de água
+em movimento, já cavitação é bastante comum
+em vertedouros e obras de saneamento, onde a
+movimentação das águas e ações das micro bo-
+lhas de vapor têm efeitos significativos, o que faz
+com que o concreto apresente cavidades.
+
+Figura 155 - Esborcinamento de junta.
+Fonte: Acervo da autora.
+
+5.6.2.1 Variação de temperatura
+
+Sabe-se que os materiais dilatam em tem-
+peraturas mais altas e retraem em temperaturas
+mais baixas. Isso não seria diferente com o con-
+creto. Essa movimentação ocorre principalmen-
+te em áreas de maior incidência de calor, como
+lajes e elementos na cobertura, entretanto, pisos
+de concreto, mesmo que cobertos, sofrem esse
+fenômeno e suas respostas são bastante eviden-
+tes em forma de fissuração. É por essa razão que
+juntas são de extrema importância em pisos.
+A variação térmica é dada pela equação 1 na qual
+a largura total de todas as juntas da peça (AL) é
+a razão do coeficiente de dilatação do material
+
+266 * MANUAL Di
+
+NGENHARIA DIAGNÓSTICA
+eae
+
+em estudo (at), no caso do concreto, o compri-
+mento total da peça (1) e da variação térmica
+anual do concreto (A6) sobre o fator de forma
+do selante (a).
+
+axl,xh0
+As
+
+AL =
+
+Equação 1 - Largura total de juntas da peça estrutural.
+
+Sabe-se que o coeficiente de dilatação do
+concreto é 10%m/mºC. Ao adotar a região su-
+deste, onde, no verão tem-se facilmente tempe-
+ratura no concreto de 40ºC e no inverno 5º, a
+variação de temperatura, então, seria 35ºC, em
+selantes de alto desempenho, o fator de acomo-
+dação é de 20%, portanto a largura total da jun-
+ta, se adotada uma peça de comprimento de 20
+metros, dever ser de 38,5 mm, e, em selantes de
+baixo desempenho, com fator de acomodação
+em torno e 15%, essa largura, para as mesmas
+condições, passa para 51 mm. Se essa largura
+não for respeitada, ou até mesmo se a junta não
+for executada, certamente o concreto irá fissu-
+rar, como demonstrado na figura 156 em que um
+piso de concreto, executado sem juntas, fissurou,
+cortando toda a transversal da peça e criou uma
+junta forçada.
+
+Figura 156 - Fissura na transversal em piso de concreto.
+Fonte: Acervo da autora.
+
+As manifestações patológicas decorrentes
+das movimentações térmicas se apresentam, re-
+gularmente, em peças de grandes dimensões e
+

@@ -1,0 +1,114 @@
+tores
+Ivelo-
+abri-
+2 sua
+
+ando
+| dos
+istin-
+5575
+fe es-
+todos
+
+ições
+5 ma-
+tados
+fados
+
+nos ensaios são analisados, por intermédio de
+tabelas e gráficos comparativos, onde são tabu-
+lados os valores obtidos em cada uma das me-
+dições feitas nos ambientes receptores dos en-
+saios.
+
+4.2.4.31 Ruído em instalações
+hidrossanitárias e seus
+métodos de controle
+
+Serão analisados os ruídos em instalações
+hidrossanitárias, detalhando tipos de geração e
+formas de transmissão, embasado nos ensaios
+e análises da autora. Ainda serão, determinados
+métodos de envelopamento existentes no mer-
+cado nacional, com descrições de procedimen-
+tos adotados na Construção Civil, delineando os
+procedimentos adotados na execução dos en-
+saios realizados em dois apartamentos distintos,
+fundamentados nas normas NBR 15575 (ABNT,
+2013),anorma 10152 (ABNT, 2017) e ISO 16032
+(ISO, 2004) que estabelecem critérios de desem-
+penho e métodos adequados de avaliação.
+
+4,2,4.3.2 Fontes de ruídos aéreos
+
+As diversas fontes de ruídos aéreos podem
+ser gerados por equipamentos coletivos existen-
+tes no próprio interior das edificações. Tais ruí-
+dos podem ser transmitidos pela estrutura e pa-
+redes divisórias, quando, por exemplo, ocorre a
+movimentação de elevadores; há o acionamento
+de bombas; como também os ruídos gerados pe-
+las instalações hidrossanitárias (IH) embutidas
+na alvenaria, sob as lajes e em shafts.
+
+Um edifício deve ser projetado seguindo
+diretrizes básicas de uma boa construção e suas
+respectivas especificações, subdivididas em gru-
+pos básicos, sendo que uma delas é o conforto
+acústico, segundo a ISO 6241 (1982), e a Norma
+de Desempenho 15575-6 (ABNT, 2013).
+
+O desempenho acústico conforme requi-
+sitos determinados na norma NBR 15575-6
+
+(ABNT, 2013), estabelece um método de medi-
+ção dos ruídos gerados por equipamentos pre-
+diais, apresentando valores descritos na Tabela
+16, que mostra os níveis de desempenho. Todas
+as instalações hidrossanitárias operando de-
+vem atender aos critérios estabelecidos nessa
+tabela,
+
+Tabela 16 - Valores do L,,, ,, medidos em dormitórios.
+
+Lcarr [dBCA] Nível de desempenho
+M30 S (Superior)
+M34 | CIntermediário)
+M37 M (Mínimo)
+
+Fonte: Adaptado da norma NBR 15575-6 (ABNT, 2013).
+
+O desempenho acústico mínimo de um
+aparelho sanitário como, por exemplo, o lavató-
+rio, pode ser especificado na Tabela 17, consi-
+derando a grandeza LAsmax,, nT, conforme re-
+quisitos determinados na norma NBR 15575-6
+(ABNT, 2013).
+
+Tabela 17 - Valores máximos do nível de pressão sono-
+ra máximo LAsmax,,nT, medido em dormitórios.
+
+Lasar [ABCAD] “Nível de desempenho
+M36 S (Superior)
+o M39 o = | (Intermediário) o
+“Ma2 M (Mínimo)
+
+Fonte: Adaptado da norma NBR 15575-6 (ABNT, 2013).
+
+Para medir o desempenho acústico das ins-
+talações hidrossanitárias, devem ser realizados
+ensaios na peça em que ocorre o ruído quando
+do acionamento do equipamento (ruído emi-
+tido), seja ela contígua ao banheiro em que o
+equipamento está instalado, ou esteja acima ou
+abaixo do mesmo.
+
+Deve ser verificado o nível de ruído máximo
+no ambiente interno, com equipamento fora de
+operação LAai, no momento da medição. Caso o
+valor seja maior que o determinado nos parâme-
+tros acústicos de verificação - Valores do LAeg,
+nT medidos em dormitórios - o ensaio deverá
+
+ETAPAS CONSTRUTIVAS * 125
+

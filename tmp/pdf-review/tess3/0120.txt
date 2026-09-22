@@ -1,0 +1,92 @@
+* Transmissões diretas - aquelas em que o
+som passa diretamente por uma parede
+que divisa dois ambientes;
+
+* Transmissões indiretas ou laterais - as
+que ocorrem quando o som passa de um
+ambiente a outro por estruturas da edifi-
+cação que não uma parede divisória;
+
+* Transmissões parasitas - as transmis-
+sões devidas a falhas/defeitos em deter-
+minados locais e que ocorrem, em geral,
+devido a uma falta de vedação correta,
+como em fissuras em paredes ou falhas
+na instalação de janelas e similares.
+
+Figura 64 - Tipos de transmissão de ruído.
+Fonte: Litwinczik (2013).
+
+Teremos, portanto, abordagem principal
+para ruídos aéreos e ruídos de impacto sempre
+baseados nos ensaios de campo, visando garan-
+tir o conforto acústico esperado em uma edifi-
+cação, seguindo diretrizes básicas da Norma de
+Desempenho NBR 15.575:2013 e normas inter-
+nacionais recomendadas. Os parâmetros serão
+para garantir o nível de desempenho determi-
+nado por normas, e para garantir a privacida-
+de contra a intrusão de ruído de atividade nos
+ambientes adjacentes, tais como a fala, música,
+passos, arrastar de móveis etc.
+
+O ensaio de campo deve seguir regras de-
+terminadas em normas e não se pode considerar
+como resultados gerais para todas edificações,
+cada obra ou ambiente deve ser analisado e en-
+saiado individualmente, deve-se também levar
+em conta os materiais aplicados com resultados
+
+118 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+de R, - Índice de redução sonora ponderado
+(laboratório) e também a região da construção
+do edifício.
+
+A intenção dos ensaios, como menciona-
+do, foi determinar os níveis de desempenho da
+unidade privativa e dos materiais aplicados para
+obter resultados de desempenho determinados
+na Norma de Desempenho NBR 15.575:2013,
+garantindo os níveis de atenuação determinado,
+como ilustrado na tabela 09, garantindo o con-
+forto acústico nas unidades.
+
+Tabela 09 - Níveis de desempenho para conforto acús-
+tico da edificação.
+
+Níveis de Desempenho Siglas
+
+Superior
+
+s
+Intermediário |
+Mínimo M
+Fonte: Adaptação Norma de Desempenho. E
+
+Para ensaios de campo, foram utilizados
+os equipamentos determinados por norma
+ISO, com as devidas calibrações de laboratório.
+Os seguintes equipamentos devem ser utiliza-
+dos, atendendo as exigências da ISO 16032 (ISO,
+2004), para efetuar as medições:
+
+* Medidor de nível sonoro (sonômetro):
+nível de pressão sonora é a grandeza
+acústica que determina uma sensação
+subjetiva de intensidade dos sons, possui
+um transdutor eletroacústico, conhecido
+como microfone, transformando a pres-
+são sonora em um sinal elétrico equiva-
+lente (BISTAFA, 2011);
+
+* Caixa acústica dodecaédrica: a fonte so-
+nora deve irradiar o som uniformemente
+em todas as direções para que os resul-
+tados sejam reprodutíveis e confiáveis
+(KUHN, 2015);
+
+* Amplificador de Potência: esse equipa-
+mento tem a função de fornecer a po-
+tência ao sinal de áudio sem que tenha
+

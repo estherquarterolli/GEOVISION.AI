@@ -1,0 +1,102 @@
+Em caso de proibição da vistoria
+
+Aqui a situação fica um pouco mais compli-
+cada.
+
+Tem aquele ocupante que nega o acesso ao
+imóvel e assume a responsabilidade, fornecendo
+seus dados para serem entregues a empreiteira.
+
+Em outros casos, o vistoriado tenta inú-
+meras vezes, recebe vários “nãos” e o ocupante
+não se identifica. Nesse caso, é prudente realizar
+uma foto externa do imóvel e descrever no re-
+latório o histórico das tentativas. Cabe também
+uma carta registrada, solicitando contato em um
+determinado prazo, para a realização da vistoria.
+
+Em casos extremos pode-se interpor Ação
+Judicial ou Extra Judicial de Vistoria Cautelar An-
+tecipada de Prova.
+
+Em caso de ocupante não localizado
+
+Neste caso, recomenda-se pedir ajuda aos
+vizinhos, pois sempre tem alguém que sabe um
+causo ou tem acesso ao imóvel. Se mesmo assim
+não conseguir. Fotos externas tentando identifi-
+car ao máximo o imóvel são realizadas.
+
+Cabe também uma carta registrada, solici-
+tando contato em um determinado prazo, para
+a realização da vistoria. Mas, se a casa está deso-
+cupada, é muito provável que essa carta registra-
+da não seja recebida.
+
+Registros em cartório
+
+Houve um tempo que era muito usual regis-
+trar os Relatórios Técnicos em cartório, mas essa
+prática vem diminuindo dia a dia, pois trata-se
+de um procedimento caro, e nem sempre surte
+os efeitos necessários.
+
+Existem casos em que a empreiteira con-
+sidera necessária essa ação. Como por exemplo
+quando é claro que as anomalias do imóvel não
+são de responsabilidade da empreiteira, há ne-
+cessidade da remoção dos morados, mas o mes-
+mo insiste em ficar.
+
+84 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+Entrega dos relatórios técnicos
+
+Os relatórios técnicos devem ser entregues
+apenas ao contratante, cabendo a ele entregar,
+ou não, uma cópia aos proprietários.
+
+Existem situações em que a permissão da
+vistoria se dá, mediante a certeza do recebimen-
+to de uma cópia do relatório técnico. isso deve
+ser alinhando previamente com o Contratante.
+
+Atualmente, a prática mostra que os relató-
+rios são entregues em via digital e só quando há
+necessidade, os mesmos são impressos.
+
+Seguros e seguradoras
+
+Em alguns casos, o seguro das obras são
+vinculados as vistorias de vizinhança.
+
+Nesse caso, para que o seguro pague o sinis-
+tro de um imóvel lindeiro, são necessários dois
+relatórios técnicos de vistoria de vizinhança.
+
+Sendo que o primeiro deve ter sido realizado
+antes do início das obras e o segundo após o dano.
+
+Miriana Marques
+Vitor Marques
+O TR
+4.2.2 O Building Information Modelling
+(BIM) - Fase de projeto
+
+BIM é o futuro? BIM É O PRESENTE!
+
+Embora muitas pessoas acreditem que o
+BIM vai chegar, o BIM já é o presente. Em alguns
+lugares está “presente” há algum tempo.
+
+Building Information Modelling (BIM) ou,
+em português, Modelagem da Informação da
+Construção, em uma definição inicial, conforme
+o professor Chuck Eastman?, é uma tecnologia
+de modelagem virtual. É um grupo associado de
+processos para produção, comunicação e análise
+da construção.
+
+72 EASTMAN, Chuck; TEICHOLZ, Paul; SACKS, Rafael; LISTON,
+Kathleen - Building Information Modeling.
+

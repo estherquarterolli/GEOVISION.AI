@@ -1,0 +1,112 @@
+1º) CONCEPÇÃO
+
+e Comitê de empreendimentos;
+
+e Definição de premissas de projeto
+mais voltadas a fase de uso do em-
+preendimento;
+
+e Fixação de metas de custo factíveis;
+
+e Fixação de custos de assistência técni-
+ca compatíveis.
+
+E deve-se evitar:
+
+e Inadequação da localidade ao produto
+desenvolvido;
+
+e Programa do empreendimento incom-
+patível com o desempenho de seu fun-
+cionamento;
+
+e Custos de viabilidade incompatíveis
+com o desempenho pretendido pelo
+produto;
+
+e Sistema construtivo adotado incom-
+patível com o desempenho pretendido
+pelo produto.
+
+E podemos destacar que esse comitê de em-
+preendimento deve ter a visão sistêmica do pro-
+cesso, orientando o projeto com base no uso, a
+execução planejada, a entrega e o uso com manu-
+tenção apropriada, tudo com base nas normas da
+ABNT e nos bons princípios de qualidade total.
+
+Além disso, vale destacar que a norma de
+desempenho recomenda diversos requisitos ao
+local, como está determinado no item 6.2 da par-
+te 1 da NBR 15575:2013, podendo-se destacar:
+avaliação dos riscos de deslizamento; avaliação
+de enchentes; avaliação de vibrações (vias fér-
+reas, terraplenagem etc.); avaliação de subsi-
+dência do solo; avaliação dos riscos de explosões
+devido a aterros; avaliação de solos contamina-
+dos; avaliação das fundações das construções
+próximas (sobreposições de bulbos de pressão,
+efeitos de grupos de estacas, rebaixamento do
+lençol freático, desconfinamento em função do
+corte do terreno).
+
+O segundo passo apresentado pelo Enge-
+nheiro Ceotto é o seguinte:
+
+2º) PROJETO
+e Desenvolvimento de processo de coor-
+denação de projetos:
+
+314 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+» desenvolvimento de diretrizes de
+projetos;
+» elaboração de “Brieffing” e “Check-
+List” para cada projeto;
+» etapas com validações finais;
+» coordenação do projeto nas mãos
+do arquiteto (evitar pulverização
+de responsabilidades);
+» fixação dos critérios de desempe-
+nho para cada sistema;
+» acompanhamento dos custos das
+decisões de projeto.
+e Escolha do processo construtivo com-
+patível com o desempenho definido;
+e “Peer Review” para os primeiros pro-
+jetos;
+e “Lesson Learned” (Lições aprendidas)
+no final de cada projeto e obra;
+e Modificações nos procedimentos e di-
+retrizes;
+e Atenção com impacto das mudanças
+climáticas.
+E deve-se evitar:
+e Indefinições de premissas de desem-
+penho;
+* Imobservância de normas;
+e Erros de dimensionamento;
+e Definição “escolar” ou “pueril” dos sis-
+temas do edifício;
+* Incompatibilidade entre o desempe-
+nho esperado dos diversos sistemas
+que compõem um edifício;
+e Falta de análise de interferência entre
+os sistemas do edifício. Falta de com-
+patibilização dimensional e funcional;
+e Especificações mal feitas;
+e Previsão inadequada de acessibilidade
+para manutenção.
+
+E vale destacar que a norma de desempe-
+nho determina que a responsabilidade pela indi-
+cação dos prazos de vida útil do projeto (VUP) é
+do projetista, porém, as informações sobre vida
+útil dos produtos e sistemas construtivos são ra-
+ras no mercado, conforme já exposto neste livro.
+A respeito disso, reitera-se o conteúdo do item
+5.3 e da seção 14 da parte 1 da norma, pois os
+projetistas devem ter muito cuidado e atenção
+quanto a definição das VUP's e, também, quanto
+às compatibilidades dos diversos sistemas cons-
+trutivos, reportando-se à utilidade do BIM, nesse

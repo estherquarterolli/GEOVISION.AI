@@ -1,0 +1,83 @@
+respeitada a fim de minimizar reflexos decorren-
+tes de movimentação térmica.
+
+Segundo Bolina et al. (2019), as principais
+causas de manifestações patológicas por me-
+canismos mecânicos congênitos são a falta de
+aderência ou de ancoragem das armaduras, de-
+ficiência na posição das armaduras, cobrimento
+insuficiente das armaduras, falha de conexão en-
+tre elementos e erros construtivos.
+
+(ii) Ordem Induzida
+
+O recalque diferencial, muito observado nas
+construções da cidade de Santos, São Paulo, e a
+falha na retirada de escoramentos podem gerar
+fissuras que são consideradas manifestações
+patológicas por ações mecânicas de ordem in-
+duzida, assim como incêndios, esse último o que
+causa a calcinação do concreto e o efeito chama-
+do “spalling” que é o desplacamento da camada
+atingida pelo fogo.
+
+Em caso de incêndio, os mecanismos físicos
+e químicos de degradação são desencadeados
+devido às altas temperaturas. A seguir, apre-
+senta-se a evolução da temperatura durante o
+
+incêndio e os respectivos reflexos ou efeitos cor-
+respondentes, a saber: aos 100ºC, ocorre a eva-
+poração da água livre presente nos poros e, logo
+aos 150ºC, tem-se o primeiro pico de decomposi-
+ção do C-S-H. Quanto a redução de resistência do
+concreto, a temperatura crítica está entre 550º e
+600ºC. Nessa faixa, a redução é de cerca de 40%
+da resistência do concreto antes do fogo, o que
+afeta a capacidade da estrutura. O ponto favorável
+do concreto é que a transmissão de calor é muito
+lenta, o que faz com que o calor não se aproxime
+de seu núcleo rapidamente. Entretanto, o aço é o
+elemento que mais sofre com altas temperaturas
+e, se o calor atingir a camada do concreto onde ele
+está posicionado, ele pode perder capacidade me-
+cânica e com isso sofrer excessivas deformações
+(BOLINA etal, 2019).
+
+Cánovas (1977) apud Souza e Ripper
+(1998) demonstra na tabela 43 o comportamen-
+to do concreto frente a evolução da temperatura,
+e traz um referencial colorimétrico do concreto
+em relação as perdas de resistência, uma forma
+prática de se observar o grau de deterioração
+que a estrutura incendiada sofreu.
+
+Tabela 43 - Evolução do comportamento do concreto em função da evolução da temperatura ambiente.
+
+Temperatura em ºC Cor do concreto Condição do concreto Perda de resistência
+0a 200 Cinza Não afetado 0%
+300 a 600 Rosa Razoavelmente bom <40%
+600 a 900 Rosa a Vermelho Friável com alta sucção de água 70%
+900 a 1200 Cinza Avermelhado Friável 100%
+= >1200 Amarelo Decomposto 100% |
+
+Fonte: Cánovas (1977) apud Souza e Ripper (1998).
+
+5.6.2 Ações físicas
+
+As ações físicas de deterioração são bas-
+tante abrangentes. Estão entre os principais,
+desgastes superficiais, degradações por variação
+de temperatura, ações da água e a retração do
+concreto.
+
+As ações físicas de deterioração com ma-
+nifestação patológica em forma de desgaste su-
+perficial podem ser originadas de três diferen-
+tes formas: a abrasão, desgaste a seco; a erosão,
+desgaste hidráulico; e a cavitação, arrancamento
+superficial do concreto por movimentação de
+água. A abrasão, segundo Souza e Ripper (1998),
+
+DIAGNÓSTICOS NA CONSTRUÇÃO CIVIL (MANIFESTAÇÕES PATOLÓGICAS) * 265
+

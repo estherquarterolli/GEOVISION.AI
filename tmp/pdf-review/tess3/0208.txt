@@ -1,0 +1,72 @@
+exercer a função para a qual foi concebida - ela,
+então, precisa e pode ser reabilitada.
+
+Reabilitar uma estrutura, então, significa
+restabelecer condições normais ou, no mínimo,
+aceitáveis de desempenho. No entanto, não é ne-
+cessário aguardar o final da vida útil de uma es-
+trutura, para que se providencie sua reabilitação.
+
+A reabilitação pode também ser entendida
+e assim exercida, mediante intervenções, no de-
+correr da vida útil de uma estrutura, para elevar
+ou restabelecer o nível de desempenho parcial-
+mente perdido com o passar do tempo.
+
+A Figura 122, por intermédio do gráfico
+assim chamado “dente de serra”, representa in-
+crementos de níveis de desempenho produzidos
+
+Nave] numa
+desempenho
+
+e
+5
+a
+uv
+q
+=
+z
+
+por intervenções realizadas ao longo da vida útil
+de uma estrutura, de maneira semelhante às in-
+tervenções para manutenção.
+
+Aliás, as manutenções corretivas e também
+as preventivas, podem, em alguns casos, ser con-
+sideradas como ações de reabilitação.
+
+Observe-se, portanto, que as reabilitações
+podem proporcionar incrementos na vida útil
+das estruturas e, assim, se denota, também, a
+importância deste assunto.
+
+Importante lembrar que a NBR 15575 Edi-
+ficações habitacionais - desempenho (ABNT,
+2013) estabelece, em 50 anos, o tempo de vida
+útil mínimo para um sistema estrutural.
+
+Incremento de desempenho
+
+Figura 122 - Resultados de incrementos de desempenho durante a vida útil da estrutura.
+Fonte: Adaptado da NBR15575.
+
+4.2111 Intervenções
+
+Na prática, tem se verificado um elevado
+número de intervenções realizadas resultarem
+ineficazes e, por consequência, grande quantida-
+de de recursos vem sendo dispendidas indevida-
+mente, porque as intervenções não surtem efeito.
+
+206 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+Por outro lado, observa-se que o motivo
+é único: muitas das intervenções são feitas de
+maneira inadequada, principalmente porque
+são destinadas, simplesmente a combater as
+anomalias.
+
+Como resultado, tem-se que as anomalias
+ressurgem, às vezes até com maior intensidade,
+

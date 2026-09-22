@@ -1,0 +1,94 @@
+O
+
+longo da profundidade e, nesses casos, a terapia
+deve ser bastante estudada. Existem técnicas
+avançadas de recuperação sem que seja necessá-
+ria a demolição como de extração eletroquímica
+de íons cloreto.
+
+Um ponto bastante interessante é que no
+concreto há cimento anidro, portanto, há fonte
+interna de C,A. Quando o cloro livre entra pelos
+poros capilares e encontra esse C,A, forma-se
+cloroaluminato, também conhecido como sal de
+friedel. Com essa reação os fons cloreto não es-
+tão mais livres e, portanto, não são capazes de
+atacar a armadura.
+
+5.6.4 Ações biológicas
+
+A atividade biológica tem bastante im-
+portância em obras de saneamento. Embora o
+esgoto doméstico seja potencialmente alcali-
+no, bactérias redutoras de sulfato presente nos
+efluentes consomem íons sulfato, liberando H,S
+(sulfeto de hidrogênio) em forma aquosa, que
+devido à alta turbulência e sua volatilidade, são
+liberados em forma de gases para a atmosfe-
+ra. Entretanto, bactérias oxidantes de enxofre,
+presentes geralmente no biofilme formado na
+superfície do concreto, logo acima do nível da
+água, captam esse gás e o transformam em H,SO,
+(ácido sulfúrico), esse sim capaz de deteriorar o
+concreto e causa a descalcificação do Ca(0H,) e
+até do C-S-H, num estágio mais severo, forman-
+do produtos expansivos como: gipsita, etringita
+e taumasita. Conforme o ataque avança ocorre
+a lixiviação da superfície, deixando o agregado
+exposto e perdendo a seção transversal da peça
+(GÓIS, 2016).
+
+Para Bolina et al. (2019) a degradação por
+ações biológicas também pode partir de fungos,
+algas e musgos e a proliferação destas espécies
+indica a presença de umidade dentro das pe-
+ças. Esses agentes causam também a diminui-
+ção do pH no concreto, por excretarem ácidos,
+causando lixiviação e expondo o agregado, como
+
+visto anteriormente. Essa combinação de fatores
+desencadeia o processo corrosivo das armadu-
+ras. Esse processo pode ser identificado através
+de manchas e presença de líquens, principal-
+mente em fissuras.
+
+Outra formação muito comum é o desenvol-
+vimento de vegetação em juntas e fissuras, onde a
+umidade é bastante presente, o que fomenta sua
+formação. Dessa forma, a estrutura sofrerá com
+ações mecânicas, por promover tensões não pre-
+vistas na região, o que resulta em novas fissuras.
+
+Natália Linhares
+
+5.7 PATOLOGIA DE .
+IMPERMEABILIZAÇÃO
+
+Na indústria da construção civil, o diagnós-
+tico da patologia de impermeabilização se faz
+presente pela aplicação e abordagem da enge-
+nharia diagnóstica, quando se produz uma pro-
+va pericial e se investiga as origens, as causas, os
+mecanismos de ocorrência, as manifestações e
+consequências das situações de falhas de estan-
+queidade da envolvente exterior dos edifícios ou
+suas partes que deixam de apresentar o desem-
+penho mínimo pré-estabelecido pela norma de
+desempenho ABNT NBR 15575/13, em especial
+as normas técnicas ABNT NBR 9575 - Elabora-
+ção de Projetos de Impermeabilização e ABNT
+NBR 9574 - Execução dos Serviços de Imper-
+meabilização.
+
+Impermeabilização é o ato de tornar algum
+material, área ou objeto impermeável, estanque,
+com que a água, outro fluido, fungos e bactérias
+não consiga atravessar esse material, área ou ob-
+jeto. A NBR 9575 materializa a impermeabiliza-
+ção como um produto resultante de um conjunto
+de operações e serviços, formado por camadas,
+que objetivam proteger contra ação deletéria de
+fluídos, umidade e vapores.
+
+DIAGNÓSTICOS NA CONSTRUÇÃO CIVIL (MANIFESTAÇÕES PATOLÓGICAS) * 273
+

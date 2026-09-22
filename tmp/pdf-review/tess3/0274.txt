@@ -1,0 +1,115 @@
+com presença de cloreto em teor acima do per-
+mitido, segundo as prescrições da NBR 12655
+(2015). Esses teores são determinados na Tabela
+
+44, a partir da classe de agressividade apresen-
+tada na Tabela 45.
+
+Tabela 44 - Teor máximo de fons cloreto para proteção das armaduras do concreto.
+
+Classe de agressividade
+(5.2.2)
+
+Condições de serviço da estrutura
+
+Teor máximo de fons cloreto (CI) no
+concreto % sobre a massa de cimento
+
+Todas
+
+Concreto protendido
+
+0,05
+
+AA
+
+Concreto armado exposto a cloretos nas
+condições de serviço da estrutura
+
+015
+
+Concreto armado não exposto a cloretos nas
+
+condições de serviço da estrutura
+
+0,30
+
+Concreto armado em brandas condições de
+
+exposição (seco ou protegido da umidade nas
+
+0,40
+
+condições de serviço da estrutura)
+
+Fonte: NBR 12655 (2015).
+
+Tabela 45 - Classes de agressividade ambiental.
+
+Classe de agressividade
+ambiental
+
+Agressividade
+
+Classificação geral do tipo de ambiente
+para efeito de projeto
+
+Risco de deterioração
+da estrutura
+
+Fraca
+
+Rural Insignificante
+
+Submersa
+
+Moderada
+
+Urbana ** Pequeno
+
+Forte
+
+Marinha * Grade
+
+Industrial *º
+
+Muito forte
+
+Industrial «e elevado
+
+Respingos da maré
+
+a, Pode-se admitir um microclima com uma classe de agressividade mais branda (um nível acima) para ambientes internos
+secos (salas, dormitórios, banheiros, cozinhas e áreas de serviço de apartamentos residenciais e conjuntos comerciais ou
+
+ambientes com concreto revestido com argamassa e pintura).
+
+b. Pode-se admitir uma classe de agressividade mais brande (um nível acima) em obras em regiões de clima seco, com umi-
+dade relativa do ar menor ou igual a 65%, partes da estrutura protegidas de chuva em ambientes predominantes secos, ou
+
+regiões onde chove raramente.
+
+c. Ambientes quimicamente agressivos, tanques industriais, galvanoplastia, branqueamento em indústrias de celulose e pa-
+
+pel, armazéns de fertilizantes e indústrias químicas.
+
+Fonte: NBR 12655 (2015).
+
+Para a determinação do teor de cloreto na
+estrutura é necessário o ensaio de perfil de clo-
+reto. Esse ensaio requer amostras do concreto
+em diferentes profundidades. O resultado desse
+perfil determinará a profundidade de penetra-
+ção do cloreto, dando informações para a cor-
+reta especificação da terapia. Quando o agente
+
+272 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+agressivo é inerente ao ambiente externo, é co-
+mum um perfil com desenho decrescente com
+um teor levemente menor na superfície, resul-
+tante de lavagens. Entretanto, se o agente agres-
+sivo for inerente aos materiais de composição
+do concreto, o perfil terá desenho horizontal
+o que indica que o teor de cloreto é contínuo ao
+

@@ -1,0 +1,95 @@
+Cada material, solução de projeto e carac-
+terísticas das edificações, portanto, devem ser
+verificados caso a caso com análise combinató-
+ria de características e comportamento do(s)
+material(is) e ambiente a que foi especificado,
+considerando hipóteses variadas. Por exemplo:
+hipóteses de exposição direta ao fogo, acesso
+direto ou indireto a instalações próximas de
+elétrica, exaustão e aquecimento, acesso a ele-
+mentos arquitetônicos eventualmente colabora-
+tivos para propagação de fogo ou fumaça, como
+ocorrem em shafts sem vedação; ou nas falhas
+de compartimentação, como vãos excessivos sob
+portas corta-fogo (mal instaladas) e inúmeros
+problemas comuns similares.
+
+Como de praxe, estas verificações normal-
+mente possuem parâmetros técnicos em ins-
+truções técnicas de corpo de bombeiros e/ou
+normas da ABNT, contendo propriedades e ní-
+veis pretendidos de desempenho de materiais
+quanto a ignição, queima, emissão, densidade,
+propriedades de toxinas e compartimentação
+de fumaça.
+
+Devem, portanto, ser analisadas pelo pro-
+fissional diagnóstico de modo integral, fazendo
+correlação entre soluções de projeto, comporta-
+mentos da edificação às condições de manuten-
+ção e uso de materiais, além de quais ambientes,
+instalações e situações mostram-se potenciais
+de risco.
+
+Observando um caso prático, no caso da
+utilização de revestimento de madeira em piso
+ou teto de áreas internas em uma habitação
+com elétrica embutida e aterrada, com configu-
+ração arquitetônica em alvenaria e concreto: o
+piso de madeira em dormitório não apresenta
+risco evidente ao usuário ou inviabiliza sua es-
+pecificação.
+
+Caso este mesmo revestimento seja para o
+ambiente da sala nas proximidades de uma la-
+reira, fogão da cozinha gourmet, chapas, fornos,
+churrasqueiras e aquecedores, o revestimento
+
+38 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+de madeira passa a evidenciar riscos pela fácil
+ignição por faíscas ou potenciais acidentes de
+manuseio, sendo agente colaborador para pro-
+pagação do fogo, além de eventual emissor de
+fumaça contendo substância tóxica de solvente
+(verniz). Naturalmente, nesta situação, passan-
+do também a ter impeditivos normativos para
+sua instalação.
+
+Sendo assim, recomenda-se sempre a ob-
+servação do profissional diagnóstico a todas hi-
+póteses e verificações potenciais de risco. Desde
+situações mais simples, como superaquecimen-
+to e ignição de fiações, propagação de fumaça e
+fogo por dentro de shafts e fachadas ventiladas,
+a outras menos perceptíveis, como situações de
+invasão do fogo a vizinhança e demais blocos do
+empreendimento, aspectos da segurança estru-
+tural em casos de incêndio, material da sinaliza-
+ção de rota de fuga, funcionamento de instala-
+ções de combate, entre outros.
+
+b) Água
+
+Conhecidamente causadores de prejuízos a
+estética e vida útil das habitações, os efeitos da
+água imprevista ou contaminada no ambiente
+construído indica riscos e consequências varia-
+das ao ser humano. Quando responsável por ris-
+cos diretos aos usuários, indicam estar relacio-
+nadas ao fornecimento de águas impróprias ao
+consumo para banhos e alimentação, geralmente
+com relação a contaminações do próprio lençol
+freático, reservatórios ou tubulações, ocorridas
+principalmente em edificações com instalações
+precárias sem manutenção, áreas com solos com
+traços de metais pesados ou sem saneamento
+adequado.
+
+Comuns situações de contaminações fa-
+vorecidas por tubulações sem manutenção, ou
+rompidas por oxidação e/ou ação de raízes, que
+eventualmente permitem mistura de ferro, ter-
+ra ou vazamentos de esgoto. Nestas condições,
+ainda que menos incidentes em edificações
+investigadas por profissionais diagnósticos,

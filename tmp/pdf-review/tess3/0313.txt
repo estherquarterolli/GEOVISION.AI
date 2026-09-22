@@ -1,0 +1,89 @@
+e mestre da Unisinos, e apresentado à comunida-
+de técnica através da publicação do artigo “Espe-
+cificação de parâmetros da estrutura de concre-
+to armado segundo os preceitos de desempenho,
+durabilidade e segurança contra incêndio”, na
+edição 76, ano XLII outubro a dezembro de 2014,
+darevista Concreto & Construções.
+
+Em robusto artigo técnico, os autores de-
+monstram ter:
+
+[...] realizado uma revisão dos principais
+modelos teóricos que inferem sobre pre-
+visão de vida útil do elemento estrutural.
+Buscou-se analisar modelos que admitem,
+essencialmente, espessuras carbonata-
+das e espessuras de ingresso de cloretos
+sobre diferentes características do con-
+creto. Da espessura contaminada obtida
+com os modelos teóricos determina-se,
+então, qual espessura de cobrimento no-
+minal das armaduras o elemento estrutu-
+ral, inserido naquele ambiente, deve ter.
+Ajustificativa para a escolha de apenas dois
+tipos de agressão, gás carbônico e cloretos,
+
+fundamenta-se no fato de que estas formas
+de ataque mais corriqueiramente observa-
+das nas construções convencionais, além
+de serem estas as formas de ataque que,
+indiretamente, fundamentam a essência
+das classes de agressividade ambiental da
+normalização brasileira. Obviamente que
+em situações em que o fenômeno da agres-
+são preponderante seja outro, como lixi-
+viação, reação álcali-agregado, ataque por
+sulfato, ação de gelo-degelo, entre outros,o
+profissional responsável pela especificação
+do concreto deve tomaras precauções cabí-
+veis para essa situação.
+
+E o resultado desse complexo trabalho,
+após análises dos modelos teóricos de Morinaga
+(1990) e Bob (1991) para as classes de agressi-
+vidade Ie II, e de Paulo Helene (1993), Maage et
+al (1996) e Bom (1996) para as classes de agres-
+sividade III e IV, resultaram na tabela de dimen-
+sionamento estrutural à durabilidade para uma
+VUP de 50, 63 e 75 anos, como segue:
+
+Tabela 58 - Dimensionamento estrutural à durabilidade para uma VUP.
+
+Vida útil
+
+50 Anos 63 Anos 75 Anos
+CAR ' u m y ' m 1v 1 " m iv
+Elemento. Cobrimento (mm)/ Classe concreto Cobrimento (mm), Classe concreto Cobrimento (mm)/ Classe concreto
+e Relação ac / Consumo cimento (kg/m?) Relação ac / Consumo cimento (kg/m?) Relação ac / Consumo cimento (kg/m?)
+E 20/C20 25/C25 35/C30 45/C40 25/C25 35/35 45/C40 55/50 30/30 40/40 s0/CãO  65/650
+á 0,65/260 0,6/280 0,5/320 0,45/360 0,6/280 0,5/300 0,45/340 0,40/360 0,60/280 0,50/340 040/3600 0,40/380
+Va 25/0200 30/C25 40/C40 SO/C4O 30/C25 40/C35 SO/C4O 60/C50 35/C30 45/C40 55/40  70/C50
+FIM 065/260 06/2860 05/320 045/360 0,6/280 05/30 0,45/340 0,40/360 060/28 0,50/340 0,40/360 0,35/380
+Eatete 30/20 30/C25 40/C40 50/C40 30/C25 40/C35 SO/C4O 60/50 40/C30 45/04 55/c4O 70/C50
+comosoo” 065/260 0,6/280 05/320 045/360 06/280 05/30 045/340 035/360 0,60/280 0,45/340 0,40/360 0,35/380
+
+Fonte: Revista Concreto & Construções - edição 79, ano XLII (2014),
+
+E os engenheiros Fabrício Bolina e Bernar-
+do Tutikian concluem que:
+
+[..] foi possível estabelecer critérios e pa-
+râmetros de projeto para uma estrutura
+com durabilidade e segurança contra in-
+cêndio atendendo as normas ABNT NBR
+15.575:2013, ABNT NBR 6118:2014 e
+ABNT NBR 15200:2012, com base em
+
+modelos de previsão de vida útil e espe-
+cificações de normas internacionais, para
+diferentes vidas úteis de projeto (VUP),
+atendendo os 50, 63 e 75 anos.
+
+Com base nesses dados, bastante confiáveis
+cientificamente, os Engenheiros Diagnósticos
+podem acrescentar essas análises dos cobri-
+mentos especificados em projetos, medi-los na
+
+DESEMPENHO * 311
+

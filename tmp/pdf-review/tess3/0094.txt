@@ -1,0 +1,124 @@
+Exigências Parâmetros a considerar
+
+Limitação dos movimentos de aceleração e vibração (transientes e contínuos);
+
+Dinâmica
+
+Conforto aos pedestres em áreas com vento intenso;
+Facilidade no deslocamento (declividade de rampas, espelhos de escadas etc.);
+
+Manobrabilidade (abertura e fechamento de portas, janelas, controles de equipamentos etc.).
+
+Facilidades para cuidados com o corpo e a limpeza;
+
+Suprimento de água potável;
+
+Higiene Capacidade de limpeza;
+
+Eliminação de fumaça, águas servidas, resíduos indesejáveis.
+
+Adequação do
+espaço para usos
+específicos
+
+Serviços disponíveis e equipamentos;
+
+Quantidade, tamanho, configuração subdivisão e interpelação entre os espaços (internos e externos);
+
+Capacidade de mobiliar os ambientes com flexibilidade.
+
+Durabilidade
+
+Manter o pleno desempenho durante o ciclo de vida mediante manutenções periódicas;
+Adaptabilidade para alterações de finalidade de uso do edifício.
+
+Custos de capital, operação e manutenção;
+
+Economia Manutenibilidade;
+
+Acessibilidade Equidade no acesso.
+
+Acesso de portadores de necessidades especiais (físicas, auditivas e visuais),
+
+Consumo de recursos (energia e água);
+
+Escolha dos materiais utilizados na construção;
+
+Escolha métodos construtivos e recursos usados na construção;
+Disposição de resíduos (na construção, no uso e operação, e na demolição);
+
+Contribuições ao
+
+desenvolvimento
+
+sustentável
+Resiliência.
+
+Fonte: Adaptado de ISO 19208/2016 - Framework for specifying performance in buildings.
+
+No Brasil, a Norma NBR 15 575, de 2013, que
+teve como base a ISO 6240/1980, contemplou
+parte destes requisitos, agrupando-os em três
+categorias, conforme Tabela 3:
+
+Tabela 3 - Requisitos dos usuários de acordo com a
+NBR 15 575/2013.
+
+Requisito
+Segurança estrutural;
+
+Segurança contra o fogo;
+Segurança no uso e na operação.
+
+Categoria
+
+Segurança
+
+Estanqueidade;
+
+Desempenho térmico;
+Desempenho acústico;
+Desempenho lumínico;
+
+Saúde, higiene e qualidade do ar
+Funcionalidade e acessibilidade.
+
+Durabilidade;
+Manutenibilidade;
+Impacto ambiental.
+
+Fonte: Adaptado de NBR 15 575/2013 (ABNT, 2013).
+
+Habitabilidade
+
+Sustentabilidade
+
+Comparando-se os requisitos contidos nas
+Tabelas 1 e 2, denota-se que houve acréscimos
+de exigências (ou requisitos na NBR 15575:1),
+
+92 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+visto que foram incorporados mais parâmetros,
+com destaque aos relativos conceitos contempo-
+râneos de desenvolvimento sustentável.
+
+Para garantir que o desempenho da edifica-
+ção como um todo, ou de seus subsistemas em
+particular, esteja dentro dos parâmetros pre-
+vistos, é importante que haja o controle exerci-
+do em todas as etapas previstas no PPEURD, de
+maneira que as verificações, ensaios e determi-
+nações certifiquem que o produto final tenha a
+“qualidade” e atenda o desempenho preconiza-
+do quando em uso.
+
+Entretanto, existe um grande potencial ge-
+rador de falhas, durante o processo de execução
+de qualquer obra de um edifício. Isso se deve às
+várias condições que influenciam a construção,
+durante o processo executivo. De acordo com
+Meseguer (MESEGUER, 1991), a construção civil
+tem peculiaridades características, sendo, resu-
+midamente, as apresentadas no Tabela 4:
+

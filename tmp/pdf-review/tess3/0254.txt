@@ -1,0 +1,249 @@
+Tabela 39 - Técnicas de ensaio in-situ em revestimentos.
+
+Designação da
+
+Código técnica
+
+Parâmetro de
+medição
+
+Princípio da
+técnica
+
+Propriedades de
+desempenho
+
+Patologia relacionada
+
+nm Pull-off
+
+Mecânicas Resistência ao
+
+arrancamento
+
+Tensão de aderência
+(MPa)
+
+Perda de aderência/
+destacamentos
+
+T2 Esclerómetro
+pendular
+
+Mecânicas Índice esclerométrico Dureza superficial
+
+Pulverulência/ perda
+de coesão
+
+T3 Ensaio choque
+de esfera
+
+Diâmetro da mossa
+(mm)
+
+Mecânicas Resistência superficial
+em função da resistência
+
+ao impacto
+
+Pulverulência / perda
+de coesão
+
+Ultra-sons
+
+Ultra-sónicas Módulo de elasticidade
+dinâmico (se existir boa
+
+correlação)
+
+Velocidade aparente
+de propagação das
+ondas 8m/s)
+
+Perda de coesão
+interna / aderência /
+fissuração
+
+Termómetro de
+infra-vermelhos
+
+Resistência à humidade
+de condensação e à
+biodeterioração
+
+Térmicas Temperatura
+
+superficial (2C)
+
+Humidade, sujidade,
+colonização biológica
+
+Pirómetro de
+radiação infra-
+vermelha
+
+Térmicas Resistência à humidade
+de condensação e à
+
+biodeterioração
+
+Temperatura
+superficial (2C)
+
+Humidade, sujidade,
+colonização biológica
+
+Termo-
+higrómetro
+
+Temperatura do ar
+(C) e humidade
+relativa do ar (%)
+
+Resistência aos agentes
+climáticos (medida
+indireta)
+
+Manchas, sujidade,
+humidade, entre
+outras
+
+Termografia por
+infravermelho
+
+Térmicas Resistência à humidade
+de condensação
+(deficiente isolamento
+
+térmico)
+
+Termograma (ºC)
+com base na radiação
+infravermelha emitida
+
+erefletida
+
+Humidade,
+fendilhação em zonas
+húmidas, perda de
+aderência
+
+Tubo de karsten
+
+Hidrodinâmica Absorção de água a
+
+baixa pressão (cm?)
+
+Permeabilidade à água
+líquida
+
+Infiltrações,
+humidade, manchas,
+descolorações
+
+Esponja de
+contacto
+
+Hidrodinâmica Absorção de água da
+
+superfície (cm?)
+
+Absorção de água da
+superfície
+
+Infiltrações,
+humidade, manchas,
+descolorações
+
+Fitas
+colorimétricas
+
+Químicas Tipo e teor (semi-
+quantitativo) de sais,
+
+[1974]
+
+Resistência química,
+à humidade (medidas
+indiretas)
+
+Eflorescências (sais
+solúveis), carbonatos,
+sujidade, humidade
+(origem)
+
+Kit de campo
+
+Químicas Tipo eteor
+(quantitativo) de sais,
+
+mg/l
+
+Resistência química,
+à humidade (medidas
+indiretas)
+
+Eflorescências (sais
+solúveis), carbonatos,
+sujidade, humidade
+(origem)
+
+Medidor de pH/
+condutividade /
+total de sais
+
+Químicas pH / condutividade
+elétrica (xS/cm) /
+
+total de sais (ppm)
+
+Resistência química,
+à humidade, à
+biodeterioração
+(medidas indiretas)
+
+Eflorescências (sais
+solúveis), carbonatos,
+sujidade, humidade
+(origem)
+
+Humidímetro
+
+Elétrica Resistência à humidade
+(origem) / Absorção de
+
+água (medida indireta)
+
+Humidade à superfície
+(%)
+
+Infiltrações, humidade
+capilar, manchas
+
+Colorímetro
+
+Sensorial Variação de cor (L.a.b
+
+ou AE)
+
+Resistência química /
+
+resistência à humidade
+
+/ resistência às ações
+climáticas
+
+Manchas,
+descolorações,
+humidade
+
+T16 Rugosímetro
+
+Sensorial * Rugosidade (mm) Rugosidade superficial
+
+Alterações de textura
+
+Fonte: Elaborada pela autora.
+
+252 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+

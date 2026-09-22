@@ -1,0 +1,85 @@
+(vii) Valor Básico Unitário - Cálculo
+
+Como já descrito anteriormente, a amostra
+coletada se restringiu a imóveis localizados na
+orla da praia, dentro de um limite territorial e
+com padrão construtivo similar, excetuando suas
+áreas úteis, idades aparentes e seus estados de
+conservação.
+
+Assim, para estudar o impacto do recalque
+diferencial nesses imóveis foram fixadas as va-
+riáveis “Área Útil” e “Idade Estimada”, somente
+alterando a variável “Estado de Conservação”,
+visto ser a que aponta a patologia existente.
+
+É importante esclarecer que no modelo ava-
+liatório foi devidamente contemplada a influên-
+cia da superestimativa dos valores em oferta.
+
+(viii1) Valor Básico Unitário do avaliando (amostra
+sob influência do recalque diferencial na edi-
+ficação)
+
+* Variável “Área Útil” = 63,00 m? (obtida
+através da mediana** dos elementos pes-
+quisados);
+
+* Variável “Idade Estimada” = 30 anos
+(obtida através da mediana dos elemen-
+tos pesquisados);
+
+Variável “Estado de Conservação” = 1
+(obtida através do estudo de “Valores de
+Edificações de Imóveis Urbanos - San-
+tos/SP: 2007” sendo classificado como “g
+- necessitando de reparos importantes”).
+
+Substituindo-se os dados na função de re-
+gressão, tem-se:
+
+54 «A mediana é a medida de tendência central que divide
+a distribuição em duas partes iguais, ou seja, é o valor que
+fica no meio da série ordenada” (AZEVEDO, 2016, p. 145).
+
+396 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+V, (mínimo) = R$ 3.864,79/m?
+V, (médio) = R$ 4.240,81/m*
+V, (máximo) = R$ 4.616,83/m?
+
+(vii.2) Valor Básico Unitário do avaliando (amostra
+sem influência do recalque diferencial na edi-
+ficação)
+
+* Variável “Área Útil” = 63,00 m? (obtida
+através da mediana dos elementos pes-
+quisados);
+
+Variável “Idade Estimada” = 30 anos
+(obtida através da mediana dos elemen-
+tos pesquisados);
+
+Variável “Estado de Conservação” =
+(obtida através do estudo de “Valores de
+Edificações de Imóveis Urbanos - San-
+tos/SP: 2007” sendo classificado como “e
+- necessitando de reparos simples”).
+
+Substituindo-se os dados na função de re-
+gressão, tem-se:
+
+V, (mínimo) = R$ 4.594,88/m?
+
+V, (médio) = R$ 4.960,34/m?
+
+V, (máximo) = R$ 5.325,79/m?
+
+(viii) Estudo do Impacto do Recalque Diferencial
+
+Os valores finais utilizados para calcular o
+impacto do recalque diferencial no valor médio
+de mercado dos apartamentos localizados nos
+denominados “prédios tortos” para a data-base
+de maio de 2020 são:
+

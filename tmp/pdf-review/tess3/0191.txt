@@ -1,0 +1,93 @@
+ser mantidos juntamente com toda a documen-
+tação técnica da edificação, de forma zelosa, or-
+ganizada e disponível para consulta sempre que
+necessário, pois tais documentos contêm infor-
+mações importantes acerca dos serviços reali-
+
+Tabela 31 - Trecho de um programa de manutenção.
+
+zados. Preferencialmente devem ser mantidos
+num local de acesso restrito, evitando-se assim
+O costumeiro extravio quando há a substituição
+dos responsáveis pela gestão do condomínio.
+
+descargas atmosféricas
+
+cabeamento e dos captores.
+
+Subsistema Atividade de manutenção Atribuição Periocidade
+Verificar a existência de lâmpadas
+Iluminação das áreas comuns queimadas e providenciar a substituição. Equipe local Semanal
+Testar os sensores de presença
+Quadros de distribuição Efetuar a limpeza e organização, dos painéis, Empresa
+i ; i A cada 30 dias
+de circuitos cabos, canaletas e diagramas. especializada
+Luz piloto localizada no ático Limpar e testar o funcionamento, cobrindo a Equipe local A cada 90 dias
+fotocélula e verificando se a luz acende.
+dia Testar os disjuntores, com profissional
+quebre nesta capacitado na NRO e sob responsabilidade PA
+2 de um profissional habilitado P
+Ss
+£ - E NE 7 Z
+ã Quadros de distribuição erificar a integridade de fechos, Equipe local dnuai
+de circuitos vedação e identificação
+ê Quadros de distribuição Reapertar todas as conexões dos Empresa
+s disjuntores, barramentos, contatores, A Anual
+E decircuitos : j especializada
+g reles e bornes. Realizar teste termográfico.
+E)
+“Quadros de distribuição Verificar a integridade dos Empresa
+g : Gai Anual
+Ê de circuitos isolamentos das redes especializada
+74 “Quadros deialsteiuição Reapertar todas as conexões Empresa, Anual
+de circuitos especializada
+Sistema de proteção contra Inspecionar visualmente a integridade Empresa âmidl
+descargas atmosféricas das conexões e fixações do sistema. especializada
+Sistema de proteção contra Realizar medição Ôhmica (teste de Empresa
+do aterramento), e limpeza do P Anual
+
+especializada
+
+Tomadas, interruptores
+e pontos de luz
+
+Reapertar as conexões, e verificar o
+estado dos contatos elétricos, substituindo
+as peças que apresentem desgaste.
+
+Empresa
+
+1H A cada 2 anos
+especializada
+
+Sistema de proteção contra
+descargas atmosféricas
+
+Inspecionar de forma completa todo o
+sistema, conforme a ABNT NBR 5419.
+
+Empresa
+
+dali A cada 5 anos
+especializada
+
+4.2.9.3 Custo e dificuldade
+
+Diversos estudos relacionam a importância
+da manutenção com a longevidade das edifica-
+ções e seus sistemas, abordando de forma muito
+lúcida os benefícios de um planejamento bem
+estruturado, implementado e gerido de forma
+
+Fonte: Adaptado de Manual de Uso, Operação e Manutenção - SECOVI/SINDUSCON-SP 2012.
+
+responsável, assim como os resultados negati-
+vos provenientes da ignorância e/ou despreparo
+daqueles que ficarão à frente de um tema tão re-
+levante como esse,
+
+A NBR 15575-1 elucida o impacto que a
+manutenção tem no tocante ao desempenho dos
+sistemas e à sua vida útil, conforme Figura 109.
+
+ETAPAS CONSTRUTIVAS * 189

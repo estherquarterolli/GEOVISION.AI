@@ -1,0 +1,43 @@
+1#PROJETO E EXECUCAO
+nos pilares com pinos metalicos.A tela deve ser dobrada em 90°e os
+pinos devem ficar o mais proximos possivel da dobra e seguir as especi-
+ficacoes recomendadas no mesmo codigo. Essa fixacao esta apresentada
+na Fig. 1.2.
+Caso sejam necessarias ligacoes mais rigidas, estas podem ser
+executadas com armaduras de espera introduzidas nos pilares ou por
+meio de furacao posterior e fixacao de ferragem no pilar, podendo ser
+fortalecidas aindamais com a introducao de blocos canaletas grauteados
+para receber essa ferragem.
+Alvenaria
+devedacao
+Alvenaria-
+Tela
+de vedacao
+galvanizada
+Pilar em
+7T
+na argamassa
+concreto
+A⊥
+Pilar em ~
+concreto
+Tela
+galvanizada
+Pino e arruela metalicos
+na argamassa
+PLANTA
+VISTA LATERAL
+Fig.1.2Ligacdo de alvenaria de vedacdo com pilar em concreto
+No caso de estruturas extremamente flexiveis,é aconselhavel a
+execucaode juntas flexiveis para limitar a solicitacao da alvenaria em
+funcaodadeformacaoda estrutura.
+A producao de vergas e contravergas,que, incorporadas a alvenaria
+para a distribuicao das tensoes, tendem a se concentrar nos cantos das
+aberturas de portas ejanelas,pode ser executada de varias maneiras,em
+funcao da organizacao da obra e da disponibilidade de mao de obra e
+equipamentos.
+Se corretamente dimensionadas, de acordo com as cargas atuantes
+sobre paredes com aberturas e com a extensao do vao e da parede,as
+vergas evitam o aparecimento de fissuras por efeito de cisalhamento,
+enquanto as contravergas absorvem as tensoes de tracao na flexao (Silva,
+2003). A fim de absorver essas tensoes, Thomaz e Helene (2000) sugerem:

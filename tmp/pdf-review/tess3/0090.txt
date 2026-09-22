@@ -1,0 +1,101 @@
+A entrada em vigor do decreto nº 9.377, em
+maio de 2018?º (Revogado pelo Decreto nº 9.983,
+de 2019)”, foi uma sinalização do Estado sobre a
+relevância do BIM para a modernização da cons-
+trução civil. A metodologia BIM tornou-se parte
+de uma estratégia nacional, que visa incentivar o
+uso dessa tecnologia em âmbito nacional.
+
+E por meio do decreto nº 10.306, de 2 de
+abril de 20202, o governo federal estabeleceu a
+utilização do BIM na execução direta ou indire-
+ta de obras e serviços de engenharia realizadas
+pelos órgãos e pelas entidades da administração
+pública federal.
+
+O documento oficializa o que o decreto de
+2018 havia estabelecido: um marco de dez anos
+para que o país se adapte. Apesar da obrigato-
+riedade ser apenas para certos órgãos vincu-
+lados ao Ministério da Defesa e ao Ministério
+da Infraestrutura, o decreto deixa livre a qual-
+quer entidade da Administração a exigência da
+metodologia.
+
+Isso trará mais precisão, mais transparên-
+cia e menos desperdício nas obras públicas e
+maior demanda por profissionais adaptamos a
+metodologia.
+
+A estratégia nacional de disseminação do
+BIM no Brasil envolve a criação da plataforma
+BIM BR, que hospeda a Biblioteca Nacional BIM
+(BNBIM). Com o intuído de se tornar um repo-
+sitório das bibliotecas BIM no Brasil, onde for-
+necedores podem fazer seus uploads de seus
+produtos na plataforma, para que projetistas
+
+20 BRASIL. Decreto nº 9.377, de 17 de maio de 2018. Ins-
+titui a Estratégia Nacional de Disseminação do Building In-
+formation Modeling.
+
+21 BRASIL, Decreto nº 9.983, de 22 de agosto de 2019. Dis-
+põe sobre a Estratégia Nacional de Disseminação do Buil-
+ding Information Modeling e institui o Comitê Gestor da
+Estratégia.
+
+22 BRASIL, Decreto nº 10.306, de 2 de abril de 2020. Es-
+tabelece a utilização do Building Information Modeling na
+execução direta ou indireta de obras e serviços de engenha-
+ria realizada pelos órgãos e pelas entidades da administra-
+ção pública federal.
+
+88 » MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+tenham acesso a esse material e todos possam
+participar das compras públicas no âmbito da
+estratégia nacional BimBr. Empresas que já pos-
+suem suas bibliotecas, encontram na plataforma
+uma oportunidade de contribuir e disseminar
+seus produtos e tem o papel fundamental de não
+somente de fornecer geometria dos seus produ-
+tos, mas fornecer as informações.
+
+A razão número um, para uma construtora
+ou um projetista não usar BIM, é “o cliente não
+pediu”. Sendo o governo um grande contratante
+de obras públicas, ele assume o papel de induzir
+essa adoção,
+
+O BIM é um caminho muito importante
+para a gestão do projeto como um todo, a imple-
+mentação no Brasil ganhou novas técnicas com a
+criação da Comissão de Estudo Especial de Mo-
+delagem de Informação da Construção, ABNT/
+CEE-134, em que três atividades foram definidas
+como os temas iniciais de trabalho da Comissão:
+a tradução da norma ISO 12006-2; o desenvol-
+vimento de um sistema de classificação para a
+Construção e o desenvolvimento de diretrizes
+para criação de componentes BIM.
+
+A publicação da norma ABNT NBR ISO
+12006-2:2010 Construção de edificação - Orga-
+nização de informação da construção - Parte 2:
+Estrutura para classificação de informação, defi-
+ne diretrizes e uma estruturação para a concep-
+ção de sistemas de classificação das informações
+da Construção, permitindo o desenvolvimento
+de sistemas de classificação compatíveis inter-
+nacionalmente.
+
+Para a segunda ação, foi iniciado o desen-
+volvimento da primeira norma técnica BIM
+Brasileira, a ABNT NBR 15965 - Sistema de
+classificação da informação da construção, que
+oferece à indústria da construção a possibilida-
+de de padronização, para o todo país, da nomen-
+clatura utilizada nos seus processos. Ela requer
+a utilização e a combinação de diversos termos,
+com seus correspondentes códigos, oriundos de
+

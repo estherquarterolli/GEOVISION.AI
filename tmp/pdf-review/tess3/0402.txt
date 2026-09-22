@@ -1,0 +1,53 @@
+CI
+
+A melhor técnica de avaliação baseia-se na experiência do avaliador, mas há regras científicas
+que o avaliador não pode dispensar.
+
+A avaliação de imóveis baseia-se em fatos e acontecimentos que influenciam, em cada momento,
+o resultado final do valor do imóvel, convindo, sempre que possível, não nos atermos a um único as-
+pecto da questão e, pelo contrário, considerar simultaneamente os fatores “custo” e “utilidade”, este
+especialmente porque todo valor decorre da utilidade.
+
+STANLEY L. McMICHAEL, em seu “Tratado de Transación”, afirma:
+
+Os avaliadores de propriedades imobiliárias não têm o dom da profecia e será útil recorrer-se a eles
+para que estimem o valor puramente especulativo da propriedade, muito embora seja frequente de-
+sejar o proprietário precisamente este tipo de informações, especialmente quando se tem em vista
+uma transação.
+
+b) Valor, Custo e Preço
+
+As palavras VALOR e CUSTO, bem como PREÇO, têm significados distintos: PREÇO é a quantia
+paga pelo comprador ao vendedor e CUSTO é o preço pago mais todas as outras despesas que incorre
+o comprador na aquisição da propriedade.
+
+O custo de uma propriedade não é necessariamente igual ao seu valor, embora o custo seja uma
+prova de valor; por outro lado, na investigação do valor de uma propriedade procura-se conhecer
+tanto o custo original quanto o custo de reprodução.
+
+A palavra VALOR tem muitos sentidos e diversos elementos modificadores e, as definições a se-
+guir mostram os sentidos mais usuais em Engenharia de Avaliações
+
+VALOR DE MERCADO é aquele encontrado por um vendedor desejoso de vender mas não força-
+do e um comprador desejoso de comprar mas também não forçado, tendo ambos pleno conhecimen-
+to das condições de compra e venda e da utilidade da propriedade.
+
+VALOR DE REPOSIÇÃO é aquele valor da propriedade determinado na base do que ela
+
+custaria (normalmente aos preços correntes do mercado) para ser substituída por outra igualmente
+satisfatória.
+
+VALOR RENTÁBIL é o valor atual das receitas líquidas prováveis e futuras, segundo prognóstico
+feito com base nas receitas e despesas recentes e nas tendências dos negócios.
+
+A Suprema Corte da California, Estados Unidos, assim definiu o valor venal:
+
+De acordo com a norma NB-502/89, na avaliação de imóveis urbanos, serão utilizados os méto-
+dos diretos e/ou indiretos.
+
+Os métodos diretos classificam-se em:
+
+a) método comparativo (comparação de vendas);
+
+400 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+

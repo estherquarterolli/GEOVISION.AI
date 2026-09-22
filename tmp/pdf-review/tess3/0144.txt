@@ -1,0 +1,77 @@
+(iv) Classificação do estado aparente de desem-
+penho
+
+Recomenda-se classificar de maneira geral
+
+cada um dos sistemas construtivos da edifica-
+ção quanto ao estado de desempenho aparente,
+
+com base nas anomalias e não-conformidades
+identificadas, devendo-se levar em conta o re-
+quisito de desempenho comprometido, confor-
+me Tabela 22.
+
+Tabela 22 - Classificação de estado aparente de desempenho.
+
+Necessidades Requisitos de desempenho inadequado Adequado comRessalvas Adequado
+Segurança Segurança estrutural x
+"Segurança contra incêndio x EE
+Segurança no uso e operação x E QUA |.
+Habitabilidade Estanqueidade Ed Ed
+Saúde, higiene e qualidade do ar x
+Funcionalidade x é
+Acessibilidade x j
+Sustentabilidade Durabilidade x
+Manutenibilidade x Es
+Impacto Ambiental Fu é E
+Aparência Estética x
+Critérios:
+
+Inadequado, ou risco crítico - integridade física das pessoas e meio ambiente;
+Adequado com ressalvas, ou risco médio - funcionamento e desempenho dos sistemas construtivos e equipamentos;
+
+Adequado, ou risco mínimo - estética e desvalorização.
+Notas:
+1 Quando infringe legislação ambiental.
+
+2) Quando gera comprometimento apenas da eficiência energética, consumo de recursos naturais
+
+3) Comprometimento localizado.
+
+Fonte: adaptado de ABNT NBR 15575 (2013); IE (2013).
+
+(v) Definição das ações de correção e reparo
+
+Em muitos casos, o contratante inclui no
+escopo da investigação de recebimento a ativi-
+dade de consultoria, para definição das ações de
+reparo.
+
+Nesta etapa devem ser definidas as ações
+de correção, que devem ser objetivas, orientan-
+do a tomada de ação do responsável pela corre-
+ção, com o objetivo de identificar “o que fazer” e
+não “como fazer”. Pode ser, por exemplo, a indi-
+cação de investigação mais aprofundada da cau-
+sa do problema por meio de perícia ou inspeção
+especializada.
+
+142 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+(vi) Emissão do parecer técnico
+
+A investigação técnica na etapa de conclu-
+são de obra deve ser registrada, gerando um
+parecer técnico, que servirá como registro cau-
+telar do estado da edificação na data da realiza-
+ção desta e, também, como base para a tomada
+de ações de correção e reparo dos problemas
+identificados. Por isso, o parecer deve ser minu-
+ciosamente elaborado, tendo as anomalias bem
+identificadas quanto à localização e extensão,
+podendo-se fazer uso de croquis, ilustrações,
+farto registro fotográfico etc.
+
+Sugere que o parecer técnico seja estrutu-
+rado da seguinte forma:
+

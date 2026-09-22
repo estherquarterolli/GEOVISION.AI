@@ -1,0 +1,99 @@
+de Faraday, e é direcionada através do condutor
+próprio até o seu aterramento. Usualmente, a
+descida é realizada por cabo condutor metálico
+aplicado em paralelo e à toda altura da empena
+do prédio devidamente apoiado na parede por
+espaçadores aéreos com isoladores em relação
+ao corpo da edificação. Este isolamento se faz
+necessário para evitar o centelhamento perigo-
+so pelo contato do cabo com a parede do edifício
+durante a descida do raio.
+
+Quanto ao subsistema de aterramento, ne-
+cessário para garantir a dispersão do forte fluxo
+da corrente do raio, deve ser próprio e exclusivo,
+jamais podendo ser utilizado para tal o fio terra
+e respectivo aterramento das instalações elétri-
+cas do prédio. Usualmente o aterramento é fei-
+to por uma ou mais hastes de cobre enterradas
+ou, opcionalmente, por uma malha específica de
+aterramento aplicada ao solo que é feita confor-
+me as determinações da NBR 5419 da ABNT ea
+literatura técnica pertinente.
+
+Em casos muito especiais, existem estrutu-
+ras de concreto armado que foram especialmente
+projetadas e construídas para servirem também
+de condutores de descida da descarga atmosfé-
+rica até o solo. Estas estruturas possuem nas ar-
+maduras dos seus pilares vários conectores ou
+soldas que garantem a continuidade dos verga-
+lhões permitindo a descida da descarga desde o
+alto do prédio, onde está o captor, até o subsolo.
+Porém, junto às fundações, os vergalhões devem
+estar interligados por cabos ao próprio subsis-
+tema de aterramento, sendo que estes cabos de-
+vem ser passíveis de visitação, através de caixas
+com tampas, onde o profissional poderá assim
+efetuar as medições necessárias de continuida-
+de da malha e de eficiência do aterramento para
+atestar a qualidade do conjunto.
+
+(v) A eficácia do sistema de proteção contra in-
+cêndio e pânico
+
+No Estado do Rio de Janeiro, a legislação
+mais rigorosa em determinar nas edificações os
+
+equipamentos de combate a incêndio apareceu
+apenas através do Decreto nº 897 de 21 de se-
+tembro de 1976. Portanto, ao vistoriar prédios
+cujo licenciamento for anterior a esta data, alguns
+dos itens de segurança serão diferentes daqueles
+construídos nos anos seguintes a 1976, posto que
+esta legislação criou condições mais mais detalha-
+das e abrangentes para o licenciamento das cons-
+truções em relação aos itens de segurança para
+combate a incêndio. Criou também novos disposi-
+tivos em relação às rotas de escape, notadamente
+as escadas enclausuradas com antecâmaras.
+
+Mais recentemente, esta legislação veio a
+ser alterada por diversos Decretos que introdu-
+ziram exigências de adaptação dos prédios mais
+antigos, notadamente, a instalação obrigatória
+de luzes de emergência nos corredores e escadas
+(partes comuns). As alterações culminaram com
+a promulgação do Decreto nº 42 de 17 de dezem-
+bro de 2018 que estabeleceu o novo Código de
+Segurança Contra Incêndio e Pânico (COSCIP)
+com exigências de adaptações nos prédios anti-
+gos de maior porte, tudo conforme ajustamento
+de conduta a ser determinado pelo próprio Cor-
+po de Bombeiros ao condomínio ou proprietário.
+
+No entanto, são itens de segurança a se-
+rem verificados obrigatoriamente em uma Au-
+tovistoria:
+
+a) a existência da reserva de incêndio ga-
+rantida na caixa d'água superior através
+da posição da tubulação de alimentação
+das prumadas de descida de água fria em
+nível acima de um terço da altura do com-
+partimento, de modo a que sempre haja
+água na parte inferior do reservatório;
+
+o bom funcionamento por gravidade das
+portas corta fogo dos acessos à escada;
+
+o bom funcionamento das luzes de
+emergência nas partes comuns e, prin-
+cipalmente, na escada;
+
+a correta manutenção dos registros dos
+mangotes, assim como das respectivas
+mangueiras de combate a incêndio,
+
+ETAPAS CONSTRUTIVAS * 183
+

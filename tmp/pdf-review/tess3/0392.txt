@@ -1,0 +1,104 @@
+8.2.2.2 Avaliação
+
+Além da experiência profissional, a avalia-
+dora não pôde deixar de observar as regras téc-
+nicas cabíveis em cada caso e as recomendações
+das Normas Brasileiras de Avaliações de Imóveis
+Urbanos, elaboradas pela Associação Brasileira
+de Normas Técnicas (ABNT) e as normas do Ins-
+tituto Brasileiro de Avaliações e Perícias de En-
+genharia de São Paulo (IBAPE/SP).
+
+As avaliações devem produzir valores que
+expressem as condições vigentes no mercado
+imobiliário local, ou seja, representem o real VA-
+LOR DE MERCADO.
+
+A ABNT NBR 14653-1 (2019, p. 7), em seu
+item 3.1.47, define esse valor como a “quantia
+mais provável pela qual se negociaria voluntaria-
+mente e conscientemente um bem, em uma data
+de referência, dentro das condições do mercado
+vigente”.
+
+Em função da quantidade e qualidade das
+amostras obtidas, o Método Comparativo Direto
+de Dados de Mercado será adotado para efeito
+desta avaliação.
+
+(i) Método Comparativo Direto de Dados de
+Mercado
+
+Esse método segue a técnica na qual a esti-
+mativa do valor de mercado é obtida sobre pre-
+ços pagos e/ou em oferta referente a transações
+imobiliárias, sendo assim um processo de corre-
+lação de valores de propriedades existentes no
+mercado imobiliário.
+
+A ABNT NBR 14.653-1 (2019, p. 14), em seu
+item 7.2.1, define esse método como aquele que
+“identifica o valor de mercado do bem por meio
+de tratamento técnico dos atributos dos elemen-
+tos comparáveis, constituintes da amostra”
+
+A maior dificuldade da aplicação do Método
+Comparativo Direto de Dados de Mercado está
+na obtenção de elementos similares compará-
+veis, para que se possa fazer o cotejo. Embora
+
+390 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+na pesquisa seja coletada uma amostra de ca-
+racterísticas semelhantes, sendo significativo o
+número de variáveis que intervém na formação
+do valor de mercado, na maioria dos casos há ne-
+cessidade de homogeneizar essas variáveis, de
+modo que no confronto dos dados as diferenças
+sejam reduzidas ao mínimo possível,
+
+(ii) Preliminares
+
+Para atingir os objetivos da presente avalia-
+
+ção, foram observadas as seguintes normas:
+
+* Norma para Avaliação de Bens - Parte 1:
+Procedimentos Gerais - NBR 14.653-1 -
+ABNT: 2019;
+
+* Norma para Avaliação de Bens - Parte
+2: Imóveis Urbanos - NBR 14.653-2 —
+ABNT: 2011;
+
+* Estudos consagrados na Engenharia de
+Avaliações e aprovados pelo IBAPE/SP.
+
+(iii) Valor do Imóvel Paradigma
+
+No presente caso, para determinação do
+valor de mercado do imóvel, empregar-se-á a
+Metodologia da Inferência Estatística, a partir de
+uma amostra do mercado imobiliário.
+
+Assim, primeiramente, deve-se realizar
+uma coleta de elementos de valor através de vi-
+sitas às imobiliárias da região, de verificação de
+placas e de anúncios publicados nos jornais do
+município.
+
+Segundo a ABNT NBR 14.653-1 (2019), o
+modelo de regressão é utilizado para represen-
+tar determinado fenômeno, com base em uma
+amostra, considerando as diversas característi-
+cas influenciantes.
+
+Pelo conceito empregado nas Inferências
+Estatísticas, as variáveis são características ou
+atributos observáveis em uma amostra, que, em
+princípio, devem variar entre os elementos que
+a compõem.
+
+Assim, de acordo com a ABNT NBR 14.653-2
+(2011), as variáveis podem ser classificadas em:
+

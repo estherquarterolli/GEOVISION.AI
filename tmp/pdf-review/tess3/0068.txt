@@ -1,0 +1,82 @@
+e Elaboração do Laudo ou Parecer.
+3.5.3 Tipologias de consultorias
+
+Os diagnósticos indiretos e os prognósti-
+cos/prescrições técnicas são as duas principais
+tipologias de consultorias de Engenharia Diag-
+nóstica na construção civil.
+
+No tocante aos diagnósticos indiretos, te-
+mos três principais estudos: (1) os resultados
+dos ensaios tecnológicos da Tecnologia da Cons-
+trução; (2) a quantificação do valor ou custo ne-
+cessário para se poder realizar as prescrições
+necessárias de reparação, recuperação ou rea-
+bilitação, que são matérias da Engenharia de
+Avaliação; e (3) os detalhamentos das anomalias
+apuradas nos estudos da Patologia das Constru-
+ções. Ou seja, as três principais vertentes das
+consultorias que auxiliam ou complementam a
+Engenharia Diagnóstica. Sem embargo de outros
+conhecimentos que também podem subsidiar e
+contribuir para bem fundamentar e ilustrar os
+diagnósticos, tais como a fotografia, a topografia,
+o BIM, a informática etc.
+
+Figura 51 - Diagnósticos indiretos.
+Fonte: Elaborado pelo autor.
+
+Os ensaios tecnológicos podem fornecer
+subsídios importantes na determinação do diag-
+nóstico, principalmente nas fases de investiga-
+
+66 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+ção das ferramentas de inspeção e perícia, ca-
+bendo destacar a análise granulométrica, o teor
+de absorção de água dos materiais, a resistência
+a compressão axial, o teor de inchamento, o tra-
+ço experimental, as medições acústicas, dentre
+muitos outros.
+
+Quanto à determinação do valor de um
+diagnóstico técnico, que é outro dos estudos de
+consultoria, o mesmo pode ser fundamental na
+quantificação do importe financeiro necessário
+para realizar a correção da manifestação patoló-
+gica indicada na prescrição, ou mesmo para que
+se execute ações de aprimoramento do desem-
+penho. Os orçamentos de obra são as avaliações
+mais usuais nesse sentido, com os cálculos de
+despesas diretas e indiretas, envolvendo ma-
+teriais, mão de obra etc, sempre acrescidos do
+competente BDI”, Mas, eventuais estudos mais
+avançados podem ser necessários para se cal-
+cular o valor da prescrição técnica necessária,
+motivo de cálculos avançados da Engenharia de
+Avaliação.
+
+E, em terceiro lugar, tem-se os diagnósticos
+indiretos ou as prescrições técnicas propria-
+mente ditas, que são as consultorias mais usuais,
+desenvolvidas pelos especialistas da disciplina
+conhecida como Patologia das Construções. Aqui
+cabe esclarecer que, via de regra, os especialistas
+de Engenharia Diagnóstica, Tecnologia da Cons-
+trução, Engenharia de Avaliações e Patologia das
+Construções, são profissionais independentes,
+mas podem trabalhar em parceria nos casos
+mais complexos, usualmente coordenados pelo
+Engenheiro Diagnóstico.
+
+As interligações dessas quatro disciplinas
+costumam gerar alguns conflitos de competên-
+cia profissional, pois alguns especialistas enten-
+dem que todo esse complexo técnico pode ser
+
+7 O índice BDI (Benefícios e Despesas Indiretas) é um ele-
+mento orçamentário responsável pela composição dos pre-
+ços na Construção Civil levando em conta os custos indi-
+retos (os não relacionados a materiais, mão de obra etc.).
+Fonte: Sienge Plataforma.
+

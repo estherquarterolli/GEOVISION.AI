@@ -1,0 +1,114 @@
+Continuação da tabela.
+
+Identificação
+
+Utilização
+
+Martelo de borracha
+
+Avaliação qualitativa da aderência ao suporte através do som
+
+Escovas / vassourinha
+
+Limpeza da superfície a inspecionar e/ou avaliação do grau de acumulação / fixação de
+contaminantes na superfície; distinção entre eflorescências solúveis (eliminadas com
+escovagem a seco, com ou sem água) da carbonatação
+
+Recipiente pulverizador com
+água
+
+Para avaliação das superfícies após molhagem (existência de fissuração e pulverulência),
+quando não exista fornecimento de água no local
+
+Solução de fenolftaleína em
+aerossol
+
+Determinação da profundidade de carbonatação (que ocorre para pH abaixo de 9)
+
+Ácido clorídrico a 10% em
+aerossol
+
+Para pulverização nas zonas com manchas brancas. Se existir efervescência, trata-se de
+anomalias do tipo de carbonatação (manchas devido à formação do carbonato de cálcio de
+origem da argamassa ou betão), caso contrário, são eflorescências de sais solúveis
+
+Hipoclorito de sódio a 5% em
+aerossol
+
+Para pulverização nas zonas com sujidade / fungos e algas (manchas escuras / de cor
+castanha / preta). De acordo com a ASTM D 4610, para distinguir estas anomalias
+
+pulveriza-se a superfície com a solução indicada (corrente lixívia) e espera-se 60 s. Se
+reagir (descoloração), existe a presença de microrganismos biológicos
+
+Berbequim de baixa
+“velocidade
+
+Execução de pequenos furos (broca de diâmetro de 0.01 m) para recolha de amostras;
+furos para analisar a reação da fenolftaleína
+
+Sacos
+
+Recolha de pequenas amostras
+
+Sinalética e etiquetas
+autocolantes
+
+Identificação de determinados pormenores e amostras recolhidas
+
+Fonte: Elaborada pela autora,
+5.4.3 Técnicas de ensaios in-situ
+
+Em muitas situações, a observação unica-
+mente visual é insuficiente pois muitas das ano-
+malias ou causas não estão visíveis à superfície,
+pelo que é preciso recorrer a ensaios comple-
+mentares. Os ensaios in-sítu constituem um pre-
+cioso meio auxiliar à observação visual e permi-
+tem uma melhor caracterização de:
+
+* mecanismos de degradação existentes
+nos paramentos (por exemplo, sujidade,
+eflorescências, humidade, fissuração);
+
+* variações das propriedades dos materiais
+relacionadas diretamente com o seu de-
+sempenho (por exemplo, resistência me-
+cânica, coeficiente de absorção de água);
+
+* condições in-situ (por exemplo, parâme-
+tros ambientais);
+
+* tipo de materiais aplicados, em conjun-
+to com ensaios laboratoriais, a partir de
+amostras in-situ (por exemplo: caracteri-
+zação dos constituintes de revestimentos).
+
+Neste sentido, a sua realização permite re-
+duzir a subjetividade das observações visuais e
+avaliar, com maior precisão, as efetivas necessi-
+dades de manutenção; permite ainda detetar pe-
+quenas alterações que podem estar associadas a
+sinais de pré-patologia (fenómenos de alteração
+anteriores ao aparecimento das anomalias que
+são visíveis a olho nu). No entanto, estes ensaios
+apresentam alguns condicionalismos:
+
+* podem aumentar o tempo de análise;
+
+* podem produzir resultados confusos e de
+difícil interpretação (em especial, quan-
+do a informação disponível sobre os ma-
+teriais aplicados é nula ou escassa);
+
+* possuem limitações, dependendo da téc-
+nica utilizada - por vezes, a pouca preci-
+são da técnica utilizada permite apenas
+uma análise qualitativa.
+
+No atual estado do conhecimento, são pou-
+cas (e normalmente onerosas) as técnicas de
+ensaio in-situ que permitem individualmente
+informação fiável, de carácter quantitativo, para
+
+DIAGNÓSTICOS NA CONSTRUÇÃO CIVIL (MANIFESTAÇÕES PATOLÓGICAS) * 249

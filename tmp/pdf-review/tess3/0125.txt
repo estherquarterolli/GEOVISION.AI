@@ -1,0 +1,74 @@
+p re-
+ição
+
+= ee ret me
+
+Figura 68 - Corte e legenda do
+material aplicado na unidade tipo.
+
+Fonte: Empresa Procryl e Laboratório Harmonia.
+
+Os ensaios foram realizados nos apartamen-
+tos de numeração 21 e 11, do Bloco 33, no am-
+biente denominado Quarto 1, sendo que a fonte
+geradora foi o Dormitório 1 da unidade 21 e a
+fonte receptora foi o Dormitório 1 da unidade 11.
+
+A edificação tem sua construção em laje de
+concreto armado, espessura de 10 cm, com reves-
+timento da face superior composta por camada
+acústica da marca Procryl anti-ruído, com consu-
+mo de 2 kg/m?, espessura de 2 mm, mas a prote-
+ção de Cimento ACIII, com espessura aproximada
+de 3 mm, totalizando uma área de 8,10 mº.
+
+Os resultados encontrados são apresenta-
+dos na tabela 14,
+
+Tabela 14 - Resultados das medições.
+
+Com os resultados apresentados na tabela
+14, foi possível gerar um gráfico demonstrando
+um comparativo entre os resultados encontra-
+dos, conforme determinado pela Norma de De-
+sempenho, ISO 717-1 e curva ajustada.
+
+du
+
+o 20 0 m aaa
+
+Figura 69 - Gráfico comparativo
+entre os resultados encontrados,
+
+Fonte: Empresa Procryl e Laboratório Harmonia.
+
+A conclusão obtida foi que, com a aplicação
+da massa antirruído, o desempenho mínimo de-
+
+Frequencia (Hz) DnT (dB) terminado pela ABNT NBR 15575-3, foi atendi-
+100 394 do com resultados entre 45 a 49 dB, conforme
+— IB 36,2 apresentado na tabela 15.
+= NO 317
+o ,
+E E Tabela 15 - Resultados encontrados no ensaio para iso-
++ lamento de ruído aéreo - Impacto de piso.
+315 417 o k
+400 39,8 E Ambiente Diretrizes NBR
+500 230 Ensaio (gerador e receptor) 155753 Dorm (dB)
+630 459 Sistema de piso
+entre unidades
+— = Quarto) Apto 21- habitacionais
+Z : - autônomas, nocaso 48
+1250 53,0 eua a =" “de pelo menos um
+1600 53,8 E dos ambientes ser
+16 . 8 dormitório
+o o — Fonte: Empresa Procryl e Laboratório Harmonia
+3150 64,0 E
+Dx as dB a] O ensaio de campo realizado, comprova
+
+Fonte: Empresa Procryl e Laboratório Harmonia.
+
+a necessidade de um material resiliente para
+
+ETAPAS CONSTRUTIVAS * 123
+

@@ -1,0 +1,46 @@
+e 3 ff IDENTIFICAÇÃO DE ANOMALIAS, SUAS CAUSAS E REPAROS POSSÍVEIS
+
+I I ] I A Lo. I I I
+T T T T T T ( T T T T
+
+]
+|
+]
+|
+]
+]
+]
+
+Fig. 3.29 Fissura desenvolvida predominantemente na diagonal, a partir da
+aplicação da carga e dos vértices das aberturas
+
+Reparos
+
+m Retirar a carga adicional solicitante.
+
+m Verificar o nível de comprometimento da alvenaria estrutural; se
+possível, executar reforço estrutural, caso contrário, condenar a
+estrutura e refazê-la.
+
+3.4.2 Fissuras em alvenaria estrutural por recalques
+diferenciados de fundações
+
+Aspectos
+As fissuras em alvenarias estruturais por recalques diferenciados de
+fundações apresentam os seguintes aspectos:
+
+= A fissura em alvenaria estrutural com aberturas por recalques
+diferenciados de fundações desenvolve-se predominantemente na
+diagonal, a partir dos vértices das aberturas, onde há maior concen-
+tração de tensões (Fig. 3.30).
+
+m A fissura em alvenaria estrutural na edificação menor por recalques
+diferenciados de fundações por influência de edificação vizinha
+desenvolve-se predominantemente na diagonal, a partir dos vértices
+das aberturas, onde há maior concentração de tensões (Fig. 3.31).
+
+Causas prováveis atuando com ou sem simultaneidade
+Para ambos os casos, as principais causas possíveis são:
+= Rebaixamento de aquífero.
+
+87

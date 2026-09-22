@@ -1,0 +1,126 @@
+erado
+rução
+
+Biona-
+ho da
+5 para
+pados
+013,
+ado,
+
+tório.
+tiliza-
+(ISO,
+
+letro):
+ndeza
+isação
+possui
+tecido
+pres-
+quiva-
+
+te so-
+mente
+resul-
+fáveis
+
+quipa-
+a po-
+tenha
+
+distorções, o mesmo é projetado para ali-
+mentar as fontes sonoras na medição de
+isolamento acústico aéreo e também seu
+tempo de reverberação (KUHN, 2015);
+
+* Calibrador sonoro: deve ser utilizado no
+início e no final do dia de cada medição,
+devendo ser verificado o nível de pressão
+
+de acordo com o que abrange a norma
+TEC 60942 (2003) (KUHN, 2015).
+
+Nos ensaios de campo efetuados para ruí-
+do aéreo hidrossanitário e ruído de impacto de
+piso em unidades residenciais, recomenda-se a
+realização de medições do ruído de fundo e do
+ruído aéreo gerado pelas instalações hidrossani-
+tárias e impacto de piso, assim como medição do
+tempo de reverberação de cada ambiente, para
+medir a pressão sonora seguindo a norma ISO
+16032 (ISO, 2004), com a utilização dos equipa-
+mentos apresentados na figura 65.
+
+2 ,
+
+“ecarmaro roma
+
+ae
+E)
+
+Figura 65 - Vista geral dos equipamentos
+para medição do ruído aéreo.
+
+Fonte: Arquivo da autora.
+4.2.4.2 Desempenho acústico em pisos
+
+Para os sons ou ruídos gerados por impacto
+de piso tem-se a fonte geradora e a fonte recepto-
+ra. Os ruídos gerados por pisadas e queda de ob-
+jetos sobre lajes provocam grande desconforto
+
+aos moradores e originam grandes reclamações,
+por serem ouvidos claramente pelo vizinho de bai-
+xo (fonte receptora). Isto ocorre porque se trata de
+uma eficiente perturbação por contato, em que a
+Jaje se torna um transmissor de energia sonora em
+ampla faixa de frequências. Pode-se determinar
+que esse é o ruído aéreo, devido ao movimento vi-
+bratório induzido por um ponto específico.
+
+De acordo com Bistafa, uma medida da ca-
+pacidade da laje em transmitir sons de impacto
+é dada pelo nível sonoro normalizado de impac-
+to (Ln). Importante que seja efetuado um ensaio
+para determinação da perda na transmissão para
+sons aéreos, e conforme o ensaio para determi-
+nação de (Ln) também se utiliza de duas câmaras
+reverberantes - sala fonte geradora e sala fonte
+receptora (ensaio normalizado pela ISO 140-6).
+
+Os parâmetros foram apresentados na tabe-
+
+la 10, conforme determinado pela NBR 15.575-
+3:2013.
+
+Tabela 10 - Parâmetros dos níveis de pressão sonora.
+
+Símbolo Descrição Norma Aplicação
+Nível de
+pressão sonora .
+t, deimpacto 1501407 - sistema de Piso
+ia pr ISO 717-2
+padrão
+= — ponderado E» no
+Diferença destes.
+õ padronizada 150 140-4 |,
+M orizontais, em
+tu de nível 1507174 edifícios (pisos,
+ponderada Pisos,
+
+paredes, etc.)
+Fonte: Norma de Desempenho ABNT NBR 15.575-3:2013.
+
+4.2.4.241 Pisos flutuantes
+
+Estudos de campo revelam que o nível sono-
+ro de impacto é muito elevado, mesmo em lajes
+com maiores espessuras e densidades, mesmo
+considerando que o aumento da espessura nas
+lajes temos uma redução nos níveis sonoros no
+ambiente receptor. Atualmente a alternativa de
+aumento de densidade/massa na laje torna-se
+inviável, pois implica no aumento de custo da
+
+ETAPAS CONSTRUTIVAS * 119

@@ -1,0 +1,87 @@
+cimentos resistentes a sulfato, aliados a baixa re-
+lação água/cimento.
+
+O ataque por sulfato com formação de tau-
+masita é diferenciado dos demais processos pois
+não exige fonte de C,A. Sua reação dá-se entre
+umidade, íons sulfato, fons carbonato e o próprio
+€-S-H do concreto. O produto dessa reação é uma
+massa sem propriedade aglutinante, perdendo
+totalmente sua função, além de causar a perda
+significativa de seção, o que faz desse ataque o
+mais danoso dentre as formas de ataque sulfato.
+Sua formulação é descrita conforme equação 4.
+
+CaSiO;. CaCO;. CaSO,. 15H,O
+
+Equação 4 -Taumasita.
+
+Embora acredita-se que taumasita não se
+forma em temperaturas acima de 15ºC, há estu-
+dos que mostram que ela pode evoluir de etrin-
+gita e se formar em temperatura de 20ºC. Para
+que se consiga diagnosticar ataque sulfato com
+formação de taumasita é necessária uma inves-
+tigação com ensaios aprofundados de análises
+químicas.
+
+5.6.3.2 Ataque ácido
+
+O cimento Portland não tem resistência a
+nenhum tipo de ataque ácido, segundo Nevil-
+le e Brooks (2013). Para os citados autores, em
+ambientes com umidade, os gases presentes na
+atmosfera, principalmente dióxido de enxofre e
+dióxido de carbono, podem formar ácidos que
+em contato com o concreto, lixiviam o hidróxi-
+do de cálcio e afetam também o próprio C-S-H. A
+acidez torna-se prejudicial ao concreto a partir
+de pH 6,5, intensificando-se substancialmente
+quando menores que 4,5 (bastante comum em
+indústrias principalmente em chaminés e pisos
+de fábricas alimentícias).
+
+Em obras de saneamento, as bactérias pre-
+sentes no esgoto reduzem o enxofre em ácido
+
+sulfúrico, causando ataques significativos ao
+concreto. Entretanto, esse assunto será melhor
+abordado no item biodeterioração.
+
+5.6.3.3 Reação álcali-agregado
+
+A reação álcali-agregado (RAA), como o
+próprio nome diz, é a reação que ocorre entre os
+álcalis presente no cimento - Na* e K* - e sílica
+reativa, presente em determinados agregados.
+Sua reação é expansiva e a manifestação pato-
+lógica dá-se alguns anos após a concretagem,
+apresenta-se em forma de fissuras ativas pro-
+gressivas, em geometria mapeada, conforme
+apresentada na figura 157.
+
+Figura 157 - RAA em bloco de fundação.
+Fonte: Pecchio etal. apud Salomão (2017)
+
+A melhor forma de se mitigar a reação é
+ensaiando os agregados, conforme a ABNT NBR
+15577, dividida em seis partes:
+
+i. Parte 1: Guia para avaliação da reativi-
+dade potencial e medidas preventivas
+para uso de agregados em concreto;
+
+ii. Parte 2: Coleta, preparação e periodici-
+dade de ensaios de amostras de agrega-
+dos para concreto;
+
+iii Parte 3: Análise petrográfica para verifi-
+cação da potencialidade reativa de agre-
+gados em presença de álcalis do concreto;
+
+iv. Parte 4: Determinação da expansão
+em barras de argamassa pelo método
+acelerado;
+
+DIAGNÓSTICOS NA CONSTRUÇÃO CIVIL (MANIFESTAÇÕES PATOLÓGICAS) * 269
+

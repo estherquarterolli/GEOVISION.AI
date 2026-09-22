@@ -1,0 +1,102 @@
+No ambiente receptor é efetuada a medição do
+tempo de reverberação, pelo método determina-
+do na norma ISO 3382-2, e o nível de ruído de
+fundo, para correções necessárias. Caso o ruído
+de fundo tenha uma diferença entre o nível de
+pressão sonora médio da sala receptora, e o ruí-
+do de fundo for menor que 6dB, o resultado re-
+presenta o limite de medição que será indicado
+pelo símbolo (>) no caso de isolamento ao ruído
+aéreo. Todo o ensaio será realizado com portas e
+janelas fechadas, em todos os ambientes.
+
+O Isolamento de ruído aéreo dos sistemas
+de pisos entre unidades habitacionais, será ba-
+seado na tabela 13 que apresenta recomenda-
+ções relativas a outros níveis de desempenho da
+diferença padronizada de nível ponderada, Dar
+
+Tabela 13 - Critérios de diferenças padronizada de nível
+ponderada, D
+
+D'nTa Nível de
+Elemento [dB] desempenho
+Sistema de piso separando 45249 M
+unidades habitacionais autônomas
+de áreas em que um dos recintos 50254 !
+seja dormitório >55 s
+Sistema de piso separando 40244 M
+unidades habitacionais autônomas
+de áreas comuns de trânsito 45a 49 I
+
+eventual, como corredores e
+escadaria nos pavimentos, bem >50 s
+como em pavimentos distintos.
+
+Sistema de piso separando 45249 M
+unidades habitacionais autônomas
+de áreas comuns de uso coletivo, 50454 I
+
+para atividades de lazer e
+
+esportivas, como home theater,
+
+salas de ginástica, salão de
+
+festa, salão de jogos, banheiros 255 s
+e vestiários coletivos, cozinhas e
+
+lavanderias coletivas
+
+Fonte: Norma de Desempenho ABNT NBR 15.575-3:2013.
+
+Para exemplificar, foi realizado um ensaio na
+Cidade de São Paulo, Região de Cotia, em um Con-
+domínio residencial Padrão Minha Casa Minha
+Vida, sendo determinado um ambiente dentro da
+unidade autônoma para execução das medições,
+considerando a fonte geradora e receptora.
+
+122 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+Equipamentos utilizados:
+
+* Sonômetro, Black, Marca 01dB, número de
+série 65238, com certificado de calibração
+RBC3-10332-652 e 10333-375, calibra-
+do em 16/04/2018 e 17/04/2018 res-
+pectivamente;
+
+* Sonômetro, Blue, Marca 01dB, número
+de série 61677, com certificado de cali-
+bração RBCI-10241-381, calibrado em
+15/01/2018;
+
+* Calibrador CAL.Larson, marca Larson
+Davis, número de série 7382, com certi-
+ficado de calibração RBC2-10657-671,
+calibrado em 07/03/2019;
+
+* Fonte Sonora Dodecaédrica DODO1,
+marca Look Line, número de série
+D3.090164, em conformidade com termo
+do fabricante.
+
+Nota: As validades de calibração definidas pelo
+
+Laboratório são de 2(dois) anos para os sonô-
+metros e de 1 (um) ano para os calibradores.
+
+Croqui esquemático da unidade ensaiada:
+
+setorsaLo fendas jm
+
+aumtos
+
+Figura 67 - Planta baixa da unidade final 1 (Tipo)
+Fonte: Empresa Procry e Laboratório Harmonia.
+
+Detalhe representado na figura 68, com re-
+presentação do material aplicado para redução
+de nível de ruído por impacto.
+

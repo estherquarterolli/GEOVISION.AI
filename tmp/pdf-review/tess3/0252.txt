@@ -1,0 +1,70 @@
+qualquer grau de degradação. Porém, a utiliza-
+ção conjunta de várias técnicas de ensaio faci-
+lita a interpretação dos resultados e minimiza
+significativamente as limitações referidas. Por
+estas razões, estes ensaios, mesmo com algumas
+limitações, permitem detectar erros grosseiros
+no diagnóstico ou evitar, em certos casos, a rea-
+lização de análises laboratoriais (que consomem
+tempo e aumentam os custos do diagnóstico).
+
+Os ensaios in-situ incluem uma grande va-
+riedade de técnicas e são classificadas de modo
+diferente, consoante os autores. Seguem exem-
+plos de classificações:
+
+* grau de destruição que provocam no pa-
+ramento (destrutivas, semi-destrutivas e
+não-destrutivas);
+existência ou não de solicitação artificial
+(passivas, também designadas de não in-
+vasivas, e ativas, também designadas de
+invasivas);
+princípios em que se baseiam (mecâni-
+cos, elétricos, magnéticos, eletromagné-
+ticos, ultra-sónicos, radioativos, senso-
+riais, térmicos, químicos, eletroquímicos,
+entre outros);
+tipo de resultados obtidos (propriedades
+aavaliar);
+tipo de tecnologia utilizada (baixa ou alta
+tecnologia);
+objetivos principais (exemplos: resistên-
+cia, durabilidade, geometria);
+
+250 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+* elementos a que se aplicam (exemplos:
+revestimento, suporte, ambos);
+
+* actividades em que intervêm (controlo
+da qualidade, inspeção de edifícios, ve-
+rificação da aplicação de regulamentos
+entre outros).
+
+Na Tabela 38 exemplificam-se algumas
+técnicas de ensaio in-situ correntes em revesti-
+mentos e na Tabela 39 é feita uma síntese sobre
+estas técnicas, em termos de informação reco-
+lhida (parâmetros medidos), da sua contribui-
+ção para o conhecimento do desempenho em
+serviço (quais as propriedades que podem ser
+analisadas com cada técnica) e das anomalias.
+Neste caso, as técnicas são agrupadas consoan-
+te o princípio em que se baseiam (mecânico,
+ultra-sónico, térmico, hidrodinâmico, químico,
+elétrico e sensorial).
+
+As técnicas ilustradas apresentam, de uma
+maneira geral, boa adequabilidade à avaliação
+in-situ e têm um caráter expedito. No entanto,
+não permitem uma avaliação direta do desem-
+penho, estando mais vocacionadas para a carac-
+terização da degradação, e dependem (na sua
+maioria) excessivamente dos meios de acesso.
+Estas técnicas podem auxiliar o diagnóstico das
+seguintes anomalias correntes em revestimen-
+tos: fissuração, perda de aderência, perda de
+coesão, manchas (sujidade, colonização biológi-
+ca, eflorescências, entre outras).
+

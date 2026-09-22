@@ -1,0 +1,96 @@
+o
+
+Por exemplo, além da calibração dos equipa-
+mentos, o tipo de microfone é diferente de equi-
+pamentos de celular, acarretando erros de capta-
+ção e medição.
+
+Levando-se em conta a escala logarítmica
+de medição de ruídos em decibel (dB - deci do
+logaritmo de 10, bel de Alexander Graham Bell),
+cada decibel de erro destes equipamentos equi-
+vale a uma intensidade de ruído significativa à
+percepção do ouvido humano. Isto é, sem devido
+preparo profissional e procedimentos técnicos
+em medições deste assunto equivalem a invali-
+dações de resultados, laudos ou mesmo levanta-
+mentos diagnósticos.
+
+Além disso, as normas preveem situações
+incomodativas e prejudiciais à saúde que mui-
+tas vezes são difíceis de reproduzir em medições
+simples. Por exemplo quanto a ruídos de gran-
+de intensidade e de curtos períodos, como uma
+serra de corte por exemplo. Para este caso, há
+definições específicas da(s) norma(s) que possi-
+bilitam aplicar fatores multiplicadores.
+
+f) Elementos Ergonômicos, Táteis e Visuais
+
+Sem constituir um elemento específico de
+risco, é conveniente destacar as situações coti-
+dianas que englobam aspectos táteis, visuais e
+de ergonomia das edificações periodicamente
+responsáveis, ou, de alguma forma, favorecedo-
+ras a acidentes de quedas, descargas elétricas,
+choques físicos e exposição a fragmentos de ma-
+teriais. Talvez, por englobar situações provenien-
+tes de anomalias construtivas de acabamentos,
+supressão de acessórios durante a obra e padrão
+de referência do próprio usuário, grande parte
+destes elementos acabam sendo imperceptíveis
+até o acontecimento de algum evento. Muitos
+deles visto até com normalidade após algum aci-
+dente, culpando o usuário de uma situação que
+facilmente poderia ter sido evitada em projeto,
+no gerenciamento de obra, na fixação de algum
+elemento etc,
+
+42 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+Estão nesse grupo: quedas por falta de iden-
+tificação de altura diferenciada de um degrau de
+escadaria; torção de pé ocorrida em função de
+piso escorregadio assentado em área externa;
+quedas de idosos em desníveis acima de 3cm em
+local de circulação; cortes de vidros laminados
+fragmentados (instalados em áreas não con-
+formes a norma); desprendimento de guarda-
+-corpos fixados ou especificados incorretamen-
+te; desprendimentos de escadas marinheiro de
+acesso a coberturas; quedas de crianças através
+de vãos de guarda-corpos abaixo do nível do
+parapeito; entre outras que julgo infinitas pos-
+sibilidades, que envolvem centenas de itens fa-
+cilmente verificados no cotidiano de inspeções.
+
+Também podem-se citar situações de que-
+das de idosos em ambientes mal iluminados ou
+com disposição inadequada de interruptores;
+dores na coluna ou membros superiores de ban-
+cadas e interruptores instalados em altura fora
+do padrão; choques em instalações elétricas sem
+identificação de fiações ou proteções; cortes
+em acessórios metálicos oxidados e instalados
+em área externa; choques de pedestres a vidros
+transparentes, sem identificação instalados em
+corredores de alto fluxo; etc.
+
+A atenção provida a estas situações, en-
+tretanto, envolvem parcialmente uma atenção
+a idosos, crianças, bebês, grávidas, animais do-
+mésticos e pessoas com qualquer dificuldade
+ainda que momentânea, que, além de danos ins-
+tantâneos, podem englobar uma série de con-
+sequências relacionadas ao evento do acidente.
+A perda de um bebê, ente querido ou animal de
+estimação; perda dos dentes; limitação de movi-
+mento em algum membro; cegueira; depressão
+e afastamento do meio social em função de se-
+quela estética ou longo período de recuperação;
+traumas psicológicos; afastamento do trabalho;
+prejuízos financeiros; etc.
+
+Ou, ainda, complicações decorrentes do
+trauma, cirurgia ou vulnerabilidades do usuário
+englobando pneumonia, escaras, ocorrência de

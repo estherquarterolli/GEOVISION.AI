@@ -1,0 +1,100 @@
+E a
+
+Tabela 56 - Critério de avaliação de desempenho térmico para condições de verão.
+
+Critério
+Nível de Desempenho —— > — > —————— ——
+a 1  Zona8
+o M Ti, máx. s Te, máx. Ti, máx. s Te, máx.
+ss Ti, méx.s (Te, máx. - 2ºC) TiméxsCemáx-PO
+s Ti, máx. s (Te, máx. - 4ºC) Ti, máx. < (Te, máx. - 2ºC)
+
+Ti, máx. é o valor máximo diário da temperatura do ar no interior da edificação, em graus Celsius. Te, máx. é o valor máximo
+diário da temperatura do ar exterior à edificação, em graus Celsius.
+
+Ti, mín. é o valor mínimo diário da temperatura do ar no interior da edificação, em graus Celsius. Te, mín. é o valor mínimo
+diário da temperatura do ar exterior à edificação, em graus Celsius.
+
+NOTA Zonas bioclimáticas de acordo com a ABNT NBR 15220-3
+
+Fonte: Tabela El da ABNT NBR 15575-1
+
+Tabela 57 - Níveis de iluminamento natural.
+
+Dependência
+
+Wuminamento Geral para os níveis de Desempenho (lux)
+
+Sala de estar, dormitório, copa/cozinha e área de serviço
+
+Banheiro, corredor ou escada interna à unidade, corredor
+de uso comum (prédios), escadaria de uso comum
+(prédios), garagens /estacionamentos
+
+SCE RE BEE SS
+260 290 2120
+Não requerido >30 >45
+
+a Valores mínimos obrigatórios, conforme 13.21.
+
+NOTA 1 Para os edifícios multipiso, são permitidos, para as dependências situadas no pavimento térreo ou em pavimentos
+abaixo da cota da rua, níveis de iluminância ligeiramente inferiores aos valores especificados nesta Tabela (diferença máxima
+
+de 20% em qualquer dependência),
+
+NOTA 2 Os critérios desta Tabela não se aplicam às áreas confinadas ou que não tenham iluminação natural
+
+NOTA 3 Deve-se verificar e atender às condições mínimas requeridas pela legislação local
+
+Fonte: Tabela NBR 15575-1,
+
+Vale reiterar que diversos são os méto-
+dos de avaliação do desempenho da estru-
+tura de obra pronta, com verificações dos
+deslocamentos-limites para cargas perma-
+nentes e cargas acidentais em geral, níveis
+de fissuração, flechas máximas para vigas e
+lajes, além de outros requisitos das demais
+normas da ABNT, ou das tabelas A a E da par-
+te 2 da própria norma de desempenho.
+
+Porém, no tocante à durabilidade e vida
+
+útil das estruturas de concreto a norma é
+
+conceitual, vaga, sugerindo no item 14.1.2 a
+
+“aplicação de modelos”, conforme explicita-
+do a seguir:
+
+a) análise do projeto, considerando a ade-
+
+quação dos materiais, detalhes constru-
+tivos adotados visando o atendimento
+
+310 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+[,
+
+às disposições previstas nas normas
+específicas utilizadas no projeto; ou
+
+b) ensaios físico-químicos e ensaios de
+envelhecimento acelerado (porosida-
+de, absorção de água, permeabilidade,
+dilatação térmica, choque térmico,
+expansão higroscópica, câmara de
+condensação, câmara de névoa salina,
+câmara CUV, câmara de SO2, Wheater-
+-O-Meter (Intemperismo AceleradoJe
+outros); ou
+
+c) aplicação de modelos para previsão do
+avanço de frentes de carbonatação, clo-
+retos, corrosão e outros.
+
+Ora, sm, tal explicitação nada explica.
+
+Mas, recentemente, foi desenvolvido inte-
+ressante modelagem criada pelos engenheiros
+Fabrício Bolina e Bernardo Tutikian, mestrando
+

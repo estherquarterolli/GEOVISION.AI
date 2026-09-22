@@ -1,0 +1,87 @@
+de diagnóstico assertivo são: a) “petrografia'”, na
+qual é possível caracterizar os agregados utili-
+zados, além de descrever/identificar, de forma
+macroscópica, a matriz e os vazios do concreto e
+evidenciar a incidência de manifestações patoló-
+gicas; b) “microscopia de varredura” (MEV), em
+que pode-se detalhar a microtextura do concreto,
+caracterizar os materiais utilizados e apresentar
+os componentes químicos presentes; e c) “difra-
+ção por raio X” (DRX), na qual são analisados os
+compostos formados pelos componentes quími-
+cos presentes no concreto; entre outros ensaios.
+
+5.6.3.1 Ataque sulfato
+
+O ataque sulfato dá-se pela interação de
+íons sulfato, umidade e o C,A (aluminato tricál-
+cico), ou C,AF (ferroaluminato tetracálcico), pre-
+sentes no cimento. Logo nas primeiras horas
+do concreto, o C,A e C,AF reagem com o sulfato
+presente na composição do cimento formando
+etringita primária. Nessa fase, o concreto ainda
+está fresco e não limita a expansão que ocorre
+devido a essa reação e absorve esse novo volu-
+me, sem impor maiores problemas à estrutura.
+Porém, após o endurecimento do concreto, esse
+tipo de interação torna-se problemática, uma
+vez que o concreto não absorverá essa expan-
+são sem que fissure.
+
+Ca(0H)>
+pad af
+hidróxido de cálcio
+
+Em concretagens de grandes volumes, como
+grandes blocos de fundação, a temperatura de
+hidratação é crucial para determinar a formação
+de etringita tardia. Isso porque, nesses casos
+se não houver planejamento de concretagem, =
+temperatura no núcleo do concreto chegará fa-
+cilmente em 65ºC, limite superior adotado parz
+mitigar a ocorrência. Acima desse valor, a forma-
+ção de etringita tardia será desencadeada. Sua
+manifestação ocorre nos primeiros dias após
+a concretagem em forma de fissuras passivas,
+bastante danosas. Na literatura essa vertente
+de ataque por sulfato é comumente chamada de
+DEF, do inglês delayed etringite formation. Esse
+efeito também pode ser desencadeado através
+de cura térmica com temperaturas elevadas, po-
+dendo ser observado em dormentes e peças pré-
+-fabricadas em larga escala, em que o uso de cura
+térmica é mais presente.
+
+Além dessa fonte interna, a entrada de íons
+sulfato provenientes de água subterrânea, chu-
+va ácida, água marinha e esgotos acaba desen-
+cadeando reação deletéria a qual chama-se de
+etringita secundária. Entretanto, antes forma-se
+gipsita e só então etringita, como demonstram
+as equações 2 e 3 (GÓIS, 2016).
+
++S0; > CaS0,2H,0
+
+gipsita
+
+Equação 2 - Formação de gipsita.
+
+3(CaS0,2H,0) + 3Ca0AL,0; + 26H,0 > 3(Ca0. Al,0;).3(CaS0,).32H,0
+etringita
+
+gipsita CA
+
+Equação 3 - Formação de etringita.
+
+A manifestação dessa reação se dá por fis-
+suras ativas progressivas e aparecem dentro de
+alguns anos após a concretagem. Com o correto
+diagnóstico, deve-se fazer ensaios com o intui-
+
+268 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+to de verificar a profundidade de ingresso dos
+íons sulfatos para que toda a massa de concreto
+contaminada seja substituída. A melhor manei-
+ra de mitigação deste problema é a utilização de
+

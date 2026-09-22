@@ -1,0 +1,147 @@
+nta O
+pnado
+nidas,
+
+rdado
+os e
+
+studo
+puma-
+, sen-
+és do
+fe ser
+ão at-
+turar,
+
+à dife-
+jepen-
+a am-
+ado às
+(como
+ana), e
+dáveis
+Som é
+Fio no
+>, que
+vo, re-
+u seja,
+ar que
+e uma
+
+b) Ruído em edificações
+
+Nas edificações, os ruídos vêm se tornan-
+do fonte de preocupação, e é necessário que se
+possa assegurar um isolamento acústico satisfa-
+tório tanto para os elementos estruturais quanto
+para qualquer tipo de som produzido pelo ho-
+mem, como impactos gerados por seus objetos
+ou por seu convívio com outros indivíduos em
+sua unidade autônoma, de forma que haja um li-
+mite de saída de sons para ambientes externos.
+O bom desempenho acústico de uma edificação é
+um dos itens relevantes para se obter condições
+satisfatórias de conforto para seus ocupantes e,
+em casos extremos, evitar a ocorrência de efei-
+tos nocivos à saúde do ser humano.
+
+Um edifício deve ser projetado seguindo
+diretrizes básicas de uma boa construção e suas
+respectivas especificações, subdivididas em gru-
+pos básicos, sendo que uma delas é o conforto
+acústico, segundo a ISO (International Organiza-
+tion for Standardization) 6241 (1982) e a Norma
+de Desempenho NBR 15575 (ABNT, 2013).
+
+b.1) Tipos de ruídos
+
+Os diferentes tipos de ruídos são descritos
+conforme adaptação da Associação Brasileira
+para a Qualidade Acústica (PIERRARD, AKKER-
+MAN, 2013) sendo classificados em:
+
+* Ruído aéreo - transmissão de ruído entre
+duas unidades habitacionais sobrepostas
+em uma edificação. Esse se produz atra-
+vés do próprio piso, elementos laterais
+ou paredes. O desempenho de isolamento
+de ruído aéreo deve ser obtido por meio
+de uma adequada execução nas paredes
+e piso, evitando frestas que permitam a
+passagem do ruído.
+
+* Ruído de impacto - transmissão de ruído
+entre duas unidades habitacionais sobre-
+postas em uma edificação, que se pro-
+duz através do próprio sistema de piso.
+Essa transmissão depende das proprie-
+dades das soluções construtivas, consi-
+derando, dessa forma, o desempenho de
+isolamento ao ruído de impacto entre
+dois ambientes.
+
+* Ruído de equipamento - sons provenien-
+tes de equipamentos de uso coletivo em
+uma edificação, como bombas de recalque
+ecirculação, ventilação mecânica, aquece-
+dores de água, elevadores e portões de ga-
+ragem, entre outros, que são transmitidos
+por via aérea e estrutural.
+
+De acordo com Kôtz (apud PAVANELLO,
+2014), no que se refere ao conforto acústico,
+uma residência ou unidade autônoma deve de-
+sempenhar algumas funções básicas, como pre-
+servar a vida particular das pessoas, o que sig-
+nifica prover a intimidade e proteção; permitir
+a individualidade e o desenvolvimento pessoal
+dos moradores; e ainda possibilitar a permanên-
+cia da paz entre vizinhos.
+
+A ilustração para transmissão de ruído aé-
+reo, figura 63, demonstra as diversas vertentes
+para a propagação do ruído em um determinado
+ambiente.
+
+De acordo com o Manual da Pró-
+
+-Acústica, há 12 vias de transmissão
+
+PN entre duas unidades habitacionais
+
+(superior e inferior), com a trans-
+
+missão do ruído pelo. sistema de
+
+| piso (laje), sendo determinado como
+
+transmissão direta, e as paredes de al-
+
+| venaria (vedações) como transmissão
+| indireta,
+
+WA Ainda conforme o Manual da Pró-
+-Acústica, o desempenho de iso-
+lamento ao ruído aéreo entre dois
+ambientes separados por um sistema
+de pisos de um edifício (D,,y) é ge-
+ralmente inferior ao desempenho do
+mesmo sistema de piso ensaiado. em
+laboratório (R,).
+
+Figura 63 - Transmissão de ruído aéreo.
+
+Fonte: Pró Acústica - Manual sobre a Norma de Desempenho.
+Legenda:
+R, - Índice de redução sonora ponderado (laboratório);
+
+D,r w. Diferença padronizada de nível ponderada (Vedações
+verticais e horizontais internas, em edificações).
+
+b.2) Formas de transmissão de ruídos
+
+A transmissão de ruídos pode ocorrer de
+três diferentes formas, conforme apresentado na
+Figura 64, descria por Litwinczik (2013):
+
+ETAPAS CONSTRUTIVAS * 117

@@ -1,0 +1,50 @@
+a) Parao lote “Marinha”: R$ 1.053.139,00 , 3.025,29m? = R$ 348,36/m?
+b) Parao lote “Rua”: R$ 299.848,27 , 973,25 m? = R$ 308,08/m?
+
+Tomar-se-á para os dois lotes a média PONDERADA como o valor unitário justo, ou seja:
+
+R$ 348/m? x 3.025,29 m? + R$ 308,08/m? x 973,25 m?
+cececacecaracacaanaanacananoaoacaoacacenacanecamanneanacamanoa =R$338,36/m?
+3.025,29 + 973,25
+
+Este é o justo valor unitário do conjunto composto pelos dois lotes, já que nos abstraímos da
+transação envolvendo a loja da DADALTO por conter edificações e participação no empreendimento.
+
+Para obtermos o justo valor do espaço aéreo, fá-lo-emos através de dois métodos, optando por
+um deles para demonstrar, além da total isenção do trabalho, as metodologias de cálculo, a saber:
+
+1º) Considerando uma distribuição linear do valor do terreno ao longo da sua profundi-
+dade;
+
+2º) Considerando que o terreno diminui de valor a medida que se afasta da testada, Esta,
+pela sua nobreza, apesar de ser a voltada para a Avenida Princesa Isabel, será consi-
+derada como de fundos, já que a parte mais nobre é exatamente aquela representada
+pela Avenida Marechal Mascarenhas de Moraes, que é costeira.
+
+Assim, temos:
+19)
+
+Para efeito avaliatório será excluída a parte da antiga loja da Mesbla, hoje Dadalto. Deste modo,
+o terreno terá como profundidade o somatório das laterais do ESPAÇO AÉREO (22,61 m), da área de
+MARINHA (48,86 m) e da RUA (15,20m), totalizando 86,67 m, repetimos, excluída a área da DADALTO.
+
+A área a ser construída sobre a via totaliza 4.321,92 m? ocupando o espaço correspondente ao
+3º,4º e 5º pavimentos.
+
+A média ponderada que nos fornece o valor unitário é R$ 338,36 /m? cf. calculado anteriormen-
+te, o que levaria o valor do domínio pleno da plataforma da Avenida mal. Mascarenhas de Moraes com
+1.440,64 m? ao valor de R$ 338,36/m? x 1.440,64m? = R$ 487.454,00 (quatrocentos e oitenta e
+sete mil, quatrocentos e cinquenta e quatro reais).
+
+Como a ocupação far-se-á excluído o que seriam o térreo e segundo pavimento, há que se dis-
+tribuir o valor retro pela penalização imposta ao aproveitamento total, que consideraremos como
+aquele do próprio CentroShopping, ou seja, cinco pavimentos, apesar de a legislação permitir mais,
+como se deduz do estacionamento que ocupa sete pavimentos. O correspondente ao térreo é a parte
+mais nobre da edificação, o qual atribuiremos o “peso” 2 . Aos demais pavimentos será atribuído o
+“peso” igual à unidade.
+
+Assim, temos, obtendo as “áreas fictícias equivalentes”:
+* Térreo (virtual): 1.440,64 m? x peso 2 = 2.881,28 mº ficticios equivalentes
+
+408 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+

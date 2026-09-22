@@ -1,0 +1,123 @@
+ma-
+laje
+piso
+
+is re-
+lação
+er to-
+-obra
+D para
+ade de
+jade.
+ais de-
+mento
+ante a
+onora
+Supe-
+rtanto
+madas
+itível.
+
+trans-
+
+impor-
+te iso-
+im que
+
+não haja conexão como, por exemplo, através
+dos rodapés.
+
+De acordo com Bistafa a frequência de res-
+sonância (n) é a aquela para a qual a amplitude
+da velocidade de vibração, medida com o acele-
+rômetro, é máxima. Como também a rigidez di-
+nâmica do isolador medida (s') tem duas com-
+ponentes aditivas, a rigidez dinâmica do isolador
+no vácuo (st e a rigidez dinâmica do ar retido
+nos pontos do isolador (sa'). Então, a rigidez
+dinâmica total do isolador é dada por s' = st' +
+sa”. O desempenho do piso flutuante será tanto
+melhor quanto menor for a rigidez dinâmica do
+isolador.
+
+Ainda, Bistafa explica a similarmente ao
+módulo de elasticidade estático, o módulo de
+elasticidade dinâmico do isolador (Edin) é dado
+pelo produto da rigidez dinâmica do isolador (s')
+pela espessura do isolardor (d), ou seja
+
+Eua =S xd (N/m? ou Pa)
+
+Bistafa demonstra que um piso flutuante de
+reação localizada é aquele em que a transmis-
+são do impacto sobre o contrapiso para a laje
+estrutural se dá nas proximidades do ponto de
+impacto. Nesse caso, as ondas de flexão no piso
+flutuante são fortemente amortecidas. Uma me-
+dida da capacidade de isolação de impactos é
+dada pela redução do nível sonoro normalizado
+de impacto (ALn), que, no caso de pisos flutuan-
+tes de reação localizada, pode ser estimada por
+meio de :
+
+ALn = 40 log E
+o
+
+Complementa Bistafa que, quando o piso
+flutuante é espesso, rígido e pouco amortecido,
+os impactos excitam um campo reverberante
+relativamente uniforme de ondas de flexão. A
+redução do nível sonoro normalizado de impac-
+to “ALn”, nas frequências mais altas, quando a
+
+energia dissipadano piso flutuante excedea ener-
+gia transmitida para a laje estrutural, pode ser
+estimada, para pisos flutuantes de concreto “pou-
+co” amortecidos n0,01, por meio de impacto.
+
+4.2.4,2.2 Ensaios de campo
+
+A Norma de Desempenho NBR 15575, es-
+tabelece parâmetros de desempenho para diver-
+sos componentes de uma edificação, em especial
+os níveis mínimos de desempenho acústico que
+devem ser atendidos pela obras residenciais.
+Os níveis de desempenho são os indicados na ta-
+bela 09 (Superiores, Intermediários e Mínimos),
+possibilitando qualidade na construção civil.
+
+Os parâmetros utilizados para avaliar um
+ensaio de campo, garantindo o desempenho do
+sistema construtivo de piso, vedações verticais e
+suas coberturas (L,, Dry e Dor ntw ) São Ob-
+
+tidos através de procedimentos indicados nas
+normas ISO 16283 e ISO 717.
+
+Objetivo
+Determinar parâmetros de desempenho
+
+acústico, através do ensaio de campo, contem-
+plando:
+
+a) Isolamento ao ruído aéreo de um siste-
+ma de piso.
+
+b) Avaliar os resultados com base nos
+critérios apresentados na norma de
+desempenho de edifícios, ABNT BRB
+15575-3:2013.
+
+O procedimento adotado para ensaio de
+campo, determinando o ruído aéreo do sistema
+de piso, será determinado através do resultado
+encontrado no índice D,., (Diferença padroni-
+zada de nível ponderada), conforme determina-
+do na norma ISO 16283-1.
+
+Procedimentos adotados
+
+O ensaio de campo é efetuado em dois
+ambientes, denominados Gerador e Receptor.
+
+ETAPAS CONSTRUTIVAS * 121

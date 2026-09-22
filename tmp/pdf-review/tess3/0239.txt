@@ -1,0 +1,110 @@
+Processo de avaliação de riscos
+
+Ferramentas e
+
+técnicas Identificação de
+
+Análise de riscos
+
+Avaliação de Dificuldade
+
+riscos Consequência
+
+Probabilidade
+
+Nível de risco tacos
+
+Técnica E
+estruturada “E FA FA
+se" (SWIFT)
+
+Análise de
+cenários
+
+FA FA
+
+Análise de
+causa-raiz NA FA
+(RCA)
+
+FA FA FA
+
+Análise de modo
+e efeito de falha FA FA
+CFMEA)
+
+Análise de
+árvore de falhas
+CFTA)
+
+Análise de
+camadas de
+proteção (LOPA)
+
+Análise de
+árvore de NA FA
+
+Média
+
+Média
+
+Análise de
+Bow tie
+
+Análise de
+decisão por
+multicritérios
+
+NA
+
+decisões
+
+Legenda: FA - Fortemente aplicável; A - Aplicável; NA - Não aplicável
+
+Média
+
+Baixa
+
+Fonte: ABNT NBR ISO/IEC 31010 (2012, p. 18, adaptado).
+
+(v) Delimitação de causas prováveis - triagem
+de hipóteses
+
+Em alguns casos a quantidade de 'causas
+possíveis! levantadas pode ser muito elevada,
+principalmente quando se tem muitas variáveis,
+ou muitos dados desconexos. De forma a res-
+tringir o tempo de análise e recursos de inves-
+tigação, recomenda-se triar as 'causas possíveis,
+definindo as causas prováveis, aquelas que tem
+maior probabilidade de ter gerado o problema,
+ou aquelas que melhor respondem o problema.
+Para isso, pode-se usar as ferramentas da tabela
+36, marcadas como possíveis de avaliar proba-
+bilidade, ou mesmo, votação, complexidade de
+investigação das causas etc.
+
+Continuando o exemplo da rua molhada,
+pode-se descartar as hipóteses que não são muito
+
+prováveis: (3) nevou e derreteu a neve; (5) muitos
+vizinhos lavaram as calçadas e rua; (6) um avião
+passou jogando água; (9) ilusão diótica; etc. (note
+que no item 3, se no local não neva é possível que
+tenha nevado pela primeira vez, mudanças climá-
+ticas ocorrem, mas muito pouco provável; item
+5, é possível que muitas pessoas tenham lavado
+suas calçadas simultâneamente, mas muito pou-
+co provável; item 6, é possível um avião passar
+jogando água, mas porque faria isso?).
+
+(vi) Comprovação das causas prováveis - teste
+das hipóteses
+
+Depois de definidas as causas prováveis,
+será preciso realizar mais observação /coleta de
+dados, agora direcionadas pelo contexto das hi-
+póteses, de forma a ser possíveis comprová-las
+
+DIAGNÓSTICOS NA CONSTRUÇÃO CIVIL (MANIFESTAÇÕES PATOLÓGICAS) * 237
+

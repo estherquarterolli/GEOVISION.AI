@@ -1,0 +1,64 @@
+Figuras 107 e 108 - Corrosão entre metais diferentes.
+Fonte: Arquivo do autor.
+
+(iii) A boa fixação dos telhados
+
+O mesmo item relativo a corrosões deve
+ser verificado também nas fixações do telhado
+das edificações. Telhas soltas por quebra ou de-
+vido à corrosão dos seus parafusos e arruelas,
+são potenciais causas de acidentes na primeira
+ocorrência de uma ventania mais forte. Outro fa-
+tor que leva a acidentes de telhados são as suas
+estruturas de apoio, caso se apresentem apo-
+drecidas por infiltrações ou por corrosão a tal
+ponto que as deixem sem capacidade de fixar o
+conjunto em caso de uma súbita subpressão cau-
+sada por ventania. Por oportuno, o profissional
+deverá também verificar o correto caimento e
+estanqueidade da impermeabilização das ca-
+lhas de captação das águas pluviais existentes
+nas bordas dos telhados, para evitar infiltrações
+comprometedoras.
+
+(iv) A eficiência do SPDA
+
+Aproveitando que o profissional está no
+topo da edificação, também deverá ser checada
+a eficiência da proteção realizada pelo captor de
+descargas atmosféricas, seja ele um para-raios
+do tipo Franklin, um telhado metálico ou, ainda,
+a gaiola de Faraday instalada no local. Este tipo
+de equipamento é importante para a segurança
+da edificação, notadamente se ela for um prédio
+
+182 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+com sete ou mais pavimentos (mais de 20m de
+altura), para que dirija as descargas atmosféricas
+que venham a nele se abater diretamente para
+o solo, sem ferir qualquer pessoa ou danificar o
+imóvel. Pode parecer brincadeira, mas já foram
+encontrados em vistorias para-raios sem cabo
+de descida ou com cabos simplesmente enter-
+rados na alvenaria da edificação, sem qualquer
+ligação até ao aterramento no solo, oferecendo
+assim perigo real para as pessoas.
+
+Portanto, qualquer medição para a verifica-
+ção do bom funcionamento deste tipo de equi-
+pamento para a proteção contra descargas at-
+mosféricas, deve ser feita em dois lugares: lá em
+cima, no cabo metálico ligado ao para-raios, e lá
+embaixo, no mesmo cabo junto ao conector do
+aterramento. Em hipótese nenhuma admite-se
+que este cabo esteja “aterrado” em um vergalhão
+da estrutura, ou ainda, enterrado em alguma
+parede ou piso de concreto sem a correta dis-
+sipação na terra por instalação de aterramento
+devidamente existente nas proximidades da fun-
+dação do edifício.
+
+i . Afinal, a descarga atmos-
+férica é captada pelo para-raios, ou pela gaiola
+

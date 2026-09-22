@@ -1,0 +1,38 @@
+Nem sempre, no entanto, a falha é apenas executiva, podendo ser
+proveniente também de projetos com insuficiência de informações para
+uma boa execução.
+
+12 DEFINIÇÕES
+Algumas definições serão abordadas a seguir para possibilitar o entendi-
+mento dos temas a serem dissertados.
+
+12.1 Alvenarias
+São conjuntos compostos de unidades menores, podendo ou não ser
+unidas por material ligante, justapostas em camadas horizontais que se
+sobrepõem umas às outras.
+
+1.2.2 Alvenarias não estruturais
+
+Apresentam as seguintes finalidades: compartimentar ambientes,
+podendo ser internas ou externas (estas últimas delimitam a edificação);
+resistir ao seu peso próprio e a pequenas cargas de ocupação, como prate-
+leiras e lavatórios; resistir às cargas de ventos e às solicitações de tentativa
+de intrusão sem que a segurança dos ocupantes da edificação seja preju-
+dicada; resistir a certo nível de impacto sem entrar em ruína; resistir à
+ação do fogo, não contribuindo para o início de um incêndio nem para
+a propagação de chamas e calor, e não produzindo gases tóxicos quando
+em combustão.
+
+12.3 Alvenarias estruturais
+Além de ter as mesmas finalidades da alvenaria não estrutural, servem
+também como suporte estrutural. Conforme o cálculo das cargas a serem
+suportadas, podem ser providas de pontos de graute e armaduras para
+aumentar sua capacidade portante.
+
+1.2.4 Unidades que compõem as alvenarias
+São materiais pétreos, naturais ou artificiais. Algumas unidades mais
+comumente utilizadas são: blocos de concreto, blocos cerâmicos, blocos
+pétreos e blocos sílico-calcários, entre outros. As unidades podem ser ou
+não estruturais, conforme o tipo de alvenaria que irão compor. Caso tenham
+
+InrroDUÇÃO

@@ -1,0 +1,98 @@
+execução do sistema de revestimento. É impor-
+tante constar no plano de controle tecnológico
+os tipos a serem realizados na fase de constru-
+ção; na fase de reabilitação, o profissional deve
+avaliar os sintomas para definir, com base nas
+normas vigentes, quais metodologias e ensaios
+solicitar de forma a qualificar e quantificar a
+extensão dos problemas patológicos a diagnos-
+ticar, para poder prescrever a(s) solução(ões)
+com conhecimento de causa e com a justificativa
+correspondente.
+
+No caso de edificações concluídas é neces-
+sário que haja uma maior investigação, com o
+objetivo de encontrar a causa e a origem de de-
+terminada anomalia dentro de um sistema de re-
+vestimento composto por diversas camadas de
+materiais.
+
+5.8.3 Revestimento de argamassa
+
+Cobrimento de uma superfície com uma
+ou mais camadas superpostas de argamas-
+sa, apto a receber acabamento decorativo
+ou constituir-se em acabamento final, de-
+corativo, ou não.
+
+(ABNT, 2013b)
+
+O revestimento de argamassa é aplicado so-
+bre a base de alvenaria ou de concreto, podendo
+ser constituído pelo conjunto “chapisco + emboço
++ reboco”, ou a aplicação de camada única, deno-
+minada de “emboço paulista”, sobre o chapisco; a
+argamassa regulariza a superfície dos elementos
+de vedação, tornando-a adequadamente prepara-
+da para receber o revestimento posterior. Como
+acabamento final podemos considerar a aplicação
+de texturas, pinturas ou revestimentos cerâmicos
+dentre os mais utilizados.
+
+Suas principais funções são: garantir a pla-
+neza da superfície para receber a camada de
+acabamento; absorver as tensões entre a base e
+
+286 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+os revestimentos aderidos (no caso das placas
+cerâmicas); contribuir com a estanqueidade; e
+compor o sistema que cumpre os requisitos dos
+confortos térmico e acústico em consonância
+com a Norma de Desempenho Norma Técnica
+ABNT 15575 (ABNT, 20134).
+
+Para garantir um bom desempenho do sis-
+tema, é necessário que este cumpra os requisi-
+tos de aderência, dentre os principais atributos,
+além de ter a capacidade de absorver deforma-
+ções originadas pela estrutura e variações tér-
+micas. É importante atentar-se às espessuras ad-
+missíveis dos revestimentos internos e externos,
+conforme as determinações da Norma ABNT
+NBR 13749 (ABNT, 2013c).
+
+Tabela 50 - Espessuras admissíveis de revestimentos.
+
+Espessura (e) [mm]
+5MeM 20
+20MeM30
+eM20
+
+Revestimento
+
+Parede Interna
+
+Parede Externa
+
+Teto interno e Externo
+Fonte: (ABNT, 20130).
+
+A Norma ABNT NBR 13755 (ABNT, 2017)
+estabelece a Espessura Limite Inferior (ELI) da
+camada de argamassa como sendo de 20 mm e
+a Espessura Limite Superior (ELS) sendo de 50
+mm; para os casos que superarem a ELS, com
+limite de 80 mm, indica-se a aplicação de telas
+metálicas específicas para este fim, que também
+podem ser utilizadas para reforço do emboço
+nos cantos das janelas e na interface entre o con-
+creto e a alvenaria, a serem previstas do projeto,
+a critério do projetista, analisando inclusive os
+efeitos decorrentes da esbeltez da edificações.
+
+Durante o processo construtivo, o processo
+
+de controle de qualidade construtiva é apresenta-
+do pela Norma ABNT NBR 13749 (ABNT, 2013c):
+

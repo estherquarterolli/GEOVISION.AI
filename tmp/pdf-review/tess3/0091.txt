@@ -1,0 +1,144 @@
+ossam
+jito da
+já pos-
+
+forma
+
+minar
+ge não
+produ-
+
+prtante
+imple-
+coma
+Ge Mo-
+ABNT/
+finidas
+missão:
+senvol-
+para a
+fetrizes
+
+BR ISO
+- Orga-
+Parte 2:
+jo, defi-
+foncep-
+mações
+imento
+5 inter-
+
+| desen-
+Ea BIM
+ema de
+ão, que
+Sibilida-
+momen-
+| requer
+termos,
+ndos de
+
+diferentes tabelas, para a discriminação completa
+de um componente, recurso, processo ou resulta-
+do gerado.
+
+É composta por tabelas, e está sendo de-
+senvolvida a partir do “texto-base” das tabelas
+OmniClass, um sistema de classificação aberto,
+criado para o mercado da construção da Améri-
+ca do Norte. Para a “tropicalização”, estão sendo
+retirados itens das tabelas que correspondem às
+técnicas e sistemas construtivos utilizados tipi-
+camente na indústria da construção norte-ame-
+ricana, e sendo incluídas soluções construtivas,
+técnicas e componentes específicos do Brasil.
+
+Astabelas de classificação podem ser utiliza-
+das para criar EAPs (Estrutura Analítica de Proje-
+to) padronizadas, que poderão ser corretamente
+entendidas e interpretadas, não apenas por pes-
+soas, mas também por diferentes softwares. Em-
+bora ainda não tenha sido completamente publi-
+cada, a ABNT NBR 15965 já pode ser utilizada.
+
+O BIM é uma transformação digital sem pre-
+cedentes na construção civil. Para efeito de elu-
+cidação da importância da chegada do BIM, vale
+relembrar que o surgimento do CAD foi uma mu-
+dança meramente de ferramenta, pois deixou-se
+de lado o lápis para desenhar com mouse (sob
+o ponto de vista do processo, foi a mesma coisa,
+tratava-se igualmente de desenhos).
+
+Embora as mudanças promovidas pelo BIM
+estejam sendo muito mais profundas do que se
+possa imaginar, carece, no entanto, de uma ca-
+pacitação ainda mais abrangente, com menor
+desigualdade nos segmentos setoriais, devendo
+ser estimulada por profissionais, universidades,
+empresas e órgãos públicos.
+
+Ainda sobre a abrangência mercadológica
+do BIM, vale destacar que o seu uso não se res-
+tringe apenas aos profissionais projetistas en-
+volvidos na fase de concepção de um empreen-
+dimento, mas também a todos os envolvidos no
+processo de planejamento, execução, gerencia-
+mento, na pós ocupação do edifício, em especial
+sua manutenção.
+
+Érica Dallariva
+
+O e
+4.2.3 Qualidade construtiva e
+
+controle tecnológico - Fase de
+execução
+
+No processo de produção das edificações, a
+etapa de execução é a que requer a maior aten-
+ção no que se refere ao controle tecnológico,
+visto que no processo construtivo empregam-se
+diversos materiais, componentes e sistemas, que
+estão sendo executados numa sequência enca-
+deada e simultânea de tarefas, de modo a com-
+por organizadamente um produto final, a edifi-
+cação com “qualidade”,
+
+Esse controle é fundamental para que o
+produto final, o edifício, cumpra as suas funções,
+e segundo consta no clássico Juran's quality
+handbook (JURAN, 1998, p 2.1), “qualidade” tem
+dois significados importantes, que numa livre
+tradução são:
+
+* qualidade significa aquelas caracterís-
+ticas distintivas dos produtos as quais
+atendem às necessidades do usuário e
+deste modo proporcionando a satisfação
+do usuário” (grifo nosso);
+
+* qualidade significa livre de erros que
+requeiram retrabalho, ou que possam
+resultar em falhas no uso, causando a in-
+satisfação dos usuários e a consequente
+reclamação sobre o bem ou serviço (grifo
+nosso).
+
+Para a Engenharia Diagnóstica, o controle
+tecnológico é o meio que propicia a constatação
+de que a edificação, desde o projeto até o uso,
+vai atender à qualidade esperada, considerando
+tanto as características distintivas, que promo-
+vam a satisfação do usuário, bem como livre de
+
+falhas (erros) que possam afetar o desempenho
+em uso, causando a insatisfação para o usuário
+
+(grifo nosso).
+
+Neste sentido, ressalta-se a importância
+da visão sistêmica no processo produtivo da
+Construção Civil que, associada às dimensões da
+
+ETAPAS CONSTRUTIVAS * 89

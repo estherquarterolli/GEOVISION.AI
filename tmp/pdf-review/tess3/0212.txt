@@ -1,0 +1,98 @@
+a propagação da fissura. Já foram observadas
+fissuras em peças estruturais de concreto, ini-
+cialmente de pequena abertura, mas que se
+propagaram a ponto de transpor totalmente a
+peça. Ora, uma peça estrutural, transposta por
+uma fissura, perde o monolitismo necessário
+para exercer a função para a qual foi concebida
+e, portanto, pode ter perdido integralmente sua
+funcionalidade.
+
+É certo que cada fissura incidente numa
+peça de concreto significa uma verdadeira porta
+aberta ao ingresso de agentes deletérios e, por
+isso, estas, precisam ser vedadas. No entanto,
+seguindo se as premissas do parágrafo anterior, é
+também necessário restabelecer (ou preservar)
+o monolitismo da peça.
+
+Nesse contexto, cabe então apresentar os
+materiais e procedimentos adequados para ve-
+dar as fissuras e, ao mesmo tempo, produzir a
+reconstituição do monolitismo das peças estru-
+turais: trata-se da injeção de resina epoxídica
+fluida, sob alta pressão, que é conseguida com
+auxílio de compressor de ar, como mostra a figu-
+ra 126. Resultados muito satisfatórios têm sido
+conseguidos mediante essa técnica.
+
+k
+
+Y
+
+Figura 126 - Exemplo de injeção de resina epoxídica
+em fissura detectada em uma peça de concreto.
+
+Fonte: Treinotec (2020).
+
+(ii.2) Desplacamentos e similares
+
+Vale lembrar que a grande maioria dos des-
+placamentos se dá por consequência da corro-
+são das armaduras, mas não exclusivamente por
+
+210 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
+isso, existem outros mecanismos e agentes que
+podem conduzir à esse tipo de manifestação,
+como os incêndios, por exemplo.
+
+Nesses casos, os reparos nas estruturas de
+concreto podem ser feitos, geralmente, com uso
+de argamassa consistente e aplicação manual,
+tomando-se, sempre, os devidos cuidados para
+garantir a aderência do material novo ao antigo.
+
+Nesse contexto e diferentemente do que se
+tem verificado no mercado, recomenda-se, que
+o material de reparo tenha características tão
+próximas quanto possível do material original.
+Caso contrário, a resultante diferença de módu-
+los de elasticidade dos materiais poderá ser um
+indutor de descolamentos, diante de solicitações
+térmicas,
+
+Como dito, esses procedimentos exigem
+alguns cuidados específicos, por isso, cabe reco-
+mendar a seguinte sequência:
+
+a) Na superfície da peça estrutural, deli-
+mitar a área deteriorada do concreto,
+estabelecendo uma forma geométrica
+simples (dar preferência a quadrados e
+retângulos);
+
+Escarificar o concreto até encontrar
+concreto são e transpor as armaduras,
+em pelo menos 2cm?, de modo que as
+arestas da cavidade resultem em ângu-
+lo normal (90º) à superfície, de modo a
+formar uma “caixa” *º — vide figura 127;
+
+3º A escarificação do concreto, de modo a descobrir total-
+mente a armadura, é imprescindível em casos de corrosão
+e se justifica no fato de que o processo corrosivo é essen-
+cialmente eletrolítico, o que faz com que todo seu entorno
+possa estar afetado e, portanto, deva ser objeto de remoção
+das partículas que se desprenderam da barra. Esse cuidado
+é, também, importante, porque permitirá o envolvimento
+da armadura com o material de reparo, que é naturalmente
+alcalino, e, assim funcionará como barreira química de pro-
+teção contra a corrosão. Note-se, portanto, que, mais uma
+vez, se estará combatendo o agente causador.
+
+40 A recomendação para que as bordas da “caixa” resul.
+tem normais à superfície reside no fato de que esta condi-
+ção favorece a aderência mecânica do material de reparo,
+pois, ao contrário, o formato chanfrado poderá facilitar o
+

@@ -1,0 +1,112 @@
+entrega das áreas comuns. O manual deve servir
+de orientação para que proprietários e síndicos
+desenvolvam e implantem seus Planos de manu-
+tenção, para adotar critérios e prazos para ins-
+peção e manutenção estabelecidos pela Norma
+ABNT NBR 5674 (ABNT, 2012). No caso da ma-
+nutenção das fachadas deve abranger a previsão
+de execução da manutenção com previsão dos
+cuidados como lavagem periódica e revisões do
+rejunte nas juntas de assentamento e do selante
+elastomérico nas juntas de movimentação e des-
+solidarização. A falta, a negligência de manuten-
+ção, ou a aplicação de intervenções inadequadas,
+causam prejuízos para o sistema, comprometen-
+do seu desempenho e consequentemente redu-
+zindo sua vida útil do sistema.
+
+A manifestação de descolamento e despla-
+camento cerâmico deve alertar à necessidade de
+verificação das interfaces dos componentes do
+sistema ao longo da vida útil do edifício, a fim
+de identificar, durante as inspeções regulares,
+previstas no Plano de Manutenção, a falha de
+aderência; este lapso pode estar entre a interfa-
+ce cerâmica e a argamassa colante, entre a arga-
+massa colante e a base argamassada ou, em ca-
+sos mais graves, entre as interfaces revestimento
+argamassado e base - neste caso, o revestimento
+
+cerâmico pode estar bem aderido, porém se tor-
+na a vítima de um problema patológico origina-
+do na camada argamassada.
+
+Especificamente nos pisos, os desplacamen-
+tos cerâmicos ocorrem majoritariamente devido
+às movimentações das lajes em concreto, bem
+como devido a erros construtivos específicos,
+como a espessura de rejunte inferior à recomen-
+dada pelo fabricante, a ausência ou falha nas jun-
+tas de movimentação e/ou a dessolidarização.
+
+Em fachadas, as estruturas em concreto ar-
+mado podem ter papel preponderante no pro-
+cesso de formação de problemas patológicos que
+por vezes pode estar associado a deficiência de
+preparo da base antes de receber o chapisco ou
+ainda pela deficiência de cura do chapisco. Além
+disso a incidência de trincas e fissuras no reves-
+timento, que favorecem o contato da estrutura
+com a água, que favorecem e deflagram o proces-
+so de corrosão das armaduras, expandindo-as e
+gerando esforços de tração internas no concreto,
+ocasionando a destacamento do concreto que
+por sua vez induz ao descolamentos de todo o
+sistema de revestimento.
+
+Na Tabela 53 há um resumo com a classifi-
+cação e descrição dos principais problemas pa-
+tológicos associados a revestimentos cerâmicos.
+
+Tabela 53 - Classificação dos problemas patológicos em revestimentos cerâmicos.
+
+Fenômeno patológico Prováveis causas
+
+Principais sintomas
+
+Falha na aderência dos materiais, erros construtivos,
+defeito nos materiais, infiltração de água pelo rejunte
+
+Descolamentos e
+Desplacamentos
+
+e juntas de movimentação, corrosão de armaduras na
+estrutura, falha na capacidade de resistência superficial do
+revestimento em argamassa, tempo em aberto inadequado
+na aplicação da argamassa colante, ausência de “quebra”
+dos cordões da argamassa colante
+
+Embricamento, trincas
+e fissuras; queda do
+revestimento.
+
+Gretamento da peça
+cerâmica
+
+Falha na fabricação do material
+
+Craqueamento da camada
+superficial da peca cerâmica;
+expansão da peca por umidade
+CEPU),
+
+Eflorescência
+
+Falha na estanqueidade, presença de água no revestimento;
+revestimento com presença de sais solúveis, resultando
+principalmente na dissolução do hidróxido de cálcio
+(Ca(OH2))
+
+Manchas, na maioria das vezes,
+esbranquiçadas na superfície
+do revestimento
+
+Trincas e Fissuras
+
+Movimentação da estrutura, ausência ou falha nas juntas
+de movimentação, falha nas juntas de assentamento
+
+Peças trincadas e fissuradas
+
+292 * MANUAL DE ENGENHARIA DIAGNÓSTICA
+
