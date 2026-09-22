@@ -29,6 +29,17 @@ export function AdminLogin() {
     return () => clearInterval(timer)
   }, [tempoBloqueio])
 
+  // A chamada precisa vir antes de qualquer retorno condicional. Depois de
+  // autenticar, a tela redireciona; deixá-la abaixo desse retorno fazia o
+  // React renderizar menos hooks e derrubava o painel em produção.
+  useEffect(() => {
+    if (session && usuario && usuario.papel === 'cidadao') {
+      sair().then(() => {
+        setErro('ACESSO RESTRITO: Esta credencial não possui permissão de administrador. A sessão foi revogada.')
+      })
+    }
+  }, [session, usuario, sair])
+
   // Se já autenticado como admin ou defesa civil, redireciona para o painel
   if (session && usuario && (usuario.papel === 'admin' || usuario.papel === 'defesa_civil')) {
     return <Navigate to="/painel" replace />
@@ -65,15 +76,6 @@ export function AdminLogin() {
       setEnviando(false)
     }
   }
-
-  // Verificação de segurança pós-login: se o usuário logado for 'cidadao', bloqueia e desloga
-  useEffect(() => {
-    if (session && usuario && usuario.papel === 'cidadao') {
-      sair().then(() => {
-        setErro('ACESSO RESTRITO: Esta credencial não possui permissão de administrador. A sessão foi revogada.')
-      })
-    }
-  }, [session, usuario, sair])
 
   const bloqueado = tempoBloqueio > 0
 
