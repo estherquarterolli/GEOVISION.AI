@@ -1,13 +1,26 @@
 """Empacota fontes locais no notebook; executar novamente após alterar módulos."""
 import csv
+import ast
 import json
 from pathlib import Path
-import sys
 
 PASTA = Path(__file__).resolve().parent
 CONTRATO = PASTA.parent / "ai-service/app/services/contrato_modelo.py"
-sys.path.insert(0, str(CONTRATO.parent))
-from contrato_modelo import VOCABULARIO, MEDICOES
+
+
+def constantes_do_contrato():
+    """Lê os dois literais sem exigir TensorFlow, NumPy ou Pillow localmente."""
+    arvore = ast.parse(CONTRATO.read_text(encoding="utf-8"))
+    valores = {}
+    for no in arvore.body:
+        if isinstance(no, ast.Assign):
+            for alvo in no.targets:
+                if isinstance(alvo, ast.Name) and alvo.id in {"VOCABULARIO", "MEDICOES"}:
+                    valores[alvo.id] = ast.literal_eval(no.value)
+    return valores["VOCABULARIO"], valores["MEDICOES"]
+
+
+VOCABULARIO, MEDICOES = constantes_do_contrato()
 
 
 def markdown(texto):
@@ -27,8 +40,12 @@ Reserva 20 minutos das 3h para finalizar. O limite é cooperativo; operações b
 Instalação e montagem do Drive ficam fora do relógio.
 
 Use `visual` para fotos rotuladas ou `multimodal` para casos reais com três fotos,
-triagem e revisor. Não preencha triagem fictícia. O modelo gerado não é compatível
-diretamente com a API antiga 224 × 224. Leia o README antes de integrar.
+triagem e revisor. Não preencha triagem fictícia. As células antigas de clone,
+extração de ZIP e `split-folders` não fazem parte deste notebook.
+
+No modo visual, o resultado é um `.keras` 600 × 660; a API deste projeto já o
+aceita quando `CAMINHO_MODELO` aponta para esse arquivo. O modo multimodal ainda
+exige uma integração própria, pois recebe quatro entradas.
 """), codigo("""%pip -q install scikit-learn pillow
 from google.colab import drive
 drive.mount('/content/drive')
@@ -61,6 +78,8 @@ Quando houver identificação, desative a opção exploratória e use pelo menos
 edifícios por classe. Nenhum desses mínimos garante suficiência estatística.
 """))
 celulas.append(codigo("""from contrato_modelo import VOCABULARIO, MEDICOES
+# No Drive, use “Organizar > Adicionar atalho ao Drive” na pasta compartilhada
+# e selecione Meu Drive. Informe abaixo a pasta que contém baixo/critico/medio/sem_risco.
 RAIZ = '/content/drive/MyDrive/GeoVision-IA'
 MODO = 'visual'  # altere para 'multimodal' se já houver casos.csv revisado
 AVALIACAO_EXPLORATORIA = True  # fotos sem identificação do imóvel; somente modo visual
@@ -68,6 +87,11 @@ HORAS = 3.0
 MAX_EPOCAS = 1_000_000  # teto; quem controla a parada é o relógio
 print('Categorias aceitas:', VOCABULARIO)
 print('Medições opcionais e escalas numéricas (não limites):', MEDICOES)
+if not Path(RAIZ).is_dir():
+    raise FileNotFoundError(
+        f'RAIZ não encontrada: {RAIZ}. Adicione a pasta compartilhada ao Meu Drive '
+        'e informe aqui o caminho dela no Colab.'
+    )
 """))
 celulas.append(markdown("""## Preparar a lista de imagens
 
@@ -76,7 +100,8 @@ do edifício em branco. Arquivos idênticos são deduplicados antes da separaç�
 Fotos diferentes do mesmo imóvel ainda podem vazar entre os conjuntos.
 Com a opção desligada, cria `imagens.preencher.csv` para preencher os edifícios.
 Usa `01_imagens_brutas/<classe>`; se não houver fotos nessa pasta, recupera as imagens
-de `02_dataset_limpo/train|val|test/<classe>`. Não mistura as duas fontes nem apaga arquivos.
+de `02_dataset_limpo/train|val|test/<classe>` ou de `RAIZ/<classe>`, que é a estrutura
+da pasta compartilhada atual. Não mistura as fontes, não apaga arquivos e não extrai ZIPs.
 
 Abra o CSV, preencha `edificio_id` com um identificador real de agrupamento (por exemplo,
 `imovel_001` em todas as fotos do mesmo imóvel) e salve como `imagens.csv`, separado por

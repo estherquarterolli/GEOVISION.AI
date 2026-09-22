@@ -1,4 +1,10 @@
-"""Inventário das pastas antigas, sem inventar identidade de edifícios."""
+"""Inventário de imagens sem inventar identidade de edifícios.
+
+São aceitas três estruturas, nesta ordem: ``01_imagens_brutas/<classe>``, o
+dataset já separado em ``02_dataset_limpo/<split>/<classe>`` e uma pasta que
+contenha as quatro classes diretamente. A última forma é a recebida quando a
+pasta compartilhada do Drive é adicionada ao Meu Drive como atalho.
+"""
 import csv
 from pathlib import Path
 
@@ -34,11 +40,22 @@ def preparar_manifesto(raiz, exploratoria=False):
                                    "rotulo": classe.name, "imagem": foto.relative_to(raiz).as_posix()})
         return linhas
 
+    # Não juntar fontes diferentes: cópias do mesmo arquivo inflariam o
+    # inventário, mesmo que a validação posterior elimine hashes repetidos.
     linhas = inventariar([raiz / "01_imagens_brutas"])
     if not linhas:
         linhas = inventariar([raiz / "02_dataset_limpo" / split for split in ("train", "val", "test")])
     if not linhas:
-        raise ValueError("Nenhuma imagem encontrada em 01_imagens_brutas/<classe> ou 02_dataset_limpo/train|val|test/<classe>. Confira RAIZ.")
+        # A pasta compartilhada pode ser a própria raiz do dataset, com as
+        # quatro classes logo abaixo. Isso evita obrigar a recriar/mover o
+        # acervo apenas para atender ao layout de uma versão antiga.
+        linhas = inventariar([raiz])
+    if not linhas:
+        raise ValueError(
+            "Nenhuma imagem encontrada em 01_imagens_brutas/<classe>, "
+            "02_dataset_limpo/train|val|test/<classe> ou RAIZ/<classe>. "
+            "Confira RAIZ e adicione a pasta compartilhada ao Meu Drive."
+        )
     with destino.open("x", encoding="utf-8-sig", newline="") as arquivo:
         writer = csv.DictWriter(arquivo, fieldnames=["caso_id", "edificio_id", "rotulo", "imagem"])
         writer.writeheader()

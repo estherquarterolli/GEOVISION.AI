@@ -67,6 +67,22 @@ class ContratoTest(unittest.TestCase):
 
 
 class DadosTest(unittest.TestCase):
+    def test_pasta_compartilhada_com_classes_na_raiz(self):
+        with tempfile.TemporaryDirectory() as temp:
+            raiz = Path(temp)
+            for classe in CLASSES:
+                pasta = raiz / classe
+                pasta.mkdir()
+                Image.new('RGB', (8, 8), 'red').save(pasta / f'{classe}.jpg')
+            arquivo = preparar_manifesto(raiz, exploratoria=True)
+            with arquivo.open(encoding='utf-8-sig', newline='') as f:
+                linhas = list(csv.DictReader(f))
+            self.assertEqual({linha['rotulo'] for linha in linhas}, set(CLASSES))
+            self.assertEqual(
+                {linha['imagem'] for linha in linhas},
+                {f'{classe}/{classe}.jpg' for classe in CLASSES},
+            )
+
     def test_pastas_antigas_geram_csv_exploratorio(self):
         with tempfile.TemporaryDirectory() as temp:
             raiz = Path(temp)

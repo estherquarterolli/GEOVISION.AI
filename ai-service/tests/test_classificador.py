@@ -33,6 +33,19 @@ def test_preprocessar_normaliza_para_zero_e_um():
     assert tensor.max() <= 1.0
 
 
+def test_preprocessar_modelo_visual_preserva_proporcao_sem_normalizar():
+    buffer = io.BytesIO()
+    Image.new("RGB", (100, 50), (255, 0, 0)).save(buffer, format="PNG")
+
+    tensor = preprocessar(
+        buffer.getvalue(), (660, 600), normalizar=False, letterbox=True,
+    )
+
+    assert tensor.shape == (1, 600, 660, 3)
+    np.testing.assert_array_equal(tensor[0, 0, 0], [127, 127, 127])
+    np.testing.assert_array_equal(tensor[0, 300, 330], [255, 0, 0])
+
+
 def test_preprocessar_aceita_imagem_em_escala_de_cinza():
     buffer = io.BytesIO()
     Image.new("L", (300, 300), color=90).save(buffer, format="PNG")

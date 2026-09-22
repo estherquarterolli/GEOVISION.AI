@@ -19,6 +19,8 @@ from app.schemas import NivelRisco, RespostaClassificacao
 
 logger = logging.getLogger(__name__)
 
+# Compatibilidade do modelo antigo: 224 x 224, RGB em 0..1. O treinamento
+# visual atual exporta 600 x 660 e inclui a normalização na própria rede.
 TAMANHO_ENTRADA = (224, 224)
 CLASSES_MODELO = ("baixo", "critico", "medio", "sem_risco")
 
@@ -41,13 +43,33 @@ class ModeloIndisponivelError(RuntimeError):
     """O modelo não foi carregado e o serviço não pode classificar."""
 
 
-def preprocessar(bytes_imagem: bytes) -> np.ndarray:
-    """Aplica o mesmo pré-processamento usado na API MobileNetV2 atual."""
+def preprocessar(
+    bytes_imagem: bytes,
+    tamanho: tuple[int, int] = TAMANHO_ENTRADA,
+    *,
+    normalizar: bool = True,
+    letterbox: bool = False,
+) -> np.ndarray:
+    """Prepara uma foto conforme o contrato do modelo carregado.
+
+    O modelo legado recebe imagem redimensionada e já normalizada. O artefato
+    visual 600 x 660 preserva a proporção com bordas neutras e faz a
+    normalização internamente; os dois caminhos não devem ser misturados.
+    """
 
     with Image.open(io.BytesIO(bytes_imagem)) as imagem:
         imagem = ImageOps.exif_transpose(imagem)
-        imagem = imagem.convert("RGB").resize(TAMANHO_ENTRADA)
-        tensor = np.asarray(imagem, dtype=np.float32) / 255.0
+        imagem = imagem.convert("RGB")
+        if letterbox:
+            imagem = ImageOps.pad(
+                imagem, tamanho, method=Image.Resampling.BILINEAR,
+                color=(127, 127, 127),
+            )
+        else:
+            imagem = imagem.resize(tamanho)
+        tensor = np.asarray(imagem, dtype=np.float32)
+        if normalizar:
+            tensor /= 255.0
     return np.expand_dims(tensor, axis=0)
 
 
@@ -65,6 +87,9 @@ class Classificador:
         self.limiar = limiar
         self._modelo = None
         self._bloqueio = Lock()
+        self._tamanho_entrada = TAMANHO_ENTRADA
+        self._normalizar_entrada = True
+        self._letterbox = False
 
     @property
     def carregado(self) -> bool:
@@ -81,12 +106,33 @@ class Classificador:
         try:
             import tensorflow as tf
 
-            self._modelo = tf.keras.models.load_model(self.caminho, compile=False)
+            modelo = tf.keras.models.load_model(self.caminho, compile=False)
         except ImportError:
             logger.warning(
                 "TensorFlow não está instalado. Use Python 3.12 e instale requirements.txt."
             )
             return
+
+        # O endpoint de uma foto só pode receber um modelo visual. Um modelo
+        # multimodal exige as três perspectivas e a triagem, portanto não pode
+        # ser aceito silenciosamente como substituto do modelo antigo.
+        if len(modelo.inputs) != 1:
+            logger.warning(
+                "Modelo %s possui %d entradas; /classify aceita somente o artefato visual de uma foto.",
+                self.caminho, len(modelo.inputs),
+            )
+            return
+
+        forma = modelo.inputs[0].shape
+        if len(forma) != 4 or forma[1] is None or forma[2] is None or forma[3] != 3:
+            logger.warning("Formato de entrada não suportado em %s: %s", self.caminho, forma)
+            return
+        altura, largura = int(forma[1]), int(forma[2])
+        self._tamanho_entrada = (largura, altura)
+        # Schema 2: 600x660, letterbox e Rescaling dentro do artefato.
+        self._normalizar_entrada = (altura, largura) == (224, 224)
+        self._letterbox = not self._normalizar_entrada
+        self._modelo = modelo
 
         logger.info("MobileNetV2 %s carregada de %s", self.versao, self.caminho)
 
@@ -94,7 +140,12 @@ class Classificador:
         if self._modelo is None:
             raise ModeloIndisponivelError("Nenhum modelo MobileNetV2 foi carregado.")
 
-        entrada = preprocessar(bytes_imagem)
+        entrada = preprocessar(
+            bytes_imagem,
+            self._tamanho_entrada,
+            normalizar=self._normalizar_entrada,
+            letterbox=self._letterbox,
+        )
         with self._bloqueio:
             saida = np.asarray(self._modelo.predict(entrada, verbose=0))[0]
 
