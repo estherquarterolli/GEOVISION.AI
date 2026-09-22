@@ -206,7 +206,11 @@ async def alterar_papel(
     )
 
 
-@roteador.delete("/usuarios/{usuario_id}", status_code=status.HTTP_204_NO_CONTENT)
+@roteador.delete(
+    "/usuarios/{usuario_id}",
+    status_code=status.HTTP_204_NO_CONTENT,
+    response_model=None,
+)
 async def excluir_usuario(
     usuario_id: str,
     req: Request,

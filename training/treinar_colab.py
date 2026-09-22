@@ -23,7 +23,32 @@ from contrato_modelo import (
 )
 
 
-def ler_manifesto(raiz, modo, avaliacao_exploratoria=False):
+def _amostra_balanceada(linhas, limite_por_classe):
+    """Seleciona uma amostra estável antes de ler bytes lentos do Drive."""
+    if limite_por_classe is None:
+        return linhas
+    if isinstance(limite_por_classe, bool) or not isinstance(limite_por_classe, int) or limite_por_classe < 5:
+        raise ValueError("limite_por_classe deve ser inteiro >= 5 ou None.")
+    por_classe = {classe: [] for classe in CLASSES}
+    for linha in linhas:
+        rotulo = linha.get("rotulo")
+        if rotulo not in por_classe:
+            raise ValueError(f"Rótulo inválido: {rotulo}")
+        # A ordem por hash torna a seleção repetível sem depender da ordem em
+        # que o Drive entregou os arquivos.
+        chave = f"{linha.get('caso_id', '')}|{linha.get('imagem', '')}".encode("utf-8")
+        por_classe[rotulo].append((hashlib.sha256(chave).hexdigest(), linha))
+    selecionadas = []
+    resumo = []
+    for classe in CLASSES:
+        candidatas = sorted(por_classe[classe], key=lambda item: item[0])
+        selecionadas.extend(linha for _, linha in candidatas[:limite_por_classe])
+        resumo.append(f"{classe}={min(len(candidatas), limite_por_classe)}/{len(candidatas)}")
+    print("Amostra balanceada antes da leitura do Drive: " + ", ".join(resumo), flush=True)
+    return selecionadas
+
+
+def ler_manifesto(raiz, modo, avaliacao_exploratoria=False, limite_por_classe=None, prazo=None):
     """Exige edifícios conhecidos, salvo experimento visual explicitamente habilitado."""
     nome = "casos.csv" if modo == "multimodal" else "imagens.csv"
     arquivo = raiz / nome
@@ -40,7 +65,13 @@ def ler_manifesto(raiz, modo, avaliacao_exploratoria=False):
         obrigatorias += ["revisor", *VOCABULARIO]
     if not linhas or any(c not in linhas[0] for c in obrigatorias):
         raise ValueError(f"CSV vazio ou sem colunas: {obrigatorias}")
+    if limite_por_classe is not None:
+        if modo != "visual" or not avaliacao_exploratoria:
+            raise ValueError("Amostra limitada só é permitida no modo visual exploratório.")
+        linhas = _amostra_balanceada(linhas, limite_por_classe)
     vistos, hashes, rotulos_hash = set(), {}, {}
+    total_verificacoes = len(linhas) * len(fotos)
+    verificadas = 0
     for row in linhas:
         if not (row["caso_id"] or "").strip() or row["caso_id"] in vistos or (not avaliacao_exploratoria and not (row["edificio_id"] or "").strip()):
             raise ValueError("caso_id deve ser único e edificio_id obrigatório.")
@@ -58,10 +89,15 @@ def ler_manifesto(raiz, modo, avaliacao_exploratoria=False):
                 raise ValueError(f"Categoria inválida em {campo}: {row[campo]}")
         hashes_caso = set()
         for campo in fotos:
+            if prazo is not None and time.monotonic() >= prazo:
+                raise TimeoutError("Verificação das imagens excedeu o orçamento; reduza LIMITE_POR_CLASSE.")
             caminho = (raiz / row[campo]).resolve()
             if not caminho.is_relative_to(raiz.resolve()) or not caminho.is_file():
                 raise ValueError(f"Imagem ausente ou fora do dataset: {row[campo]}")
             digest = hashlib.sha256(caminho.read_bytes()).hexdigest()
+            verificadas += 1
+            if verificadas == 1 or verificadas % 25 == 0 or verificadas == total_verificacoes:
+                print(f"Verificando imagens no Drive: {verificadas}/{total_verificacoes}", flush=True)
             if digest in rotulos_hash and rotulos_hash[digest] != row["rotulo"]:
                 raise ValueError("Foto idêntica com rótulos diferentes. Revise as classes antes de treinar.")
             rotulos_hash[digest] = row["rotulo"]
@@ -102,7 +138,8 @@ def dividir(linhas):
     return y, treino, val, teste
 
 
-def treinar(raiz, modo="multimodal", horas=3.0, epocas=1_000_000, batch_imagens=8, avaliacao_exploratoria=False):
+def treinar(raiz, modo="multimodal", horas=3.0, epocas=1_000_000, batch_imagens=8,
+            avaliacao_exploratoria=False, limite_por_classe=None):
     inicio = time.monotonic()
     prazo = inicio + horas * 3600
     # Reserva para teste, remontagem, salvamento local e cópia ao Drive.
@@ -117,7 +154,10 @@ def treinar(raiz, modo="multimodal", horas=3.0, epocas=1_000_000, batch_imagens=
     if not tf.config.list_physical_devices("GPU"):
         raise RuntimeError("Ative GPU no Colab antes de iniciar; não prometemos 3 horas em CPU.")
     raiz = Path(raiz)
-    linhas, fotos = ler_manifesto(raiz, modo, avaliacao_exploratoria=avaliacao_exploratoria)
+    linhas, fotos = ler_manifesto(
+        raiz, modo, avaliacao_exploratoria=avaliacao_exploratoria,
+        limite_por_classe=limite_por_classe, prazo=fim_treino,
+    )
     y, treino, val, teste = dividir(linhas)
     sessao = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%f")
     local = Path("/content") / f"geovision_{sessao}"
@@ -145,6 +185,8 @@ def treinar(raiz, modo="multimodal", horas=3.0, epocas=1_000_000, batch_imagens=
             shutil.copy2(origem, alvo)
             lista.append(alvo)
         caminhos.append(lista)
+        if len(caminhos) == 1 or len(caminhos) % 25 == 0 or len(caminhos) == len(linhas):
+            print(f"Copiando imagens do Drive: {len(caminhos)}/{len(linhas)}", flush=True)
         if time.monotonic() >= fim_treino:
             raise TimeoutError("Cópia consumiu o orçamento; nenhum modelo foi publicado.")
 

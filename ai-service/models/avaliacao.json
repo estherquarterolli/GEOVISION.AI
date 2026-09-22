@@ -1,0 +1,72 @@
+{
+  "baixo": {
+    "precision": 0.7368421052631579,
+    "recall": 0.7368421052631579,
+    "f1-score": 0.7368421052631579,
+    "support": 19.0
+  },
+  "critico": {
+    "precision": 0.5416666666666666,
+    "recall": 0.8666666666666667,
+    "f1-score": 0.6666666666666666,
+    "support": 15.0
+  },
+  "medio": {
+    "precision": 0.6923076923076923,
+    "recall": 0.375,
+    "f1-score": 0.4864864864864865,
+    "support": 24.0
+  },
+  "sem_risco": {
+    "precision": 0.875,
+    "recall": 0.9545454545454546,
+    "f1-score": 0.9130434782608695,
+    "support": 22.0
+  },
+  "accuracy": 0.7125,
+  "macro avg": {
+    "precision": 0.7114541160593792,
+    "recall": 0.7332635566188198,
+    "f1-score": 0.7007596841692951,
+    "support": 80.0
+  },
+  "weighted avg": {
+    "precision": 0.7248798076923076,
+    "recall": 0.7125,
+    "f1-score": 0.697032902467685,
+    "support": 80.0
+  },
+  "matriz_confusao": [
+    [
+      14,
+      1,
+      3,
+      1
+    ],
+    [
+      0,
+      13,
+      1,
+      1
+    ],
+    [
+      5,
+      9,
+      9,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      21
+    ]
+  ],
+  "epocas_executadas": 19539,
+  "melhor_epoca": 30,
+  "orcamento_horas": 1.0,
+  "reserva_finalizacao_minutos": 20,
+  "tipo_avaliacao": "exploratoria_por_conteudo",
+  "origem_imoveis_conhecida": false,
+  "segundos_ate_avaliacao": 2400.356775751
+}

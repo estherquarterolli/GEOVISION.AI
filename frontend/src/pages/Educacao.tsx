@@ -79,6 +79,21 @@ const GUIAS: GuiaAnomalia[] = [
   }
 ]
 
+const PONTOS_DE_OBSERVACAO = [
+  {
+    titulo: 'Padrão e local',
+    texto: 'Registre onde começa e termina a anomalia e se ela está em parede, laje, pilar, viga ou muro.',
+  },
+  {
+    titulo: 'Mudança no tempo',
+    texto: 'Informe se surgiu recentemente ou se parece aumentar. Uma foto isolada não mostra evolução.',
+  },
+  {
+    titulo: 'Água e entorno',
+    texto: 'Observe infiltração, drenagem, solo, chuva e sinais de deslocamento no entorno, sem se expor ao perigo.',
+  },
+]
+
 export function Educacao() {
   const [guiaAtivo, setGuiaAtivo] = useState(0)
 
@@ -89,11 +104,20 @@ export function Educacao() {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 h-64 w-64 rounded-full bg-gradient-to-tr from-marca-laranja/10 to-marca-azul/10 blur-[60px]" />
 
       <header className="mb-6 text-center">
-        <h1 className="text-2xl font-bold tracking-tight text-tinta">Como identificar riscos?</h1>
+        <h1 className="text-2xl font-bold tracking-tight text-tinta">Observe antes de relatar</h1>
         <p className="text-tinta-suave mt-1.5 text-sm">
-          Aprenda a reconhecer anomalias estruturais em sua casa e saiba quando acionar a Defesa Civil.
+          Fotos, contexto e evolução ajudam a Defesa Civil a priorizar a análise. Não substituem vistoria técnica.
         </p>
       </header>
+
+      <section aria-label="O que observar" className="mb-6 grid gap-2 sm:grid-cols-3">
+        {PONTOS_DE_OBSERVACAO.map((ponto) => (
+          <Cartao key={ponto.titulo} className="border-marca-azul/15 bg-marca-azul/5 p-3">
+            <h2 className="text-xs font-bold text-marca-azul">{ponto.titulo}</h2>
+            <p className="mt-1 text-[11px] leading-relaxed text-tinta-suave">{ponto.texto}</p>
+          </Cartao>
+        ))}
+      </section>
 
       {/* Tabs */}
       <div className="flex border-b border-borda mb-6 bg-white/40 backdrop-blur rounded-lg p-0.5 shadow-sm">
@@ -149,11 +173,15 @@ export function Educacao() {
             <div>
               <h3 className="text-xs font-bold text-risco-critico uppercase tracking-wider">Atenção!</h3>
               <p className="text-xs text-tinta mt-1 leading-relaxed">
-                Em caso de risco crítico iminente, barulhos de estalo na estrutura, portas emperrando repentinamente ou muros cedendo, **saia do local imediatamente** e ligue para a Defesa Civil no número **199** ou Bombeiros no **193**.
+                Em caso de movimentação visível, queda de material, estalos ou muro cedendo, não faça testes, não toque no elemento e não se aproxime para fotografar. Afaste-se e ligue para a Defesa Civil no **199** ou Bombeiros no **193**.
               </p>
             </div>
           </div>
         </Cartao>
+
+        <p className="px-1 text-center text-[10px] leading-relaxed text-tinta-suave">
+          Conteúdo educativo baseado em referências de patologia, diagnóstico e avaliação de risco; não define segurança, causa ou necessidade de intervenção.
+        </p>
       </div>
 
     </div>

@@ -1,0 +1,78 @@
+{
+  "schema_version": 2,
+  "modo": "visual",
+  "classes": [
+    "baixo",
+    "critico",
+    "medio",
+    "sem_risco"
+  ],
+  "altura": 600,
+  "largura": 660,
+  "preprocessamento": "pil_letterbox_rgb_0_255_rescaling_interno",
+  "perspectivas": [
+    "geral",
+    "detalhe",
+    "escala"
+  ],
+  "vocabulario": {
+    "tipo_anomalia": [
+      "desconhecido",
+      "rachadura",
+      "inclinacao_muro",
+      "infiltracao",
+      "desplacamento",
+      "armadura_exposta",
+      "afundamento_recalque",
+      "outro"
+    ],
+    "evolucao": [
+      "desconhecido",
+      "estavel",
+      "aumentando",
+      "rapido"
+    ],
+    "local_anomalia": [
+      "desconhecido",
+      "parede",
+      "viga_pilar",
+      "laje_piso",
+      "muro_arrimo",
+      "solo_talude",
+      "outro"
+    ],
+    "ruido_percebido": [
+      "desconhecido",
+      "nenhum",
+      "estalos",
+      "vibracao_ao_pisar",
+      "outro"
+    ],
+    "gravidade_percebida": [
+      "desconhecido",
+      "baixo",
+      "medio",
+      "alto"
+    ],
+    "tempo_surgimento": [
+      "desconhecido",
+      "recente",
+      "semanas",
+      "meses"
+    ]
+  },
+  "medicoes_escalas": {
+    "abertura_mm": 10.0,
+    "evolucao_mm_dia": 1.0,
+    "desaprumo_mm_m": 10.0,
+    "distorcao_angular": 0.01
+  },
+  "medicoes_layout": "valor_dividido_pela_escala,indicador_presenca",
+  "homologado": false,
+  "observacao": "Modelo experimental de triagem; softmax não é probabilidade de ruína.",
+  "tipo_avaliacao": "exploratoria_por_conteudo",
+  "limitacao_avaliacao": "Fotos diferentes do mesmo imóvel podem estar em splits distintos; não demonstra generalização para outros imóveis.",
+  "versao": "20260922T184622247128",
+  "tensorflow": "2.20.0",
+  "sha256": "96561dc648efe6c65c1c335bffc4fb5b7a4cc1f440aa21f8a22b2d8052dd0a0b"
+}

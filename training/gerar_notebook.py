@@ -85,8 +85,11 @@ MODO = 'visual'  # altere para 'multimodal' se já houver casos.csv revisado
 AVALIACAO_EXPLORATORIA = True  # fotos sem identificação do imóvel; somente modo visual
 HORAS = 3.0
 MAX_EPOCAS = 1_000_000  # teto; quem controla a parada é o relógio
+# Evita horas sem resposta lendo todo o Drive. Use 0 somente após validar uma amostra.
+LIMITE_POR_CLASSE = 300
 print('Categorias aceitas:', VOCABULARIO)
 print('Medições opcionais e escalas numéricas (não limites):', MEDICOES)
+print('Máximo por classe nesta execução:', LIMITE_POR_CLASSE)
 if not Path(RAIZ).is_dir():
     raise FileNotFoundError(
         f'RAIZ não encontrada: {RAIZ}. Adicione a pasta compartilhada ao Meu Drive '
@@ -123,8 +126,10 @@ if MODO == 'visual':
 if AVALIACAO_EXPLORATORIA and MODO != 'visual':
     raise ValueError('Desative AVALIACAO_EXPLORATORIA para treinar casos multimodais revisados.')
 from treinar_colab import treinar
+limite = None if LIMITE_POR_CLASSE == 0 else LIMITE_POR_CLASSE
 destino = treinar(RAIZ, modo=MODO, horas=HORAS, epocas=MAX_EPOCAS, batch_imagens=8,
-                 avaliacao_exploratoria=AVALIACAO_EXPLORATORIA)
+                 avaliacao_exploratoria=AVALIACAO_EXPLORATORIA,
+                 limite_por_classe=limite)
 """))
 celulas.append(codigo("""import json
 print(json.dumps(json.loads((destino / 'avaliacao.json').read_text()), indent=2, ensure_ascii=False))

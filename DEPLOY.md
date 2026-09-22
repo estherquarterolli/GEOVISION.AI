@@ -204,6 +204,15 @@ Preencha, no mínimo:
 - `ROBOFLOW_API_KEY` e `ROBOFLOW_WORKFLOW_ID` — sem eles o sistema funciona,
   mas os alertas chegam ao painel sem nível de risco, para triagem manual.
 
+### Modelo experimental
+
+O modelo não é versionado no Git. Envie para a VPS os arquivos
+`geovision_model_pronto.keras`, `geovision_model_pronto.json` e
+`avaliacao.json` no diretório `/opt/geovision/ai-service/models/`. No `.env`,
+configure `CAMINHO_MODELO=/app/models/geovision_model_pronto.keras` e a versão
+do artefato. O Compose monta esse diretório como somente leitura dentro da API;
+depois de enviar o arquivo, recrie apenas o serviço `api`.
+
 ## 5. Subir
 
 ```bash

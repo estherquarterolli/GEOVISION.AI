@@ -26,7 +26,7 @@ class Config(BaseSettings):
     # --- Modelo --------------------------------------------------------------
     # O padrão preserva o artefato legado. O treinamento visual atual gera
     # geovision_model_pronto.keras; configure CAMINHO_MODELO para adotá-lo.
-    caminho_modelo: Path = RAIZ / "models" / "geovision_model_pronto.h5"
+    caminho_modelo: Path = RAIZ / "models" / "geovision_model_pronto.keras"
     # Gravado junto de cada classificação em alertas.modelo_versao. Sem isso,
     # um erro de classificação vira impossível de auditar depois de um retreino.
     versao_modelo: str = "sem-modelo"

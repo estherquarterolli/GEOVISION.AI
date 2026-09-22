@@ -12,7 +12,7 @@ from PIL import Image
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "ai-service/app/services"))
 from contrato_modelo import codificar_triagem, preparar_imagem, metadados_modelo, CLASSES, VOCABULARIO
 from calculos_observacionais import abertura_mm, evolucao_mm_dia, desaprumo_mm_m, distorcao_angular, gut_tecnico
-from treinar_colab import dividir, treinar, ler_manifesto
+from treinar_colab import _amostra_balanceada, dividir, treinar, ler_manifesto
 from preparar_manifesto import preparar_manifesto, conferir_manifesto
 
 
@@ -67,6 +67,19 @@ class ContratoTest(unittest.TestCase):
 
 
 class DadosTest(unittest.TestCase):
+    def test_amostra_balanceada_limita_cada_classe(self):
+        linhas = [
+            {"caso_id": f"{classe}_{indice}", "rotulo": classe,
+             "imagem": f"{classe}/{indice}.jpg"}
+            for classe in CLASSES for indice in range(8)
+        ]
+        amostra = _amostra_balanceada(linhas, 3)
+        self.assertEqual(len(amostra), 12)
+        self.assertEqual(
+            {classe: sum(linha["rotulo"] == classe for linha in amostra) for classe in CLASSES},
+            {classe: 3 for classe in CLASSES},
+        )
+
     def test_pasta_compartilhada_com_classes_na_raiz(self):
         with tempfile.TemporaryDirectory() as temp:
             raiz = Path(temp)

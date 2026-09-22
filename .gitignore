@@ -32,6 +32,11 @@ venv/
 *.pt
 ai-service/models/*
 !ai-service/models/.gitkeep
+# Artefato experimental aprovado para o MVP privado. Os demais modelos
+# continuam fora do repositório por padrão.
+!ai-service/models/geovision_model_pronto.keras
+!ai-service/models/geovision_model_pronto.json
+!ai-service/models/avaliacao.json
 
 # Dataset de imagens (não versionar imagens brutas)
 # Ignora o conteúdo, não a pasta: o Git não consegue reincluir um arquivo

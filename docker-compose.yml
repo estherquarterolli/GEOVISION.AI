@@ -35,6 +35,8 @@ services:
       GEOVISION_DATA_DIR: /data
     volumes:
       - dados:/data
+      # O modelo é enviado diretamente à VPS e fica fora do Git e da imagem.
+      - ./ai-service/models:/app/models:ro
     # Sem `ports`: nada da API chega ao host. Quem fala com ela é o nginx do
     # `web`, pela rede interna.
     expose:

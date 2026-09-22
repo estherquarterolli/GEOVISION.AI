@@ -1,7 +1,7 @@
 # GeoVision.AI — Serviço de classificação de risco
 #
-# O serviço roda em Python 3.12 porque o TensorFlow 2.21 não publica wheel
-# para Python 3.14. A inferência é totalmente local; Roboflow não é usado.
+# O artefato atual foi exportado em TensorFlow 2.20. O runtime local usa
+# Python 3.11, compatível com essa versão no Windows. A inferência é local.
 
 # --- API ---------------------------------------------------------------------
 fastapi==0.141.1
@@ -20,11 +20,12 @@ email-validator>=2.2,<3
 
 # --- Imagem ------------------------------------------------------------------
 pillow==12.3.0
-numpy==2.5.3
+# Mantido em 2.2 para compatibilidade entre TensorFlow e OpenCV no Python 3.11.
+numpy==2.2.6
 
 # --- Inferência --------------------------------------------------------------
-# Modelo MobileNetV2 exportado em Keras/HDF5.
-tensorflow==2.21.0
+# Modelo MobileNetV2 visual exportado em Keras.
+tensorflow==2.20.0
 
 # --- Integrações -------------------------------------------------------------
 httpx==0.28.1                 # chamadas ao Supabase, Resend e WhatsApp Cloud API
